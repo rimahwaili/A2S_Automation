@@ -1,6 +1,18 @@
 import { test, expect } from '@playwright/test';
+import { SuppliersPage } from '../../pages/SuppliersPage';
+import { LoginPage } from '../../pages/LoginPage';
 
 test.describe('Suppliers module', () => {
+
+   let suppliersPage: SuppliersPage;
+test.beforeEach(async ({ page }) => {
+      const loginPage = new LoginPage(page);
+      await loginPage.goto();
+      await loginPage.login();
+      suppliersPage = new SuppliersPage(page);
+      await suppliersPage.goto();
+    });
+
 
   test('Create new supplier', async ({ page }) => {
     // Step 1: Go to Suppliers page

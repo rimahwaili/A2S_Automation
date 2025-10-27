@@ -76,15 +76,10 @@ export class SuppliersPage {
   // --- Filters interactions ---
   async filterByCode(code: string) {
     
-    await this.page.locator('#supplier_0_code_chosen a').filter({ hasText: 'All' }).click();
-    
+    await this.page.locator('#supplier_0_code_chosen a').filter({ hasText: 'All' }).click(); 
     await this.page.locator('#supplier_0_code_chosen').getByRole('textbox', { name: 'Enter a value' }).waitFor({ state: 'visible' });
     await this.page.locator('#supplier_0_code_chosen').getByRole('textbox', { name: 'Enter a value' }).click();
-    //await this.page.locator('#supplier_0_code_chosen').getByRole('textbox', { name: 'Enter a value' }).fill(code);
-   //await this.page.keyboard.type("", { delay: 100 });
-   //await this.page.keyboard.press('Backspace');
    await this.page.keyboard.type(code, { delay: 100 });
-   this.page.waitForLoadState('networkidle'),
     await this.page.locator('#supplier_0_code_chosen').getByRole('textbox', { name: 'Enter a value' }).press('Enter');
     await this.page.getByRole('listitem').filter({ hasText: code }).last().getByRole('emphasis').click();
     await this.page.getByRole('button', { name: 'Apply filters' }).click();
@@ -99,7 +94,9 @@ export class SuppliersPage {
   async filterByCountry(country: string) {
     await this.page.locator('#supplier_0_invoicing_countries_chosen').click();
     await this.filterCountry.fill(country);
+    await this.page.keyboard.type(country, { delay: 100 });
     await this.page.keyboard.press('Enter');
+    this.page.waitForLoadState('networkidle'),
     await this.applyFilters();
   }
 
@@ -170,7 +167,7 @@ export class SuppliersPage {
   // --- Actions ---
   async applyFilters() {
     await this.applyButton.click();
-    await this.page.waitForLoadState('networkidle');
+    //await this.page.waitForLoadState('networkidle');
   }
 
   async resetFilters() {

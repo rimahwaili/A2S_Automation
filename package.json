@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test:P0": "npx playwright test --grep '@P0'",
+    "test:Login": "npx playwright test --grep '@Login'",
     "test:recette": "cross-env ENV=recette npx playwright test",
-    "test:ppd": "cross-env ENV=ppd npx playwright test",
-    "test:login": "cross-env ENV=recette npx playwright test tests/login/login.spec.ts --project=chromium"
+    "test:ppd": "cross-env ENV=ppd npx playwright test"
   },
   "keywords": [],
   "author": "",

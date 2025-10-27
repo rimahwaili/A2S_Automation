@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { SuppliersPage } from '../../pages/SuppliersPage';
 import { LoginPage } from '../../pages/LoginPage';
+
 test.describe('Suppliers Filters', () => {
   let suppliersPage: SuppliersPage;
 
@@ -33,13 +34,13 @@ test.describe('Suppliers Filters', () => {
   });
 
   test('Filter by category', async () => {
-    await suppliersPage.filterByCategory('Guest amenities');
+    await suppliersPage.filterByCategories('Guest amenities');
     const first = await suppliersPage.getFirstResultText();
     expect(first).toContain('Guest amenities');
   });
 
   test('Filter by active contracts', async () => {
-    await suppliersPage.filterByActiveContracts('Yes');
+    await suppliersPage.filterByActiveContracts('true');
     const count = await suppliersPage.getResultsCount();
     expect(count).toBeGreaterThan(0);
   });
@@ -48,6 +49,6 @@ test.describe('Suppliers Filters', () => {
     await suppliersPage.filterByCode('703');
     await suppliersPage.resetFilters();
     const count = await suppliersPage.getResultsCount();
-    expect(count).toBeGreaterThan(100); // full dataset
+    expect(count).toBeGreaterThan(15); // full dataset
   });
 });

@@ -33,7 +33,7 @@ export class ForgotPasswordPage {
 
   async gotoResetLink() {
     // simule l'ouverture du lien envoyé par mail (dans un vrai test : stub backend)
-    await this.page.goto('https://astoresuite.com/reset-password');
+    await this.page.goto('https://rec.astoresuite.com/users/forgot_password');
   }
 
   async fillNewPassword(password: string, confirm: string) {
