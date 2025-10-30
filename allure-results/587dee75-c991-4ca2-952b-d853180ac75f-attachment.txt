@@ -1,0 +1,5 @@
+Detected UI language: EN
+Detected UI language: FR
+🧮 Application des filtres: { firstName: 'helene', profile: 'support' }
+🎯 Option "Support" sélectionnée
+✅ Filtres appliqués avec succès

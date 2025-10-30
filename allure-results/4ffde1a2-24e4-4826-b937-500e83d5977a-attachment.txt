@@ -1,0 +1,2 @@
+Detected UI language: EN
+✅ Active and inactive icons are visible

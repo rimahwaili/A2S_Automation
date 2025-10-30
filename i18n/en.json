@@ -1,0 +1,45 @@
+{
+  "toaster_success_create": "Contact was successfully created.",
+  "toaster_success_password": "Success - Password has been changed",
+  "toaster_error_inactive": "Error - Your account has been deactivated. Please contact customer support.",
+  "toaster_error_invalid": "Wrong email or password.",
+  "successHeader": "Success",
+  "successMessage": "You're now logged as",
+  "loginButton": "Log in",
+  "invalidCredentialsMessage": "Wrong Email or Password",
+  "listTitle": "Contacts List",
+  "firstName": "First name",
+   "lastName": "Last name",
+   "email": "Email",
+   "function": "Function",
+    "active": "Active",
+    "profile": "Profile",
+    "areas": "Areas",
+    "actions": "Actions",
+    "newContact": "New Contact",
+    "addFilters": "Add filters",
+    "exportSuccess": "An email with your contacts list will be sent soon, please check your mailbox.",
+
+    "all": "[All]",
+    "activeValues": {
+      "true": "true",
+      "false": "false"
+    },
+    "profileValues": {
+      "supplier": "Supplier",
+      "client": "client",
+      "buyer": "Buyer",
+      "businessDev": "Business Developer",
+      "zoneAdmin": "Area Admin",
+      "support": "Support",
+      "centralAdmin": "Central Admin"
+    },
+    "functionValues": {
+      "director": "Sales Director",
+      "billingManager": "Billing Manager",
+      "ceo": "CEO",
+      "assistant": "Assistant",
+      "customerCare": "Customer Care",
+      "other": "Other"
+    }
+}

@@ -1,0 +1,2 @@
+Detected UI language: EN
+➡️ Opened contact details for "Loic"

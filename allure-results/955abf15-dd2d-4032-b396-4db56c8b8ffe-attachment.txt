@@ -1,0 +1,4 @@
+Detected UI language: EN
+Detected UI language: FR
+📤 Vérification du message de succès après export...
+✅ Message du toast vérifié (FR)
