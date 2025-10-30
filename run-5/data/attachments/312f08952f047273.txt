@@ -1,0 +1,4 @@
+Detected UI language: EN
+Detected UI language: FR
+🧮 Application des filtres: { firstName: 'Laurent' }
+✅ Filtres appliqués avec succès
