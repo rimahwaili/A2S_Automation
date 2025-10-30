@@ -17,11 +17,11 @@ jobs:
       NODE_ENV: recette
 
     steps:
-      # 1️⃣ Cloner le repo
+      # 1️⃣ Cloner le dépôt
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Construire l'image Docker Playwright
+      # 2️⃣ Construire l’image Docker Playwright
       - name: Build Docker image
         run: docker build -t playwright-tests .
 
@@ -34,7 +34,7 @@ jobs:
           echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.recette
           echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.recette
 
-      # 4️⃣ Debug (facultatif mais utile)
+      # 4️⃣ Debug (facultatif)
       - name: Debug .env.recette existence
         run: |
           echo "[DEBUG] Contents of workspace root:"
@@ -51,11 +51,7 @@ jobs:
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
             playwright-tests npx playwright test --reporter=line,allure-playwright || true
 
-      # 6️⃣ Installer Java pour Allure (hors container)
-      - name: Install Java for Allure
-        run: sudo apt-get update && sudo apt-get install -y default-jre
-
-      # 7️⃣ Générer le rapport Allure (dans Docker)
+      # 6️⃣ Générer le rapport Allure dans Docker
       - name: Generate Allure report
         if: always()
         run: |
@@ -64,7 +60,14 @@ jobs:
             -v ${{ github.workspace }}/allure-report:/app/allure-report \
             playwright-tests npx allure generate /app/allure-results --clean -o /app/allure-report
 
-      # 8️⃣ Upload du rapport en artefact GitHub
+      # 7️⃣ Vérifier le contenu du rapport
+      - name: Check Allure report content
+        if: always()
+        run: |
+          echo "📁 Contenu du dossier allure-report :"
+          ls -la allure-report || echo "⚠️ Aucun rapport généré !"
+
+      # 8️⃣ Upload du rapport comme artefact GitHub
       - name: Upload Allure report artifact
         if: always()
         uses: actions/upload-artifact@v4
@@ -72,7 +75,7 @@ jobs:
           name: allure-report
           path: allure-report
 
-      # 9️⃣ Déploiement du rapport Allure sur GitHub Pages
+      # 9️⃣ Déploiement du rapport Allure sur GitHub Pages (avec historique)
       - name: Deploy Allure report to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v4
@@ -80,5 +83,28 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-report
           publish_branch: gh-pages
-          force_orphan: true
-          commit_message: "🚀 Publish Allure report from CI"
+          destination_dir: run-${{ github.run_number }}
+          force_orphan: false
+          commit_message: "🚀 Publish Allure report run #${{ github.run_number }}"
+
+      # 🔟 Génération d’une page d’index listant tous les rapports
+      - name: Generate index.html for GitHub Pages
+        if: always()
+        run: |
+          echo "<html><head><meta charset='UTF-8'><title>Allure Reports</title></head><body>" > index.html
+          echo "<h2>Historique des rapports Allure</h2><ul>" >> index.html
+          for dir in $(git ls-remote --heads origin | grep gh-pages | cut -f2); do
+            echo "<li><a href='${dir}/'>${dir}</a></li>" >> index.html
+          done
+          echo "</ul></body></html>" >> index.html
+        shell: bash
+
+      - name: Deploy index page
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: true
+          commit_message: "🗂️ Update Allure report index"
