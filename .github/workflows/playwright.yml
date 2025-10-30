@@ -17,14 +17,15 @@ jobs:
       NODE_ENV: recette
 
     steps:
+      # 1️⃣ Cloner le repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 🧱 Build Docker image (avec la version locale de Playwright)
+      # 2️⃣ Construire l'image Docker Playwright
       - name: Build Docker image
         run: docker build -t playwright-tests .
 
-      # 🔐 Création du fichier .env.recette
+      # 3️⃣ Créer le fichier .env.recette depuis les secrets
       - name: Create .env.recette file
         run: |
           echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env.recette
@@ -33,7 +34,7 @@ jobs:
           echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.recette
           echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.recette
 
-      # 🧩 Vérifie que le fichier .env.recette existe bien
+      # 4️⃣ Debug (facultatif mais utile)
       - name: Debug .env.recette existence
         run: |
           echo "[DEBUG] Contents of workspace root:"
@@ -42,40 +43,42 @@ jobs:
           echo "[DEBUG] .env.recette content:"
           cat .env.recette || echo "file not found"
 
-      # 🧪 Exécution des tests Playwright dans Docker
+      # 5️⃣ Exécuter les tests Playwright dans Docker
       - name: Run Playwright tests
         run: |
           docker run --rm \
-          -v ${{ github.workspace }}/.env.recette:/app/.env.recette \
-          -v ${{ github.workspace }}/allure-results:/app/allure-results \
-          playwright-tests npx playwright test || true
+            -v ${{ github.workspace }}/.env.recette:/app/.env.recette \
+            -v ${{ github.workspace }}/allure-results:/app/allure-results \
+            playwright-tests npx playwright test --reporter=line,allure-playwright || true
 
+      # 6️⃣ Installer Java pour Allure (hors container)
       - name: Install Java for Allure
         run: sudo apt-get update && sudo apt-get install -y default-jre
-      
 
-      # 📊 Génération du rapport Allure
+      # 7️⃣ Générer le rapport Allure (dans Docker)
       - name: Generate Allure report
         if: always()
         run: |
           docker run --rm \
-          -v ${{ github.workspace }}/allure-results:/app/allure-results \
-          -v ${{ github.workspace }}/allure-report:/app/allure-report \
-          playwright-tests allure generate /app/allure-results --clean -o /app/allure-report
+            -v ${{ github.workspace }}/allure-results:/app/allure-results \
+            -v ${{ github.workspace }}/allure-report:/app/allure-report \
+            playwright-tests npx allure generate /app/allure-results --clean -o /app/allure-report
 
-
-      # 📦 Upload du rapport comme artefact
+      # 8️⃣ Upload du rapport en artefact GitHub
       - name: Upload Allure report artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
           path: allure-report
 
-      # 🌐 Déploiement automatique sur GitHub Pages
+      # 9️⃣ Déploiement du rapport Allure sur GitHub Pages
       - name: Deploy Allure report to GitHub Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-report
           publish_branch: gh-pages
           force_orphan: true
+          commit_message: "🚀 Publish Allure report from CI"
