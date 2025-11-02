@@ -2,7 +2,9 @@ import { test, expect } from '@playwright/test';
 import { CreateContactPage } from '../../pages/CreateContact';
 import { LoginPage } from '../../pages/LoginPage';
 import { ContactsPage } from '../../pages/ContactsPage';
+import { ContactDetailsPage } from '../../pages/ContactDetailsPage';
 import { translations, getLang } from '../../utils/translations';
+import { ForgotPasswordPage } from '../../pages/ForgotPasswordPage';
 
 // --- Détection ou configuration de la langue ---
 const lang = getLang(); // 'fr' ou 'en' selon ta fonction utilitaire
@@ -35,12 +37,41 @@ for (const profil of profils) {
   test.describe(`@P0 @Contacts : Profil [${profil.name}]`, () => {
     test(`${profil.jiraKey} | @P0 @Contact Should create Contact for: ${profil.name}`, async ({ page }) => {
       createContactPage = new CreateContactPage(page);
-
       const random = Math.floor(1000 + Math.random() * 9000);
       const email = `${profil.name.replace(/\s+/g, '')}${random}@yopmail.com`;
 
       await createContactPage.createContact('Test', 'Auto', email, profil.name);
       await createContactPage.verifySuccess();
+      const contactsPage = new ContactsPage(page);
+      await contactsPage.goto();
+
+      await contactsPage.applyFilters({ email: email });
+      const contactsDetailsPage = new ContactDetailsPage(page);
+
+      await contactsPage.showContactDetails();
+      await contactsDetailsPage.verifyPageLoaded();
+      await contactsDetailsPage.verifyContactInformation();
+      //if supplier or buyer we need to click on send link
+      if (profil.name =="Supplier" || profil.name =="client") {
+          await contactsDetailsPage.sendResetLink();
+      }
+
+      await contactsDetailsPage.openChangePasswordModal();
+
+      await contactsDetailsPage.changeInvalidPassword('invalid','Valid@260994!!');
+      await contactsDetailsPage.closeChangePasswordModal();
+      await contactsDetailsPage.openChangePasswordModal();
+      await contactsDetailsPage.changeValidPassword('Valid@260994!!');
+      await contactsDetailsPage.verifyAndCloseSuccessToast(/Password changed/i);
+
+      const loginPage = new LoginPage(page);
+      await loginPage.logout();
+      await loginPage.login(email,'Valid@260994!!');
+
+      const forgotPassword = new ForgotPasswordPage(page);
+      await forgotPassword.setNewPassword('Valid@260994!!');
+
+
     });
-  });
-}
+ });
+ }

@@ -1,4 +1,4 @@
-import { Page, Locator } from '@playwright/test';
+import { Page, Locator, expect } from '@playwright/test';
 import { credentials } from '../utils/env';
 import { loginSelectors } from '../selectors/login.selectors';
 
@@ -61,5 +61,33 @@ async detectLanguage() {
 
   async getToastMessage() {
     return this.page.locator(loginSelectors.toastMessage);
+  }
+  
+async openAvatarMenu() {
+    const menu = this.page.locator(loginSelectors.avatarMenuOpen);
+    if (!(await menu.isVisible())) {
+      const avatarButton = this.page.locator('.header__avatar, .header__avatar-button');
+      await expect(avatarButton).toBeVisible();
+      await avatarButton.click();
+      //await expect(menu).toBeVisible();
+    }
+  }
+
+  /** Verify logged-in user info */
+  async verifyLoggedInUser(name: string, profile: string) {
+    await this.openAvatarMenu();
+    const actualName = (await this.page.locator(loginSelectors.avatarName).innerText()).trim();
+    const actualProfile = (await this.page.locator(loginSelectors.avatarProfile).innerText()).trim();
+    expect(actualName).toBe(name);
+    expect(actualProfile).toBe(profile);
+  }
+
+  /** Log out */
+  async logout() {
+    await this.openAvatarMenu();
+    const logoutLink = this.page.locator(loginSelectors.logoutLink);
+    await expect(logoutLink).toBeVisible({ timeout: 8000 });
+    await logoutLink.click();
+    await this.page.waitForURL('**/login**', { timeout: 10000 });
   }
 }

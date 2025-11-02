@@ -4,7 +4,7 @@ import { LoginPage } from '../../pages/LoginPage';
 
 test.describe('Suppliers module', () => {
 
-   let suppliersPage: SuppliersPage;
+let suppliersPage: SuppliersPage;
 test.beforeEach(async ({ page }) => {
       const loginPage = new LoginPage(page);
       await loginPage.goto();
@@ -54,6 +54,7 @@ test.beforeEach(async ({ page }) => {
     await page.getByLabel('City').fill('Paris');
     await page.getByLabel('ZIP code').fill('75001');
     await page.getByLabel('Country').selectOption({ label: 'France' });
+    
 /*
     // Step 6: Submit form
     await page.getByRole('button', { name: /Submit/i }).click();

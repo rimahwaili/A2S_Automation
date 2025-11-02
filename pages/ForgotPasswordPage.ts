@@ -1,5 +1,6 @@
 import { Page , Locator, expect } from '@playwright/test';
 import { credentials } from '../utils/env';
+import { loginSelectors as sel} from '../selectors/login.selectors';
 
 export class ForgotPasswordPage {
   readonly page: Page;
@@ -14,8 +15,6 @@ export class ForgotPasswordPage {
     this.passwordInput = page.locator('#user_0_password');
     this.loginButton = page.getByRole('button', { name: 'Log in' });
     this.forgetpasswordbutton = page.getByRole('link', { name: 'Forgot your password ?' });
-;
-
   }
 
   async goto() {
@@ -37,8 +36,24 @@ export class ForgotPasswordPage {
   }
 
   async fillNewPassword(password: string, confirm: string) {
+    const url='https://rec.astoresuite.com/users/cgu_required';
     await this.page.fill('input[name="password"]', password);
     await this.page.fill('input[name="confirmPassword"]', confirm);
     await this.page.click('button[type="submit"]');
+  }
+
+   /** Fill and submit new password form */
+  async setNewPassword(password: string) {
+
+ 
+    console.log(`🔐 Setting new password (${password.length} chars)...`);
+
+    await this.page.locator(sel.ResetpasswordInput).fill(password);
+    await this.page.locator(sel.confirmPasswordInput).fill(password);
+
+    await expect(this.page.locator(sel.acceptButton)).toBeEnabled();
+    await this.page.locator(sel.acceptButton).click();
+
+    console.log('✅ Password set and form submitted');
   }
 }
