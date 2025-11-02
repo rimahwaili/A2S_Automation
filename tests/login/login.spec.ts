@@ -3,6 +3,7 @@ import { LoginPage } from '../../pages/LoginPage';
 import { credentials } from '../../utils/env';
 import { loginSelectors } from '../../selectors/login.selectors';
 import { translations, getLang } from '../../utils/translations';
+import { allure } from 'allure-playwright';
 
 
 const lang = getLang(); // détecte depuis process.env.LANG
@@ -11,6 +12,11 @@ const t = translations[lang];
 
 test.describe('Login Tests', () => {
   test('A2SQA2-2522 | @P0 @Login Login with valid credentials', async ({ page }) => {
+
+    allure.label('feature', 'Login');
+    allure.epic('Login');
+    allure.story('Login with valid credentials');
+    
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.detectLanguage();
@@ -25,6 +31,10 @@ test.describe('Login Tests', () => {
   });
 
   test('A2SQA2-2523 | @P0 @Login Login with inactif credentials', async ({ page }) => {
+    allure.label('feature', 'Login');
+    allure.epic('Login');
+    allure.story('Login with inactif credentials');
+
     const loginPage = new LoginPage(page);
     await loginPage.goto();
      await loginPage.detectLanguage();
@@ -36,6 +46,11 @@ test.describe('Login Tests', () => {
   });
 
   test('A2SQA2-2524 | @P0 @Login Login with invalid credentials', async ({ page }) => {
+
+    allure.label('feature', 'Login');
+    allure.epic('Login');
+    allure.story('Login with invalid credentials');
+
     const loginPage = new LoginPage(page);
     await loginPage.goto();
      await loginPage.detectLanguage();

@@ -109,25 +109,121 @@ jobs:
           keep_files: true
           commit_message: "🗂️ Update Allure report index"
 
-      # 1️⃣2️⃣ Envoyer un mail avec le lien du rapport
+      # 1️⃣3️⃣ Send Allure Report Email (dynamic badge + chart)
       - name: Send Allure Report Email
         if: always()
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.gmail.com      
-          server_port: 465                    
+          server_address: smtp.gmail.com
+          server_port: 465
           secure: true
           username: ${{ secrets.EMAIL_USER }}
           password: ${{ secrets.EMAIL_PASS }}
-          subject: "✅ A2S Automation - Allure Report Run #${{ github.run_number }}"
+          subject: "📊 A2S Automation - Run #${{ github.run_number }} | ✅ ${{ env.PASSED }} Passed ❌ ${{ env.FAILED }} Failed"
           to: "rimah.waili@consulting-for.accor.com"
           from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
+          content_type: text/html
           body: |
-            Bonjour Rimah 👋,
+            <html>
+              <head>
+                <meta charset="UTF-8" />
+                <style>
+                  body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+                  .container { background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 650px; margin: auto; }
+                  h2 { color: #0d6efd; }
+                  .badge { display: inline-block; padding: 10px 15px; border-radius: 20px; color: white; font-weight: bold; margin-top: 10px; }
+                  .badge-green { background: #28a745; }
+                  .badge-yellow { background: #ffc107; color: black; }
+                  .badge-red { background: #dc3545; }
+                  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+                  th, td { padding: 10px; text-align: left; }
+                  th { background: #f0f0f0; }
+                  tr:nth-child(even) { background: #f9f9f9; }
+                  .passed { color: #28a745; font-weight: bold; }
+                  .failed { color: #dc3545; font-weight: bold; }
+                  .broken { color: #fd7e14; font-weight: bold; }
+                  .skipped { color: #6c757d; font-weight: bold; }
+                  .total { color: #0d6efd; font-weight: bold; }
+                  .time { color: #333; font-weight: bold; }
+                  .chart { text-align: center; margin-top: 25px; }
+                  a { color: #0d6efd; text-decoration: none; }
+                  a:hover { text-decoration: underline; }
+                  .footer { font-size: 12px; color: #777; margin-top: 30px; text-align: center; }
+                </style>
+              </head>
+              <body>
+                <div class="container">
+                  <h2>📊 A2S Automation - Test Run #${{ github.run_number }}</h2>
+                  <p>Hello Rimah 👋,</p>
+                  <p>The Allure report for the latest Playwright test run is now available.</p>
 
-            Le rapport Allure du dernier test est disponible :
+                  <p><strong>🔗 <a href="https://rimahwaili.github.io/A2S_Automation/run-${{ github.run_number }}/" target="_blank">
+                    View Full Allure Report
+                  </a></strong></p>
 
-            🔗 https://rimahwaili.github.io/A2S_Automation/run-${{ github.run_number }}/
+                  <!-- 🧮 Dynamic pass rate calculation -->
+                  <p style="text-align:center; font-size:16px;">
+                    ${
+                      {
+                        {
+                          'rate': Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100),
+                          'badge': (
+                            Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100) >= 90
+                            ? 'badge-green'
+                            : Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100) >= 70
+                            ? 'badge-yellow'
+                            : 'badge-red'
+                          )
+                        }
+                      }
+                    }
+                    <span class="badge ${
+                      Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100) >= 90
+                        ? 'badge-green'
+                        : Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100) >= 70
+                        ? 'badge-yellow'
+                        : 'badge-red'
+                    }">
+                      ✅ Pass Rate: ${(100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)).toFixed(1)}%
+                    </span>
+                  </p>
 
-            Cordialement,  
-            A2S Automation CI
+                  <table>
+                    <tr><th>Metric</th><th>Value</th></tr>
+                    <tr><td class="passed">✅ Passed</td><td>${{ env.PASSED }}</td></tr>
+                    <tr><td class="failed">❌ Failed</td><td>${{ env.FAILED }}</td></tr>
+                    <tr><td class="broken">⚠️ Broken</td><td>${{ env.BROKEN }}</td></tr>
+                    <tr><td class="skipped">⏭️ Skipped</td><td>${{ env.SKIPPED }}</td></tr>
+                    <tr><td class="total">📊 Total</td><td>${{ env.TOTAL }}</td></tr>
+                    <tr><td class="time">🕒 Duration (min)</td><td>${{ env.DURATION }}</td></tr>
+                    <tr><td class="time">🟢 Start Time</td><td>${{ env.START_TIME }}</td></tr>
+                    <tr><td class="time">🔴 End Time</td><td>${{ env.STOP_TIME }}</td></tr>
+                  </table>
+
+                  <div class="chart">
+                    <h3>📈 Test Results Overview</h3>
+                    <img src="https://quickchart.io/chart?c={
+                      type:'doughnut',
+                      data:{
+                        labels:['Passed','Failed','Broken','Skipped'],
+                        datasets:[{
+                          data:[${{ env.PASSED }},${{ env.FAILED }},${{ env.BROKEN }},${{ env.SKIPPED }}],
+                          backgroundColor:['#28a745','#dc3545','#fd7e14','#6c757d']
+                        }]
+                      },
+                      options:{
+                        plugins:{
+                          legend:{position:'bottom'},
+                          title:{display:false}
+                        }
+                      }
+                    }" width="300" height="300" alt="Test results chart" />
+                  </div>
+
+                  <p class="footer">
+                    Sent automatically by <strong>A2S Automation CI</strong><br />
+                    🕓 Run completed on ${{ env.STOP_TIME }}
+                  </p>
+                </div>
+              </body>
+            </html>

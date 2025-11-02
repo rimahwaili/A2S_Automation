@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../pages/LoginPage';
 import { ContactsPage } from '../../pages/ContactsPage';
+import { allure } from 'allure-playwright';
 
  let contactsPage: ContactsPage;
  test.beforeEach(async ({ page }) => {

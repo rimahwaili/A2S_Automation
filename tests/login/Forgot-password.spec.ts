@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { ForgotPasswordPage } from '../../pages/ForgotPasswordPage';
 import { credentials } from '../../utils/env';
+import { allure } from 'allure-playwright';
 
 test.describe('Reset Password:', () => {
   let forgotPassword: ForgotPasswordPage;
@@ -11,6 +12,11 @@ test.describe('Reset Password:', () => {
   });
 
   test('A2SQA2-2525 | @P1 @Login Sent password Reset correctly with valid email', async ({ page }) => {
+    
+    allure.label('feature', 'Login');
+    allure.epic('Login');
+    allure.story('Sent password Reset correctly with valid email');
+
     await forgotPassword.resetPassword(credentials.username);
     await expect(page.locator('#success')).toBeVisible();
     await expect(page.locator('#success')).toHaveText(
@@ -20,11 +26,18 @@ test.describe('Reset Password:', () => {
 
 
   test('A2SQA2-2527 | @P0 @Login Reset password when using  Inactif email', async ({ page }) => {
+
+    allure.label('feature', 'Login');
+    allure.epic('Login');
+    allure.story('Reset password when using  Inactif email');
     await forgotPassword.resetPassword(credentials.inactive_username);
     await expect(page.locator('#warning')).toContainText('Your account has been deactivated');
   });
 
   test('A2SQA2-2526 | @P0 @Login Fails reset password when using wrong email', async ({ page }) => {
+    allure.label('feature', 'Login');
+    allure.epic('Login');
+    allure.story('Fails reset password when using wrong email');
     await forgotPassword.resetPassword('adresse@inconnue.com');
    await expect(page.locator('#warning')).toContainText('No user is registered with this email');
   });
