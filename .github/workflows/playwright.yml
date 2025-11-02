@@ -109,7 +109,35 @@ jobs:
           keep_files: true
           commit_message: "🗂️ Update Allure report index"
 
-      # 1️⃣2 send email report
+      # 1️⃣1️⃣bis - Compute pass rate & badge color
+      - name: Compute Pass Rate and Colors
+        if: always()
+        run: |
+          PASSED=${{ env.PASSED }}
+          TOTAL=${{ env.TOTAL }}
+          FAILED=${{ env.FAILED }}
+          BROKEN=${{ env.BROKEN }}
+          SKIPPED=${{ env.SKIPPED }}
+
+          if [ "$TOTAL" -eq 0 ]; then TOTAL=1; fi
+          RATE=$(echo "scale=1; ($PASSED / $TOTAL) * 100" | bc)
+
+          if (( $(echo "$RATE >= 90" | bc -l) )); then
+            COLOR="#28a745"
+            TEXT_COLOR="white"
+          elif (( $(echo "$RATE >= 70" | bc -l) )); then
+            COLOR="#ffc107"
+            TEXT_COLOR="black"
+          else
+            COLOR="#dc3545"
+            TEXT_COLOR="white"
+          fi
+
+          echo "PASS_RATE=$RATE" >> $GITHUB_ENV
+          echo "BADGE_COLOR=$COLOR" >> $GITHUB_ENV
+          echo "BADGE_TEXT_COLOR=$TEXT_COLOR" >> $GITHUB_ENV
+    
+      # 1️⃣2 bis - Send Allure Report Email   
       - name: Send Allure Report Email
         if: always()
         uses: dawidd6/action-send-mail@v3
@@ -132,23 +160,10 @@ jobs:
                   body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
                   .container { background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 650px; margin: auto; }
                   h2 { color: #0d6efd; }
-                  .badge { display: inline-block; padding: 10px 15px; border-radius: 20px; color: white; font-weight: bold; margin-top: 10px; }
-                  .badge-green { background: #28a745; }
-                  .badge-yellow { background: #ffc107; color: black; }
-                  .badge-red { background: #dc3545; }
                   table { width: 100%; border-collapse: collapse; margin-top: 20px; }
                   th, td { padding: 10px; text-align: left; }
                   th { background: #f0f0f0; }
                   tr:nth-child(even) { background: #f9f9f9; }
-                  .passed { color: #28a745; font-weight: bold; }
-                  .failed { color: #dc3545; font-weight: bold; }
-                  .broken { color: #fd7e14; font-weight: bold; }
-                  .skipped { color: #6c757d; font-weight: bold; }
-                  .total { color: #0d6efd; font-weight: bold; }
-                  .time { color: #333; font-weight: bold; }
-                  .chart { text-align: center; margin-top: 25px; }
-                  a { color: #0d6efd; text-decoration: none; }
-                  a:hover { text-decoration: underline; }
                   .footer { font-size: 12px; color: #777; margin-top: 30px; text-align: center; }
                 </style>
               </head>
@@ -156,57 +171,32 @@ jobs:
                 <div class="container">
                   <h2>📊 A2S Automation - Test Run #${{ github.run_number }}</h2>
                   <p>Hello Rimah 👋,</p>
-                  <p>The Allure report for the latest Playwright test run is now available.</p>
+                  <p>The Allure report for this run is now available.</p>
+
+                  <p style="text-align:center; font-size:18px;">
+                    <span style="padding:10px 20px; border-radius:20px; font-weight:bold;
+                      background-color:${{ env.BADGE_COLOR }};
+                      color:${{ env.BADGE_TEXT_COLOR }};
+                    ">
+                      ✅ Pass Rate: ${{ env.PASS_RATE }}%
+                    </span>
+                  </p>
 
                   <p><strong>🔗 <a href="https://rimahwaili.github.io/A2S_Automation/run-${{ github.run_number }}/" target="_blank">
                     View Full Allure Report
                   </a></strong></p>
 
-                  <!-- Calculate pass rate color -->
-                  ${
-                    {
-                      'green': '#28a745',
-                      'yellow': '#ffc107',
-                      'red': '#dc3545'
-                    }[
-                      (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 90
-                        ? 'green'
-                        : (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 70
-                        ? 'yellow'
-                        : 'red'
-                    ]
-                  }
-
-                  <p style="text-align:center; font-size:18px;">
-                    <span style="padding:10px 20px; border-radius:20px; font-weight:bold;
-                      color:${{
-                        (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 70 ? 'black' : 'white'
-                      }};
-                      background-color:${{
-                        (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 90
-                          ? '#28a745'
-                          : (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 70
-                          ? '#ffc107'
-                          : '#dc3545'
-                      }};
-                    ">
-                      ✅ Pass Rate: ${(100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)).toFixed(1)}%
-                    </span>
-                  </p>
-
                   <table>
                     <tr><th>Metric</th><th>Value</th></tr>
-                    <tr><td class="passed">✅ Passed</td><td>${{ env.PASSED }}</td></tr>
-                    <tr><td class="failed">❌ Failed</td><td>${{ env.FAILED }}</td></tr>
-                    <tr><td class="broken">⚠️ Broken</td><td>${{ env.BROKEN }}</td></tr>
-                    <tr><td class="skipped">⏭️ Skipped</td><td>${{ env.SKIPPED }}</td></tr>
-                    <tr><td class="total">📊 Total</td><td>${{ env.TOTAL }}</td></tr>
-                    <tr><td class="time">🕒 Duration (min)</td><td>${{ env.DURATION }}</td></tr>
-                    <tr><td class="time">🟢 Start Time</td><td>${{ env.START_TIME }}</td></tr>
-                    <tr><td class="time">🔴 End Time</td><td>${{ env.STOP_TIME }}</td></tr>
+                    <tr><td>✅ Passed</td><td>${{ env.PASSED }}</td></tr>
+                    <tr><td>❌ Failed</td><td>${{ env.FAILED }}</td></tr>
+                    <tr><td>⚠️ Broken</td><td>${{ env.BROKEN }}</td></tr>
+                    <tr><td>⏭️ Skipped</td><td>${{ env.SKIPPED }}</td></tr>
+                    <tr><td>📊 Total</td><td>${{ env.TOTAL }}</td></tr>
+                    <tr><td>🕒 Duration (min)</td><td>${{ env.DURATION }}</td></tr>
                   </table>
 
-                  <div class="chart">
+                  <div style="text-align:center;margin-top:25px;">
                     <h3>📈 Test Results Overview</h3>
                     <img src="https://quickchart.io/chart?c={
                       type:'doughnut',
@@ -219,8 +209,7 @@ jobs:
                       },
                       options:{
                         plugins:{
-                          legend:{position:'bottom'},
-                          title:{display:false}
+                          legend:{position:'bottom'}
                         }
                       }
                     }" width="300" height="300" alt="Test results chart" />
@@ -233,3 +222,6 @@ jobs:
                 </div>
               </body>
             </html>
+
+
+     
