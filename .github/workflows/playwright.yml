@@ -151,7 +151,7 @@ jobs:
           to: "rimah.waili@consulting-for.accor.com"
           from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
           content_type: text/html
-          body: >
+          body: |
             <!DOCTYPE html>
             <html>
               <head>
