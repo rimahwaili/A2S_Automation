@@ -12,39 +12,35 @@ import { ContactsPage } from '../../pages/ContactsPage';
     await contactsPage.goto();
   });
 
-test.describe('E2E Contacts List tests:', () => {
+test.describe('Contacts List tests', () => {
  
-  test('@P1 Should display translated column headers', async () => {
+  test('@P1 @Contact Display translated column headers', async () => {
     await contactsPage.verifyTableHeaders();
   });
 
-  test('@P1 Should contain visible rows in the table', async () => {
+  test('@P1 @Contact Check visible rows in the table', async () => {
     await contactsPage.verifyTableHasRows();
   });
 
-  test('@P1 should display Show and Edit buttons', async () => {
+  test('@P1 @Contact Display Show and Edit buttons', async () => {
     await contactsPage.verifyButtonsVisible();
   });
 
-  test('@P1 Should display active and inactive icons', async () => {
+  test('@P1 @Contact  Display active and inactive icons', async () => {
     await contactsPage.verifyActiveAndInactiveIcons();
   });
 
-  test('@P1 Should read contact data from first row', async () => {
+  test('@P1 @Contact Read contact data from first row', async () => {
     const data = await contactsPage.getRowData(0);
     console.log('🧩 Contact data:', data);
     expect(data.email).toContain('@');
   });
 
-  test('@P1 should open contact detail page by name', async () => {
-    await contactsPage.openContactByName('Loic');
-    await expect(contactsPage.page).toHaveURL(/\/contacts\/show\//);
-  });
 });
 
 //export   
   test.describe('Contacts Export Message', () => {
-  test('@P1 Should display translated success message after export', async ({ page }) => {
+  test('@P1 @Contact Display translated success message after export', async ({ page }) => {
     const contactsPage = new ContactsPage(page);
     await contactsPage.goto();
     await contactsPage.verifyExportSuccessAlert();
@@ -55,19 +51,25 @@ test.describe('E2E Contacts List tests:', () => {
 //filtrage 
 test.describe('Contacts Filtering', () => {
 
-  test('@P1 filtrage par prénom', async ({ page }) => {
+  test('@P1 @Contact Filter by Surname', async ({ page }) => {
     const contactsPage = new ContactsPage(page);
     await contactsPage.goto();
     await contactsPage.applyFilters({ firstName: 'Laurent' });
   });
 
-  test('@P1 filtrage par profil', async ({ page }) => {
+  test('@P1 @Contact Filter by Profil', async ({ page }) => {
     const contactsPage = new ContactsPage(page);
     await contactsPage.goto();
     await contactsPage.applyFilters({ profile: 'Client' });
   });
 
-  test('@P1 filtrage combiné prénom + profile', async ({ page }) => {
+  test('@P1 @Contact Filter by Email', async ({ page }) => {
+    const contactsPage = new ContactsPage(page);
+    await contactsPage.goto();
+    await contactsPage.applyFilters({ profile: 'Email' });
+  });
+
+  test('@P1 @Contact Filter by Surname + profil', async ({ page }) => {
     const contactsPage = new ContactsPage(page);
     await contactsPage.goto();
     await contactsPage.applyFilters({

@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test:P0": "npx playwright test --grep '@P0'",
+    "test:P1": "npx playwright test --grep '@P1'",
     "test:Login": "npx playwright test --grep '@Login'",
     "test:recette": "cross-env ENV=recette npx playwright test",
-    "test:ppd": "cross-env ENV=ppd npx playwright test"
+    "test:ppd": "cross-env ENV=ppd npx playwright test",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
   },
   "keywords": [],
   "author": "",

@@ -123,7 +123,7 @@ async applyFilters(filters: {
   suppliers?: string;
   clients?: string;
 }) {
-  console.log('🧮 Application des filtres:', filters);
+  console.log('Apply filters:', filters);
 
   const t = translations[this.lang];
 
@@ -171,7 +171,7 @@ if (filters.function) {
   const tableRows = this.page.locator(sel.tableRows);
   await expect(tableRows.first()).toBeVisible({ timeout: 8000 });
 
-  console.log('✅ Filtres appliqués avec succès');
+  console.log('✅ Filters successfully applied');
 }
 
 
@@ -194,10 +194,27 @@ async selectSlimSelectOption(dropdownSelector: string, optionText: string) {
   // Attendre un petit délai pour stabiliser
   await this.page.waitForTimeout(200);
 
-  console.log(`🎯 Option "${optionText}" sélectionnée`);
+  console.log(` Option "${optionText}" sélectionnée`);
 }
 
+async showContactDetails() {
+  console.log('Opening the contact details page...');
 
+  // Ensure at least one contact row is visible
+  const firstRow = this.page.locator(sel.tableRows).first();
+  await expect(firstRow).toBeVisible({ timeout: 8000 });
+
+  // Click the eye icon ("Show" button)
+  const showButton = firstRow.locator(sel.showButton);
+  await expect(showButton).toBeVisible({ timeout: 5000 });
+  await showButton.click();
+
+  // Wait for navigation or details page to appear
+  await this.page.waitForURL('**/contacts/show/**', { timeout: 10000 });
+  await expect(this.page.locator('h1, h2', { hasText: 'Contact Details' })).toBeVisible({ timeout: 8000 });
+
+  console.log('✅ Contact details page opened successfully');
+}
 
 
 async clearFilters() {

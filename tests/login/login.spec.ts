@@ -10,7 +10,7 @@ const t = translations[lang];
 
 
 test.describe('Login Tests', () => {
-  test('A2SQA2-2522 | @P0 @Login Should login successfully with valid credentials', async ({ page }) => {
+  test('A2SQA2-2522 | @P0 @Login Login with valid credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.detectLanguage();
@@ -24,7 +24,7 @@ test.describe('Login Tests', () => {
   await expect(toast.locator(loginSelectors.toastMessage)).toContainText(credentials.username);
   });
 
-  test('A2SQA2-2523 | @P0 @Login Should fail when login with inactif credentials', async ({ page }) => {
+  test('A2SQA2-2523 | @P0 @Login Login with inactif credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
      await loginPage.detectLanguage();
@@ -35,7 +35,7 @@ test.describe('Login Tests', () => {
     await expect(page.locator(loginSelectors.warningMessage)).toBeVisible();
   });
 
-  test('A2SQA2-2524 | @P0 @Login should fail when login with invalid credentials', async ({ page }) => {
+  test('A2SQA2-2524 | @P0 @Login Login with invalid credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
      await loginPage.detectLanguage();

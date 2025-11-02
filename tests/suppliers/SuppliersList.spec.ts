@@ -22,9 +22,9 @@ test.describe('Suppliers Filters', () => {
   });
 
   test('Filter by name - partial match', async () => {
-    await suppliersPage.filterByName('COSMETICS');
+    await suppliersPage.filterByName('ACIAL');
     const first = await suppliersPage.getFirstResultText();
-    expect(first).toContain('COSMETICS');
+    expect(first).toContain('ACIAL');
   });
 
   test('Filter by country', async () => {
