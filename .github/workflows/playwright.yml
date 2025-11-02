@@ -109,7 +109,7 @@ jobs:
           keep_files: true
           commit_message: "🗂️ Update Allure report index"
 
-      # 1️⃣3️⃣ Send Allure Report Email (dynamic badge + chart)
+      # 1️⃣2 send email report
       - name: Send Allure Report Email
         if: always()
         uses: dawidd6/action-send-mail@v3
@@ -123,7 +123,8 @@ jobs:
           to: "rimah.waili@consulting-for.accor.com"
           from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
           content_type: text/html
-          body: |
+          body: >
+            <!DOCTYPE html>
             <html>
               <head>
                 <meta charset="UTF-8" />
@@ -161,29 +162,34 @@ jobs:
                     View Full Allure Report
                   </a></strong></p>
 
-                  <!-- 🧮 Dynamic pass rate calculation -->
-                  <p style="text-align:center; font-size:16px;">
-                    ${
-                      {
-                        {
-                          'rate': Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100),
-                          'badge': (
-                            Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100) >= 90
-                            ? 'badge-green'
-                            : Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100) >= 70
-                            ? 'badge-yellow'
-                            : 'badge-red'
-                          )
-                        }
-                      }
-                    }
-                    <span class="badge ${
-                      Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100) >= 90
-                        ? 'badge-green'
-                        : Math.round((${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) * 100) >= 70
-                        ? 'badge-yellow'
-                        : 'badge-red'
-                    }">
+                  <!-- Calculate pass rate color -->
+                  ${
+                    {
+                      'green': '#28a745',
+                      'yellow': '#ffc107',
+                      'red': '#dc3545'
+                    }[
+                      (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 90
+                        ? 'green'
+                        : (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 70
+                        ? 'yellow'
+                        : 'red'
+                    ]
+                  }
+
+                  <p style="text-align:center; font-size:18px;">
+                    <span style="padding:10px 20px; border-radius:20px; font-weight:bold;
+                      color:${{
+                        (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 70 ? 'black' : 'white'
+                      }};
+                      background-color:${{
+                        (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 90
+                          ? '#28a745'
+                          : (100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)) >= 70
+                          ? '#ffc107'
+                          : '#dc3545'
+                      }};
+                    ">
                       ✅ Pass Rate: ${(100 * ${{ env.PASSED }} / (${{ env.TOTAL }} || 1)).toFixed(1)}%
                     </span>
                   </p>
