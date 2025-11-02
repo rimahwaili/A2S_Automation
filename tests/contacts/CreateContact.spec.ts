@@ -5,6 +5,7 @@ import { ContactsPage } from '../../pages/ContactsPage';
 import { ContactDetailsPage } from '../../pages/ContactDetailsPage';
 import { translations, getLang } from '../../utils/translations';
 import { ForgotPasswordPage } from '../../pages/ForgotPasswordPage';
+import { allure } from 'allure-playwright';
 
 // --- Détection ou configuration de la langue ---
 const lang = getLang(); // 'fr' ou 'en' selon ta fonction utilitaire
@@ -36,6 +37,10 @@ test.beforeEach(async ({ page }) => {
 for (const profil of profils) {
   test.describe(`@P0 @Contacts : Profil [${profil.name}]`, () => {
     test(`${profil.jiraKey} | @P0 @Contact Should create Contact for: ${profil.name}`, async ({ page }) => {
+      allure.label('feature', 'Contacts');
+      allure.epic('Contacts');
+      allure.story('Create new contact');
+
       createContactPage = new CreateContactPage(page);
       const random = Math.floor(1000 + Math.random() * 9000);
       const email = `${profil.name.replace(/\s+/g, '')}${random}@yopmail.com`;
