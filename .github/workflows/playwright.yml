@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write  # 
+  contents: write  # ✅ nécessaire pour publier sur GitHub Pages
 
 jobs:
   test:
@@ -18,16 +18,13 @@ jobs:
 
     steps:
       # 1️⃣ Cloner le dépôt
-      # 1️⃣ Cloner le dépôt
       - name: Checkout repository
         uses: actions/checkout@v4
 
       # 2️⃣ Construire l’image Docker Playwright
-      # 2️⃣ Construire l’image Docker Playwright
       - name: Build Docker image
         run: docker build -t playwright-tests .
 
-      # 3️⃣ Créer le fichier .env.recette à partir des secrets
       # 3️⃣ Créer le fichier .env.recette à partir des secrets
       - name: Create .env.recette file
         run: |
@@ -37,7 +34,6 @@ jobs:
           echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.recette
           echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.recette
 
-      # 4️⃣ Vérifier la présence du fichier d’environnement
       # 4️⃣ Vérifier la présence du fichier d’environnement
       - name: Debug .env.recette existence
         run: |
@@ -63,18 +59,7 @@ jobs:
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
             -v ${{ github.workspace }}/allure-report:/app/allure-report \
             playwright-tests npx allure generate /app/allure-results --clean -o /app/allure-report
-            -v ${{ github.workspace }}/allure-results:/app/allure-results \
-            -v ${{ github.workspace }}/allure-report:/app/allure-report \
-            playwright-tests npx allure generate /app/allure-results --clean -o /app/allure-report
 
-      # 7️⃣ Vérifier le contenu du rapport généré
-      - name: Check Allure report content
-        if: always()
-        run: |
-          echo "📁 Contenu du dossier allure-report :"
-          ls -la allure-report || echo "⚠️ Aucun rapport généré !"
-
-      # 8️⃣ Uploader le rapport comme artefact GitHub
       # 7️⃣ Vérifier le contenu du rapport généré
       - name: Check Allure report content
         if: always()
@@ -85,16 +70,13 @@ jobs:
       # 8️⃣ Uploader le rapport comme artefact GitHub
       - name: Upload Allure report artifact
         if: always()
-        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
           path: allure-report
 
       # 9️⃣ Déployer le rapport sur GitHub Pages dans un dossier par run
-      # 9️⃣ Déployer le rapport sur GitHub Pages dans un dossier par run
       - name: Deploy Allure report to GitHub Pages
-        if: always()
         if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
