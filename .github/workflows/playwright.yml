@@ -1,4 +1,4 @@
-name: Playwright Tests with Allure Report (Docker + GitHub Pages)
+name: Playwright Tests with Allure Report (Docker + GitHub Pages + Mail)
 
 on:
   push:
@@ -12,7 +12,6 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     env:
       NODE_ENV: recette
 
@@ -51,7 +50,7 @@ jobs:
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
             playwright-tests npx playwright test --grep '@P0' --reporter=line,allure-playwright || true
 
-      # 6️⃣ Générer le rapport Allure dans Docker
+      # 6️⃣ Générer le rapport Allure
       - name: Generate Allure report
         if: always()
         run: |
@@ -75,7 +74,7 @@ jobs:
           name: allure-report
           path: allure-report
 
-      # 9️⃣ Déployer le rapport sur GitHub Pages dans un dossier par run
+      # 9️⃣ Déployer le rapport sur GitHub Pages
       - name: Deploy Allure report to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v4
@@ -109,3 +108,26 @@ jobs:
           publish_branch: gh-pages
           keep_files: true
           commit_message: "🗂️ Update Allure report index"
+
+      # 1️⃣2️⃣ Envoyer un mail avec le lien du rapport
+      - name: Send Allure Report Email
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com      
+          server_port: 465                    
+          secure: true
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
+          subject: "✅ A2S Automation - Allure Report Run #${{ github.run_number }}"
+          to: "rimah.waili@consulting-for.accor.com"
+          from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
+          body: |
+            Bonjour Rimah 👋,
+
+            Le rapport Allure du dernier test est disponible :
+
+            🔗 https://rimahwaili.github.io/A2S_Automation/run-${{ github.run_number }}/
+
+            Cordialement,  
+            A2S Automation CI
