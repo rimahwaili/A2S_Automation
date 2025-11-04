@@ -38,7 +38,6 @@ jobs:
         run: |
           echo "[DEBUG] Contents of workspace root:"
           ls -la
-          echo "---------"
           echo "[DEBUG] .env.recette content:"
           cat .env.recette || echo "file not found"
 
@@ -93,7 +92,7 @@ jobs:
         run: |
           echo "<html><head><meta charset='UTF-8'><title>Allure Reports</title></head><body>" > index.html
           echo "<h1>📊 Historique des rapports Allure</h1><ul>" >> index.html
-          for dir in $(git ls-remote --heads origin | cut -f2 | grep -oE 'run-[0-9]+'); do
+          for dir in $(ls -d allure-report/* 2>/dev/null || true); do
             echo "<li><a href='${dir}/index.html'>${dir}</a></li>" >> index.html
           done
           echo "</ul></body></html>" >> index.html
@@ -109,19 +108,37 @@ jobs:
           keep_files: true
           commit_message: "🗂️ Update Allure report index"
 
-      # 1️⃣1️⃣bis - Compute pass rate & badge color
+      # 1️⃣1️⃣a - Extraire les statistiques Allure
+      - name: Extract Allure summary stats
+        if: always()
+        run: |
+          SUMMARY_FILE="allure-report/widgets/summary.json"
+          if [ ! -f "$SUMMARY_FILE" ]; then
+            echo "⚠️ Summary file not found!"
+            exit 0
+          fi
+          PASSED=$(jq '.statistic.passed' $SUMMARY_FILE)
+          FAILED=$(jq '.statistic.failed' $SUMMARY_FILE)
+          BROKEN=$(jq '.statistic.broken' $SUMMARY_FILE)
+          SKIPPED=$(jq '.statistic.skipped' $SUMMARY_FILE)
+          TOTAL=$(jq '.statistic.total' $SUMMARY_FILE)
+          DURATION=$(jq '.time.duration / 60000' $SUMMARY_FILE)
+          echo "PASSED=$PASSED" >> $GITHUB_ENV
+          echo "FAILED=$FAILED" >> $GITHUB_ENV
+          echo "BROKEN=$BROKEN" >> $GITHUB_ENV
+          echo "SKIPPED=$SKIPPED" >> $GITHUB_ENV
+          echo "TOTAL=$TOTAL" >> $GITHUB_ENV
+          echo "DURATION=$(printf '%.1f' $DURATION)" >> $GITHUB_ENV
+          echo "STOP_TIME=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+      # 1️⃣1️⃣b - Calcul du Pass Rate et couleur du badge
       - name: Compute Pass Rate and Colors
         if: always()
         run: |
-          PASSED=${{ env.PASSED }}
           TOTAL=${{ env.TOTAL }}
-          FAILED=${{ env.FAILED }}
-          BROKEN=${{ env.BROKEN }}
-          SKIPPED=${{ env.SKIPPED }}
-
+          PASSED=${{ env.PASSED }}
           if [ "$TOTAL" -eq 0 ]; then TOTAL=1; fi
           RATE=$(echo "scale=1; ($PASSED / $TOTAL) * 100" | bc)
-
           if (( $(echo "$RATE >= 90" | bc -l) )); then
             COLOR="#28a745"
             TEXT_COLOR="white"
@@ -132,12 +149,11 @@ jobs:
             COLOR="#dc3545"
             TEXT_COLOR="white"
           fi
-
           echo "PASS_RATE=$RATE" >> $GITHUB_ENV
           echo "BADGE_COLOR=$COLOR" >> $GITHUB_ENV
           echo "BADGE_TEXT_COLOR=$TEXT_COLOR" >> $GITHUB_ENV
-    
-      # 1️⃣2 bis - Send Allure Report Email   
+
+      # 1️⃣2️⃣ - Envoi de l’e-mail HTML du rapport
       - name: Send Allure Report Email
         if: always()
         uses: dawidd6/action-send-mail@v3
@@ -198,21 +214,7 @@ jobs:
 
                   <div style="text-align:center;margin-top:25px;">
                     <h3>📈 Test Results Overview</h3>
-                    <img src="https://quickchart.io/chart?c={
-                      type:'doughnut',
-                      data:{
-                        labels:['Passed','Failed','Broken','Skipped'],
-                        datasets:[{
-                          data:[${{ env.PASSED }},${{ env.FAILED }},${{ env.BROKEN }},${{ env.SKIPPED }}],
-                          backgroundColor:['#28a745','#dc3545','#fd7e14','#6c757d']
-                        }]
-                      },
-                      options:{
-                        plugins:{
-                          legend:{position:'bottom'}
-                        }
-                      }
-                    }" width="300" height="300" alt="Test results chart" />
+                    <img src="https://quickchart.io/chart?c={type:'doughnut',data:{labels:['Passed','Failed','Broken','Skipped'],datasets:[{data:[${{ env.PASSED }},${{ env.FAILED }},${{ env.BROKEN }},${{ env.SKIPPED }}],backgroundColor:['#28a745','#dc3545','#fd7e14','#6c757d']}]},options:{plugins:{legend:{position:'bottom'}}}}" width="300" height="300" alt="Test results chart" />
                   </div>
 
                   <p class="footer">
@@ -222,6 +224,3 @@ jobs:
                 </div>
               </body>
             </html>
-
-
-     
