@@ -164,7 +164,7 @@ jobs:
           username: ${{ secrets.EMAIL_USER }}
           password: ${{ secrets.EMAIL_PASS }}
           subject: "📊 A2S Automation - Run #${{ github.run_number }} | ✅ ${{ env.PASSED }} Passed ❌ ${{ env.FAILED }} Failed"
-          to: "rimah.waili@consulting-for.accor.com, interceptor_a2s@astoresuite.com"
+          to: "rimah.waili@consulting-for.accor.com"
           from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
           body: >
             <!DOCTYPE html>
