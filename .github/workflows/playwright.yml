@@ -7,8 +7,7 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write  # ✅ nécessaire pour publier sur GitHub Pages
-
+  contents: write  
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -154,10 +153,10 @@ jobs:
           echo "BADGE_TEXT_COLOR=$TEXT_COLOR" >> $GITHUB_ENV
 
       # 1️⃣2️⃣ - Envoi de l’e-mail HTML du rapport
-      - name: Send Allure Report Email (Outlook Safe - English)
-        if: always()
-        uses: dawidd6/action-send-mail@v3
-        with:
+      - name: Send Allure Report Email (HTML mode)
+      if: always()
+      uses: dawidd6/action-send-mail@v3
+      with:
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
@@ -166,7 +165,7 @@ jobs:
           subject: "📊 A2S Automation - Run #${{ github.run_number }} | ✅ ${{ env.PASSED }} Passed ❌ ${{ env.FAILED }} Failed"
           to: "rimah.waili@consulting-for.accor.com, interceptor_a2s@astoresuite.com"
           from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
-          body: >
+          html_body: >
             <!DOCTYPE html>
             <html>
             <head>
@@ -177,7 +176,6 @@ jobs:
                 <h2 style="color: #004aad; text-align: center;">📊 A2S Automation - Test Run #${{ github.run_number }}</h2>
                 <p>Hello Rimah 👋,</p>
                 <p>The Allure report for this test run is now available.</p>
-
                 <p style="text-align: center; font-size: 18px; margin-top: 20px;">
                   <span style="padding: 10px 20px; border-radius: 20px; font-weight: bold;
                     background-color: ${{ env.BADGE_COLOR }};
@@ -186,7 +184,6 @@ jobs:
                     ✅ Pass Rate: ${{ env.PASS_RATE }}%
                   </span>
                 </p>
-
                 <div style="text-align: center; margin-top: 25px;">
                   <a href="https://rimahwaili.github.io/A2S_Automation/run-${{ github.run_number }}/" 
                     target="_blank"
@@ -194,7 +191,6 @@ jobs:
                     🔍 View Full Allure Report
                   </a>
                 </div>
-
                 <table style="width: 100%; border-collapse: collapse; margin-top: 25px;">
                   <tr>
                     <th style="background-color: #f0f0f0; padding: 10px; text-align: left;">📈 Metric</th>
@@ -207,13 +203,11 @@ jobs:
                   <tr><td style="padding: 8px;">📊 Total</td><td style="padding: 8px;">${{ env.TOTAL }}</td></tr>
                   <tr><td style="padding: 8px;">🕒 Duration (min)</td><td style="padding: 8px;">${{ env.DURATION }}</td></tr>
                 </table>
-
                 <div style="text-align: center; margin-top: 25px;">
                   <h3 style="color: #004aad;">📈 Test Results Overview</h3>
                   <img src="https://quickchart.io/chart?c={type:'doughnut',data:{labels:['Passed','Failed','Broken','Skipped'],datasets:[{data:[${{ env.PASSED }},${{ env.FAILED }},${{ env.BROKEN }},${{ env.SKIPPED }}],backgroundColor:['#28a745','#dc3545','#fd7e14','#6c757d']}]},options:{plugins:{legend:{position:'bottom'}}}}" 
                     width="280" height="280" alt="Test results chart" />
                 </div>
-
                 <div style="font-size: 12px; color: #777; text-align: center; margin-top: 30px;">
                   Sent automatically by <strong>A2S Automation CI</strong><br />
                   🕓 Run completed on ${{ env.STOP_TIME }}
