@@ -151,12 +151,12 @@ jobs:
           echo "PASS_RATE=$RATE" >> $GITHUB_ENV
           echo "BADGE_COLOR=$COLOR" >> $GITHUB_ENV
           echo "BADGE_TEXT_COLOR=$TEXT_COLOR" >> $GITHUB_ENV
-
+          
       # 1️⃣2️⃣ - Envoi de l’e-mail HTML du rapport
       - name: Send Allure Report Email (HTML mode)
-      if: always()
-      uses: dawidd6/action-send-mail@v3
-      with:
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
