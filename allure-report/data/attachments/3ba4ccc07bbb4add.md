@@ -1,0 +1,225 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: recette
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - alert [ref=e57]:
+        - generic [ref=e58]: 
+        - generic [ref=e59]:
+          - generic [ref=e60]: Success
+          - generic [ref=e61]: An email as been successfully sent to this contact.
+        - button [ref=e63] [cursor=pointer]: 
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - link [ref=e67] [cursor=pointer]:
+            - /url: /contacts/index
+            - text: Contacts
+          - generic [ref=e68]: /
+          - generic [ref=e69]: supplier4193@yopmail.com
+          - generic [ref=e70]: /
+          - generic [ref=e71]: Consultation
+        - generic [ref=e72]:
+          - heading [level=2] [ref=e74]:  Contact Details
+          - generic [ref=e75]:
+            - link [ref=e76] [cursor=pointer]:
+              - /url: /contacts/change_password/51214
+              - generic [ref=e77]: 
+              - text: Change password
+            - link [ref=e78] [cursor=pointer]:
+              - /url: /contacts/sent_welcome_email/51214
+              - generic [ref=e79]: 
+              - text: Send reset link
+            - link [ref=e80] [cursor=pointer]:
+              - /url: /contacts/edit/51214
+              - generic [ref=e81]: 
+        - group [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e86]:
+              - generic [ref=e87]:
+                - generic [ref=e88]: Test AUTO
+                - generic [ref=e90]: supplier4193@yopmail.com
+                - generic [ref=e91]:
+                  - generic [ref=e93]: "Mobile:"
+                  - generic [ref=e96]: "Phone:"
+              - generic [ref=e99]:
+                - generic [ref=e100]:
+                  - generic [ref=e101]: Supplier
+                  - generic [ref=e102]: Active
+                - generic [ref=e104]: "Address:"
+            - generic [ref=e106]:
+              - generic [ref=e107]: Contact Settings
+              - generic [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: "Language:"
+                  - generic [ref=e111]: English
+                - generic [ref=e112]:
+                  - generic [ref=e113]: "Number format:"
+                  - generic [ref=e114]: 1,000.10
+                - generic [ref=e115]:
+                  - generic [ref=e116]: "Date format:"
+                  - generic [ref=e117]: mm/dd/yyyy
+                - generic [ref=e118]:
+                  - generic [ref=e119]: "Currency:"
+                  - generic [ref=e120]: None
+                - generic [ref=e122]: "Last password update:"
+            - generic [ref=e124]:
+              - generic [ref=e125]: Access to modules
+              - table [ref=e128]:
+                - rowgroup [ref=e129]:
+                  - row [ref=e130]:
+                    - cell [ref=e131]: Suppl. Code
+                    - cell [ref=e132]: Suppl. Name
+                    - cell [ref=e133]: Invoicing Countries
+                    - cell [ref=e134]: Nber of areas covered
+                    - cell [ref=e135]: All
+                    - cell [ref=e136]: Declaration
+                    - cell [ref=e137]: Control
+                    - cell [ref=e138]: Data Collection
+                    - cell [ref=e139]: Spend
+                    - cell [ref=e140]: Commercial
+                    - cell [ref=e141]: Invoicing
+      - generic [ref=e142]:
+        - generic [ref=e143]: "Version: 2.28.5"
+        - generic [ref=e144]:
+          - link [ref=e145] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e146] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [ref=e148]:
+    - document:
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - heading [level=5] [ref=e151]: Change password
+          - button [active] [ref=e152] [cursor=pointer]
+        - generic [ref=e154]:
+          - group [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]: Password
+              - generic [ref=e158]:
+                - textbox [ref=e159]:
+                  - /placeholder: Please input password
+                  - text: invalid
+                - text: 
+            - generic [ref=e161]:
+              - generic [ref=e162]: "Password must contain:"
+              - list [ref=e163]:
+                - listitem [ref=e164]:
+                  - generic [ref=e165]: 
+                  - generic [ref=e166]: At least 8 characters
+                - listitem [ref=e167]:
+                  - generic [ref=e168]: 
+                  - generic [ref=e169]: At least 1 number (0...9)
+                - listitem [ref=e170]:
+                  - generic [ref=e171]: 
+                  - generic [ref=e172]: At least 1 lowercase letter (a...z)
+                - listitem [ref=e173]:
+                  - generic [ref=e174]: 
+                  - generic [ref=e175]: At least 1 uppercase letter (A...Z)
+                - listitem [ref=e176]:
+                  - generic [ref=e177]: 
+                  - generic [ref=e178]: At least 1 special symbol (!...$)
+            - generic [ref=e179]:
+              - generic [ref=e180]: Password Confirmation
+              - generic [ref=e181]:
+                - textbox [ref=e182]:
+                  - /placeholder: Please confirm password
+                  - text: Valid@260994!!
+                - text: 
+            - generic [ref=e184]: Password confirmation mismatched!
+          - generic [ref=e185]:
+            - button [disabled]: Apply
+  - dialog [ref=e188]:
+    - paragraph [ref=e192]: Share your feedback!💡
+    - paragraph [ref=e196]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e199]:
+      - strong [ref=e200]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e205]:
+      - generic [ref=e206]:
+        - radio "1"
+        - generic [ref=e207]: "1"
+        - generic [ref=e208]: Very difficult
+      - generic [ref=e209]:
+        - radio "2"
+        - generic [ref=e210]: "2"
+      - generic [ref=e211]:
+        - radio "3"
+        - generic [ref=e212]: "3"
+      - generic [ref=e213]:
+        - radio "4"
+        - generic [ref=e214]: "4"
+      - generic [ref=e215]:
+        - radio "5"
+        - generic [ref=e216]: "5"
+        - generic [ref=e217]: Very easy
+    - generic [ref=e219]:
+      - button "Remind me later" [ref=e221] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e222]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e223] [cursor=pointer]: ×
+```

@@ -1,0 +1,463 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: recette
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - heading [level=3] [ref=e60]: Contacts List (24691)
+          - button [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: 
+            - text: New Contact
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - button [expanded] [ref=e68] [cursor=pointer]:
+                - generic [ref=e69]: 
+                - generic [ref=e70]: Add filters
+                - text: 
+                - generic [ref=e71]: 
+              - generic [ref=e73]:
+                - generic [ref=e74]:
+                  - generic [ref=e75]: Select filters
+                  - button [ref=e76] [cursor=pointer]: Clear all
+                - generic [ref=e77]:
+                  - generic [ref=e78]:
+                    - generic [ref=e79]: "Active:"
+                    - combobox [ref=e81] [cursor=pointer]:
+                      - img [ref=e83]
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: "First name:"
+                    - textbox [ref=e88]
+                  - generic [ref=e89]:
+                    - generic [ref=e90]: "Last name:"
+                    - textbox [ref=e92]
+                  - generic [ref=e93]:
+                    - generic [ref=e94]: "Email:"
+                    - textbox [ref=e96]: Buyer3838@yopmail.com
+                  - generic [ref=e97]:
+                    - generic [ref=e98]: "Profile:"
+                    - combobox [ref=e100] [cursor=pointer]:
+                      - generic [ref=e102]: "[All]"
+                      - img [ref=e103]
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: "Function:"
+                    - combobox [ref=e108] [cursor=pointer]:
+                      - generic [ref=e110]: "[All]"
+                      - img [ref=e111]
+                  - generic [ref=e113]:
+                    - generic [ref=e114]: "Suppliers:"
+                    - combobox [ref=e116] [cursor=pointer]:
+                      - generic [ref=e118]: "[All]"
+                      - img [ref=e119]
+                  - generic [ref=e121]:
+                    - generic [ref=e122]: "Clients:"
+                    - combobox [ref=e124] [cursor=pointer]:
+                      - generic [ref=e126]: "[All]"
+                      - img [ref=e127]
+                - button [ref=e130] [cursor=pointer]: Apply
+            - link [ref=e131] [cursor=pointer]:
+              - /url: /contacts/export
+              - generic [ref=e132]: 
+        - table [ref=e134]:
+          - rowgroup [ref=e135]:
+            - row [ref=e136]:
+              - columnheader [ref=e137] [cursor=pointer]: First name 
+              - columnheader [ref=e138] [cursor=pointer]: Last name 
+              - columnheader [ref=e139] [cursor=pointer]: Email 
+              - columnheader [ref=e140] [cursor=pointer]: Function 
+              - columnheader [ref=e141] [cursor=pointer]: Active 
+              - columnheader [ref=e142] [cursor=pointer]: Profile 
+              - columnheader [ref=e143] [cursor=pointer]: Areas 
+              - cell [ref=e144]: Actions
+          - rowgroup [ref=e145]:
+            - row [ref=e146]:
+              - cell [ref=e147]: Loic
+              - cell [ref=e148]: BOUTET
+              - cell [ref=e149]: lboutet@hexagonalconsulting.com
+              - cell [ref=e150]: Business Contact
+              - cell [ref=e151]:
+                - generic [ref=e152]: 
+              - cell [ref=e153]:
+                - generic [ref=e154]: Supplier
+              - cell [ref=e155]
+              - cell [ref=e158]:
+                - link [ref=e159] [cursor=pointer]:
+                  - /url: /contacts/show/937
+                  - generic [ref=e160]: 
+                - link [ref=e161] [cursor=pointer]:
+                  - /url: /contacts/edit/937
+                  - generic [ref=e162]: 
+            - row [ref=e163]:
+              - cell [ref=e164]: Julien
+              - cell [ref=e165]: PONCELET
+              - cell [ref=e166]: jponcelet@hexagonalconsulting.com
+              - cell [ref=e167]: Customer Care
+              - cell [ref=e168]:
+                - generic [ref=e169]: 
+              - cell [ref=e170]:
+                - generic [ref=e171]: Supplier
+              - cell [ref=e172]
+              - cell [ref=e173]:
+                - link [ref=e174] [cursor=pointer]:
+                  - /url: /contacts/show/938
+                  - generic [ref=e175]: 
+                - link [ref=e176] [cursor=pointer]:
+                  - /url: /contacts/edit/938
+                  - generic [ref=e177]: 
+            - row [ref=e178]:
+              - cell [ref=e179]: Louis
+              - cell [ref=e180]: KOTTMANN
+              - cell [ref=e181]: lkottmann@hexagonalconsulting.com
+              - cell [ref=e182]: Business Contact
+              - cell [ref=e183]:
+                - generic [ref=e184]: 
+              - cell [ref=e185]:
+                - generic [ref=e186]: Supplier
+              - cell [ref=e187]
+              - cell [ref=e188]:
+                - link [ref=e189] [cursor=pointer]:
+                  - /url: /contacts/show/944
+                  - generic [ref=e190]: 
+                - link [ref=e191] [cursor=pointer]:
+                  - /url: /contacts/edit/944
+                  - generic [ref=e192]: 
+            - row [ref=e193]:
+              - cell [ref=e194]: Rachid
+              - cell [ref=e195]: AIT TAHAR
+              - cell [ref=e196]: rachid.aittahar@consulting-for.accor.com
+              - cell [ref=e197]: Business Contact
+              - cell [ref=e198]:
+                - generic [ref=e199]: 
+              - cell [ref=e200]:
+                - generic [ref=e201]: Support
+              - cell [ref=e202]
+              - cell [ref=e203]:
+                - link [ref=e204] [cursor=pointer]:
+                  - /url: /contacts/show/8563
+                  - generic [ref=e205]: 
+                - link [ref=e206] [cursor=pointer]:
+                  - /url: /contacts/edit/8563
+                  - generic [ref=e207]: 
+            - row [ref=e208]:
+              - cell [ref=e209]: Catherine
+              - cell [ref=e210]: MERCIER
+              - cell [ref=e211]: catherine.mercier@accor.com
+              - cell [ref=e212]: Other
+              - cell [ref=e213]:
+                - generic [ref=e214]: 
+              - cell [ref=e215]:
+                - generic [ref=e216]: Central Admin
+              - cell [ref=e217]
+              - cell [ref=e218]:
+                - link [ref=e219] [cursor=pointer]:
+                  - /url: /contacts/show/8564
+                  - generic [ref=e220]: 
+                - link [ref=e221] [cursor=pointer]:
+                  - /url: /contacts/edit/8564
+                  - generic [ref=e222]: 
+            - row [ref=e223]:
+              - cell [ref=e224]: Mathilde
+              - cell [ref=e225]: TACINELLI
+              - cell [ref=e226]: mathilde.tacinelli@accor.com
+              - cell [ref=e227]: Administrator
+              - cell [ref=e228]:
+                - generic [ref=e229]: 
+              - cell [ref=e230]:
+                - generic [ref=e231]: Central Admin
+              - cell [ref=e232]
+              - cell [ref=e233]:
+                - link [ref=e234] [cursor=pointer]:
+                  - /url: /contacts/show/8565
+                  - generic [ref=e235]: 
+                - link [ref=e236] [cursor=pointer]:
+                  - /url: /contacts/edit/8565
+                  - generic [ref=e237]: 
+            - row [ref=e238]:
+              - cell [ref=e239]: Helene
+              - cell [ref=e240]: BOUCHOT
+              - cell [ref=e241]: helene.bouchotadmin@accor.com
+              - cell [ref=e242]: Business Contact
+              - cell [ref=e243]:
+                - generic [ref=e244]: 
+              - cell [ref=e245]:
+                - generic [ref=e246]: Support
+              - cell [ref=e247]
+              - cell [ref=e248]:
+                - link [ref=e249] [cursor=pointer]:
+                  - /url: /contacts/show/8566
+                  - generic [ref=e250]: 
+                - link [ref=e251] [cursor=pointer]:
+                  - /url: /contacts/edit/8566
+                  - generic [ref=e252]: 
+            - row [ref=e253]:
+              - cell [ref=e254]: Sophie
+              - cell [ref=e255]: POFILET
+              - cell [ref=e256]: sophie.pofilet@accor.com
+              - cell [ref=e257]: Business Contact
+              - cell [ref=e258]:
+                - generic [ref=e259]: 
+              - cell [ref=e260]:
+                - generic [ref=e261]: Central Admin
+              - cell [ref=e262]
+              - cell [ref=e263]:
+                - link [ref=e264] [cursor=pointer]:
+                  - /url: /contacts/show/8567
+                  - generic [ref=e265]: 
+                - link [ref=e266] [cursor=pointer]:
+                  - /url: /contacts/edit/8567
+                  - generic [ref=e267]: 
+            - row [ref=e268]:
+              - cell [ref=e269]: Sophie
+              - cell [ref=e270]: IANNI
+              - cell [ref=e271]: sophie.ianni@accor.com
+              - cell [ref=e272]: Administrator
+              - cell [ref=e273]:
+                - generic [ref=e274]: 
+              - cell [ref=e275]:
+                - generic [ref=e276]: Central Admin
+              - cell [ref=e277]
+              - cell [ref=e278]:
+                - link [ref=e279] [cursor=pointer]:
+                  - /url: /contacts/show/8568
+                  - generic [ref=e280]: 
+                - link [ref=e281] [cursor=pointer]:
+                  - /url: /contacts/edit/8568
+                  - generic [ref=e282]: 
+            - row [ref=e283]:
+              - cell [ref=e284]: Amaury
+              - cell [ref=e285]: COUTURIER
+              - cell [ref=e286]: amaury.couturier@accor.com
+              - cell [ref=e287]: Business Contact
+              - cell [ref=e288]:
+                - generic [ref=e289]: 
+              - cell [ref=e290]:
+                - generic [ref=e291]: Support
+              - cell [ref=e292]
+              - cell [ref=e293]:
+                - link [ref=e294] [cursor=pointer]:
+                  - /url: /contacts/show/8569
+                  - generic [ref=e295]: 
+                - link [ref=e296] [cursor=pointer]:
+                  - /url: /contacts/edit/8569
+                  - generic [ref=e297]: 
+            - row [ref=e298]:
+              - cell [ref=e299]: Olivia
+              - cell [ref=e300]: REGIS
+              - cell [ref=e301]: olivia.regis@accor.com
+              - cell [ref=e302]: Business Contact
+              - cell [ref=e303]:
+                - generic [ref=e304]: 
+              - cell [ref=e305]:
+                - generic [ref=e306]: Support
+              - cell [ref=e307]
+              - cell [ref=e308]:
+                - link [ref=e309] [cursor=pointer]:
+                  - /url: /contacts/show/8570
+                  - generic [ref=e310]: 
+                - link [ref=e311] [cursor=pointer]:
+                  - /url: /contacts/edit/8570
+                  - generic [ref=e312]: 
+            - row [ref=e313]:
+              - cell [ref=e314]: Ghislain
+              - cell [ref=e315]: GENET
+              - cell [ref=e316]: ghislain.genet@alenium.com
+              - cell [ref=e317]: Business Contact
+              - cell [ref=e318]:
+                - generic [ref=e319]: 
+              - cell [ref=e320]:
+                - generic [ref=e321]: Central Admin
+              - cell [ref=e322]
+              - cell [ref=e323]:
+                - link [ref=e324] [cursor=pointer]:
+                  - /url: /contacts/show/8585
+                  - generic [ref=e325]: 
+                - link [ref=e326] [cursor=pointer]:
+                  - /url: /contacts/edit/8585
+                  - generic [ref=e327]: 
+            - row [ref=e328]:
+              - cell [ref=e329]: Sabrina
+              - cell [ref=e330]: MARDJOEKI
+              - cell [ref=e331]: smardjoeki@hexagonalconsulting.com
+              - cell [ref=e332]: Business Contact
+              - cell [ref=e333]:
+                - generic [ref=e334]: 
+              - cell [ref=e335]:
+                - generic [ref=e336]: Supplier
+              - cell [ref=e337]
+              - cell [ref=e338]:
+                - link [ref=e339] [cursor=pointer]:
+                  - /url: /contacts/show/8586
+                  - generic [ref=e340]: 
+                - link [ref=e341] [cursor=pointer]:
+                  - /url: /contacts/edit/8586
+                  - generic [ref=e342]: 
+            - row [ref=e343]:
+              - cell [ref=e344]: Emilie
+              - cell [ref=e345]: PAINO
+              - cell [ref=e346]: emilie.paino@accor.com
+              - cell [ref=e347]: Business Contact
+              - cell [ref=e348]:
+                - generic [ref=e349]: 
+              - cell [ref=e350]:
+                - generic [ref=e351]: Business Developer
+              - cell [ref=e352]
+              - cell [ref=e353]:
+                - link [ref=e354] [cursor=pointer]:
+                  - /url: /contacts/show/10461
+                  - generic [ref=e355]: 
+                - link [ref=e356] [cursor=pointer]:
+                  - /url: /contacts/edit/10461
+                  - generic [ref=e357]: 
+            - row [ref=e358]:
+              - cell [ref=e359]: Alexandra
+              - cell [ref=e360]: LAUNAY
+              - cell [ref=e361]: alexandra.launay@accor.com
+              - cell [ref=e362]: Salesman
+              - cell [ref=e363]:
+                - generic [ref=e364]: 
+              - cell [ref=e365]:
+                - generic [ref=e366]: Business Developer
+              - cell [ref=e367]
+              - cell [ref=e368]:
+                - link [ref=e369] [cursor=pointer]:
+                  - /url: /contacts/show/10462
+                  - generic [ref=e370]: 
+                - link [ref=e371] [cursor=pointer]:
+                  - /url: /contacts/edit/10462
+                  - generic [ref=e372]: 
+        - navigation [ref=e373]:
+          - list [ref=e374]:
+            - listitem [ref=e375]:
+              - link:
+                - /url: /contacts
+                - generic: 
+            - listitem [ref=e376]:
+              - link:
+                - /url: /contacts?page=1
+                - text: "1"
+            - listitem [ref=e377]:
+              - link [ref=e378] [cursor=pointer]:
+                - /url: /contacts?page=2
+                - text: "2"
+            - listitem [ref=e379]:
+              - link [ref=e380] [cursor=pointer]:
+                - /url: /contacts?page=3
+                - text: "3"
+            - listitem [ref=e381]:
+              - link [ref=e382] [cursor=pointer]:
+                - /url: "#"
+                - text: …
+            - listitem [ref=e383]:
+              - link [ref=e384] [cursor=pointer]:
+                - /url: /contacts?page=1646
+                - text: "1646"
+            - listitem [ref=e385]:
+              - link [ref=e386] [cursor=pointer]:
+                - /url: /contacts?page=1647
+                - text: "1647"
+            - listitem [ref=e387]:
+              - link [ref=e388] [cursor=pointer]:
+                - /url: /contacts?page=2
+                - generic [ref=e389]: 
+      - generic [ref=e390]:
+        - generic [ref=e391]: "Version: 2.28.5"
+        - generic [ref=e392]:
+          - link [ref=e393] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e394] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e397]:
+    - paragraph [ref=e401]: Share your feedback!💡
+    - paragraph [ref=e405]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e408]:
+      - strong [ref=e409]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e414]:
+      - generic [ref=e415]:
+        - radio "1"
+        - generic [ref=e416]: "1"
+        - generic [ref=e417]: Very difficult
+      - generic [ref=e418]:
+        - radio "2"
+        - generic [ref=e419]: "2"
+      - generic [ref=e420]:
+        - radio "3"
+        - generic [ref=e421]: "3"
+      - generic [ref=e422]:
+        - radio "4"
+        - generic [ref=e423]: "4"
+      - generic [ref=e424]:
+        - radio "5"
+        - generic [ref=e425]: "5"
+        - generic [ref=e426]: Very easy
+    - generic [ref=e428]:
+      - button "Remind me later" [ref=e430] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e431]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e432] [cursor=pointer]: ×
+```
