@@ -7,8 +7,7 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write  # ✅ nécessaire pour publier sur GitHub Pages
-
+  contents: write  
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -154,10 +153,10 @@ jobs:
           echo "BADGE_TEXT_COLOR=$TEXT_COLOR" >> $GITHUB_ENV
 
       # 1️⃣2️⃣ - Envoi de l’e-mail HTML du rapport
-            - name: Send Allure Report Email (HTML mode)
-        if: always()
-        uses: dawidd6/action-send-mail@v3
-        with:
+      - name: Send Allure Report Email (HTML mode)
+      if: always()
+      uses: dawidd6/action-send-mail@v3
+      with:
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
