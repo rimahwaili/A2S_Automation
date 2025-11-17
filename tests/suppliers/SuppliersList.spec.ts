@@ -13,7 +13,7 @@ test.describe('Suppliers Filters', () => {
     await suppliersPage.goto();
   });
 
-  test('Filter by code - valid supplier', async () => {
+  test('A2SQA2-2522 | @P1 @Supplier Filter by code - valid supplier', async () => {
     await suppliersPage.filterByCode('45351');
     const results = await suppliersPage.getResultsCount();
     expect(results).toBeGreaterThan(0);
@@ -21,34 +21,34 @@ test.describe('Suppliers Filters', () => {
     expect(text).toContain('ACIAL');
   });
 
-  test('Filter by name - partial match', async () => {
+  test('A2SQA2-XX | @P1 @Supplier  Filter by name - partial match', async () => {
     await suppliersPage.filterByName('ACIAL');
     const first = await suppliersPage.getFirstResultText();
     expect(first).toContain('ACIAL');
   });
 
-  test('Filter by country', async () => {
+  test('A2SQA2-XX | @P1 @Supplier  Filter by country', async () => {
     await suppliersPage.filterByCountry('France');
     const first = await suppliersPage.getFirstResultText();
     expect(first).toContain('France');
   });
 
-  test('Filter by category', async () => {
+  test('A2SQA2-XX | @P1 @Supplier  Filter by category', async () => {
     await suppliersPage.filterByCategories('Guest amenities');
     const first = await suppliersPage.getFirstResultText();
     expect(first).toContain('Guest amenities');
   });
 
-  test('Filter by active contracts', async () => {
+  test('A2SQA2-XX | @P1 @Supplier  Filter by active contracts', async () => {
     await suppliersPage.filterByActiveContracts('true');
     const count = await suppliersPage.getResultsCount();
     expect(count).toBeGreaterThan(0);
   });
 
-  test('Reset filters restores full list', async () => {
+  test('A2SQA2-XX | @P1 @Supplier  Reset filters restores full list', async () => {
     await suppliersPage.filterByCode('703');
     await suppliersPage.resetFilters();
     const count = await suppliersPage.getResultsCount();
-    expect(count).toBeGreaterThan(15); // full dataset
+    expect(count).toBeGreaterThan(15);
   });
 });

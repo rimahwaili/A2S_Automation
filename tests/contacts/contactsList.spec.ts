@@ -67,7 +67,7 @@ test.describe('Contacts Filtering', () => {
   test('@P1 @Contact Filter by Email', async ({ page }) => {
     const contactsPage = new ContactsPage(page);
     await contactsPage.goto();
-    await contactsPage.applyFilters({ profile: 'Email' });
+    await contactsPage.applyFilters({ email: 'lboutet@hexagonalconsulting.com' });
   });
 
   test('@P1 @Contact Filter by Surname + profil', async ({ page }) => {
