@@ -4,10 +4,10 @@ on:
   schedule:
     # 07h heure de Paris
     - cron: "0 10 * * *"   # 07h CET (hiver)
-    - cron: "0 9 * * *"   # 07h CEST (été)
+    - cron: "0 9 * * *"    # 07h CEST (été)
     # 14h heure de Paris
-    - cron: "0 13 * * *"  # 14h CET (hiver)
-    - cron: "0 12 * * *"  # 14h CEST (été)
+    - cron: "0 13 * * *"   # 14h CET (hiver)
+    - cron: "0 12 * * *"   # 14h CEST (été)
   workflow_dispatch:
 
 permissions:
@@ -21,15 +21,12 @@ jobs:
       TZ: Europe/Paris
 
     steps:
-      # 1️⃣ Cloner le dépôt
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Construire l’image Docker Playwright
       - name: Build Docker image
         run: docker build -t playwright-tests .
 
-      # 3️⃣ Créer le fichier .env.recette à partir des secrets
       - name: Create .env.recette file
         run: |
           echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env.recette
@@ -38,23 +35,13 @@ jobs:
           echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.recette
           echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.recette
 
-      # 4️⃣ Vérifier la présence du fichier d’environnement
-      - name: Debug .env.recette existence
-        run: |
-          echo "[DEBUG] Contents of workspace root:"
-          ls -la
-          echo "[DEBUG] .env.recette content:"
-          cat .env.recette || echo "file not found"
-
-      # 5️⃣ Exécuter les tests Playwright dans Docker
-      - name: Run Playwright P0 tests
+      - name: Run Playwright tests
         run: |
           docker run --rm \
             -v ${{ github.workspace }}/.env.recette:/app/.env.recette \
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
-            playwright-tests npx playwright test --grep '@P0' --reporter=line,allure-playwright || true
+            playwright-tests npx playwright test --reporter=line,allure-playwright || true
 
-      # 6️⃣ Générer le rapport Allure
       - name: Generate Allure report
         if: always()
         run: |
@@ -63,57 +50,7 @@ jobs:
             -v ${{ github.workspace }}/allure-report:/app/allure-report \
             playwright-tests npx allure generate /app/allure-results --clean -o /app/allure-report
 
-      # 7️⃣ Vérifier le contenu du rapport généré
-      - name: Check Allure report content
-        if: always()
-        run: |
-          echo "📁 Contenu du dossier allure-report :"
-          ls -la allure-report || echo "⚠️ Aucun rapport généré !"
-
-      # 8️⃣ Uploader le rapport comme artefact GitHub
-      - name: Upload Allure report artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
-
-      # 9️⃣ Déployer le rapport sur GitHub Pages
-      - name: Deploy Allure report to GitHub Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: allure-report
-          publish_branch: gh-pages
-          destination_dir: run-${{ github.run_number }}
-          keep_files: true
-          force_orphan: false
-          commit_message: "🚀 Publish Allure report run #${{ github.run_number }} (cron)"
-
-      # 🔟 Générer une page d’index listant tous les rapports précédents
-      - name: Generate Allure index page
-        if: always()
-        run: |
-          echo "<html><head><meta charset='UTF-8'><title>Allure Reports</title></head><body>" > index.html
-          echo "<h1>📊 Historique des rapports Allure</h1><ul>" >> index.html
-          for dir in $(ls -d allure-report/* 2>/dev/null || true); do
-            echo "<li><a href='${dir}/index.html'>${dir}</a></li>" >> index.html
-          done
-          echo "</ul></body></html>" >> index.html
-
-      # 1️⃣1️⃣ Déployer l’index en gardant les rapports existants
-      - name: Deploy Allure index to GitHub Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          publish_branch: gh-pages
-          keep_files: true
-          commit_message: "🗂️ Update Allure report index (cron)"
-
-      # 1️⃣1️⃣a - Extraire les statistiques Allure
+      # EXTRACTION DES STATS — AVANT DEPLOIEMENT
       - name: Extract Allure summary stats
         if: always()
         run: |
@@ -136,7 +73,6 @@ jobs:
           echo "DURATION=$(printf '%.1f' $DURATION)" >> $GITHUB_ENV
           echo "STOP_TIME=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
-      # 1️⃣1️⃣b - Calcul du Pass Rate et couleur du badge
       - name: Compute Pass Rate and Colors
         if: always()
         run: |
@@ -157,9 +93,47 @@ jobs:
           echo "PASS_RATE=$RATE" >> $GITHUB_ENV
           echo "BADGE_COLOR=$COLOR" >> $GITHUB_ENV
           echo "BADGE_TEXT_COLOR=$TEXT_COLOR" >> $GITHUB_ENV
-          
-      # 1️⃣2️⃣ - Envoi de l’e-mail HTML du rapport
-      - name: Send Allure Report Email (HTML mode)
+
+      - name: Upload Allure report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+
+      - name: Deploy Allure report to GitHub Pages (CRON)
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report
+          publish_branch: gh-pages
+          destination_dir: cron/run-${{ github.run_number }}
+          keep_files: true
+          force_orphan: false
+          commit_message: "🚀 Publish Allure report run #${{ github.run_number }} (cron)"
+
+      - name: Generate Allure index page
+        if: always()
+        run: |
+          echo "<html><head><meta charset='UTF-8'><title>Allure Reports</title></head><body>" > index.html
+          echo "<h1>📊 Historique des rapports Allure</h1><ul>" >> index.html
+          for dir in $(ls -d run-* cron/run-* 2>/dev/null || true); do
+            echo "<li><a href='${dir}/index.html'>${dir}</a></li>" >> index.html
+          done
+          echo "</ul></body></html>" >> index.html
+
+      - name: Deploy Allure index to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: true
+          commit_message: "🗂️ Update Allure report index (cron)"
+
+      - name: Send Allure Report Email (CRON)
         if: always()
         uses: dawidd6/action-send-mail@v3
         with:
@@ -171,53 +145,36 @@ jobs:
           subject: "📊 A2S Automation (CRON) - Run #${{ github.run_number }} | ✅ ${{ env.PASSED }} Passed ❌ ${{ env.FAILED }} Failed"
           to: "rimah.waili@consulting-for.accor.com, interceptor_a2s@astoresuite.com"
           from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
-          html_body: >
+
+          html_body: |
             <!DOCTYPE html>
             <html>
-            <head>
-              <meta charset="UTF-8" />
-            </head>
-            <body style="font-family: Arial, sans-serif; background-color: #f6f8fa; padding: 0; margin: 0;">
-              <div style="background-color: #ffffff; max-width: 650px; margin: 30px auto; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                <h2 style="color: #004aad; text-align: center;">📊 A2S Automation (CRON) - Test Run #${{ github.run_number }}</h2>
+            <head><meta charset="UTF-8" /></head>
+            <body style="font-family: Arial; background-color:#f6f8fa;">
+              <div style="background:#fff; max-width:650px; margin:20px auto; padding:20px; border-radius:8px;">
+                <h2 style="text-align:center;color:#004aad;">📊 A2S Automation (CRON) - Test Run #${{ github.run_number }}</h2>
                 <p>Hello Rimah 👋,</p>
-                <p>The Allure report for this scheduled test run is now available.</p>
-                <p style="text-align: center; font-size: 18px; margin-top: 20px;">
-                  <span style="padding: 10px 20px; border-radius: 20px; font-weight: bold;
-                    background-color: ${{ env.BADGE_COLOR }};
-                    color: ${{ env.BADGE_TEXT_COLOR }};
-                    display: inline-block;">
-                    ✅ Pass Rate: ${{ env.PASS_RATE }}%
+                <p>The Allure report for this scheduled run is now available.</p>
+                <p style="text-align:center;">
+                  <span style="padding:10px 20px; background:${{ env.BADGE_COLOR }}; color:${{ env.BADGE_TEXT_COLOR }}; border-radius:20px; font-weight:bold;">
+                    Pass Rate: ${{ env.PASS_RATE }}%
                   </span>
                 </p>
-                <div style="text-align: center; margin-top: 25px;">
-                  <a href="https://rimahwaili.github.io/A2S_Automation/run-${{ github.run_number }}/" 
-                    target="_blank"
-                    style="background-color: #004aad; color: #ffffff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">
+                <div style="text-align:center;margin-top:20px;">
+                  <a href="https://rimahwaili.github.io/A2S_Automation/cron/run-${{ github.run_number }}/"
+                    style="background:#004aad;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;">
                     🔍 View Full Allure Report
                   </a>
                 </div>
-                <table style="width: 100%; border-collapse: collapse; margin-top: 25px;">
-                  <tr>
-                    <th style="background-color: #f0f0f0; padding: 10px; text-align: left;">📈 Metric</th>
-                    <th style="background-color: #f0f0f0; padding: 10px; text-align: left;">Value</th>
-                  </tr>
-                  <tr><td style="padding: 8px;">✅ Passed</td><td style="padding: 8px;">${{ env.PASSED }}</td></tr>
-                  <tr><td style="padding: 8px;">❌ Failed</td><td style="padding: 8px;">${{ env.FAILED }}</td></tr>
-                  <tr><td style="padding: 8px;">⚠️ Broken</td><td style="padding: 8px;">${{ env.BROKEN }}</td></tr>
-                  <tr><td style="padding: 8px;">⏭️ Skipped</td><td style="padding: 8px;">${{ env.SKIPPED }}</td></tr>
-                  <tr><td style="padding: 8px;">📊 Total</td><td style="padding: 8px;">${{ env.TOTAL }}</td></tr>
-                  <tr><td style="padding: 8px;">🕒 Duration (min)</td><td style="padding: 8px;">${{ env.DURATION }}</td></tr>
+                <table style="width:100%;margin-top:20px;border-collapse:collapse;">
+                  <tr><th>Metric</th><th>Value</th></tr>
+                  <tr><td>Passed</td><td>${{ env.PASSED }}</td></tr>
+                  <tr><td>Failed</td><td>${{ env.FAILED }}</td></tr>
+                  <tr><td>Broken</td><td>${{ env.BROKEN }}</td></tr>
+                  <tr><td>Skipped</td><td>${{ env.SKIPPED }}</td></tr>
+                  <tr><td>Total</td><td>${{ env.TOTAL }}</td></tr>
+                  <tr><td>Duration (min)</td><td>${{ env.DURATION }}</td></tr>
                 </table>
-                <div style="text-align: center; margin-top: 25px;">
-                  <h3 style="color: #004aad;">📈 Test Results Overview</h3>
-                  <img src="https://quickchart.io/chart?c={type:'doughnut',data:{labels:['Passed','Failed','Broken','Skipped'],datasets:[{data:[${{ env.PASSED }},${{ env.FAILED }},${{ env.BROKEN }},${{ env.SKIPPED }}],backgroundColor:['#28a745','#dc3545','#fd7e14','#6c757d']}]},options:{plugins:{legend:{position:'bottom'}}}}" 
-                    width="280" height="280" alt="Test results chart" />
-                </div>
-                <div style="font-size: 12px; color: #777; text-align: center; margin-top: 30px;">
-                  Sent automatically by <strong>A2S Automation CI (CRON)</strong><br />
-                  🕓 Run completed on ${{ env.STOP_TIME }}
-                </div>
               </div>
             </body>
             </html>
