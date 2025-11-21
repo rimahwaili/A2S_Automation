@@ -1,0 +1,5 @@
+Detected UI language: EN
+Detected UI language: EN
+Apply filters: { profile: 'Client' }
+ Option "Client" sélectionnée
+✅ Filters successfully applied
