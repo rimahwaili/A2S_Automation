@@ -1,0 +1,5 @@
+Detected UI language: EN
+Detected UI language: EN
+Apply filters: { email: 'AreaAdmin2685@yopmail.com' }
+✅ Filters successfully applied
+Opening the contact details page...
