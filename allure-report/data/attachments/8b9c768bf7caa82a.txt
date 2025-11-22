@@ -1,0 +1,2 @@
+Detected UI language: EN
+✅ "Show" and "Edit" buttons are visible
