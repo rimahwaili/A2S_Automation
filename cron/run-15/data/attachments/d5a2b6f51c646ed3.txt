@@ -1,0 +1,11 @@
+Detected UI language: EN
+📥 Extracted data from row 1: {
+  firstName: 'Loic',
+  lastName: 'BOUTET',
+  email: 'lboutet@hexagonalconsulting.com'
+}
+🧩 Contact data: {
+  firstName: 'Loic',
+  lastName: 'BOUTET',
+  email: 'lboutet@hexagonalconsulting.com'
+}
