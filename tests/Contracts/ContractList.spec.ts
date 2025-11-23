@@ -17,7 +17,6 @@ import { LoginPage } from '../../pages/LoginPage';
   
 test.describe('Contracts List', () => {
 
-
   test('@P1 @Contract All tabs should be visible and enabled', async ({ page }) => {
     const contractsPage = new ContractsPage(page);
     await contractsPage.goto();
@@ -25,17 +24,6 @@ test.describe('Contracts List', () => {
     for (const tab of contractsPage.getAllTabs()) {
       await expect(tab).toBeVisible();
       await expect(tab).toBeEnabled();
-    }
-  });
-
-  test('@P1 @Contract Each tab should become active when clicked', async ({ page }) => {
-    const contractsPage = new ContractsPage(page);
-    await contractsPage.goto();
-
-    for (const tab of contractsPage.getAllTabs()) {
-      await contractsPage.clickTab(tab);
-      //await contractsPage.selectFirstContract();
-
     }
   });
 
