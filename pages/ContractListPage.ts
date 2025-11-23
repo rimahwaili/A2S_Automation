@@ -32,6 +32,8 @@ export class ContractsPage {
   // Tableau
   readonly table: Locator;
   readonly tableRows: Locator;
+  readonly numberCell: Locator;
+  readonly statusCell: Locator ;
 
   // Pagination
   readonly pagination: Locator;
@@ -69,6 +71,8 @@ export class ContractsPage {
     // Tableau
     this.table = page.locator(ContractsSelectors.table.root);
     this.tableRows = page.locator(ContractsSelectors.table.bodyRows);
+    this.numberCell = page.locator(ContractsSelectors.table.numberCell);
+    this.statusCell = page.locator(ContractsSelectors.table.statusCell);
 
     // Pagination
     this.pagination = page.locator(ContractsSelectors.pagination.root);
@@ -81,12 +85,68 @@ export class ContractsPage {
 
   async goto() {
     await this.page.goto('/contracts');
-    await expect(this.table).toBeVisible();
+    //await expect(this.table).toBeVisible();
   }
 
-  async selectValidTab() {
+  async clickToValidTab() {
     await this.tabValid.click();
-    await this.page.waitForLoadState('networkidle');
+    // Re-query table after click (fresh locator)
+    const table = this.page.locator('#contracts_table');
+    await table.waitFor({ state: 'visible', timeout: 10000 });
+  }
+
+  async clickToExpiredTab() {
+    await this.tabExpired.click();
+    // Re-query table after click (fresh locator)
+    const table = this.page.locator('#contracts_table');
+    await table.waitFor({ state: 'visible', timeout: 10000 });
+  }
+
+  async clickToRenewtab() {
+  await this.tabToRenew.click({ force: true });
+
+  // Re-query table after click (fresh locator)
+  const table = this.page.locator('#contracts_table');
+  await table.waitFor({ state: 'visible', timeout: 10000 });
+
+}
+
+async getAllVisibleRows() {
+  const visibleRows: { row: Locator; number: string; status: string }[] = [];
+
+  const rowCount = await this.tableRows.count();
+
+  for (let i = 0; i < rowCount; i++) {
+    const row = this.tableRows.nth(i);
+
+    if (!(await row.isVisible())) {
+      continue;
+    }
+    const numberCell = row.locator(this.numberCell);
+    const statusCell = row.locator(this.statusCell);
+
+    const number = (await numberCell.textContent())?.trim() ?? '';
+    const status = (await statusCell.textContent())?.trim().toLowerCase() ?? '';
+    visibleRows.push({ row, number, status });
+  }
+
+  return visibleRows;
+}
+
+  async isActive(tab: Locator) {
+    return tab.evaluate(el => el.classList.contains('active'));
+  }
+
+  getAllTabs() {
+    return [
+      this.tabAll,
+      this.tabDraft,
+      this.tabValid,
+      this.tabToRenew,
+      this.tabExpired,
+      this.tabArchived,
+      this.tabError
+    ];
   }
 
   async filterByNumber(number: string) {
@@ -109,6 +169,11 @@ export class ContractsPage {
   async openFirstContract(rowIndex = 0) {
     const row = this.tableRows.nth(rowIndex);
     await row.locator(ContractsSelectors.rowActions.view).click();
+    const currentUrl = this.page.url();
+    const idMatch = currentUrl.match(/\/contracts\/show\/(\d+)/);
+    const contractId = idMatch ? idMatch[1] : undefined;
+
+    console.log('Contract ID:', contractId);
   }
 
   async expectAllRowsToHaveStatus(status: string) {

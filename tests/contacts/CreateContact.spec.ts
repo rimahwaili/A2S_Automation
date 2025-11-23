@@ -37,9 +37,10 @@ test.beforeEach(async ({ page }) => {
 for (const profil of profils) {
   test.describe(`@P0 @Contacts : Profil [${profil.name}]`, () => {
     test(`${profil.jiraKey} | @P0 @Contact Should create Contact for: ${profil.name}`, async ({ page }) => {
+    
       allure.label('feature', 'Contacts');
       allure.epic('Contacts');
-      allure.story('Create new contact');
+      allure.story('contact - Create new contact');
 
       createContactPage = new CreateContactPage(page);
       const random = Math.floor(1000 + Math.random() * 9000);
