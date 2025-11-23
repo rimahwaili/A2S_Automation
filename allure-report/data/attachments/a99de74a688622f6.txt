@@ -1,0 +1,2 @@
+Detected UI language: EN
+📊 Found 15 contact(s) in the table
