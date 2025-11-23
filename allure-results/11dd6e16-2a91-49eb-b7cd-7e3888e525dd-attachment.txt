@@ -1,0 +1,2 @@
+Detected UI language: EN
+🔎 Verifying table headers (en)

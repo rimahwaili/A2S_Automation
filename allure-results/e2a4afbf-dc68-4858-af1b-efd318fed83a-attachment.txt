@@ -1,0 +1,5 @@
+Detected UI language: EN
+Detected UI language: EN
+Apply filters: { firstName: 'helene', profile: 'support' }
+ Option "Support" sélectionnée
+✅ Filters successfully applied

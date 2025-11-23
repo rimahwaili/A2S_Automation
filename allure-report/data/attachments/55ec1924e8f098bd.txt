@@ -1,0 +1,9 @@
+Detected UI language: EN
+Detected UI language: EN
+Apply filters: { email: 'Supplier8536@yopmail.com' }
+✅ Filters successfully applied
+Opening the contact details page...
+✅ Contact details page opened successfully
+✅ Contact Details page is visible
+✅ Contact basic information verified
+✅ Send Reset Password Link
