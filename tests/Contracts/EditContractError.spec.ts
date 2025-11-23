@@ -2,6 +2,7 @@ import { test,expect } from '@playwright/test';
 import { ContractsPage } from '../../pages/ContractListPage';
 import { ContractPage } from '../../pages/EditContractPage';
 import { LoginPage } from '../../pages/LoginPage';
+import { allure } from 'allure-playwright';
 
 
  let contractsPage: ContractsPage;
@@ -16,6 +17,12 @@ import { LoginPage } from '../../pages/LoginPage';
 
 test.describe('Contract Page tests', () => {
   test(' 2SQA2-2562 | @P0 Move contract status from to renew into Error ', async ({ page }) => {
+
+    
+    allure.label('feature', 'Contract');
+    allure.epic('Contract');
+    allure.story('Move contract status from to renew into Error');
+
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
     contractsPage.clickToRenewtab();
@@ -31,6 +38,11 @@ test.describe('Contract Page tests', () => {
   });
 
 test(' 2SQA2-2560 | @P0 Move contract status from valid into Error ', async ({ page }) => {
+
+    allure.label('feature', 'Contract');
+    allure.epic('Contract');
+    allure.story('Move contract status from valid into Error');
+
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
     contractsPage.clickToValidTab();
@@ -46,6 +58,11 @@ test(' 2SQA2-2560 | @P0 Move contract status from valid into Error ', async ({ p
 });
 
 test(' 2SQA2-2561 | @P0 Move contract status from Expired into Error ', async ({ page }) => {
+
+    allure.label('feature', 'Contract');
+    allure.epic('Contract');
+    allure.story('Move contract status from expired into Error');
+    
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
     contractsPage.clickToExpiredTab();
