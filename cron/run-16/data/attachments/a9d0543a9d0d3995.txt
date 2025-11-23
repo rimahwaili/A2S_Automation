@@ -1,0 +1,4 @@
+Detected UI language: EN
+Detected UI language: EN
+Apply filters: { email: 'lboutet@hexagonalconsulting.com' }
+✅ Filters successfully applied
