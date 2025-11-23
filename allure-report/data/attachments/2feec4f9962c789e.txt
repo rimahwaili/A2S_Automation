@@ -1,0 +1,4 @@
+Detected UI language: EN
+Detected UI language: EN
+Apply filters: { firstName: 'Laurent' }
+✅ Filters successfully applied
