@@ -28,6 +28,18 @@ export class ContractPage {
     readonly confirmAndSaveBtn: Locator;
     readonly cancelBtn: Locator;
 
+    //archive modale
+    readonly modal: Locator;
+
+    readonly endQuarterSelect: Locator;
+    readonly endYearInput: Locator;
+    readonly actualEndDateInput: Locator;
+
+    readonly confirmStep1Btn: Locator;
+    readonly confirmFinalBtn: Locator;
+
+    readonly step2: Locator;
+
   constructor(page: Page) {
     this.page = page;
 
@@ -52,6 +64,16 @@ export class ContractPage {
     this.modalTitle = page.locator(contractPageElements.errormodale.modalTitle);
     this.confirmAndSaveBtn = page.locator(contractPageElements.errormodale.confirmAndSaveBtn);
     this.cancelBtn = page.locator(contractPageElements.errormodale.cancelBtn);
+
+    //archive modale:
+    this.modal = page.locator('.modal-body');
+this.endQuarterSelect = this.modal.locator('select[name$="[end_quarter]"]');
+this.endYearInput = this.modal.locator('input[name$="[end_year]"]');
+this.actualEndDateInput = this.modal.locator('input[name$="[actual_end_date]"][type="text"]');
+this.confirmStep1Btn = this.modal.locator('#confirm-dates-to-step-2');
+    this.confirmFinalBtn = page.locator('#confirm-dates');
+
+    this.step2 = page.locator('.step-2');
 
   }
 
@@ -93,7 +115,7 @@ async assertStatus(expectedStatus: string) {
 
   async clickArchive() {
     await this.archiveBtn.click();
-    await expect(this.archiveModal).toBeVisible();
+    await expect(this.modal).toBeVisible();
   }
 
   async clickVersioning() {
@@ -109,5 +131,40 @@ async assertStatus(expectedStatus: string) {
   async clickSubmit() {
     await this.submitBtn.click();
     await expect(this.submitModal).toBeVisible();
+  }
+async fillStep1Data() {
+  // Wait for the modal
+  await this.modal.waitFor({ state: "visible" });
+
+  // Wait for JS to finish initialization
+  await this.page.waitForTimeout(300);
+
+  // The confirm button is disabled until fields are enabled by JS.
+  // Force user interaction to trigger enable logic.
+  await this.modal.click(); 
+}
+
+
+  
+ async setDeclarativeEndQuarter(value: string) {
+  await this.endQuarterSelect.first().click({ force: true });
+  await this.endQuarterSelect.first().selectOption(value, { force: true });
+}
+
+async setDeclarativeEndYear(year: string) {
+  await this.endYearInput.first().fill(year, { force: true });
+}
+
+async setActualEndDate(date: string) {
+  await this.actualEndDateInput.first().fill(date, { force: true });
+}
+
+async confirmStep1() {
+  await this.confirmStep1Btn.click();
+
+}
+  async confirmFinal() {
+    await this.confirmFinalBtn.click();
+    await expect(this.modal).toBeHidden();
   }
 }
