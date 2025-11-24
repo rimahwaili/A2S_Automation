@@ -36,7 +36,7 @@ jobs:
           docker run --rm \
             -v ${{ github.workspace }}/.env.preprod:/app/.env.preprod \
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
-            playwright-tests npx playwright test --grep @P0 --retries=3 --reporter=line,allure-playwright || true
+            playwright-tests npx playwright test --grep @P0 --retries=3  --workers=1 --reporter=line,allure-playwright || true
 
       - name: Generate Allure report
         if: always()
