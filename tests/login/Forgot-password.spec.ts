@@ -42,11 +42,11 @@ test.describe('Reset Password:', () => {
    await expect(page.locator('#warning')).toContainText('No user is registered with this email');
   });
 
-/*
-  test('A2SQA2-2528 | @P0 @Login Fails reset password when passwords are not identicals', async ({ page }) => {
+
+  test('A2SQA2-2528 | @P1 @Login Fails reset password when passwords are not identicals', async ({ page }) => {
     await forgotPassword.gotoResetLink();
     await forgotPassword.fillNewPassword('Test1234!', 'Test12345!');
     await expect(page.locator('//span[contains(text(),"non identiques")]')).toBeVisible();
   });
-*/
+
 });

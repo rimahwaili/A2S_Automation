@@ -2,7 +2,7 @@ import path from 'path';
 import fs from 'fs';
 import dotenv from 'dotenv';
 
-const currentEnv = process.env.ENV || 'recette';
+const currentEnv = process.env.ENV || 'preprod';
 const envFile = `.env.${currentEnv}`;
 const envPath = path.resolve(process.cwd(), envFile);
 

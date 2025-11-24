@@ -15,7 +15,7 @@ import { allure } from 'allure-playwright';
     await contractsPage.goto();
   });
 
-test.describe('Contract Page tests', () => {
+test.describe('Move Contract into Error', () => {
   test(' 2SQA2-2562 | @P0 Move contract status from to renew into Error ', async ({ page }) => {
 
     
@@ -76,4 +76,94 @@ test(' 2SQA2-2561 | @P0 Move contract status from Expired into Error ', async ({
     const isStatusEEor = await contractPage.assertStatus('Error');
 });
 
+});
+
+test.describe('Move Contract into Archived  ', () =>{
+ test(' 2SQA2-2567 | @P0 Move contract to Archived: valid contract', async ({ page }) => {
+
+    
+    allure.label('feature', 'Contract');
+    allure.epic('Contract');
+    allure.story('Move contract status from valid into Archived');
+
+    const contractPage = new ContractPage(page);
+    const contractsPage = new ContractsPage(page);
+    contractsPage.clickToValidTab();
+    const rows = await contractsPage.getAllVisibleRows();
+
+    await contractsPage.openFirstContract(1);
+    await contractPage.waitForReady();
+    const isStatusvalid = await contractPage.assertStatus('valid');
+    await contractPage.EditContract();
+
+    await contractPage.clickArchive();
+    await contractPage.fillStep1Data();
+    await contractPage.setDeclarativeEndQuarter('4'); 
+  await contractPage.setDeclarativeEndYear('2027');
+  await contractPage.setActualEndDate('12/29/2027');
+
+  await contractPage.confirmStep1();  
+  await contractPage.confirmFinal();  
+    const isStatusArchived = await contractPage.assertStatus('Archived');
+  });
+
+
+
+
+
+  test(' 2SQA2-2566 | @P0 Move contract to Archived: To Renew contract', async ({ page }) => {
+
+    
+    allure.label('feature', 'Contract');
+    allure.epic('Contract');
+    allure.story('Move contract status from To Renew into Archived');
+
+    const contractPage = new ContractPage(page);
+    const contractsPage = new ContractsPage(page);
+    contractsPage.clickToRenewtab();
+    const rows = await contractsPage.getAllVisibleRows();
+
+    await contractsPage.openFirstContract(1);
+    await contractPage.waitForReady();
+    const isStatusvalid = await contractPage.assertStatus('to renew');
+    await contractPage.EditContract();
+
+    await contractPage.clickArchive();
+    await contractPage.fillStep1Data();
+    await contractPage.setDeclarativeEndQuarter('4'); 
+  await contractPage.setDeclarativeEndYear('2027');
+  await contractPage.setActualEndDate('12/29/2027');
+
+  await contractPage.confirmStep1();  
+  await contractPage.confirmFinal();  
+    const isStatusArchived = await contractPage.assertStatus('Archived');
+  });
+
+
+  test(' 2SQA2-2568 | @P0 Move contract to Archived: Expired contract', async ({ page }) => {
+
+    
+    allure.label('feature', 'Contract');
+    allure.epic('Contract');
+    allure.story('Move contract status from Expired into Archived');
+
+    const contractPage = new ContractPage(page);
+    const contractsPage = new ContractsPage(page);
+    contractsPage.clickToExpiredTab();
+    const rows = await contractsPage.getAllVisibleRows();
+
+    await contractsPage.openFirstContract(1);
+    await contractPage.waitForReady();
+    const isStatusvalid = await contractPage.assertStatus('expired');
+    await contractPage.EditContract();
+
+    await contractPage.clickArchive();
+    await contractPage.fillStep1Data();
+    await contractPage.setDeclarativeEndQuarter('4'); 
+  await contractPage.setDeclarativeEndYear('2027');
+  await contractPage.setActualEndDate('12/29/2027');
+ 
+  await contractPage.confirmFinal();  
+    const isStatusArchived = await contractPage.assertStatus('Archived');
+  });
 });

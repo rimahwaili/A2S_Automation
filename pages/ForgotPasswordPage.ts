@@ -36,11 +36,10 @@ export class ForgotPasswordPage {
   }
 
   async fillNewPassword(password: string, confirm: string) {
-    const url='https://rec.astoresuite.com/users/cgu_required';
-    await this.page.fill('input[name="password"]', password);
-    await this.page.fill('input[name="confirmPassword"]', confirm);
-    await this.page.click('button[type="submit"]');
-  }
+  await this.page.fill('input[type="password"][name$="[password]"]', password);
+  await this.page.fill('input[type="password"][name$="[password_confirmation]"]', confirm);
+  await this.page.locator('#cgu_required_accept_form_submit').click();
+}
 
    /** Fill and submit new password form */
   async setNewPassword(password: string) {
