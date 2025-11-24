@@ -37,6 +37,7 @@ export const ContractsSelectors = {
     root: '#contracts_table',
     bodyRows: '#contracts_table tbody[data-singular-name="contract"] tr',
     numberCell: 'td[headers="contracts_number_th"] span[data-field="number"]',
+    statusCell: 'td[headers="contracts_contract_status_th"] span',
   },
 
   // Pagination

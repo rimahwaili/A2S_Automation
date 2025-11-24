@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 import { CreateSuppliersPage } from '../../pages/CreateSuppliersPage';
 import { SuppliersPage } from '../../pages/SuppliersPage';
 import { LoginPage } from '../../pages/LoginPage';
+import { allure } from 'allure-playwright';
 
 test.describe('Suppliers module', () => {
   let suppliersPage: SuppliersPage;
@@ -20,6 +21,11 @@ test.describe('Suppliers module', () => {
   });
 
   test('A2SQA2-2546 | @P0 @supplier Create new supplier', async ({ page }) => {
+
+    allure.label('feature', 'Supplier');
+    allure.epic('Supplier');
+    allure.story('Supplier - Create new supplier');
+
     const random = Date.now();
     const supplierName = `Test Supplier Automation ${random}`;
     const supplierCode = supplierName;
