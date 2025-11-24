@@ -1,0 +1,483 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: recette
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - alert [ref=e57]:
+        - generic [ref=e58]: 
+        - generic [ref=e59]:
+          - generic [ref=e60]: Success
+          - generic [ref=e61]: Contact was successfully created.
+        - button "Close" [ref=e63] [cursor=pointer]: 
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - heading "Contacts List (24760)" [level=3] [ref=e67]
+          - button "New Contact" [ref=e69] [cursor=pointer]:
+            - generic [ref=e70]: 
+            - text: New Contact
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - button " Add filters " [expanded] [ref=e75] [cursor=pointer]:
+                - generic [ref=e76]: 
+                - generic [ref=e77]: Add filters
+                - text: 
+                - generic [ref=e78]: 
+              - generic [ref=e80]:
+                - generic [ref=e81]:
+                  - generic [ref=e82]: Select filters
+                  - button "Clear all" [ref=e83] [cursor=pointer]
+                - generic [ref=e84]:
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: "Active:"
+                    - combobox "Combobox" [ref=e88] [cursor=pointer]:
+                      - img [ref=e90]
+                  - generic [ref=e92]:
+                    - generic [ref=e93]: "First name:"
+                    - textbox "First name:" [ref=e95]
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: "Last name:"
+                    - textbox "Last name:" [ref=e99]
+                  - generic [ref=e100]:
+                    - generic [ref=e101]: "Email:"
+                    - textbox "Email:" [ref=e103]: AreaAdmin6766@yopmail.com
+                  - generic [ref=e104]:
+                    - generic [ref=e105]: "Profile:"
+                    - combobox "Combobox" [ref=e107] [cursor=pointer]:
+                      - generic [ref=e109]: "[All]"
+                      - img [ref=e110]
+                  - generic [ref=e112]:
+                    - generic [ref=e113]: "Function:"
+                    - combobox "Combobox" [ref=e115] [cursor=pointer]:
+                      - generic [ref=e117]: "[All]"
+                      - img [ref=e118]
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: "Suppliers:"
+                    - combobox "Combobox" [ref=e123] [cursor=pointer]:
+                      - generic [ref=e125]: "[All]"
+                      - img [ref=e126]
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: "Clients:"
+                    - combobox "Combobox" [ref=e131] [cursor=pointer]:
+                      - generic [ref=e133]: "[All]"
+                      - img [ref=e134]
+                - button "Apply" [active] [ref=e137] [cursor=pointer]
+            - link "" [ref=e138] [cursor=pointer]:
+              - /url: /contacts/export
+              - generic "Export" [ref=e139]: 
+        - table "Contacts" [ref=e141]:
+          - rowgroup [ref=e142]:
+            - row "First name  Last name  Email  Function  Active  Profile  Areas  Actions" [ref=e143]:
+              - columnheader "First name " [ref=e144] [cursor=pointer]
+              - columnheader "Last name " [ref=e145] [cursor=pointer]
+              - columnheader "Email " [ref=e146] [cursor=pointer]
+              - columnheader "Function " [ref=e147] [cursor=pointer]
+              - columnheader "Active " [ref=e148] [cursor=pointer]
+              - columnheader "Profile " [ref=e149] [cursor=pointer]
+              - columnheader "Areas " [ref=e150] [cursor=pointer]
+              - cell "Actions" [ref=e151]
+          - rowgroup [ref=e152]:
+            - row "Loic BOUTET lboutet@hexagonalconsulting.com Business Contact  Supplier  " [ref=e153]:
+              - cell "Loic" [ref=e154]
+              - cell "BOUTET" [ref=e155]
+              - cell "lboutet@hexagonalconsulting.com" [ref=e156]
+              - cell "Business Contact" [ref=e157]
+              - cell "" [ref=e158]:
+                - generic [ref=e159]: 
+              - cell "Supplier" [ref=e160]:
+                - generic [ref=e161]: Supplier
+              - cell [ref=e162]
+              - cell " " [ref=e163]:
+                - link "" [ref=e164] [cursor=pointer]:
+                  - /url: /contacts/show/937
+                  - generic "Show" [ref=e165]: 
+                - link "" [ref=e166] [cursor=pointer]:
+                  - /url: /contacts/edit/937
+                  - generic "Edit" [ref=e167]: 
+            - row "Julien PONCELET jponcelet@hexagonalconsulting.com Customer Care  Supplier  " [ref=e168]:
+              - cell "Julien" [ref=e169]
+              - cell "PONCELET" [ref=e170]
+              - cell "jponcelet@hexagonalconsulting.com" [ref=e171]
+              - cell "Customer Care" [ref=e172]
+              - cell "" [ref=e173]:
+                - generic [ref=e174]: 
+              - cell "Supplier" [ref=e175]:
+                - generic [ref=e176]: Supplier
+              - cell [ref=e177]
+              - cell " " [ref=e178]:
+                - link "" [ref=e179] [cursor=pointer]:
+                  - /url: /contacts/show/938
+                  - generic "Show" [ref=e180]: 
+                - link "" [ref=e181] [cursor=pointer]:
+                  - /url: /contacts/edit/938
+                  - generic "Edit" [ref=e182]: 
+            - row "Louis KOTTMANN lkottmann@hexagonalconsulting.com Business Contact  Supplier  " [ref=e183]:
+              - cell "Louis" [ref=e184]
+              - cell "KOTTMANN" [ref=e185]
+              - cell "lkottmann@hexagonalconsulting.com" [ref=e186]
+              - cell "Business Contact" [ref=e187]
+              - cell "" [ref=e188]:
+                - generic [ref=e189]: 
+              - cell "Supplier" [ref=e190]:
+                - generic [ref=e191]: Supplier
+              - cell [ref=e192]
+              - cell " " [ref=e193]:
+                - link "" [ref=e194] [cursor=pointer]:
+                  - /url: /contacts/show/944
+                  - generic "Show" [ref=e195]: 
+                - link "" [ref=e196] [cursor=pointer]:
+                  - /url: /contacts/edit/944
+                  - generic "Edit" [ref=e197]: 
+            - row "Rachid AIT TAHAR rachid.aittahar@consulting-for.accor.com Business Contact  Support  " [ref=e198]:
+              - cell "Rachid" [ref=e199]
+              - cell "AIT TAHAR" [ref=e200]
+              - cell "rachid.aittahar@consulting-for.accor.com" [ref=e201]
+              - cell "Business Contact" [ref=e202]
+              - cell "" [ref=e203]:
+                - generic [ref=e204]: 
+              - cell "Support" [ref=e205]:
+                - generic [ref=e206]: Support
+              - cell [ref=e207]
+              - cell " " [ref=e208]:
+                - link "" [ref=e209] [cursor=pointer]:
+                  - /url: /contacts/show/8563
+                  - generic "Show" [ref=e210]: 
+                - link "" [ref=e211] [cursor=pointer]:
+                  - /url: /contacts/edit/8563
+                  - generic "Edit" [ref=e212]: 
+            - row "Catherine MERCIER catherine.mercier@accor.com Other  Central Admin  " [ref=e213]:
+              - cell "Catherine" [ref=e214]
+              - cell "MERCIER" [ref=e215]
+              - cell "catherine.mercier@accor.com" [ref=e216]
+              - cell "Other" [ref=e217]
+              - cell "" [ref=e218]:
+                - generic [ref=e219]: 
+              - cell "Central Admin" [ref=e220]:
+                - generic [ref=e221]: Central Admin
+              - cell [ref=e222]
+              - cell " " [ref=e223]:
+                - link "" [ref=e224] [cursor=pointer]:
+                  - /url: /contacts/show/8564
+                  - generic "Show" [ref=e225]: 
+                - link "" [ref=e226] [cursor=pointer]:
+                  - /url: /contacts/edit/8564
+                  - generic "Edit" [ref=e227]: 
+            - row "Mathilde TACINELLI mathilde.tacinelli@accor.com Administrator  Central Admin  " [ref=e228]:
+              - cell "Mathilde" [ref=e229]
+              - cell "TACINELLI" [ref=e230]
+              - cell "mathilde.tacinelli@accor.com" [ref=e231]
+              - cell "Administrator" [ref=e232]
+              - cell "" [ref=e233]:
+                - generic [ref=e234]: 
+              - cell "Central Admin" [ref=e235]:
+                - generic [ref=e236]: Central Admin
+              - cell [ref=e237]
+              - cell " " [ref=e238]:
+                - link "" [ref=e239] [cursor=pointer]:
+                  - /url: /contacts/show/8565
+                  - generic "Show" [ref=e240]: 
+                - link "" [ref=e241] [cursor=pointer]:
+                  - /url: /contacts/edit/8565
+                  - generic "Edit" [ref=e242]: 
+            - row "Helene BOUCHOT helene.bouchotadmin@accor.com Business Contact  Support  " [ref=e243]:
+              - cell "Helene" [ref=e244]
+              - cell "BOUCHOT" [ref=e245]
+              - cell "helene.bouchotadmin@accor.com" [ref=e246]
+              - cell "Business Contact" [ref=e247]
+              - cell "" [ref=e248]:
+                - generic [ref=e249]: 
+              - cell "Support" [ref=e250]:
+                - generic [ref=e251]: Support
+              - cell [ref=e252]
+              - cell " " [ref=e253]:
+                - link "" [ref=e254] [cursor=pointer]:
+                  - /url: /contacts/show/8566
+                  - generic "Show" [ref=e255]: 
+                - link "" [ref=e256] [cursor=pointer]:
+                  - /url: /contacts/edit/8566
+                  - generic "Edit" [ref=e257]: 
+            - row "Sophie POFILET sophie.pofilet@accor.com Business Contact  Central Admin  " [ref=e258]:
+              - cell "Sophie" [ref=e259]
+              - cell "POFILET" [ref=e260]
+              - cell "sophie.pofilet@accor.com" [ref=e261]
+              - cell "Business Contact" [ref=e262]
+              - cell "" [ref=e263]:
+                - generic [ref=e264]: 
+              - cell "Central Admin" [ref=e265]:
+                - generic [ref=e266]: Central Admin
+              - cell [ref=e267]
+              - cell " " [ref=e268]:
+                - link "" [ref=e269] [cursor=pointer]:
+                  - /url: /contacts/show/8567
+                  - generic "Show" [ref=e270]: 
+                - link "" [ref=e271] [cursor=pointer]:
+                  - /url: /contacts/edit/8567
+                  - generic "Edit" [ref=e272]: 
+            - row "Sophie IANNI sophie.ianni@accor.com Administrator  Central Admin  " [ref=e273]:
+              - cell "Sophie" [ref=e274]
+              - cell "IANNI" [ref=e275]
+              - cell "sophie.ianni@accor.com" [ref=e276]
+              - cell "Administrator" [ref=e277]
+              - cell "" [ref=e278]:
+                - generic [ref=e279]: 
+              - cell "Central Admin" [ref=e280]:
+                - generic [ref=e281]: Central Admin
+              - cell [ref=e282]
+              - cell " " [ref=e283]:
+                - link "" [ref=e284] [cursor=pointer]:
+                  - /url: /contacts/show/8568
+                  - generic "Show" [ref=e285]: 
+                - link "" [ref=e286] [cursor=pointer]:
+                  - /url: /contacts/edit/8568
+                  - generic "Edit" [ref=e287]: 
+            - row "Amaury COUTURIER amaury.couturier@accor.com Business Contact  Support  " [ref=e288]:
+              - cell "Amaury" [ref=e289]
+              - cell "COUTURIER" [ref=e290]
+              - cell "amaury.couturier@accor.com" [ref=e291]
+              - cell "Business Contact" [ref=e292]
+              - cell "" [ref=e293]:
+                - generic [ref=e294]: 
+              - cell "Support" [ref=e295]:
+                - generic [ref=e296]: Support
+              - cell [ref=e297]
+              - cell " " [ref=e298]:
+                - link "" [ref=e299] [cursor=pointer]:
+                  - /url: /contacts/show/8569
+                  - generic "Show" [ref=e300]: 
+                - link "" [ref=e301] [cursor=pointer]:
+                  - /url: /contacts/edit/8569
+                  - generic "Edit" [ref=e302]: 
+            - row "Olivia REGIS olivia.regis@accor.com Business Contact  Support  " [ref=e303]:
+              - cell "Olivia" [ref=e304]
+              - cell "REGIS" [ref=e305]
+              - cell "olivia.regis@accor.com" [ref=e306]
+              - cell "Business Contact" [ref=e307]
+              - cell "" [ref=e308]:
+                - generic [ref=e309]: 
+              - cell "Support" [ref=e310]:
+                - generic [ref=e311]: Support
+              - cell [ref=e312]
+              - cell " " [ref=e313]:
+                - link "" [ref=e314] [cursor=pointer]:
+                  - /url: /contacts/show/8570
+                  - generic "Show" [ref=e315]: 
+                - link "" [ref=e316] [cursor=pointer]:
+                  - /url: /contacts/edit/8570
+                  - generic "Edit" [ref=e317]: 
+            - row "Ghislain GENET ghislain.genet@alenium.com Business Contact  Central Admin  " [ref=e318]:
+              - cell "Ghislain" [ref=e319]
+              - cell "GENET" [ref=e320]
+              - cell "ghislain.genet@alenium.com" [ref=e321]
+              - cell "Business Contact" [ref=e322]
+              - cell "" [ref=e323]:
+                - generic [ref=e324]: 
+              - cell "Central Admin" [ref=e325]:
+                - generic [ref=e326]: Central Admin
+              - cell [ref=e327]
+              - cell " " [ref=e328]:
+                - link "" [ref=e329] [cursor=pointer]:
+                  - /url: /contacts/show/8585
+                  - generic "Show" [ref=e330]: 
+                - link "" [ref=e331] [cursor=pointer]:
+                  - /url: /contacts/edit/8585
+                  - generic "Edit" [ref=e332]: 
+            - row "Sabrina MARDJOEKI smardjoeki@hexagonalconsulting.com Business Contact  Supplier  " [ref=e333]:
+              - cell "Sabrina" [ref=e334]
+              - cell "MARDJOEKI" [ref=e335]
+              - cell "smardjoeki@hexagonalconsulting.com" [ref=e336]
+              - cell "Business Contact" [ref=e337]
+              - cell "" [ref=e338]:
+                - generic [ref=e339]: 
+              - cell "Supplier" [ref=e340]:
+                - generic [ref=e341]: Supplier
+              - cell [ref=e342]
+              - cell " " [ref=e343]:
+                - link "" [ref=e344] [cursor=pointer]:
+                  - /url: /contacts/show/8586
+                  - generic "Show" [ref=e345]: 
+                - link "" [ref=e346] [cursor=pointer]:
+                  - /url: /contacts/edit/8586
+                  - generic "Edit" [ref=e347]: 
+            - row "Emilie PAINO emilie.paino@accor.com Business Contact  Business Developer  " [ref=e348]:
+              - cell "Emilie" [ref=e349]
+              - cell "PAINO" [ref=e350]
+              - cell "emilie.paino@accor.com" [ref=e351]
+              - cell "Business Contact" [ref=e352]
+              - cell "" [ref=e353]:
+                - generic [ref=e354]: 
+              - cell "Business Developer" [ref=e355]:
+                - generic [ref=e356]: Business Developer
+              - cell [ref=e357]
+              - cell " " [ref=e358]:
+                - link "" [ref=e359] [cursor=pointer]:
+                  - /url: /contacts/show/10461
+                  - generic "Show" [ref=e360]: 
+                - link "" [ref=e361] [cursor=pointer]:
+                  - /url: /contacts/edit/10461
+                  - generic "Edit" [ref=e362]: 
+            - row "Alexandra LAUNAY alexandra.launay@accor.com Salesman  Business Developer  " [ref=e363]:
+              - cell "Alexandra" [ref=e364]
+              - cell "LAUNAY" [ref=e365]
+              - cell "alexandra.launay@accor.com" [ref=e366]
+              - cell "Salesman" [ref=e367]
+              - cell "" [ref=e368]:
+                - generic [ref=e369]: 
+              - cell "Business Developer" [ref=e370]:
+                - generic [ref=e371]: Business Developer
+              - cell [ref=e372]
+              - cell " " [ref=e373]:
+                - link "" [ref=e374] [cursor=pointer]:
+                  - /url: /contacts/show/10462
+                  - generic "Show" [ref=e375]: 
+                - link "" [ref=e376] [cursor=pointer]:
+                  - /url: /contacts/edit/10462
+                  - generic "Edit" [ref=e377]: 
+        - navigation "Page Navigation" [ref=e378]:
+          - list [ref=e379]:
+            - listitem [ref=e380]:
+              - link "Previous":
+                - /url: /contacts
+                - generic: 
+            - listitem [ref=e381]:
+              - link "1":
+                - /url: /contacts?page=1
+            - listitem [ref=e382]:
+              - link "2" [ref=e383] [cursor=pointer]:
+                - /url: /contacts?page=2
+            - listitem [ref=e384]:
+              - link "3" [ref=e385] [cursor=pointer]:
+                - /url: /contacts?page=3
+            - listitem [ref=e386]:
+              - link "…" [ref=e387] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e388]:
+              - link "1650" [ref=e389] [cursor=pointer]:
+                - /url: /contacts?page=1650
+            - listitem [ref=e390]:
+              - link "1651" [ref=e391] [cursor=pointer]:
+                - /url: /contacts?page=1651
+            - listitem [ref=e392]:
+              - link "Next" [ref=e393] [cursor=pointer]:
+                - /url: /contacts?page=2
+                - generic [ref=e394]: 
+      - generic [ref=e395]:
+        - generic [ref=e396]: "Version: 2.29.4"
+        - generic [ref=e397]:
+          - link "User Guide" [ref=e398] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link "Terms & Conditions" [ref=e399] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+  - listbox:
+    - generic:
+      - option [selected]
+      - option "true"
+      - option "false"
+  - listbox:
+    - generic:
+      - option "[All]" [selected]
+      - option "Supplier"
+      - option "Client"
+      - option "Buyer"
+      - option "Business Developer"
+      - option "Area Admin"
+      - option "Support"
+      - option "Central Admin"
+  - listbox:
+    - generic:
+      - option "[All]" [selected]
+      - option "Business Contact"
+      - option "Declaration Manager"
+      - option "Signatory"
+      - option "Commercial Director"
+      - option "Billing Manager"
+      - option "Commercial Contact"
+      - option "Director General"
+      - option "Manager"
+      - option "Key Account Manager"
+      - option "Sales Director"
+      - option "Division Manager"
+      - option "President"
+      - option "Administrator"
+      - option "Accountant"
+      - option "Salesman"
+      - option "Catalog Contact"
+      - option "Key Account Director"
+      - option "Director"
+      - option "Assistant"
+      - option "Operations Director"
+      - option "CEO"
+      - option "Other"
+      - option "Customer Care"
+  - listbox:
+    - generic:
+      - searchbox "Filter"
+    - generic:
+      - option "[All]" [selected]
+  - listbox:
+    - generic:
+      - searchbox "Filter"
+    - generic:
+      - option "[All]" [selected]
+```
