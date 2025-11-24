@@ -46,6 +46,7 @@ for (const profil of profils) {
       const random = Math.floor(1000 + Math.random() * 9000);
       const email = `${profil.name.replace(/\s+/g, '')}${random}@yopmail.com`;
 
+      await createContactPage.closePendoBanner(page);
       await createContactPage.createContact('Test', 'Auto', email, profil.name);
       await createContactPage.verifySuccess();
       const contactsPage = new ContactsPage(page);
