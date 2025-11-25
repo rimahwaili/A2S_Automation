@@ -1,0 +1,1186 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]:
+            - link "293110482 - 1.1" [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/35300
+          - paragraph [ref=e65]:
+            - img "arrow-right" [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading "valid Contract - 293110482 - 1.1" [level=2] [ref=e70]:
+            - generic [ref=e71]: valid
+            - text: Contract - 293110482 - 1.1
+          - generic [ref=e72]:
+            - generic [ref=e74] [cursor=pointer]: Main Information
+            - generic [ref=e76] [cursor=pointer]: Invoicing Information
+            - generic [ref=e78] [cursor=pointer]: Documents (0)
+            - generic [ref=e80] [cursor=pointer]: Services
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - generic [ref=e86]:
+                    - heading "Main Information" [level=2] [ref=e88]
+                    - generic [ref=e91]:
+                      - generic [ref=e92]: "Supplier:"
+                      - link "249989-PRIME CATER" [ref=e95] [cursor=pointer]:
+                        - /url: /suppliers/11321
+                    - generic [ref=e98]:
+                      - generic [ref=e99]: "Number:"
+                      - generic [ref=e101]: "293110482"
+                    - generic [ref=e104]:
+                      - generic [ref=e105]: "Name:"
+                      - generic [ref=e106]:
+                        - generic [ref=e107]:
+                          - generic [ref=e109] [cursor=pointer]: Contrato de homologação de produto
+                          - generic [ref=e112]:
+                            - textbox [ref=e114]
+                            - list [ref=e115]
+                        - link "New" [ref=e116] [cursor=pointer]:
+                          - /url: /contract_titles/new
+                          - generic [ref=e117]: 
+                          - text: New
+                    - generic [ref=e120]:
+                      - generic [ref=e121]: "Type:"
+                      - generic [ref=e123]: P2
+                    - generic [ref=e126]:
+                      - generic [ref=e127]:
+                        - text: "Description:"
+                        - text: (visible by customers in the directory)
+                      - 'textbox "Description: (visible by customers in the directory)" [ref=e129]'
+                    - generic [ref=e132]:
+                      - generic [ref=e133]: "Categories:"
+                      - list [ref=e135]:
+                        - listitem [ref=e136]: A00003 Meat, poultry, rabbit
+                    - generic [ref=e139]:
+                      - generic [ref=e140]: "Main Category:"
+                      - generic [ref=e142]:
+                        - generic [ref=e144] [cursor=pointer]: A00003 Meat, poultry, rabbit
+                        - generic [ref=e147]:
+                          - textbox [ref=e149]
+                          - list [ref=e150]
+                    - generic [ref=e153]:
+                      - generic [ref=e154]: "Brands:"
+                      - list [ref=e156]:
+                        - listitem [ref=e157]:
+                          - link "HOTELF1" [ref=e158] [cursor=pointer]:
+                            - /url: /brands/873
+                        - listitem [ref=e159]:
+                          - link "SO" [ref=e160] [cursor=pointer]:
+                            - /url: /brands/874
+                        - listitem [ref=e161]:
+                          - link "SANS MARQUE AUTRES" [ref=e162] [cursor=pointer]:
+                            - /url: /brands/875
+                        - listitem [ref=e163]:
+                          - link "21C" [ref=e164] [cursor=pointer]:
+                            - /url: /brands/876
+                        - listitem [ref=e165]:
+                          - link "I IBIS" [ref=e166] [cursor=pointer]:
+                            - /url: /brands/227
+                        - listitem [ref=e167]:
+                          - link "M MERCURE" [ref=e168] [cursor=pointer]:
+                            - /url: /brands/228
+                        - listitem [ref=e169]:
+                          - link "IB IBIS BUDGET" [ref=e170] [cursor=pointer]:
+                            - /url: /brands/229
+                        - listitem [ref=e171]:
+                          - link "POTC POTEL ET CHABOT" [ref=e172] [cursor=pointer]:
+                            - /url: /brands/230
+                        - listitem [ref=e173]:
+                          - link "GLB LUCIEN BARRIERE" [ref=e174] [cursor=pointer]:
+                            - /url: /brands/231
+                        - listitem [ref=e175]:
+                          - link "SANS MARQUE HOTELLERIE" [ref=e176] [cursor=pointer]:
+                            - /url: /brands/232
+                        - listitem [ref=e177]:
+                          - link "CHATEAUFORM" [ref=e178] [cursor=pointer]:
+                            - /url: /brands/233
+                        - listitem [ref=e179]:
+                          - link "SOMNOO" [ref=e180] [cursor=pointer]:
+                            - /url: /brands/234
+                        - listitem [ref=e181]:
+                          - link "AUTRES ACTIVITES HOT." [ref=e182] [cursor=pointer]:
+                            - /url: /brands/235
+                        - listitem [ref=e183]:
+                          - link "ADA ADAGIO" [ref=e184] [cursor=pointer]:
+                            - /url: /brands/236
+                        - listitem [ref=e185]:
+                          - link "NEXTDOOR" [ref=e186] [cursor=pointer]:
+                            - /url: /brands/237
+                        - listitem [ref=e187]:
+                          - link "IS IBIS STYLES" [ref=e188] [cursor=pointer]:
+                            - /url: /brands/238
+                        - listitem [ref=e189]:
+                          - link "MG MGALLERY" [ref=e190] [cursor=pointer]:
+                            - /url: /brands/239
+                        - listitem [ref=e191]:
+                          - link "N NOVOTEL" [ref=e192] [cursor=pointer]:
+                            - /url: /brands/240
+                        - listitem [ref=e193]:
+                          - link "AUTRES ACTIVITES & SIEGES" [ref=e194] [cursor=pointer]:
+                            - /url: /brands/241
+                        - listitem [ref=e195]:
+                          - link "RESIDALYA" [ref=e196] [cursor=pointer]:
+                            - /url: /brands/242
+                        - listitem [ref=e197]:
+                          - link "FINANCIERE DUVAL" [ref=e198] [cursor=pointer]:
+                            - /url: /brands/243
+                        - listitem [ref=e199]:
+                          - link "MMS MAMA SHELTER" [ref=e200] [cursor=pointer]:
+                            - /url: /brands/244
+                        - listitem [ref=e201]:
+                          - link "OLETIS" [ref=e202] [cursor=pointer]:
+                            - /url: /brands/245
+                        - listitem [ref=e203]:
+                          - link "SQUAREBREAK" [ref=e204] [cursor=pointer]:
+                            - /url: /brands/246
+                        - listitem [ref=e205]:
+                          - link "RAF RAFFLES" [ref=e206] [cursor=pointer]:
+                            - /url: /brands/247
+                        - listitem [ref=e207]:
+                          - link "F1 HOTEL F1" [ref=e208] [cursor=pointer]:
+                            - /url: /brands/248
+                        - listitem [ref=e209]:
+                          - link "SOCIETE ACCUEIL PARTENAIRES" [ref=e210] [cursor=pointer]:
+                            - /url: /brands/249
+                        - listitem [ref=e211]:
+                          - link "SOGEHO" [ref=e212] [cursor=pointer]:
+                            - /url: /brands/250
+                        - listitem [ref=e213]:
+                          - link "MARANATHA" [ref=e214] [cursor=pointer]:
+                            - /url: /brands/251
+                        - listitem [ref=e215]:
+                          - link "HOTELS ET PATRIMOINES" [ref=e216] [cursor=pointer]:
+                            - /url: /brands/252
+                        - listitem [ref=e217]:
+                          - link "SOF SOFITEL" [ref=e218] [cursor=pointer]:
+                            - /url: /brands/253
+                        - listitem [ref=e219]:
+                          - link "ORF ORFEA" [ref=e220] [cursor=pointer]:
+                            - /url: /brands/254
+                        - listitem [ref=e221]:
+                          - link "NS SUITE NOVOTEL" [ref=e222] [cursor=pointer]:
+                            - /url: /brands/255
+                        - listitem [ref=e223]:
+                          - link "ACADEMIE" [ref=e224] [cursor=pointer]:
+                            - /url: /brands/256
+                        - listitem [ref=e225]:
+                          - link "SUPPORT" [ref=e226] [cursor=pointer]:
+                            - /url: /brands/257
+                        - listitem [ref=e227]:
+                          - link "SUITE-HOME" [ref=e228] [cursor=pointer]:
+                            - /url: /brands/258
+                        - listitem [ref=e229]:
+                          - link "PUL PULLMAN" [ref=e230] [cursor=pointer]:
+                            - /url: /brands/259
+                        - listitem [ref=e231]:
+                          - link "SERAC" [ref=e232] [cursor=pointer]:
+                            - /url: /brands/260
+                        - listitem [ref=e233]:
+                          - link "EUROPCAR" [ref=e234] [cursor=pointer]:
+                            - /url: /brands/261
+                        - listitem [ref=e235]:
+                          - link "COMPAGNIE DU MONT BLANC" [ref=e236] [cursor=pointer]:
+                            - /url: /brands/262
+                        - listitem [ref=e237]:
+                          - link "GIE THALAZUR" [ref=e238] [cursor=pointer]:
+                            - /url: /brands/263
+                        - listitem [ref=e239]:
+                          - link "GROUPE EDENRED" [ref=e240] [cursor=pointer]:
+                            - /url: /brands/264
+                        - listitem [ref=e241]:
+                          - link "INSTITUT LYFE" [ref=e242] [cursor=pointer]:
+                            - /url: /brands/265
+                        - listitem [ref=e243]:
+                          - link "SIP" [ref=e244] [cursor=pointer]:
+                            - /url: /brands/266
+                        - listitem [ref=e245]:
+                          - link "SOLANET" [ref=e246] [cursor=pointer]:
+                            - /url: /brands/267
+                        - listitem [ref=e247]:
+                          - link "SOCRI FH" [ref=e248] [cursor=pointer]:
+                            - /url: /brands/268
+                        - listitem [ref=e249]:
+                          - link "ONEFINESTAY" [ref=e250] [cursor=pointer]:
+                            - /url: /brands/269
+                        - listitem [ref=e251]:
+                          - link "SOGESTHIMMO" [ref=e252] [cursor=pointer]:
+                            - /url: /brands/270
+                        - listitem [ref=e253]:
+                          - link "LONGITUDE HOTELS" [ref=e254] [cursor=pointer]:
+                            - /url: /brands/271
+                        - listitem [ref=e255]:
+                          - link "VIKING" [ref=e256] [cursor=pointer]:
+                            - /url: /brands/272
+                        - listitem [ref=e257]:
+                          - link "ATALANTE" [ref=e258] [cursor=pointer]:
+                            - /url: /brands/273
+                        - listitem [ref=e259]:
+                          - link "MOMA" [ref=e260] [cursor=pointer]:
+                            - /url: /brands/274
+                        - listitem [ref=e261]:
+                          - link "ABORD" [ref=e262] [cursor=pointer]:
+                            - /url: /brands/275
+                        - listitem [ref=e263]:
+                          - link "S-PASS" [ref=e264] [cursor=pointer]:
+                            - /url: /brands/276
+                        - listitem [ref=e265]:
+                          - link "A&L MULTI-MARQUE" [ref=e266] [cursor=pointer]:
+                            - /url: /brands/277
+                        - listitem [ref=e267]:
+                          - link "TURENNE CAPITAL" [ref=e268] [cursor=pointer]:
+                            - /url: /brands/278
+                        - listitem [ref=e269]:
+                          - link "DURFORT" [ref=e270] [cursor=pointer]:
+                            - /url: /brands/279
+                        - listitem [ref=e271]:
+                          - link "CBS-COFIGAD" [ref=e272] [cursor=pointer]:
+                            - /url: /brands/280
+                        - listitem [ref=e273]:
+                          - link "Dalloyau" [ref=e274] [cursor=pointer]:
+                            - /url: /brands/281
+                        - listitem [ref=e275]:
+                          - link "25H 25HOURS" [ref=e276] [cursor=pointer]:
+                            - /url: /brands/282
+                        - listitem [ref=e277]:
+                          - link "LA SIGNORIA" [ref=e278] [cursor=pointer]:
+                            - /url: /brands/283
+                        - listitem [ref=e279]:
+                          - link "ADA ADAGIO ACCESS" [ref=e280] [cursor=pointer]:
+                            - /url: /brands/284
+                        - listitem [ref=e281]:
+                          - link "JO JO & JOE" [ref=e282] [cursor=pointer]:
+                            - /url: /brands/285
+                        - listitem [ref=e283]:
+                          - link "QUITOQUE" [ref=e284] [cursor=pointer]:
+                            - /url: /brands/286
+                        - listitem [ref=e285]:
+                          - link "NGF NGF LE CLUB" [ref=e286] [cursor=pointer]:
+                            - /url: /brands/287
+                        - listitem [ref=e287]:
+                          - link "INCIPAJE" [ref=e288] [cursor=pointer]:
+                            - /url: /brands/288
+                        - listitem [ref=e289]:
+                          - link "IECH" [ref=e290] [cursor=pointer]:
+                            - /url: /brands/289
+                        - listitem [ref=e291]:
+                          - link "NOCTIS" [ref=e292] [cursor=pointer]:
+                            - /url: /brands/290
+                        - listitem [ref=e293]:
+                          - link "IPSO SANTE" [ref=e294] [cursor=pointer]:
+                            - /url: /brands/291
+                        - listitem [ref=e295]:
+                          - link "DEVIMCO" [ref=e296] [cursor=pointer]:
+                            - /url: /brands/292
+                        - listitem [ref=e297]:
+                          - link "ECLUSE" [ref=e298] [cursor=pointer]:
+                            - /url: /brands/293
+                        - listitem [ref=e299]:
+                          - link "SANS MARQUE" [ref=e300] [cursor=pointer]:
+                            - /url: /brands/294
+                        - listitem [ref=e301]:
+                          - link "FAI FAIRMONT" [ref=e302] [cursor=pointer]:
+                            - /url: /brands/295
+                        - listitem [ref=e303]:
+                          - link "A7 MANAGEMENT" [ref=e304] [cursor=pointer]:
+                            - /url: /brands/305
+                        - listitem [ref=e305]:
+                          - link "ALL SUITES / PICHET" [ref=e306] [cursor=pointer]:
+                            - /url: /brands/306
+                        - listitem [ref=e307]:
+                          - link "BALTARD INVESTISSEMENT" [ref=e308] [cursor=pointer]:
+                            - /url: /brands/307
+                        - listitem [ref=e309]:
+                          - link "DALMATA HOSPITALITY" [ref=e310] [cursor=pointer]:
+                            - /url: /brands/308
+                        - listitem [ref=e311]:
+                          - link "PARFIRES" [ref=e312] [cursor=pointer]:
+                            - /url: /brands/309
+                        - listitem [ref=e313]:
+                          - link "VACANCES BLEUES" [ref=e314] [cursor=pointer]:
+                            - /url: /brands/310
+                        - listitem [ref=e315]:
+                          - link "HPVA HOTELS" [ref=e316] [cursor=pointer]:
+                            - /url: /brands/311
+                        - listitem [ref=e317]:
+                          - link "MAISON DUFOSSE" [ref=e318] [cursor=pointer]:
+                            - /url: /brands/312
+                        - listitem [ref=e319]:
+                          - link "VICARTEM" [ref=e320] [cursor=pointer]:
+                            - /url: /brands/313
+                        - listitem [ref=e321]:
+                          - link "SOUTHFACE" [ref=e322] [cursor=pointer]:
+                            - /url: /brands/314
+                        - listitem [ref=e323]:
+                          - link "WITHOUT BRAND" [ref=e324] [cursor=pointer]:
+                            - /url: /brands/316
+                        - listitem [ref=e325]:
+                          - link "L. BARRIERE" [ref=e326] [cursor=pointer]:
+                            - /url: /brands/317
+                        - listitem [ref=e327]:
+                          - link "RIX RIXOS" [ref=e328] [cursor=pointer]:
+                            - /url: /brands/318
+                        - listitem [ref=e329]:
+                          - link "ACCOR SERVICES" [ref=e330] [cursor=pointer]:
+                            - /url: /brands/319
+                        - listitem [ref=e331]:
+                          - link "CARLSON WAGONLIT TRAVEL" [ref=e332] [cursor=pointer]:
+                            - /url: /brands/320
+                        - listitem [ref=e333]:
+                          - link "BLUEGREEN" [ref=e334] [cursor=pointer]:
+                            - /url: /brands/390
+                        - listitem [ref=e335]:
+                          - link "KEN GROUP" [ref=e336] [cursor=pointer]:
+                            - /url: /brands/391
+                        - listitem [ref=e337]:
+                          - link "THE ASCOTT GROUP" [ref=e338] [cursor=pointer]:
+                            - /url: /brands/392
+                        - listitem [ref=e339]:
+                          - link "LE GROUPE DE L'HOTELLERIE / LGH" [ref=e340] [cursor=pointer]:
+                            - /url: /brands/393
+                        - listitem [ref=e341]:
+                          - link "OCEALLIANCE" [ref=e342] [cursor=pointer]:
+                            - /url: /brands/394
+                        - listitem [ref=e343]:
+                          - link "GEDEMOCO" [ref=e344] [cursor=pointer]:
+                            - /url: /brands/395
+                        - listitem [ref=e345]:
+                          - link "MEININGER" [ref=e346] [cursor=pointer]:
+                            - /url: /brands/396
+                        - listitem [ref=e347]:
+                          - link "SOGEPAR" [ref=e348] [cursor=pointer]:
+                            - /url: /brands/397
+                        - listitem [ref=e349]:
+                          - link "HOLMA" [ref=e350] [cursor=pointer]:
+                            - /url: /brands/398
+                        - listitem [ref=e351]:
+                          - link "MDJ MODJO" [ref=e352] [cursor=pointer]:
+                            - /url: /brands/399
+                        - listitem [ref=e353]:
+                          - link "APARTNERS" [ref=e354] [cursor=pointer]:
+                            - /url: /brands/400
+                        - listitem [ref=e355]:
+                          - link "GOLDEN TULIP" [ref=e356] [cursor=pointer]:
+                            - /url: /brands/401
+                        - listitem [ref=e357]:
+                          - link "TEOH" [ref=e358] [cursor=pointer]:
+                            - /url: /brands/402
+                        - listitem [ref=e359]:
+                          - link "GRE GREET" [ref=e360] [cursor=pointer]:
+                            - /url: /brands/403
+                        - listitem [ref=e361]:
+                          - link "GENERATOR HOTELS" [ref=e362] [cursor=pointer]:
+                            - /url: /brands/405
+                        - listitem [ref=e363]:
+                          - link "F1 FORMULE 1" [ref=e364] [cursor=pointer]:
+                            - /url: /brands/406
+                        - listitem [ref=e365]:
+                          - link "SEDE" [ref=e366] [cursor=pointer]:
+                            - /url: /brands/407
+                        - listitem [ref=e367]:
+                          - link "WAGONLIT FERROVIAIRE" [ref=e368] [cursor=pointer]:
+                            - /url: /brands/408
+                        - listitem [ref=e369]:
+                          - link "SW SWISSOTEL" [ref=e370] [cursor=pointer]:
+                            - /url: /brands/409
+                        - listitem [ref=e371]:
+                          - link "MOV MOVENPICK" [ref=e372] [cursor=pointer]:
+                            - /url: /brands/410
+                        - listitem [ref=e373]:
+                          - link "RESTAURATION COLLECTIVE" [ref=e374] [cursor=pointer]:
+                            - /url: /brands/411
+                        - listitem [ref=e375]:
+                          - link "AUTRE RESTAURATION PUBLIQUE" [ref=e376] [cursor=pointer]:
+                            - /url: /brands/412
+                        - listitem [ref=e377]:
+                          - link "NGF LE CLUBGOLF UGOLF ESPAGNE" [ref=e378] [cursor=pointer]:
+                            - /url: /brands/489
+                        - listitem [ref=e379]:
+                          - link "PARIS SOCIETY / NOCTIS" [ref=e380] [cursor=pointer]:
+                            - /url: /brands/490
+                        - listitem [ref=e381]:
+                          - link "SCIH" [ref=e382] [cursor=pointer]:
+                            - /url: /brands/491
+                        - listitem [ref=e383]:
+                          - link "DOMAINE CHATEAU LA COSTE" [ref=e384] [cursor=pointer]:
+                            - /url: /brands/492
+                        - listitem [ref=e385]:
+                          - link "WOJ WOJO" [ref=e386] [cursor=pointer]:
+                            - /url: /brands/493
+                        - listitem [ref=e387]:
+                          - link "ACUITIS" [ref=e388] [cursor=pointer]:
+                            - /url: /brands/494
+                        - listitem [ref=e389]:
+                          - link "GH ImHô SAS" [ref=e390] [cursor=pointer]:
+                            - /url: /brands/495
+                        - listitem [ref=e391]:
+                          - link "WELCOMOTEL" [ref=e392] [cursor=pointer]:
+                            - /url: /brands/496
+                        - listitem [ref=e393]:
+                          - link "SMI HES" [ref=e394] [cursor=pointer]:
+                            - /url: /brands/497
+                        - listitem [ref=e395]:
+                          - link "VIKINGS" [ref=e396] [cursor=pointer]:
+                            - /url: /brands/498
+                        - listitem [ref=e397]:
+                          - link "ACCOR ACHATS FRANCE" [ref=e398] [cursor=pointer]:
+                            - /url: /brands/499
+                        - listitem [ref=e399]:
+                          - link "GME GRAND MERCURE" [ref=e400] [cursor=pointer]:
+                            - /url: /brands/500
+                        - listitem [ref=e401]:
+                          - link "25 Hours TO DELETE" [ref=e402] [cursor=pointer]:
+                            - /url: /brands/501
+                        - listitem [ref=e403]:
+                          - link "ORGL THE ORIGINALS" [ref=e404] [cursor=pointer]:
+                            - /url: /brands/502
+                        - listitem [ref=e405]:
+                          - link "SLS SLS" [ref=e406] [cursor=pointer]:
+                            - /url: /brands/503
+                        - listitem [ref=e407]:
+                          - link "NS NOVOTEL SUITES" [ref=e408] [cursor=pointer]:
+                            - /url: /brands/504
+                        - listitem [ref=e409]:
+                          - link "NO BRAND" [ref=e410] [cursor=pointer]:
+                            - /url: /brands/505
+                        - listitem [ref=e411]:
+                          - link "MTIS MANTIS" [ref=e412] [cursor=pointer]:
+                            - /url: /brands/506
+                        - listitem [ref=e413]:
+                          - link "Banyan Tree old" [ref=e414] [cursor=pointer]:
+                            - /url: /brands/507
+                        - listitem [ref=e415]:
+                          - link "MDR MONDRIAN" [ref=e416] [cursor=pointer]:
+                            - /url: /brands/508
+                        - listitem [ref=e417]:
+                          - link "ECO MULTI-MARQUE" [ref=e418] [cursor=pointer]:
+                            - /url: /brands/620
+                        - listitem [ref=e419]:
+                          - link "ACCOR CASINOS" [ref=e420] [cursor=pointer]:
+                            - /url: /brands/621
+                        - listitem [ref=e421]:
+                          - link "COURTEPAILLE" [ref=e422] [cursor=pointer]:
+                            - /url: /brands/622
+                        - listitem [ref=e423]:
+                          - link "SEBL THE SEBEL" [ref=e424] [cursor=pointer]:
+                            - /url: /brands/623
+                        - listitem [ref=e425]:
+                          - link "BAN3 BANYAN TREE" [ref=e426] [cursor=pointer]:
+                            - /url: /brands/624
+                        - listitem [ref=e427]:
+                          - link "TRIB TRIBE" [ref=e428] [cursor=pointer]:
+                            - /url: /brands/625
+                        - listitem [ref=e429]:
+                          - link "MTRA MANTRA" [ref=e430] [cursor=pointer]:
+                            - /url: /brands/626
+                        - listitem [ref=e431]:
+                          - link "BREAK BREAKFREE" [ref=e432] [cursor=pointer]:
+                            - /url: /brands/627
+                        - listitem [ref=e433]:
+                          - link "PEP PEPPERS" [ref=e434] [cursor=pointer]:
+                            - /url: /brands/628
+                        - listitem [ref=e435]:
+                          - link "ART ART SERIES" [ref=e436] [cursor=pointer]:
+                            - /url: /brands/629
+                        - listitem [ref=e437]:
+                          - link "HYD HYDE" [ref=e438] [cursor=pointer]:
+                            - /url: /brands/630
+                        - listitem [ref=e439]:
+                          - link "DEL DELANO" [ref=e440] [cursor=pointer]:
+                            - /url: /brands/631
+                        - listitem [ref=e441]:
+                          - link "ORI ORIENT EXPRESS" [ref=e442] [cursor=pointer]:
+                            - /url: /brands/632
+                        - listitem [ref=e443]:
+                          - link "RED REDBURY HOTELS" [ref=e444] [cursor=pointer]:
+                            - /url: /brands/633
+                        - listitem [ref=e445]:
+                          - link "2TREE DOUBLETREE" [ref=e446] [cursor=pointer]:
+                            - /url: /brands/634
+                        - listitem [ref=e447]:
+                          - link "TRIS TRISTAR" [ref=e448] [cursor=pointer]:
+                            - /url: /brands/635
+                        - listitem [ref=e449]:
+                          - link "LENOTRE" [ref=e450] [cursor=pointer]:
+                            - /url: /brands/637
+                        - listitem [ref=e451]:
+                          - link "ADRESSES HOTELS / LES HOTELS MONSIEUR" [ref=e452] [cursor=pointer]:
+                            - /url: /brands/817
+                        - listitem [ref=e453]:
+                          - link "FRENCH HOSPITALITY GROUP / FHG" [ref=e454] [cursor=pointer]:
+                            - /url: /brands/818
+                        - listitem [ref=e455]:
+                          - link "SWEET & SMART HOTELS" [ref=e456] [cursor=pointer]:
+                            - /url: /brands/819
+                        - listitem [ref=e457]:
+                          - link "HOTELS EN VILLE" [ref=e458] [cursor=pointer]:
+                            - /url: /brands/820
+                        - listitem [ref=e459]:
+                          - link "SO/" [ref=e460] [cursor=pointer]:
+                            - /url: /brands/824
+                        - listitem [ref=e461]:
+                          - link "MOMA GROUP" [ref=e462] [cursor=pointer]:
+                            - /url: /brands/834
+                        - listitem [ref=e463]:
+                          - link "GROUPE RESIDE ETUDES - LFP" [ref=e464] [cursor=pointer]:
+                            - /url: /brands/835
+                        - listitem [ref=e465]:
+                          - link "HONOTEL" [ref=e466] [cursor=pointer]:
+                            - /url: /brands/836
+                        - listitem [ref=e467]:
+                          - link "ESPRIT DE FRANCE" [ref=e468] [cursor=pointer]:
+                            - /url: /brands/837
+                        - listitem [ref=e469]:
+                          - link "LES JARDINS D'ARCADIE" [ref=e470] [cursor=pointer]:
+                            - /url: /brands/838
+                        - listitem [ref=e471]:
+                          - link "FIRST INN" [ref=e472] [cursor=pointer]:
+                            - /url: /brands/839
+                        - listitem [ref=e473]:
+                          - link "GROUPE ACQUARUT" [ref=e474] [cursor=pointer]:
+                            - /url: /brands/840
+                        - listitem [ref=e475]:
+                          - link "FRIENDLY HOTEL COLLECTION" [ref=e476] [cursor=pointer]:
+                            - /url: /brands/841
+                        - listitem [ref=e477]:
+                          - link "HABITAT PARISIEN" [ref=e478] [cursor=pointer]:
+                            - /url: /brands/842
+                        - listitem [ref=e479]:
+                          - link "MOUFAZAL MAMOUDJY" [ref=e480] [cursor=pointer]:
+                            - /url: /brands/843
+                        - listitem [ref=e481]:
+                          - link "KERSTONE" [ref=e482] [cursor=pointer]:
+                            - /url: /brands/844
+                        - listitem [ref=e483]:
+                          - link "GROUPE IENA GESTION" [ref=e484] [cursor=pointer]:
+                            - /url: /brands/845
+                        - listitem [ref=e485]:
+                          - link "GROUPE RESIDE ETUDES - CLB" [ref=e486] [cursor=pointer]:
+                            - /url: /brands/846
+                        - listitem [ref=e487]:
+                          - link "HOXTON" [ref=e488] [cursor=pointer]:
+                            - /url: /brands/847
+                        - listitem [ref=e489]:
+                          - link "GLENEAGLES" [ref=e490] [cursor=pointer]:
+                            - /url: /brands/848
+                        - listitem [ref=e491]:
+                          - link "RED ROOF" [ref=e492] [cursor=pointer]:
+                            - /url: /brands/849
+                        - listitem [ref=e493]:
+                          - link "STUDIO 6" [ref=e494] [cursor=pointer]:
+                            - /url: /brands/850
+                        - listitem [ref=e495]:
+                          - link "TO & AGENCE DE LOISIRS" [ref=e496] [cursor=pointer]:
+                            - /url: /brands/851
+                        - listitem [ref=e497]:
+                          - link "LIF LIFE HOTELS" [ref=e498] [cursor=pointer]:
+                            - /url: /brands/852
+                        - listitem [ref=e499]:
+                          - link "FAE FAENA" [ref=e500] [cursor=pointer]:
+                            - /url: /brands/853
+                        - listitem [ref=e501]:
+                          - link "PAH PA-HOLDING" [ref=e502] [cursor=pointer]:
+                            - /url: /brands/854
+                        - listitem [ref=e503]:
+                          - link "PEN LES PENATES" [ref=e504] [cursor=pointer]:
+                            - /url: /brands/855
+                        - listitem [ref=e505]:
+                          - link "RTH RELAIS THALASSO" [ref=e506] [cursor=pointer]:
+                            - /url: /brands/856
+                        - listitem [ref=e507]:
+                          - link "STH THE STUDENT HOTEL" [ref=e508] [cursor=pointer]:
+                            - /url: /brands/857
+                        - listitem [ref=e509]:
+                          - link "NAZ HOLDING NAZARALY" [ref=e510] [cursor=pointer]:
+                            - /url: /brands/858
+                        - listitem [ref=e511]:
+                          - link "SJA SJA HOTELS" [ref=e512] [cursor=pointer]:
+                            - /url: /brands/859
+                        - listitem [ref=e513]:
+                          - link "AQP AQUITAINE PROMOTION" [ref=e514] [cursor=pointer]:
+                            - /url: /brands/860
+                        - listitem [ref=e515]:
+                          - link "BRV BELLES RIVES" [ref=e516] [cursor=pointer]:
+                            - /url: /brands/862
+                        - listitem [ref=e517]:
+                          - link "CIRCUS CASINO" [ref=e518] [cursor=pointer]:
+                            - /url: /brands/863
+                        - listitem [ref=e519]:
+                          - link "CYCAS HOSPITALITY" [ref=e520] [cursor=pointer]:
+                            - /url: /brands/864
+                        - listitem [ref=e521]:
+                          - link "GRAPE HOSPITALITY" [ref=e522] [cursor=pointer]:
+                            - /url: /brands/865
+                        - listitem [ref=e523]:
+                          - link "GROUPE VERY" [ref=e524] [cursor=pointer]:
+                            - /url: /brands/866
+                        - listitem [ref=e525]:
+                          - link "KOLIBRI" [ref=e526] [cursor=pointer]:
+                            - /url: /brands/867
+                        - listitem [ref=e527]:
+                          - link "MADEHO" [ref=e528] [cursor=pointer]:
+                            - /url: /brands/868
+                        - listitem [ref=e529]:
+                          - link "MELT HOTEL" [ref=e530] [cursor=pointer]:
+                            - /url: /brands/869
+                        - listitem [ref=e531]:
+                          - link "YOUNAN COLLECTION" [ref=e532] [cursor=pointer]:
+                            - /url: /brands/870
+                        - listitem [ref=e533]:
+                          - link "GROUPE RECREA" [ref=e534] [cursor=pointer]:
+                            - /url: /brands/871
+                        - listitem [ref=e535]:
+                          - link "CHATEAUFORM BIS" [ref=e536] [cursor=pointer]:
+                            - /url: /brands/872
+                        - listitem [ref=e537]:
+                          - link "N/A" [ref=e538] [cursor=pointer]:
+                            - /url: /brands/861
+                        - listitem [ref=e539]:
+                          - link "M6 MOTEL 6" [ref=e540] [cursor=pointer]:
+                            - /url: /brands/636
+                        - listitem [ref=e541]:
+                          - link "JPL JOHN PAUL" [ref=e542] [cursor=pointer]:
+                            - /url: /brands/638
+                        - listitem [ref=e543]:
+                          - link "HUAZHU" [ref=e544] [cursor=pointer]:
+                            - /url: /brands/639
+                        - listitem [ref=e545]:
+                          - link "ASSOCIATED HOTELS - UPSCALE" [ref=e546] [cursor=pointer]:
+                            - /url: /brands/640
+                        - listitem [ref=e547]:
+                          - link "ASSOCIATED HOTELS - MIDSCALE" [ref=e548] [cursor=pointer]:
+                            - /url: /brands/641
+                        - listitem [ref=e549]:
+                          - link "3H MANAGEMENT" [ref=e550] [cursor=pointer]:
+                            - /url: /brands/642
+                        - listitem [ref=e551]:
+                          - link "INDEVHO / MARANATHA" [ref=e552] [cursor=pointer]:
+                            - /url: /brands/643
+                        - listitem [ref=e553]:
+                          - link "A attribuer 03" [ref=e554] [cursor=pointer]:
+                            - /url: /brands/644
+                        - listitem [ref=e555]:
+                          - link "HOTELKORNER" [ref=e556] [cursor=pointer]:
+                            - /url: /brands/645
+                        - listitem [ref=e557]:
+                          - link "EASYHOTEL" [ref=e558] [cursor=pointer]:
+                            - /url: /brands/646
+                        - listitem [ref=e559]:
+                          - link "EQ GROUP" [ref=e560] [cursor=pointer]:
+                            - /url: /brands/647
+                        - listitem [ref=e561]:
+                          - link "VITORIA HOTEL" [ref=e562] [cursor=pointer]:
+                            - /url: /brands/648
+                        - listitem [ref=e563]:
+                          - link "BEST MONT BLANC" [ref=e564] [cursor=pointer]:
+                            - /url: /brands/649
+                        - listitem [ref=e565]:
+                          - link "KAA HOTELS" [ref=e566] [cursor=pointer]:
+                            - /url: /brands/650
+                        - listitem [ref=e567]:
+                          - link "FRANCE HOSTELS" [ref=e568] [cursor=pointer]:
+                            - /url: /brands/651
+                        - listitem [ref=e569]:
+                          - link "EKLO HOTELS" [ref=e570] [cursor=pointer]:
+                            - /url: /brands/652
+                        - listitem [ref=e571]:
+                          - link "GROUPE JOA" [ref=e572] [cursor=pointer]:
+                            - /url: /brands/653
+                        - listitem [ref=e573]:
+                          - link "AXIS IMMOBILIER" [ref=e574] [cursor=pointer]:
+                            - /url: /brands/654
+                        - listitem [ref=e575]:
+                          - link "ALP AZUR HOTELS" [ref=e576] [cursor=pointer]:
+                            - /url: /brands/655
+                        - listitem [ref=e577]:
+                          - link "LES ETINCELLES / WHITEGOLD HOSPITALITY" [ref=e578] [cursor=pointer]:
+                            - /url: /brands/656
+                        - listitem [ref=e579]:
+                          - link "OVERSIGHT" [ref=e580] [cursor=pointer]:
+                            - /url: /brands/741
+                        - listitem [ref=e581]:
+                          - link "AZUREVA" [ref=e582] [cursor=pointer]:
+                            - /url: /brands/742
+                        - listitem [ref=e583]:
+                          - link "GROUPE SNGR" [ref=e584] [cursor=pointer]:
+                            - /url: /brands/743
+                        - listitem [ref=e585]:
+                          - link "ALG SCHRODERS / ALGONQUIN" [ref=e586] [cursor=pointer]:
+                            - /url: /brands/744
+                        - listitem [ref=e587]:
+                          - link "PMU GROUPE PASTEUR MUTUALITE" [ref=e588] [cursor=pointer]:
+                            - /url: /brands/745
+                        - listitem [ref=e589]:
+                          - link "BEST WESTERN" [ref=e590] [cursor=pointer]:
+                            - /url: /brands/773
+                        - listitem [ref=e591]:
+                          - link "BEST WESTERNPLUS" [ref=e592] [cursor=pointer]:
+                            - /url: /brands/774
+                        - listitem [ref=e593]:
+                          - link "CityHub" [ref=e594] [cursor=pointer]:
+                            - /url: /brands/775
+                        - listitem [ref=e595]:
+                          - link "GROUPE ELANCIA / SOCRI FH" [ref=e596] [cursor=pointer]:
+                            - /url: /brands/776
+                        - listitem [ref=e597]:
+                          - link "GROUPE DAVID DASSIN" [ref=e598] [cursor=pointer]:
+                            - /url: /brands/777
+                        - listitem [ref=e599]:
+                          - link "KYRIAD" [ref=e600] [cursor=pointer]:
+                            - /url: /brands/778
+                        - listitem [ref=e601]:
+                          - link "ARRELIA" [ref=e602] [cursor=pointer]:
+                            - /url: /brands/779
+                        - listitem [ref=e603]:
+                          - link "H-CLUB" [ref=e604] [cursor=pointer]:
+                            - /url: /brands/780
+                        - listitem [ref=e605]:
+                          - link "Groupe MACHEFERT" [ref=e606] [cursor=pointer]:
+                            - /url: /brands/781
+                        - listitem [ref=e607]:
+                          - link "THE HOUSE OF ORIGINALS" [ref=e608] [cursor=pointer]:
+                            - /url: /brands/808
+                        - listitem [ref=e609]:
+                          - link "WP HOTELS" [ref=e610] [cursor=pointer]:
+                            - /url: /brands/809
+                        - listitem [ref=e611]:
+                          - link "ANIMOO HOTELS" [ref=e612] [cursor=pointer]:
+                            - /url: /brands/810
+                        - listitem [ref=e613]:
+                          - link "SLEEPERS" [ref=e614] [cursor=pointer]:
+                            - /url: /brands/811
+                        - listitem [ref=e615]:
+                          - link "BSIGNATURE" [ref=e616] [cursor=pointer]:
+                            - /url: /brands/812
+                        - listitem [ref=e617]:
+                          - link "S.I.H." [ref=e618] [cursor=pointer]:
+                            - /url: /brands/813
+                        - listitem [ref=e619]:
+                          - link "ALBORAN" [ref=e620] [cursor=pointer]:
+                            - /url: /brands/814
+                        - listitem [ref=e621]:
+                          - link "RESIDIS" [ref=e622] [cursor=pointer]:
+                            - /url: /brands/815
+                        - listitem [ref=e623]:
+                          - link "FOUR SEASONS" [ref=e624] [cursor=pointer]:
+                            - /url: /brands/816
+                    - generic [ref=e627]:
+                      - generic [ref=e628]: "Category Manager:"
+                      - generic [ref=e630]:
+                        - generic [ref=e632] [cursor=pointer]: carla.virissimo@accor.com
+                        - generic [ref=e635]:
+                          - textbox [ref=e637]
+                          - list [ref=e638]
+                    - generic [ref=e641]:
+                      - generic [ref=e642]: "E Procurement:"
+                      - textbox "E Procurement:" [ref=e644]
+                    - generic [ref=e647]:
+                      - generic [ref=e648]: "Former Numbers:"
+                      - textbox "Former Numbers:" [ref=e650]
+                    - generic [ref=e653]:
+                      - generic [ref=e654]: "Opex:"
+                      - generic [ref=e655]:
+                        - spinbutton "Opex:" [ref=e656]
+                        - generic [ref=e657]: "%"
+                  - generic [ref=e658]:
+                    - heading "Declaration" [level=2] [ref=e660]
+                    - generic [ref=e663]:
+                      - generic [ref=e664]: "Declaration Frequency:"
+                      - generic [ref=e666]: Quarterly
+                    - generic [ref=e669]:
+                      - generic [ref=e670]: "Allow specific frequency for services:"
+                      - generic [ref=e672]: This frequency is applied to all services
+                - generic [ref=e673]:
+                  - generic [ref=e674]:
+                    - heading "Contracts Dates" [level=2] [ref=e676]
+                    - generic [ref=e679]:
+                      - generic [ref=e680]: "Silent Extension: *"
+                      - 'combobox "Silent Extension: *" [ref=e682]':
+                        - option "Yes" [selected]
+                        - option "No"
+                    - generic [ref=e685]:
+                      - generic [ref=e686]: "Contract Start date:"
+                      - generic [ref=e687]:
+                        - textbox "Contract Start date:" [ref=e688]: 03/30/2022
+                        - generic [ref=e690] [cursor=pointer]: 
+                    - generic [ref=e693]:
+                      - generic [ref=e694]: "Contract end date:"
+                      - generic [ref=e695]:
+                        - 'textbox "Contract end date: Contract end date:" [ref=e696]'
+                        - generic [ref=e698] [cursor=pointer]: 
+                    - generic [ref=e701]:
+                      - generic [ref=e702]: "Declarative Start Quarter:"
+                      - generic [ref=e704]: 1st of January
+                    - generic [ref=e707]:
+                      - generic [ref=e708]: "Declarative Start Year:"
+                      - generic [ref=e710]: "2022"
+                    - generic [ref=e713]:
+                      - generic [ref=e714]: "Signing date:"
+                      - generic [ref=e715]:
+                        - textbox "Signing date:" [ref=e716]: 03/30/2022
+                        - generic [ref=e718] [cursor=pointer]: 
+                    - generic [ref=e721]:
+                      - generic [ref=e722]: "Theoretical end date:"
+                      - generic [ref=e723]:
+                        - textbox "Theoretical end date:" [ref=e724]: 03/30/2023
+                        - generic [ref=e726] [cursor=pointer]: 
+                    - generic [ref=e729]:
+                      - generic [ref=e730]: "Declarative End Quarter:"
+                      - 'combobox "Declarative End Quarter: Declarative End Quarter:" [ref=e732]':
+                        - option "[Select]"
+                        - option "31st of March"
+                        - option "30th of June"
+                        - option "30th of September"
+                        - option "31st of December"
+                    - generic [ref=e735]:
+                      - generic [ref=e736]: "Declarative End Year:"
+                      - 'textbox "Declarative End Year: Declarative End Year:" [ref=e738]'
+                  - generic [ref=e739]:
+                    - heading "Contract Terms" [level=2] [ref=e741]
+                    - generic [ref=e744]:
+                      - generic [ref=e745]: "Invoicing country:"
+                      - link "Brazil" [ref=e748] [cursor=pointer]:
+                        - /url: /countries/32
+                    - generic [ref=e751]:
+                      - generic [ref=e752]: "Currency:"
+                      - link "BRL" [ref=e755] [cursor=pointer]:
+                        - /url: /currencies/33
+                    - generic [ref=e758]:
+                      - generic [ref=e759]: "Duration (months) = Term:"
+                      - generic [ref=e761]: "14"
+                    - generic [ref=e764]:
+                      - generic [ref=e765]: "Covered Perimeter: *"
+                      - list [ref=e767]:
+                        - listitem [ref=e768]: CENTRAL AND LATIN AMERICA (1 / 43)
+                    - generic [ref=e771]:
+                      - generic [ref=e772]: "Declaration Contacts:"
+                      - generic [ref=e774]:
+                        - list [ref=e775]:
+                          - listitem [ref=e776] [cursor=pointer]: krodrigues@pmct.com.br
+                          - listitem [ref=e778]:
+                            - textbox [ref=e779]
+                        - list [ref=e781]
+                    - generic [ref=e784]:
+                      - generic [ref=e785]: "Payment Term:"
+                      - generic [ref=e786]:
+                        - generic [ref=e787]:
+                          - generic [ref=e789] [cursor=pointer]: 20 days billing date
+                          - generic [ref=e792]:
+                            - textbox [ref=e794]
+                            - list [ref=e795]
+                        - link "New" [ref=e796] [cursor=pointer]:
+                          - /url: /contract_payment_terms/new
+                          - generic [ref=e797]: 
+                          - text: New
+                    - generic [ref=e800]:
+                      - generic [ref=e801]: "Payment Mode:"
+                      - generic [ref=e802]:
+                        - generic [ref=e803]:
+                          - generic [ref=e805] [cursor=pointer]: OTHER
+                          - generic [ref=e808]:
+                            - textbox [ref=e810]
+                            - list [ref=e811]
+                        - link "New" [ref=e812] [cursor=pointer]:
+                          - /url: /contract_payment_modes/new
+                          - generic [ref=e813]: 
+                          - text: New
+                    - generic [ref=e816]:
+                      - generic [ref=e817]: "Cancellation Term:"
+                      - generic [ref=e818]:
+                        - generic [ref=e819]:
+                          - generic [ref=e821] [cursor=pointer]: "[Select]"
+                          - generic [ref=e824]:
+                            - textbox [ref=e826]
+                            - list [ref=e827]
+                        - link "New" [ref=e828] [cursor=pointer]:
+                          - /url: /contract_cancellation_terms/new
+                          - generic [ref=e829]: 
+                          - text: New
+                    - generic [ref=e832]:
+                      - generic [ref=e833]: "Expected Contract Value:"
+                      - spinbutton "Expected Contract Value:" [ref=e835]
+              - generic [ref=e836]:
+                - heading "Invoicing Details" [level=2] [ref=e837]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Address:"
+                      - generic [ref=e838]: R JOAQUIM SIMOES, 350 / JARDIM VERA CRUZ / 13290-000 / LOUVEIRA-SP / Brazil
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Contacts:"
+                      - generic:
+                        - generic:
+                          - list [ref=e839]:
+                            - listitem [ref=e840] [cursor=pointer]: krodrigues@pmct.com.br
+                            - listitem:
+                              - textbox
+                          - generic [ref=e842]:
+                            - list
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Currency:"
+                      - link "BRL" [ref=e844] [cursor=pointer]:
+                        - /url: /currencies/33
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Company Name on Invoice:"
+                      - textbox "Company Name on Invoice:" [ref=e845]: PRIME CATER
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Periodicity:"
+                      - generic [ref=e846]: Quarterly
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Allow specific invoicing for services:"
+                      - generic [ref=e847]: This periodicity is applied to all services
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Deposit Amount:"
+                      - spinbutton "Deposit Amount:" [ref=e848]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Prepayment:"
+                      - combobox "Prepayment:" [ref=e849]:
+                        - option "Quarterly" [selected]
+                        - option "Semesterly on the N-1 basis"
+                        - option "Semesterly on the basis of the real N"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Package Amount:"
+                      - spinbutton "Package Amount:" [ref=e850]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "AR code:"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Intracommunity VAT:"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "your references:"
+                      - textbox "your references:" [ref=e851]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "AP code:"
+                      - generic [ref=e852]: "249989"
+              - generic:
+                - button "+ Add new Document" [disabled] [ref=e855]
+                - link "View all supplier documents" [ref=e857] [cursor=pointer]:
+                  - /url: /suppliers/show/11321?@all_documents=true&to_tab=document
+              - generic [ref=e859]:
+                - link "Back to the list" [ref=e860] [cursor=pointer]:
+                  - /url: /contracts/list
+                - link "Error" [ref=e861] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/35300?trans_name=contracts_error_from_validated
+                - link "Archive" [ref=e862] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/35300?trans_name=contracts_archived_from_validated&date_impacted=&value_impacted=
+                - link "Versioning" [ref=e863] [cursor=pointer]:
+                  - /url: /contracts/version/35300
+                - link "Renew" [ref=e864] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/35300?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                - link "Submit" [ref=e865] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/35300?declarative_impact=true
+            - generic:
+              - generic:
+                - generic:
+                  - generic [ref=e866]:
+                    - heading "Services List" [level=3]
+                  - list:
+                    - listitem [ref=e867]:
+                      - generic [ref=e868] [cursor=pointer]: Classic Procurement Service Fee
+                      - img "arrow" [ref=e869]
+                - generic:
+                  - heading "Service details" [level=3] [ref=e871]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - group:
+                          - generic [ref=e872]:
+                            - generic [ref=e874]:
+                              - generic:
+                                - generic [ref=e875]: "Name:"
+                                - generic:
+                                  - generic:
+                                    - generic [ref=e876] [cursor=pointer]:
+                                      - generic: Classic Procurement Service Fee
+                                    - generic [ref=e879]:
+                                      - textbox [ref=e881]
+                                      - list
+                            - generic [ref=e883]:
+                              - generic:
+                                - generic [ref=e884]: "Depth of declaration: *"
+                                - generic [ref=e885]: Hotel
+                            - generic [ref=e887]:
+                              - generic:
+                                - generic [ref=e888]: Redistribution
+                                - generic [ref=e889]:
+                                  - generic:
+                                    - generic: "No"
+                                    - generic: "Yes"
+                            - generic [ref=e891]:
+                              - generic:
+                                - generic [ref=e892]: "Description:"
+                                - textbox "Description:" [ref=e893]: 3% (TRÊS POR CENTO) SOBRE SEU FATURAMENTO BRUTO OU LÍQUIDO
+                            - generic [ref=e895]:
+                              - generic:
+                                - generic [ref=e896]: "Declared By:"
+                                - combobox "Declared By:" [ref=e897]:
+                                  - option "Supplier" [selected]
+                                  - option "Buyer"
+                                  - option "Back-Office"
+                            - generic [ref=e900]: "Maximum Amount:"
+                            - generic [ref=e902]:
+                              - generic:
+                                - generic [ref=e903]: "Tax:"
+                                - generic:
+                                  - textbox "Tax:" [ref=e904]: "-1.0"
+                                  - generic [ref=e905]: "%"
+                            - generic [ref=e907]:
+                              - generic:
+                                - generic [ref=e908]: "Declaration Frequency:"
+                                - generic [ref=e909]: Quarterly
+                            - generic [ref=e911]:
+                              - generic:
+                                - generic [ref=e912]: "Invoicing Periodicity:"
+                                - generic [ref=e913]: Quarterly
+                            - generic [ref=e915]:
+                              - generic:
+                                - generic [ref=e916]: "Import data from ASR:"
+                                - textbox "Import data from ASR:" [ref=e917]
+                    - generic [ref=e918]:
+                      - heading "Sub-Services" [level=3]
+                    - list [ref=e919]:
+                      - listitem:
+                        - generic [ref=e921]: TAXA P2 3%
+                        - generic [ref=e922]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/20400?edit_mode=true
+                              - img "Self And Assoc" [ref=e923] [cursor=pointer]
+                    - generic [ref=e924] [cursor=pointer]: Save this Service
+      - generic [ref=e925]:
+        - generic [ref=e926]: "Version: 2.28.12"
+        - generic [ref=e927]:
+          - link "User Guide" [ref=e928] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link "Terms & Conditions" [ref=e929] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+  - dialog [ref=e931]:
+    - document [ref=e932]:
+      - generic [ref=e933]:
+        - button "Close" [ref=e934] [cursor=pointer]: ×
+        - generic [ref=e935]:
+          - banner [ref=e936]:
+            - heading "End dates confirmation" [level=1] [ref=e937]
+          - generic [ref=e939]:
+            - paragraph [ref=e940]:
+              - text: Warning! declarations can be cancelled by this action
+              - text: "Before saving, please confirm the following dates:"
+            - paragraph [ref=e941]: Both dates are mandatory
+            - generic [ref=e942]:
+              - generic [ref=e944]:
+                - generic [ref=e945]: "Declarative End Quarter:"
+                - combobox [ref=e947]:
+                  - option "[Select]"
+                  - option "31st of March"
+                  - option "30th of June"
+                  - option "30th of September"
+                  - option "31st of December" [selected]
+              - generic [ref=e949]:
+                - generic [ref=e950]: "Declarative End Year:"
+                - textbox [ref=e952]: "2027"
+              - generic [ref=e954]:
+                - generic [ref=e955]: "Contract end date:"
+                - generic [ref=e956]:
+                  - textbox [active] [ref=e957]: 12/29/2027
+                  - generic [ref=e959]: 
+          - button "Confirm and save" [disabled] [ref=e961]
+```
