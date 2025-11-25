@@ -1,23 +1,23 @@
-name: Playwright Recette (Cron + Allure + Mail)
+name: Playwright preprod (Cron + Allure + Mail)
 
 on:
   schedule:
     # 07h heure de Paris
-    - cron: "0 10 * * *"   # 07h CET (hiver)
-    - cron: "0 9 * * *"    # 07h CEST (été)
+    - cron: "0 11 * * *"   # 07h CET (hiver)
+    - cron: "0 10 * * *"    # 07h CEST (été)
     # 14h heure de Paris
-    - cron: "0 13 * * *"   # 14h CET (hiver)
-    - cron: "0 12 * * *"   # 14h CEST (été)
+    - cron: "0 14 * * *"   # 14h CET (hiver)
+    - cron: "0 13 * * *"   # 14h CEST (été)
   workflow_dispatch:
 
 permissions:
   contents: write  
 
 jobs:
-  test-recette-cron:
+  test-preprod-cron:
     runs-on: ubuntu-latest
     env:
-      NODE_ENV: recette
+      NODE_ENV: preprod
       TZ: Europe/Paris
 
     steps:
@@ -27,18 +27,18 @@ jobs:
       - name: Build Docker image
         run: docker build -t playwright-tests .
 
-      - name: Create .env.recette file
+      - name: Create .env.preprod file
         run: |
-          echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env.recette
-          echo "LOGIN_USERNAME=${{ secrets.LOGIN_USERNAME }}" >> .env.recette
-          echo "LOGIN_PASSWORD=${{ secrets.LOGIN_PASSWORD }}" >> .env.recette
-          echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.recette
-          echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.recette
+          echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env.preprod
+          echo "LOGIN_USERNAME=${{ secrets.LOGIN_USERNAME }}" >> .env.preprod
+          echo "LOGIN_PASSWORD=${{ secrets.LOGIN_PASSWORD }}" >> .env.preprod
+          echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.preprod
+          echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.preprod
 
       - name: Run Playwright tests
         run: |
           docker run --rm \
-            -v ${{ github.workspace }}/.env.recette:/app/.env.recette \
+            -v ${{ github.workspace }}/.env.preprod:/app/.env.preprod \
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
             playwright-tests npx playwright test --grep @P0 --retries=3 --reporter=line,allure-playwright || true
 
@@ -142,7 +142,7 @@ jobs:
           secure: true
           username: ${{ secrets.EMAIL_USER }}
           password: ${{ secrets.EMAIL_PASS }}
-          subject: "📊 A2S Automation (CRON) recette - Run #${{ github.run_number }} | ✅ ${{ env.PASSED }} Passed ❌ ${{ env.FAILED }} Failed"
+          subject: "📊 A2S Automation (CRON) - Run #${{ github.run_number }} | ✅ ${{ env.PASSED }} Passed ❌ ${{ env.FAILED }} Failed"
           to: "rimah.waili@consulting-for.accor.com, interceptor_a2s@astoresuite.com"
           from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
 
@@ -152,7 +152,7 @@ jobs:
             <head><meta charset="UTF-8" /></head>
             <body style="font-family: Arial; background-color:#f6f8fa;">
               <div style="background:#fff; max-width:650px; margin:20px auto; padding:20px; border-radius:8px;">
-                <h2 style="text-align:center;color:#004aad;">📊 A2S Automation (CRON) - Test Run #${{ github.run_number }}</h2>
+                <h2 style="text-align:center;color:#004aad;">📊 A2S Automation (CRON) preprod - Test Run #${{ github.run_number }}</h2>
                 <p>Hello Rimah 👋,</p>
                 <p>The Allure report for this scheduled run is now available.</p>
                 <p style="text-align:center;">
