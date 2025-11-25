@@ -24,8 +24,6 @@ export default defineConfig({
     ignoreHTTPSErrors: true,
 
   },
-
-
   projects: [
     /*{
       name: 'recette',
