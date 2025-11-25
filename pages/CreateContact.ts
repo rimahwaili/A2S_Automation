@@ -30,6 +30,19 @@ async detectLanguage() {
   console.log(`Detected UI language: ${this.lang.toUpperCase()}`);
 }
 
+async  closePendoBanner(page: Page) {
+  const pendoBanner = page.locator('#pendo-guide-container');
+  const closeButton = page.locator('#pendo-close-guide-f679c337');
+
+  if (await pendoBanner.isVisible({ timeout: 5000 }).catch(() => false)) {
+    await closeButton.click();
+    // Optional: wait for the banner to disappear
+    await expect(pendoBanner).toHaveCount(0);
+    console.log('Pendo banner closed ✅');
+  } else {
+    console.log('No Pendo banner found');
+  }
+}
 
 async createContact(firstName: string, lastName: string, email: string, profil: string) {
     await this.page.click(CreateContactSelectors.navigation.newContactButton);

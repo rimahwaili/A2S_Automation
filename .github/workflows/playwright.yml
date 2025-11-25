@@ -13,7 +13,7 @@ jobs:
   test-run:
     runs-on: ubuntu-latest
     env:
-      NODE_ENV: recette
+      NODE_ENV: preprod
       TZ: Europe/Paris
 
     steps:
@@ -23,20 +23,20 @@ jobs:
       - name: Build Docker image
         run: docker build -t playwright-tests .
 
-      - name: Create .env.recette file
+      - name: Create .env.preprod file
         run: |
-          echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env.recette
-          echo "LOGIN_USERNAME=${{ secrets.LOGIN_USERNAME }}" >> .env.recette
-          echo "LOGIN_PASSWORD=${{ secrets.LOGIN_PASSWORD }}" >> .env.recette
-          echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.recette
-          echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.recette
+          echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env.preprod
+          echo "LOGIN_USERNAME=${{ secrets.LOGIN_USERNAME }}" >> .env.preprod
+          echo "LOGIN_PASSWORD=${{ secrets.LOGIN_PASSWORD }}" >> .env.preprod
+          echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.preprod
+          echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.preprod
 
       - name: Run Playwright tests
         run: |
           docker run --rm \
-            -v ${{ github.workspace }}/.env.recette:/app/.env.recette \
+            -v ${{ github.workspace }}/.env.preprod:/app/.env.preprod \
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
-            playwright-tests npx playwright test --grep @P0 --retries=3 --reporter=line,allure-playwright || true
+            playwright-tests npx playwright test --grep @P0 --retries=3  --workers=1 --reporter=line,allure-playwright || true
 
       - name: Generate Allure report
         if: always()
