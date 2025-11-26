@@ -4,16 +4,10 @@ import { credentials } from './utils/env';
 
 export default defineConfig({
   testDir: './tests',
-
   fullyParallel: false,
-
   forbidOnly: !!process.env.CI,
-
   retries: process.env.CI ? 3 : 0,
-
   workers: process.env.CI ? 1 : 1,
-
- 
   reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }],["line"], ["allure-playwright"]],
    use: {
     baseURL: credentials.baseUrl || 'https://preprod.astoresuite.com/',
