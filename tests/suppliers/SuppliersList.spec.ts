@@ -18,6 +18,7 @@ test.describe('Suppliers Filters', () => {
     allure.label('feature', 'Supplier');
     allure.epic('Supplier');
     allure.story('Supplier - Filter by code - valid supplier');
+    allure.severity('minor'); 
 
     await suppliersPage.filterByCode('45351');
     const results = await suppliersPage.getResultsCount();
@@ -30,6 +31,7 @@ test.describe('Suppliers Filters', () => {
     allure.label('feature', 'Supplier');
     allure.epic('Supplier');
     allure.story('Supplier - Filter by name - partial match');
+    allure.severity('minor'); 
 
     await suppliersPage.filterByName('ACIAL');
     const first = await suppliersPage.getFirstResultText();
@@ -40,7 +42,8 @@ test.describe('Suppliers Filters', () => {
     allure.label('feature', 'Supplier');
     allure.epic('Supplier');
     allure.story('Supplier - Filter by country ');
-    
+    allure.severity('minor'); 
+
     await suppliersPage.filterByCountry('France');
     const first = await suppliersPage.getFirstResultText();
     expect(first).toContain('France');
@@ -51,6 +54,7 @@ test.describe('Suppliers Filters', () => {
     allure.label('feature', 'Supplier');
     allure.epic('Supplier');
     allure.story('Supplier - Filter by category ');
+     allure.severity('minor'); 
 
     await suppliersPage.filterByCategories('Guest amenities');
     const first = await suppliersPage.getFirstResultText();
@@ -62,6 +66,7 @@ test.describe('Suppliers Filters', () => {
     allure.label('feature', 'Supplier');
     allure.epic('Supplier');
     allure.story('Supplier - Filter by active contracts ');
+    allure.severity('minor'); 
 
     await suppliersPage.filterByActiveContracts('true');
     const count = await suppliersPage.getResultsCount();
@@ -73,7 +78,7 @@ test.describe('Suppliers Filters', () => {
     allure.label('feature', 'Supplier');
     allure.epic('Supplier');
     allure.story('Supplier - Reset filters restores full list');
-
+    allure.severity('minor'); 
 
     await suppliersPage.filterByCode('703');
     await suppliersPage.resetFilters();
