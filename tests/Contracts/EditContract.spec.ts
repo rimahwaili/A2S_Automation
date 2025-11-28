@@ -79,7 +79,7 @@ test(' 2SQA2-2561 | @P0 Move contract status from Expired into Error ', async ({
 });
 
 test.describe('Move Contract into Archived  ', () =>{
- test(' 2SQA2-2567 | @P0 Move contract to Archived: valid contract', async ({ page }) => {
+ test(' 2SQA2-2567 | @P0 Move contract status from valid into Archived', async ({ page }) => {
 
     
     allure.label('feature', 'Contract');
@@ -101,7 +101,7 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.setDeclarativeEndQuarter('4'); 
   await contractPage.setDeclarativeEndYear('2027');
   await contractPage.setActualEndDate('12/29/2027');
-
+ await contractPage.endYearInput.first().click();
   await contractPage.confirmStep1();  
   await contractPage.confirmFinal();  
     const isStatusArchived = await contractPage.assertStatus('Archived');
@@ -111,12 +111,12 @@ test.describe('Move Contract into Archived  ', () =>{
 
 
 
-  test(' 2SQA2-2566 | @P0 Move contract to Archived: To Renew contract', async ({ page }) => {
+  test(' 2SQA2-2566 | @P0 Move contract status from To renew into Archived', async ({ page }) => {
 
     
     allure.label('feature', 'Contract');
     allure.epic('Contract');
-    allure.story('Move contract status from To Renew into Archived');
+    allure.story('Move contract status from to renew into Archived');
 
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
@@ -131,16 +131,16 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.clickArchive();
     await contractPage.fillStep1Data();
     await contractPage.setDeclarativeEndQuarter('4'); 
-  await contractPage.setDeclarativeEndYear('2027');
-  await contractPage.setActualEndDate('12/29/2027');
-
-  await contractPage.confirmStep1();  
-  await contractPage.confirmFinal();  
+    await contractPage.setDeclarativeEndYear('2027');
+    await contractPage.setActualEndDate('12/29/2027');
+    await contractPage.endYearInput.first().click();  
+    //await contractPage.confirmStep1();  
+    await contractPage.confirmFinal();  
     const isStatusArchived = await contractPage.assertStatus('Archived');
   });
 
 
-  test(' 2SQA2-2568 | @P0 Move contract to Archived: Expired contract', async ({ page }) => {
+  test(' 2SQA2-2568 | @P0 Move contract status from Expired into Archived', async ({ page }) => {
 
     
     allure.label('feature', 'Contract');

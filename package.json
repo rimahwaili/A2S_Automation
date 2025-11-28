@@ -16,8 +16,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
     "@playwright/test": "^1.56.0",
     "@types/node": "^24.7.0",
+    "allure-cucumberjs": "^3.4.2",
     "allure-playwright": "^3.4.1",
     "cross-env": "^10.1.0"
   },
