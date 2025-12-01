@@ -21,7 +21,8 @@ test.describe('Move Contract into Error', () => {
     
     allure.label('feature', 'Contract');
     allure.epic('Contract');
-    allure.story('Move contract status from to renew into Error');
+    allure.story('Move contract status from To renew into Error');
+    allure.severity('critical'); 
 
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
@@ -37,11 +38,12 @@ test.describe('Move Contract into Error', () => {
     const isStatusEEor = await contractPage.assertStatus('Error');
   });
 
-test(' 2SQA2-2560 | @P0 Move contract status from valid into Error ', async ({ page }) => {
+test(' 2SQA2-2560 | @P0 Move contract status from Valid into Error ', async ({ page }) => {
 
     allure.label('feature', 'Contract');
     allure.epic('Contract');
     allure.story('Move contract status from valid into Error');
+    allure.severity('critical'); 
 
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
@@ -62,7 +64,8 @@ test(' 2SQA2-2561 | @P0 Move contract status from Expired into Error ', async ({
     allure.label('feature', 'Contract');
     allure.epic('Contract');
     allure.story('Move contract status from expired into Error');
-    
+    allure.severity('critical'); 
+
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
     contractsPage.clickToExpiredTab();
@@ -84,7 +87,8 @@ test.describe('Move Contract into Archived  ', () =>{
     
     allure.label('feature', 'Contract');
     allure.epic('Contract');
-    allure.story('Move contract status from valid into Archived');
+    allure.story('Move contract status from Valid into Archived');
+    allure.severity('critical'); 
 
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
@@ -116,7 +120,12 @@ test.describe('Move Contract into Archived  ', () =>{
     
     allure.label('feature', 'Contract');
     allure.epic('Contract');
+<<<<<<< HEAD:tests/Contracts/EditContract.spec.ts
     allure.story('Move contract status from to renew into Archived');
+=======
+    allure.story('Move contract status from To Renew into Archived');
+    allure.severity('critical'); 
+>>>>>>> 75e4b5b84fc8297dfb6b326f482a2cc239695054:tests/Contracts/EditContractError.spec.ts
 
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
@@ -146,7 +155,8 @@ test.describe('Move Contract into Archived  ', () =>{
     allure.label('feature', 'Contract');
     allure.epic('Contract');
     allure.story('Move contract status from Expired into Archived');
-
+    allure.severity('critical'); 
+    
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
     contractsPage.clickToExpiredTab();

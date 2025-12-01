@@ -18,6 +18,7 @@ test.describe('Login Tests', () => {
     allure.label('feature', 'Login');
     allure.epic('Login');
     allure.story('Login with valid credentials');
+    allure.severity('critical'); 
     
     const loginPage = new LoginPage(page);
     await loginPage.goto();
@@ -40,6 +41,7 @@ test.describe('Login Tests', () => {
     allure.label('feature', 'Login');
     allure.epic('Login');
     allure.story('Login with inactif credentials');
+    allure.severity('normal'); 
 
     const loginPage = new LoginPage(page);
     await loginPage.goto();
@@ -56,6 +58,7 @@ test.describe('Login Tests', () => {
     allure.label('feature', 'Login');
     allure.epic('Login');
     allure.story('Login with invalid credentials');
+    allure.severity('critical'); 
 
     const loginPage = new LoginPage(page);
     await loginPage.goto();
