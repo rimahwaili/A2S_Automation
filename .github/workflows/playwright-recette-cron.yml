@@ -2,12 +2,12 @@ name: Playwright Recette (Cron + Allure + Mail)
 
 on:
   schedule:
-    # 07h heure de Paris
-    - cron: "0 10 * * *"   # 07h CET (hiver)
-    - cron: "0 9 * * *"    # 07h CEST (été)
+    # 10h heure de Paris
+    - cron: "0 10 * * *"   # 10h CEST (hiver)
+    - cron: "0 9 * * *"    # 10h CEST (été)
     # 14h heure de Paris
-    - cron: "0 13 * * *"   # 14h CET (hiver)
-    - cron: "0 12 * * *"   # 14h CEST (été)
+    - cron: "0 18 * * *"   # 18h CET (hiver)
+    - cron: "0 17 * * *"   # 18h CEST (été)
   workflow_dispatch:
 
 permissions:
@@ -140,11 +140,11 @@ jobs:
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
-          username: ${{ secrets.EMAIL_USER }}
-          password: ${{ secrets.EMAIL_PASS }}
+          username: ${{ secrets.EMAIL_USER_RCT }}
+          password: ${{ secrets.EMAIL_PASS_RCT }}
           subject: "📊 A2S Automation (CRON) recette - Run #${{ github.run_number }} | ✅ ${{ env.PASSED }} Passed ❌ ${{ env.FAILED }} Failed"
           to: "rimah.waili@consulting-for.accor.com, interceptor_a2s@astoresuite.com"
-          from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
+          from: "A2S Automation Bot <${{ secrets.EMAIL_USER_RCT }}>"
 
           html_body: |
             <!DOCTYPE html>

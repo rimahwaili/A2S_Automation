@@ -116,11 +116,11 @@ jobs:
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
-          username: ${{ secrets.EMAIL_USER }}
-          password: ${{ secrets.EMAIL_PASS }}
+          username: ${{ secrets.EMAIL_USER_RCT }}
+          password: ${{ secrets.EMAIL_PASS_RCT }}
           subject: "📊 A2S Automation - Run #${{ github.run_number }} | ✅ ${{ env.PASSED }} Passed ❌ ${{ env.FAILED }} Failed"
           to: "rimah.waili@consulting-for.accor.com, interceptor_a2s@astoresuite.com"
-          from: "A2S Automation Bot <${{ secrets.EMAIL_USER }}>"
+          from: "A2S Automation Bot <${{ secrets.EMAIL_USER_RCT }}>"
           html_body: |
             <!DOCTYPE html>
             <html>
