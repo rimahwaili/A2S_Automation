@@ -25,9 +25,9 @@ jobs:
 
       - name: Create .env.recette file
         run: |
-          echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env.recette
-          echo "LOGIN_USERNAME=${{ secrets.LOGIN_USERNAME }}" >> .env.recette
-          echo "LOGIN_PASSWORD=${{ secrets.LOGIN_PASSWORD }}" >> .env.recette
+          echo "BASE_URL=${{ secrets.BASE_URL_RCT }}" >> .env.recette
+          echo "LOGIN_USERNAME=${{ secrets.LOGIN_USERNAME_RCT }}" >> .env.recette
+          echo "LOGIN_PASSWORD=${{ secrets.LOGIN_PASSWORD_RCT }}" >> .env.recette
           echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.recette
           echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.recette
 
@@ -36,7 +36,7 @@ jobs:
           docker run --rm \
             -v ${{ github.workspace }}/.env.recette:/app/.env.recette \
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
-            playwright-tests npx playwright test --grep @P0 --retries=3  --workers=1 --reporter=line,allure-playwright || true
+            playwright-tests npx playwright test --grep @P0   --workers=1 --reporter=line,allure-playwright || true
 
       - name: Generate Allure report
         if: always()

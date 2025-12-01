@@ -30,8 +30,8 @@ jobs:
       - name: Create .env.preprod file
         run: |
           echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env.preprod
-          echo "LOGIN_USERNAME=${{ secrets.LOGIN_USERNAME }}" >> .env.preprod
-          echo "LOGIN_PASSWORD=${{ secrets.LOGIN_PASSWORD }}" >> .env.preprod
+          echo "LOGIN_USERNAME=${{ secrets.LOGIN_USERNAME_PPD }}" >> .env.preprod
+          echo "LOGIN_PASSWORD=${{ secrets.LOGIN_PASSWORD_PPD }}" >> .env.preprod
           echo "LOGIN_INACTIF_USERNAME=${{ secrets.LOGIN_INACTIF_USERNAME }}" >> .env.preprod
           echo "LOGIN_INACTIF_PASSWORD=${{ secrets.LOGIN_INACTIF_PASSWORD }}" >> .env.preprod
 
@@ -40,7 +40,7 @@ jobs:
           docker run --rm \
             -v ${{ github.workspace }}/.env.preprod:/app/.env.preprod \
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
-            playwright-tests npx playwright test --grep @P0 --retries=3 --reporter=line,allure-playwright || true
+            playwright-tests npx playwright test --grep @P0  --reporter=line,allure-playwright || true
 
       - name: Generate Allure report
         if: always()
