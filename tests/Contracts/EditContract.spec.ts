@@ -116,16 +116,12 @@ test.describe('Move Contract into Archived  ', () =>{
 
 
   test(' 2SQA2-2566 | @P0 Move contract status from To renew into Archived', async ({ page }) => {
-
-    
     allure.label('feature', 'Contract');
     allure.epic('Contract');
-<<<<<<< HEAD:tests/Contracts/EditContract.spec.ts
     allure.story('Move contract status from to renew into Archived');
-=======
     allure.story('Move contract status from To Renew into Archived');
     allure.severity('critical'); 
->>>>>>> 75e4b5b84fc8297dfb6b326f482a2cc239695054:tests/Contracts/EditContractError.spec.ts
+
 
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
