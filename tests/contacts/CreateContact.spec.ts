@@ -41,6 +41,7 @@ for (const profil of profils) {
       allure.label('feature', 'Contacts');
       allure.epic('Contacts');
       allure.story('contact - Create new contact');
+      allure.severity('critical'); 
 
       createContactPage = new CreateContactPage(page);
       const random = Math.floor(1000 + Math.random() * 9000);

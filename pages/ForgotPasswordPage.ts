@@ -41,18 +41,24 @@ export class ForgotPasswordPage {
   await this.page.locator('#cgu_required_accept_form_submit').click();
 }
 
-   /** Fill and submit new password form */
-  async setNewPassword(password: string) {
+ async setNewPassword(password: string) {
+  console.log(`🔐 Setting new password (${password.length} chars)...`);
 
- 
-    console.log(`🔐 Setting new password (${password.length} chars)...`);
+  const resetInput = this.page.locator(sel.ResetpasswordInput);
+  const confirmInput = this.page.locator(sel.confirmPasswordInput);
+  const acceptBtn = this.page.locator(sel.acceptButton);
 
-    await this.page.locator(sel.ResetpasswordInput).fill(password);
-    await this.page.locator(sel.confirmPasswordInput).fill(password);
+  // Scroll into view if needed
+  await resetInput.scrollIntoViewIfNeeded();
+  await resetInput.fill(password);
 
-    await expect(this.page.locator(sel.acceptButton)).toBeEnabled();
-    await this.page.locator(sel.acceptButton).click();
+  await confirmInput.scrollIntoViewIfNeeded();
+  await confirmInput.fill(password);
 
-    console.log('✅ Password set and form submitted');
-  }
+  await acceptBtn.scrollIntoViewIfNeeded();
+  await expect(acceptBtn).toBeEnabled();
+  await acceptBtn.click();
+
+  console.log('✅ Password set and form submitted');
+}
 }

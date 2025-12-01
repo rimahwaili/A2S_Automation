@@ -14,8 +14,8 @@ export class ContractPage {
 
   // Modales
   readonly errorModal: Locator;
-  readonly archiveModal: Locator;   // archive = confirm-dates
-  readonly renewModal: Locator;     // renew = same modal
+  readonly archiveModal: Locator;   
+  readonly renewModal: Locator;     
   readonly versionModal: Locator;
   readonly submitModal: Locator;
   //actions
@@ -139,13 +139,11 @@ async fillStep1Data() {
   // Wait for JS to finish initialization
   await this.page.waitForTimeout(300);
 
-  // The confirm button is disabled until fields are enabled by JS.
-  // Force user interaction to trigger enable logic.
+
   await this.modal.click(); 
 }
 
 
-  
  async setDeclarativeEndQuarter(value: string) {
   await this.endQuarterSelect.first().click({ force: true });
   await this.endQuarterSelect.first().selectOption(value, { force: true });

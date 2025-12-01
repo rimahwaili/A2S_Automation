@@ -1,7 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 import { credentials } from './utils/env';
 
-
 export default defineConfig({
   testDir: './tests',
   fullyParallel: false,
@@ -10,32 +9,36 @@ export default defineConfig({
   workers: process.env.CI ? 1 : 1,
   reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }],["line"], ["allure-playwright"]],
    use: {
-    baseURL: credentials.baseUrl || 'https://preprod.astoresuite.com/',
+    baseURL: credentials.baseUrl || 'https://rec.astoresuite.com/',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     headless: true,
     ignoreHTTPSErrors: true,
-
   },
   projects: [
-    /*{
+    {
       name: 'recette',
       use: {
         baseURL: 'https://rec.astoresuite.com/',
       },
-    },
+    },/*
     {
       name: 'preprod',
       use: {
         baseURL: 'https://preprod.astoresuite.com/',
       },
-    },*/
+    },/* 
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'],
+                launchOptions: {
+                    slowMo: 500, 
+        },
+       },
+      
     },
-   /* {
+   {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
