@@ -139,7 +139,7 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.setDeclarativeEndYear('2027');
     await contractPage.setActualEndDate('12/29/2027');
     await contractPage.endYearInput.first().click();  
-    //await contractPage.confirmStep1();  
+    await contractPage.confirmStep1();  
     await contractPage.confirmFinal();  
     const isStatusArchived = await contractPage.assertStatus('Archived');
   });
