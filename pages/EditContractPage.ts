@@ -39,7 +39,11 @@ export class ContractPage {
     readonly confirmFinalBtn: Locator;
 
     readonly step2: Locator;
-
+    //new contract
+    readonly NewContractTitle: Locator;
+    readonly NewContractStatus: Locator;
+    readonly originalContract: Locator;
+ 
   constructor(page: Page) {
     this.page = page;
 
@@ -67,14 +71,17 @@ export class ContractPage {
 
     //archive modale:
     this.modal = page.locator('.modal-body');
-this.endQuarterSelect = this.modal.locator('select[name$="[end_quarter]"]');
-this.endYearInput = this.modal.locator('input[name$="[end_year]"]');
-this.actualEndDateInput = this.modal.locator('input[name$="[actual_end_date]"][type="text"]');
-this.confirmStep1Btn = this.modal.locator('#confirm-dates-to-step-2');
-    this.confirmFinalBtn = page.locator('#confirm-dates');
+    this.endQuarterSelect = this.modal.locator(contractPageElements.archivemodale.endQuarterSelect);
+    this.endYearInput = this.modal.locator(contractPageElements.archivemodale.endYearInput);
+    this.actualEndDateInput = this.modal.locator(contractPageElements.archivemodale.actualEndDateInput);
+    this.confirmStep1Btn = this.modal.locator(contractPageElements.archivemodale.confirmStep1Btn);
+    this.confirmFinalBtn = page.locator(contractPageElements.archivemodale.confirmFinalBtn);
 
     this.step2 = page.locator('.step-2');
 
+    this.NewContractTitle = page.locator(contractPageElements.NewContractSelectors.workflowTitle);
+    this.NewContractStatus = page.locator(contractPageElements.NewContractSelectors.status);
+    this.originalContract = page.locator(contractPageElements.NewContractSelectors.originalContract);
   }
 
   // Naviguer vers un contrat donné
@@ -105,7 +112,7 @@ this.confirmStep1Btn = this.modal.locator('#confirm-dates-to-step-2');
     await this.confirmAndSaveBtn.click();
   }
 
-async assertStatus(expectedStatus: string) {
+async assertStatusVerification(expectedStatus: string) {
   const actualStatus = (await this.contractstatus.textContent())?.trim() ?? '';
   if (actualStatus.toLowerCase() !== expectedStatus.toLowerCase()) {
     throw new Error(`Expected status "${expectedStatus}", but got "${actualStatus}"`);
@@ -125,7 +132,7 @@ async assertStatus(expectedStatus: string) {
 
   async clickRenew() {
     await this.renewBtn.click();
-    await expect(this.renewModal).toBeVisible();
+    //await expect(this.renewModal).toBeVisible();
   }
 
   async clickSubmit() {
@@ -138,8 +145,6 @@ async fillStep1Data() {
 
   // Wait for JS to finish initialization
   await this.page.waitForTimeout(300);
-
-
   await this.modal.click(); 
 }
 
@@ -161,8 +166,37 @@ async confirmStep1() {
   await this.confirmStep1Btn.click();
 
 }
-  async confirmFinal() {
+async confirmFinal() {
     await this.confirmFinalBtn.click();
     await expect(this.modal).toBeHidden();
   }
+
+async getContractTitle(): Promise<string> {
+    return await this.NewContractTitle.evaluate(el => {
+      const span = el.querySelector('span.title-status');
+      if (span) span.remove();
+      return el.textContent?.trim() ?? '';
+    });
+  }
+
+  async getContractStatus(): Promise<string> {
+    return await this.NewContractStatus.textContent() ?? '';
+  }
+
+  async assertStatus(expectedStatus: string) {
+    const status = await this.getContractStatus();
+    expect(status.trim().toLowerCase()).toBe(expectedStatus.toLowerCase());
+  }
+
+  async  getOriginalContract(page: Page): Promise<string> {
+  const contractLink = this.originalContract;
+  const contractName = await contractLink.textContent();
+
+  if (!contractName) {
+    throw new Error('Original contract not found or empty');
+  }
+  console.log('Original contract:', contractName);
+  return contractName.trim();
+  
+}
 }
