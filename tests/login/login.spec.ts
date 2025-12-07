@@ -37,6 +37,8 @@ test.describe('Login Tests', () => {
   await expect(toast.locator(loginSelectors.toastMessage)).toContainText(credentials.username);
   });
 
+  
+
   test('A2SQA2-2523 | @P0 @Login Login with inactif credentials', async ({ page }) => {
     allure.label('feature', 'Login');
     allure.epic('Login');
@@ -52,6 +54,8 @@ test.describe('Login Tests', () => {
 
     await expect(page.locator(loginSelectors.warningMessage)).toBeVisible();
   });
+
+
 
   test('A2SQA2-2524 | @P0 @Login Login with invalid credentials', async ({ page }) => {
 

@@ -23,5 +23,21 @@ export const contractPageElements = {
     modalTitle: 'text=Error confirmation',
     confirmAndSaveBtn: '#confirm_error__-confirm-and-save_form_submit',
     cancelBtn: '#cancel-button',
-  }
+  },
+  
+  archivemodale: {
+    endQuarterSelect: 'select[name$="[end_quarter]"]',
+    endYearInput: 'input[name$="[end_year]"]',
+    actualEndDateInput: 'input[name$="[actual_end_date]"][type="text"]',
+    confirmStep1Btn:'#confirm-dates-to-step-2',
+    confirmFinalBtn:'#confirm-dates',
+  },
+
+  NewContractSelectors : {
+    workflowTitle: 'h2.workflow-title',
+    status: 'span.title-status',
+    originalContract:'a[data-original-title="Edit"]',
+    warningMessage: '.warning-message.hidden-element',
+}
+
 };

@@ -169,13 +169,16 @@ async getAllVisibleRows() {
   async openFirstContract(rowIndex = 0) {
     const row = this.tableRows.nth(rowIndex);
     await row.locator(ContractsSelectors.rowActions.view).click();
+
+  }
+  async getContractId(){
+
     const currentUrl = this.page.url();
     const idMatch = currentUrl.match(/\/contracts\/show\/(\d+)/);
     const contractId = idMatch ? idMatch[1] : undefined;
-
     console.log('Contract ID:', contractId);
+    return contractId
   }
-
   async expectAllRowsToHaveStatus(status: string) {
     const count = await this.tableRows.count();
     for (let i = 0; i < count; i++) {
