@@ -1,72 +1,50 @@
 import { defineConfig, devices } from '@playwright/test';
 import { credentials } from './utils/env';
 
+const isCI = !!process.env.CI;
+const envName = process.env.ENV || 'recette';
+const baseURL = credentials.baseUrl || (envName === 'preprod' 
+    ? 'https://preprod.astoresuite.com/' 
+    : 'https://rec.astoresuite.com/');
+
 export default defineConfig({
   testDir: './tests',
   fullyParallel: false,
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 1 : 0,
-  workers: process.env.CI ? 1 : 1,
-  reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }],["line"], ["allure-playwright"]],
-   use: {
-    baseURL: credentials.baseUrl || 'https://rec.astoresuite.com/',
+  forbidOnly: isCI,
+  retries: isCI ? 1 : 0,
+  workers: isCI ? 1 : undefined, // undefined utilise le nombre de cores dispo
+  reporter: [
+    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+    ['line'],
+    ['allure-playwright'],
+  ],
+  use: {
+    baseURL,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    headless: true,
+    headless: false,
     ignoreHTTPSErrors: true,
   },
   projects: [
     {
-      name: 'recette',
+      name: envName,
       use: {
-        baseURL: 'https://rec.astoresuite.com/',
+        baseURL,
       },
-    },/*
-    {
-      name: 'preprod',
-      use: {
-        baseURL: 'https://preprod.astoresuite.com/',
-      },
-    },/* 
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'],
-                launchOptions: {
-                    slowMo: 500, 
-        },
-       },
-      
     },
-   {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },*/
-    /* Test against mobile viewports. */
+    // Décommenter et personnaliser pour différents navigateurs/devices si besoin
     // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
+    //   name: 'Desktop Chrome',
+    //   use: { ...devices['Desktop Chrome'] },
     // },
     // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    //   name: 'Desktop Firefox',
+    //   use: { ...devices['Desktop Firefox'] },
     // },
     // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    //   name: 'Desktop Safari',
+    //   use: { ...devices['Desktop Safari'] },
     // },
   ],
-
-
 });

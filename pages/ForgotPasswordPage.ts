@@ -18,16 +18,24 @@ export class ForgotPasswordPage {
   }
 
   async goto() {
-    await this.page.goto(credentials.baseUrl +'/users/forgot_password');
+    await this.page.goto(credentials.baseUrl +'users/forgot_password');
     await expect(this.usernameInput).toBeVisible();
     await expect(this.usernameInput).toHaveValue('');
     
   }
 
+  async gotoresetPassword(email: string) {
+    await this.page.click('//a[@href=\'/users/forgot_password\']');
+    await this.resetPassword(email);
+  }
+
   async resetPassword(email: string) {
-    
-    await this.page.fill('input[name="email"]', email);
-    await this.page.click('button[type="submit"]');
+  const emailLocator = await this.page.locator('input[name="email"]').count() > 0
+    ? 'input[name="email"]'
+    : '#user_0_email'; // fallback si le premier n'existe pas
+
+  await this.page.fill(emailLocator, email);
+  await this.page.click('button[type="submit"]');
   }
 
   async gotoResetLink() {
