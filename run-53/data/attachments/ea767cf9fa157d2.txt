@@ -1,0 +1,6 @@
+Detected UI language: EN
+No Pendo banner found
+Detected UI language: EN
+Apply filters: { email: 'CentralAdmin4300@yopmail.com' }
+✅ Filters successfully applied
+Opening the contact details page...

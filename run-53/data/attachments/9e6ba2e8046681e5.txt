@@ -1,0 +1,4 @@
+Contract ID: 40411
+declarationFrequencyField: Annually
+supplier: 400179-GRANDS JARDINS
+invoicingCountryField: France

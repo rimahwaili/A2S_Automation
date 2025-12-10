@@ -1,0 +1,6 @@
+Contract ID: 40103
+declarationFrequencyField: Quarterly
+supplier: 93965-LAUNDRY SOLUTIONS NV (EX : DEKEUKELAERE WASBEDRIJF & ROMI)
+invoicingCountryField: Netherlands
+Page 1: Contract - E16P202518-0254 BIS (EX : 98576- Romi Laundry Services) - 1.1
+Page 2: Contract - E16P202518-0254 BIS (EX : 98576- Romi Laundry Services) - 2.1

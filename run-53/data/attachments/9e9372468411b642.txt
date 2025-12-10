@@ -1,0 +1,6 @@
+Contract ID: 30309
+declarationFrequencyField: Quarterly
+supplier: 349415-DECOSTUDIO SERVICIOS GLOBALES DE CONSTRUCCION S.L.
+invoicingCountryField: Portugal
+contract id 1: Contract - Prt 374-2020 - 1.1
+contract id 2: Contract - Prt 374-2020 - 2.1
