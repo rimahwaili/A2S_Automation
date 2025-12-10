@@ -20,6 +20,11 @@ export class ContactDetailsPage {
     console.log('✅ Contact basic information verified');
   }
 
+ async getEmail(): Promise<string> {
+  const value = await this.page.locator(sel.contactEmail).innerText();
+  return String(value);
+ }
+
   async verifySettingsSection() {
     await expect(this.page.locator(sel.contactSettingsSection)).toBeVisible();
     await expect(this.page.locator(sel.languageValue)).toBeVisible();

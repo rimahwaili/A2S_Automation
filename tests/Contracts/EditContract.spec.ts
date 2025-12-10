@@ -122,7 +122,6 @@ test.describe('Move Contract into Archived  ', () =>{
   test(' 2SQA2-2566 | @P0 Move contract status from To renew into Archived', async ({ page }) => {
     allure.label('feature', 'Contract');
     allure.epic('Contract');
-    allure.story('Move contract status from to renew into Archived');
     allure.story('Move contract status from To Renew into Archived');
     allure.severity('critical'); 
 
@@ -144,7 +143,7 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.setDeclarativeEndYear('2027');
     await contractPage.setActualEndDate('12/29/2027');
     await contractPage.endYearInput.first().click();  
-    //await contractPage.confirmStep1();  
+    await contractPage.confirmStep1();  
     await contractPage.confirmFinal();  
     const isStatusArchived = await contractPage.assertStatus('Archived');
   });
@@ -152,7 +151,6 @@ test.describe('Move Contract into Archived  ', () =>{
 
   test(' 2SQA2-2568 | @P0 Move contract status from Expired into Archived', async ({ page }) => {
 
-    
     allure.label('feature', 'Contract');
     allure.epic('Contract');
     allure.story('Move contract status from Expired into Archived');
@@ -183,7 +181,6 @@ test.describe('Move Contract into Archived  ', () =>{
 
 test.describe('Renew Contract ', () => {
   test(' A2SQA2-2572 | @P0 Renew Valid Contract', async ({ page }) => {
-
     
     allure.label('feature', 'Contract');
     allure.epic('Contract');
@@ -200,6 +197,10 @@ test.describe('Renew Contract ', () => {
     await contractPage.waitForReady();
     const isStatusvalid = await contractPage.assertStatus('valid');
     await contractPage.EditContract();
+
+    await contractPage.getDeclarationFrequency();
+    await contractPage.getSupplier();
+    await contractPage.getInvoicingCountry();
 
     await contractPage.clickRenew();
     await contractPage.setDeclarativeEndQuarter('4'); 
@@ -258,13 +259,17 @@ test.describe('Renew Contract ', () => {
     const isStatusvalid = await contractPage.assertStatus('To Renew');
     await contractPage.EditContract();
 
+    await contractPage.getDeclarationFrequency();
+    await contractPage.getSupplier();
+    await contractPage.getInvoicingCountry();
+
     await contractPage.clickRenew();
     await contractPage.setDeclarativeEndQuarter('4'); 
     await contractPage.setDeclarativeEndYear('2027');
     await contractPage.setActualEndDate('12/29/2027');
     
-
     const context = page.context();
+    await contractPage.confirmStep1(); 
     const [newPage] = await Promise.all([
     context.waitForEvent('page'),
     contractPage.confirmFinal() ]);
@@ -276,20 +281,16 @@ test.describe('Renew Contract ', () => {
     const isStatusArchived = await contractPage.assertStatus('archived');
     const titlePage1 = await contractPage.getContractTitle();
     await firstPage.bringToFront();
-    //await firstPage.reload();
-    //const statusPage1 = await contractPage.getContractStatus();
+
     console.log('Page 1:', titlePage1);
  
     const newcontractPage = new ContractPage(secondPage);
-    //await newPage.bringToFront(); 
-    // Récupère titre et statut Page 2
+
     await newcontractPage.EditContract();
     await newcontractPage.page.reload();
 
     const titlePage2 = await newcontractPage.getContractTitle();
-    //const OriginalContractTitle = await newcontractPage.getOriginalContract(page);
-    //const statusPage2 = await newcontractPage.getContractStatus();
-    //console.log('Page 2:', titlePage2, statusPage2);
+
    console.log('Page 2:', titlePage2);
 
     // Compare titres
@@ -303,8 +304,7 @@ test.describe('Renew Contract ', () => {
 
 
 test(' A2SQA2-2573 | @P0 Renew Expired Contract', async ({ page }) => {
-
-    
+   
     allure.label('feature', 'Contract');
     allure.epic('Contract');
     allure.story('Renew expired contract');
@@ -321,13 +321,15 @@ test(' A2SQA2-2573 | @P0 Renew Expired Contract', async ({ page }) => {
     const isStatusvalid = await contractPage.assertStatus('expired');
     await contractPage.EditContract();
 
+    await contractPage.getDeclarationFrequency();
+    await contractPage.getSupplier();
+    await contractPage.getInvoicingCountry();
+
+
     await contractPage.clickRenew();
     await contractPage.setDeclarativeEndQuarter('4'); 
     await contractPage.setDeclarativeEndYear('2027');
     await contractPage.setActualEndDate('12/29/2027');
-    //await contractPage.confirmStep1();  
-    //await contractPage.confirmFinal();  
-    
 
     const context = page.context();
     const [newPage] = await Promise.all([
@@ -341,21 +343,17 @@ test(' A2SQA2-2573 | @P0 Renew Expired Contract', async ({ page }) => {
     const isStatusArchived = await contractPage.assertStatus('archived');
     const titlePage1 = await contractPage.getContractTitle();
     await firstPage.bringToFront();
-    //await firstPage.reload();
-    //const statusPage1 = await contractPage.getContractStatus();
-    console.log('Page 1:', titlePage1);
+
+    console.log('contract id 1:', titlePage1);
  
     const newcontractPage = new ContractPage(secondPage);
-    //await newPage.bringToFront(); 
-    // Récupère titre et statut Page 2
+
     await newcontractPage.EditContract();
     await newcontractPage.page.reload();
 
     const titlePage2 = await newcontractPage.getContractTitle();
-    //const OriginalContractTitle = await newcontractPage.getOriginalContract(page);
-    //const statusPage2 = await newcontractPage.getContractStatus();
-    //console.log('Page 2:', titlePage2, statusPage2);
-   console.log('Page 2:', titlePage2);
+
+   console.log('contract id 2:', titlePage2);
 
     // Compare titres
     expect(titlePage2.includes(titlePage1.split(' - ')[1])).toBe(true);

@@ -43,6 +43,10 @@ export class ContractPage {
     readonly NewContractTitle: Locator;
     readonly NewContractStatus: Locator;
     readonly originalContract: Locator;
+
+    readonly supplierField: Locator;
+    readonly invoicingCountryField: Locator;
+    readonly declarationFrequencyField: Locator;
  
   constructor(page: Page) {
     this.page = page;
@@ -82,6 +86,11 @@ export class ContractPage {
     this.NewContractTitle = page.locator(contractPageElements.NewContractSelectors.workflowTitle);
     this.NewContractStatus = page.locator(contractPageElements.NewContractSelectors.status);
     this.originalContract = page.locator(contractPageElements.NewContractSelectors.originalContract);
+
+    //contract details
+    this.supplierField = page.locator(contractPageElements.contractdetails.supplierField);
+    this.invoicingCountryField = page.locator(contractPageElements.contractdetails.invoicingCountryField);
+    this.declarationFrequencyField = page.locator(contractPageElements.contractdetails.declarationFrequencyField);
   }
 
   // Naviguer vers un contrat donné
@@ -187,7 +196,6 @@ async getContractTitle(): Promise<string> {
     const status = await this.getContractStatus();
     expect(status.trim().toLowerCase()).toBe(expectedStatus.toLowerCase());
   }
-
   async  getOriginalContract(page: Page): Promise<string> {
   const contractLink = this.originalContract;
   const contractName = await contractLink.textContent();
@@ -197,6 +205,33 @@ async getContractTitle(): Promise<string> {
   }
   console.log('Original contract:', contractName);
   return contractName.trim();
-  
+}
+
+// getFieldValue accepts a Locator
+async getFieldValue(field: Locator): Promise<string> {
+  const hasValueAttr = (await field.getAttribute('value')) !== null;
+  if (hasValueAttr) {
+    return (await field.inputValue()).trim();
+  }
+  return (await field.innerText()).trim();
+}
+
+// Await before logging; return the awaited value (still matches Promise<string>)
+async getSupplier(): Promise<string> {
+  const value = await this.getFieldValue(this.supplierField);
+  console.log('supplier:', value);
+  return value;
+}
+
+async getInvoicingCountry(): Promise<string> {
+  const value = await this.getFieldValue(this.invoicingCountryField);
+  console.log('invoicingCountryField:', value);
+  return value;
+}
+
+async getDeclarationFrequency(): Promise<string> {
+  const value = await this.getFieldValue(this.declarationFrequencyField);
+  console.log('declarationFrequencyField:', value);
+  return value;
 }
 }
