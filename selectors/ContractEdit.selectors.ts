@@ -2,7 +2,6 @@ export const contractPageElements = {
   actions:{
     editButton: 'a.astore-sharp-button[title="Edit"]',
     contractstatus: 'span.title-status[class*="status-"]',
-
   },
   buttons: {
     back: 'a.astore-main-button[href="/contracts/list"]',
@@ -24,7 +23,7 @@ export const contractPageElements = {
     confirmAndSaveBtn: '#confirm_error__-confirm-and-save_form_submit',
     cancelBtn: '#cancel-button',
   },
-  
+
   archivemodale: {
     endQuarterSelect: 'select[name$="[end_quarter]"]',
     endYearInput: 'input[name$="[end_year]"]',
@@ -38,6 +37,12 @@ export const contractPageElements = {
     status: 'span.title-status',
     originalContract:'a[data-original-title="Edit"]',
     warningMessage: '.warning-message.hidden-element',
+},
+contractdetails : {
+    supplierField : '//label[contains(.,"Supplier")]/following-sibling::*[1]',
+    invoicingCountryField : '//label[contains(.,"Invoicing country")]/following-sibling::*[1]',
+    declarationFrequencyField : '//label[contains(.,"Declaration Frequency")]/following-sibling::*[1]',
+
 }
 
 };
