@@ -1,0 +1,4 @@
+Contract ID: 37426
+declarationFrequencyField: Annually
+supplier: 80859-BRASSERIE KRONENBOURG
+invoicingCountryField: France

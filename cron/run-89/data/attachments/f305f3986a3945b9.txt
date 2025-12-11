@@ -1,0 +1,6 @@
+Contract ID: 37249
+declarationFrequencyField: Quarterly
+supplier: 299737-Torn Ranch - NCA
+invoicingCountryField: Canada
+contract id 1: Contract - Torn Ranch - USD - 1.1
+contract id 2: Contract - Torn Ranch - USD - 2.1
