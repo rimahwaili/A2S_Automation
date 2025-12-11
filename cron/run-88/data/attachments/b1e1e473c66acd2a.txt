@@ -1,0 +1,6 @@
+Contract ID: 35440
+declarationFrequencyField: Quarterly
+supplier: 899-DODO S.A
+invoicingCountryField: France
+Page 1: Contract - 28250014 - 2.1
+Page 2: Contract - 28250014 - 3.1
