@@ -1,0 +1,4 @@
+Contract ID: 40294
+declarationFrequencyField: Quarterly
+supplier: 239548-ELECTRABEL NV
+invoicingCountryField: Belgium
