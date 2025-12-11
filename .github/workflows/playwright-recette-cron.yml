@@ -3,11 +3,11 @@ name: Playwright Recette (Cron + Allure + Mail)
 on:
   schedule:
     # 10h heure de Paris
-    - cron: "0 10 * * *"   # 10h CEST (hiver)
-    - cron: "0 9 * * *"    # 10h CEST (été)
-    # 14h heure de Paris
-    - cron: "30 13 * * *"   # 18h CET (hiver)
-    - cron: "30 12 * * *"   # 18h CEST (été)
+    - cron: "0 11 * * *"   # 10h CEST (hiver)
+    - cron: "0 10 * * *"    # 10h CEST (été)
+    # 15h heure de Paris
+    - cron: "0 14 * * *"   # 18h CET (hiver)
+    - cron: "0 13 * * *"   # 18h CEST (été)
   workflow_dispatch:
 
 permissions:

@@ -5,9 +5,9 @@ on:
     # 07h heure de Paris
     - cron: "0 11 * * *"   # 07h CET (hiver)
     - cron: "0 10 * * *"    # 07h CEST (été)
-    # 14h heure de Paris
-    - cron: "0 18 * * *"   # 14h CET (hiver)
-    - cron: "0 17 * * *"   # 14h CEST (été)
+    # 15h heure de Paris
+    - cron: "0 14 * * *"   # 14h CET (hiver)
+    - cron: "0 13 * * *"   # 14h CEST (été)
   workflow_dispatch:
 
 permissions:
