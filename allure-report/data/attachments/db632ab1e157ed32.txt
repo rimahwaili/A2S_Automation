@@ -1,0 +1,4 @@
+Contract ID: 38431
+declarationFrequencyField: Annually
+supplier: 46389-LAURENT-PERRIER DIFFUSION
+invoicingCountryField: France
