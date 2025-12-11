@@ -1,0 +1,4 @@
+Contract ID: 40940
+declarationFrequencyField: Quarterly
+supplier: 3067-MCI 02785.H6455 Essendi UK
+invoicingCountryField: United Kingdom

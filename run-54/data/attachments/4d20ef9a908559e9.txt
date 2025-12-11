@@ -1,0 +1,4 @@
+Contract ID: 37365
+declarationFrequencyField: Quarterly
+supplier: 2000035COL-DISTRITO HOREKA
+invoicingCountryField: Colombia
