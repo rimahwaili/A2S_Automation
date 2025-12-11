@@ -269,7 +269,7 @@ test.describe('Renew Contract ', () => {
     await contractPage.setActualEndDate('12/29/2027');
     
     const context = page.context();
-    await contractPage.confirmStep1(); 
+    //await contractPage.confirmStep1(); 
     const [newPage] = await Promise.all([
     context.waitForEvent('page'),
     contractPage.confirmFinal() ]);
