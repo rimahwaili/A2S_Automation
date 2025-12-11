@@ -1,0 +1,6 @@
+Contract ID: 33780
+declarationFrequencyField: Quarterly
+supplier: 279152-ARTE PROPRIA
+invoicingCountryField: Brazil
+Page 1: Contract - 293110401 - 1.1
+Page 2: Contract - 293110401 - 2.1
