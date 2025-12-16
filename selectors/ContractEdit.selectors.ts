@@ -10,6 +10,7 @@ export const contractPageElements = {
     versioning: 'a.astore-main-button[href*="/contracts/version/"]',
     renew: 'a.torenew-button[href*="trans_name=renew"]',
     submit: 'a.detachment-submit[href*="general_confirmation"]',
+    validate: '#contracts_validated_from_draft',
   },
   modals: {
     error: '[data-window="error-modal"]',
