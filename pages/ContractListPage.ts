@@ -192,4 +192,8 @@ async getAllVisibleRows() {
       .locator(ContractsSelectors.table.numberCell);
     await expect(numberCell).toContainText(expected);
   }
+
+  async clickNewContract(): Promise<void> {
+    await this.page.click(ContractsSelectors.actions.newContractButton);
+}
 }

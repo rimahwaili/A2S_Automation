@@ -47,12 +47,14 @@ export class ContractPage {
     readonly supplierField: Locator;
     readonly invoicingCountryField: Locator;
     readonly declarationFrequencyField: Locator;
+    readonly validate: Locator;
  
   constructor(page: Page) {
     this.page = page;
 
     this.editButton = page.locator(contractPageElements.actions.editButton);
     this.contractstatus = page.locator(contractPageElements.actions.contractstatus);
+    this.validate = this.page.locator(contractPageElements.buttons.validate);
     // ----- BUTTONS -----
     this.backToListBtn = page.locator(contractPageElements.buttons.back);
     this.errorBtn = page.locator(contractPageElements.buttons.error);
@@ -234,4 +236,13 @@ async getDeclarationFrequency(): Promise<string> {
   console.log('declarationFrequencyField:', value);
   return value;
 }
+
+async assertValidateButtonVisible() {
+    await expect(this.validate).toBeVisible();
+    await expect(this.validate).toBeEnabled();
+  }
+
+  async clickValidate() {
+    await this.validate.click();
+  }
 }
