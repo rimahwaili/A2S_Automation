@@ -14,7 +14,7 @@ test.describe('Reset Password:', () => {
    
   });
 
-  test('A2SQA2-2525 | @P1 @Login Sent password Reset correctly with valid email', async ({ page }) => {
+  test('A2SQA2-2525 | @P0 @Login Sent password Reset correctly with valid email', async ({ page }) => {
     
     allure.label('feature', 'Login');
     allure.epic('Login');
