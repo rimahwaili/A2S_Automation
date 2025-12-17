@@ -115,10 +115,6 @@ test.describe('Move Contract into Archived  ', () =>{
     const isStatusArchived = await contractPage.assertStatus('Archived');
   });
 
-
-
-
-
   test(' 2SQA2-2566 | @P0 Move contract status from To renew into Archived', async ({ page }) => {
     allure.label('feature', 'Contract');
     allure.epic('Contract');
@@ -366,3 +362,6 @@ test(' A2SQA2-2573 | @P0 Renew Expired Contract', async ({ page }) => {
 
 
  });
+
+ 
+ 
