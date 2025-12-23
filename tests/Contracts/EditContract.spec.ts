@@ -4,6 +4,7 @@ import { ContractPage } from '../../pages/EditContractPage';
 import { LoginPage } from '../../pages/LoginPage';
 import { allure } from 'allure-playwright';
 
+test.setTimeout(300_000);
 
  let contractsPage: ContractsPage;
  test.beforeEach(async ({ page }) => {
@@ -363,5 +364,203 @@ test(' A2SQA2-2573 | @P0 Renew Expired Contract', async ({ page }) => {
 
  });
 
- 
- 
+test.describe('Versionning Contract ', () => {
+
+  test('A2SQA2-2570 | @P0 Versionning Valid Contract', async ({ page }) => {
+  allure.label('feature', 'Contract');
+  allure.epic('Contract');
+  allure.story('Versionning contract');
+  allure.severity('critical');
+
+  const contractsPage = new ContractsPage(page);
+  const contractPage = new ContractPage(page);
+
+  await contractsPage.clickToValidTab();
+  await contractsPage.sortByStartDateMajorMinor();
+  await contractsPage.openFirstContract(1);
+
+  //const contractid = contractsPage.getContractId(); 
+  await contractPage.waitForReady(); 
+  const isStatusvalid = await contractPage.assertStatus('valid'); 
+  await contractPage.EditContract();
+  await contractPage.getDeclarationFrequency();
+  await contractPage.getSupplier();
+  await contractPage.getInvoicingCountry();
+
+  await contractPage.clickVersioning();
+  await contractPage.VersioningexpectVisible();
+  await contractPage.VersioningexpectWarningText();
+
+const [versionedPage] = await Promise.all([
+  page.context().waitForEvent('page'),
+  contractPage.submitVersioning(),
+]);
+
+// 🔁 RELOAD original page
+await page.reload({ waitUntil: 'domcontentloaded' });
+await contractPage.waitForReady();
+await contractPage.assertStatus('error');
+
+const oldTitle = await contractPage.getContractTitle();
+const oldVersion = await contractPage.extractVersion(oldTitle);
+
+// New version tab
+const newContractPage = new ContractPage(versionedPage);
+await versionedPage.bringToFront();
+
+// 🔁 RELOAD new page
+await versionedPage.reload({ waitUntil: 'domcontentloaded' });
+await newContractPage.waitForReady();
+
+await newContractPage.EditContract();
+
+const titlePage2 = await newContractPage.getContractTitle();
+const newVersion = await newContractPage.extractVersion(titlePage2);
+
+// Warning text (optional)
+const warningText = await newContractPage.getWarningText(versionedPage);
+
+// Version assertion
+newContractPage.assertMinorVersionIncrement(oldVersion, newVersion);
+const contractnewid = newContractPage.getContractId(); 
+// Status assertion
+//await newContractPage.assertStatus('draft');
+console.log('Polling for Validate button (max 3 minutes)...');
+
+await newContractPage.waitUntilValidateEnabled(300_000);
+});
+
+
+test('A2SQA2-2569 | @P0 Versionning Expired Contract', async ({ page }) => {
+  allure.label('feature', 'Contract');
+  allure.epic('Contract');
+  allure.story('Versionning contract');
+  allure.severity('critical');
+
+  const contractsPage = new ContractsPage(page);
+  const contractPage = new ContractPage(page);
+
+  await contractsPage.clickToExpiredTab();
+  await contractsPage.sortByStartDateMajorMinor();
+  await contractsPage.openFirstContract(1);
+
+  const contractid = contractsPage.getContractId(); 
+  await contractPage.waitForReady(); 
+  const isStatusvalid = await contractPage.assertStatus('expired'); 
+  await contractPage.EditContract();
+  await contractPage.getDeclarationFrequency();
+  await contractPage.getSupplier();
+  await contractPage.getInvoicingCountry();
+
+  await contractPage.clickVersioning();
+  await contractPage.VersioningexpectVisible();
+  await contractPage.VersioningexpectWarningText();
+
+const [versionedPage] = await Promise.all([
+  page.context().waitForEvent('page'),
+  contractPage.submitVersioning(),
+]);
+
+// 🔁 RELOAD original page
+await page.reload({ waitUntil: 'domcontentloaded' });
+await contractPage.waitForReady();
+await contractPage.assertStatus('error');
+
+const oldTitle = await contractPage.getContractTitle();
+const oldVersion = await contractPage.extractVersion(oldTitle);
+
+// New version tab
+const newContractPage = new ContractPage(versionedPage);
+await versionedPage.bringToFront();
+
+// 🔁 RELOAD new page
+await versionedPage.reload({ waitUntil: 'domcontentloaded' });
+await newContractPage.waitForReady();
+
+await newContractPage.EditContract();
+
+const titlePage2 = await newContractPage.getContractTitle();
+const newVersion = await newContractPage.extractVersion(titlePage2);
+
+// Warning text (optional)
+const warningText = await newContractPage.getWarningText(versionedPage);
+
+// Version assertion
+newContractPage.assertMinorVersionIncrement(oldVersion, newVersion);
+const contractnewid = newContractPage.getContractId(); 
+// Status assertion
+//await newContractPage.assertStatus('draft');
+console.log('Polling for Validate button (max 3 minutes)...');
+
+await newContractPage.waitUntilValidateEnabled(300_000);
+});
+
+
+test('A2SQA2-2571 | @P0 Versionning To renew Contract', async ({ page }) => {
+  allure.label('feature', 'Contract');
+  allure.epic('Contract');
+  allure.story('Versionning contract');
+  allure.severity('critical');
+
+  const contractsPage = new ContractsPage(page);
+  const contractPage = new ContractPage(page);
+
+  await contractsPage.clickToRenewtab();
+  await contractsPage.sortByStartDateMajorMinor();
+  await contractsPage.openFirstContract(1);
+
+
+  await contractPage.waitForReady(); 
+  const isStatusvalid = await contractPage.assertStatus('to renew'); 
+  await contractPage.EditContract();
+  const contractid = contractPage.getContractId(); 
+  await contractPage.getDeclarationFrequency();
+  await contractPage.getSupplier();
+  await contractPage.getInvoicingCountry();
+
+  await contractPage.clickVersioning();
+  await contractPage.VersioningexpectVisible();
+  await contractPage.VersioningexpectWarningText();
+
+const [versionedPage] = await Promise.all([
+  page.context().waitForEvent('page'),
+  contractPage.submitVersioning(),
+]);
+
+// 🔁 RELOAD original page
+await page.reload({ waitUntil: 'domcontentloaded' });
+await contractPage.waitForReady();
+await contractPage.assertStatus('error');
+
+const oldTitle = await contractPage.getContractTitle();
+const oldVersion = await contractPage.extractVersion(oldTitle);
+
+// New version tab
+const newContractPage = new ContractPage(versionedPage);
+await versionedPage.bringToFront();
+
+// 🔁 RELOAD new page
+await versionedPage.reload({ waitUntil: 'domcontentloaded' });
+await newContractPage.waitForReady();
+
+await newContractPage.EditContract();
+
+const titlePage2 = await newContractPage.getContractTitle();
+const newVersion = await newContractPage.extractVersion(titlePage2);
+
+// Warning text (optional)
+const warningText = await newContractPage.getWarningText(versionedPage);
+
+// Version assertion
+newContractPage.assertMinorVersionIncrement(oldVersion, newVersion);
+const contractnewid = newContractPage.getContractId(); 
+// Status assertion
+//await newContractPage.assertStatus('draft');
+console.log('Polling for Validate button (max 3 minutes)...');
+
+await newContractPage.waitUntilValidateEnabled(300_000);
+
+
+
+});
+});

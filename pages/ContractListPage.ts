@@ -41,6 +41,11 @@ export class ContractsPage {
   readonly customPageSubmit: Locator;
   readonly activePage: Locator;
 
+  // Headers for sorting 
+  readonly startDateHeader: Locator;
+  readonly majorVersionHeader: Locator;
+  readonly minorVersionHeader: Locator;
+
   constructor(page: Page) {
     this.page = page;
 
@@ -79,9 +84,16 @@ export class ContractsPage {
     this.customPageInput = page.locator(ContractsSelectors.pagination.customPageInput);
     this.customPageSubmit = page.locator(ContractsSelectors.pagination.customPageSubmit);
     this.activePage = page.locator(ContractsSelectors.pagination.activePage);
+
+    // Headers for sorting
+    this.startDateHeader = page.locator('#contracts_actual_beginning_date_th');
+    this.majorVersionHeader = page.locator('#contracts_major_version_th');
+    this.minorVersionHeader = page.locator('#contracts_minor_version_th');
   }
 
   // --- Méthodes métier ---
+
+
 
   async goto() {
     await this.page.goto('/contracts');
@@ -110,6 +122,22 @@ export class ContractsPage {
   await table.waitFor({ state: 'visible', timeout: 10000 });
 
 }
+
+
+
+ async sortByStartDateMajorMinor() {
+    await this.startDateHeader.click();
+    await this.startDateHeader.click();
+
+   /* await this.majorVersionHeader.click({
+      modifiers: ['Shift'],
+    });
+
+    await this.minorVersionHeader.click({
+      modifiers: ['Shift'],
+    });*/
+  }
+
 
 async getAllVisibleRows() {
   const visibleRows: { row: Locator; number: string; status: string }[] = [];
@@ -171,14 +199,14 @@ async getAllVisibleRows() {
     await row.locator(ContractsSelectors.rowActions.view).click();
 
   }
-  async getContractId(){
+async getContractId(): Promise<string | undefined> {
+  const currentUrl = this.page.url();
+  const match = currentUrl.match(/\/contracts\/(?:edit|show)\/(\d+)/);
+  const contractId = match?.[1];
+  console.log('Contract ID:', contractId);
+  return contractId;
+}
 
-    const currentUrl = this.page.url();
-    const idMatch = currentUrl.match(/\/contracts\/show\/(\d+)/);
-    const contractId = idMatch ? idMatch[1] : undefined;
-    console.log('Contract ID:', contractId);
-    return contractId
-  }
   async expectAllRowsToHaveStatus(status: string) {
     const count = await this.tableRows.count();
     for (let i = 0; i < count; i++) {
