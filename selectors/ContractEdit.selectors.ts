@@ -11,6 +11,7 @@ export const contractPageElements = {
     renew: 'a.torenew-button[href*="trans_name=renew"]',
     submit: 'a.detachment-submit[href*="general_confirmation"]',
     validate: '#contracts_validated_from_draft',
+    saveDraft: '#edit_as_tabs_save-the-draft_form_submit',
   },
   modals: {
     error: '[data-window="error-modal"]',
@@ -42,7 +43,7 @@ export const contractPageElements = {
 contractdetails : {
     supplierField : '//label[contains(.,"Supplier")]/following-sibling::*[1]',
     invoicingCountryField : '//label[contains(.,"Invoicing country")]/following-sibling::*[1]',
-    declarationFrequencyField : '//label[contains(.,"Declaration Frequency")]/following-sibling::*[1]',
+    declarationFrequencyField : 'span[id^="contract_"]:not([id^="contract_service_"])[id$="_declaration_frequency"]',
 
 }
 

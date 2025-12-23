@@ -1,5 +1,6 @@
 import { Locator, Page, expect } from '@playwright/test';
 import { contractPageElements } from '../selectors/ContractEdit.selectors';
+import { Version } from '../helpers/versioning.helper';
 
 export class ContractPage {
   readonly page: Page;
@@ -48,7 +49,16 @@ export class ContractPage {
     readonly invoicingCountryField: Locator;
     readonly declarationFrequencyField: Locator;
     readonly validate: Locator;
- 
+    readonly saveDraftButton: Locator;
+
+    //versioning
+    readonly versioningModal: Locator;
+    readonly versioningWarningText: Locator;
+    readonly versioningSubmitButton: Locator;
+// confirmation modal
+    readonly confirmationModal: Locator; 
+    readonly yesButton: Locator ;  
+      
   constructor(page: Page) {
     this.page = page;
 
@@ -93,6 +103,16 @@ export class ContractPage {
     this.supplierField = page.locator(contractPageElements.contractdetails.supplierField);
     this.invoicingCountryField = page.locator(contractPageElements.contractdetails.invoicingCountryField);
     this.declarationFrequencyField = page.locator(contractPageElements.contractdetails.declarationFrequencyField);
+  
+    this.supplierField = page.locator(contractPageElements.contractdetails.supplierField);
+    this.versioningModal = page.locator('.modal-body');
+    this.versioningWarningText = this.modal.locator('.modal-text');
+    this.versioningSubmitButton = this.modal.getByRole('link', { name: 'Submit' });
+    this.saveDraftButton = page.locator(contractPageElements.buttons.saveDraft);
+    // confirmation modal
+    this.confirmationModal = page.locator('[data-window="general-confirmation-modal"]');
+    this.yesButton = this.confirmationModal.getByRole('button', { name: 'Yes' });
+
   }
 
   // Naviguer vers un contrat donné
@@ -159,6 +179,21 @@ async fillStep1Data() {
   await this.modal.click(); 
 }
 
+ async VersioningexpectVisible() {
+    await expect(this.versionModal).toBeVisible();
+  }
+
+  async VersioningexpectWarningText() {
+    await expect(this.versioningWarningText).toContainText(
+      'do you confirm this action'
+    );
+  }
+
+  async submitVersioning() {
+    await Promise.all([
+      this.versioningSubmitButton.click(),
+    ]);
+  }
 
  async setDeclarativeEndQuarter(value: string) {
   await this.endQuarterSelect.first().click({ force: true });
@@ -175,8 +210,8 @@ async setActualEndDate(date: string) {
 
 async confirmStep1() {
   await this.confirmStep1Btn.click();
-
 }
+
 async confirmFinal() {
     await this.confirmFinalBtn.click();
     await expect(this.modal).toBeHidden();
@@ -194,10 +229,43 @@ async getContractTitle(): Promise<string> {
     return await this.NewContractStatus.textContent() ?? '';
   }
 
+async  extractVersion(text: string): Promise<Version> {
+  const match = text.match(/(\d+)\.(\d+)/);
+  expect(match).not.toBeNull();
+
+  return {
+    major: Number(match![1]),
+    minor: Number(match![2]),
+  };
+}
+
+async  assertMinorVersionIncrement(
+  previous: Version,
+  current: Version
+): Promise<void> {
+  expect(current.major).toBe(previous.major);
+  expect(current.minor).toBe(previous.minor + 1);
+}
+
+async getWarningText(page: Page): Promise<string> {
+  const warning = page.locator('#flash .alert-warning');
+  if (await warning.count() === 0) {
+    return '';
+  }
+  if (!(await warning.isVisible())) {
+    return '';
+  }
+  const text = (await warning.textContent())?.trim() ?? '';
+  console.log('warning message:', text);
+
+  return text;
+}
+
   async assertStatus(expectedStatus: string) {
     const status = await this.getContractStatus();
     expect(status.trim().toLowerCase()).toBe(expectedStatus.toLowerCase());
   }
+
   async  getOriginalContract(page: Page): Promise<string> {
   const contractLink = this.originalContract;
   const contractName = await contractLink.textContent();
@@ -225,6 +293,10 @@ async getSupplier(): Promise<string> {
   return value;
 }
 
+async clickSaveDraft() {
+    await this.saveDraftButton.click();
+  }
+
 async getInvoicingCountry(): Promise<string> {
   const value = await this.getFieldValue(this.invoicingCountryField);
   console.log('invoicingCountryField:', value);
@@ -233,7 +305,7 @@ async getInvoicingCountry(): Promise<string> {
 
 async getDeclarationFrequency(): Promise<string> {
   const value = await this.getFieldValue(this.declarationFrequencyField);
-  console.log('declarationFrequencyField:', value);
+  console.log('Declaration frequency:', value);
   return value;
 }
 
@@ -245,4 +317,52 @@ async assertValidateButtonVisible() {
   async clickValidate() {
     await this.validate.click();
   }
+
+  async expectValidateEnabled() {
+  await expect(this.validate).toBeEnabled();
+}
+
+async getContractId(): Promise<string | undefined> {
+  const currentUrl = this.page.url();
+  const match = currentUrl.match(/\/contracts\/(?:edit|show)\/(\d+)/);
+  const contractId = match?.[1];
+  console.log('Contract ID:', contractId);
+  return contractId;
+}
+async waitUntilValidateEnabled(maxWaitMs = 180_000) {
+  const interval = 10_000; // 10 seconds
+  const startTime = Date.now();
+
+  while (Date.now() - startTime < maxWaitMs) {
+    await this.page.reload({ waitUntil: 'domcontentloaded' });
+    console.log('Page reloaded, checking Validate link...');
+
+    const validateButton = this.page.locator('a.astore-main-button.modal-btn:has-text("Validate")');
+
+    if (await validateButton.count() > 0 && await validateButton.isVisible()) {
+      console.log('Validate link is visible! Clicking...');
+      await validateButton.click();
+
+      // Define modal and yes button AFTER clicking the link
+      const confirmationModal = this.page.locator('#js-confirmation-modal-section');
+      const yesButton = confirmationModal.locator('button.js-confirm-with-params:has-text("Yes")');
+
+      // Wait for modal and button to appear
+      await confirmationModal.waitFor({ state: 'visible', timeout: 15000 });
+      console.log('Confirmation modal is visible');
+
+      await yesButton.waitFor({ state: 'visible', timeout: 10000 });
+      await yesButton.click();
+      console.log('Clicked Yes button in modal');
+
+      return;
+    }
+
+    console.log('Validate link not ready yet, waiting for next reload...');
+    await this.page.waitForTimeout(interval);
+  }
+
+  throw new Error('Validate link did not become ready within timeout');
+}
+
 }
