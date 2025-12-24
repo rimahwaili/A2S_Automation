@@ -1,0 +1,45 @@
+{
+  "toaster_success_create": "Contact a été créé avec succès.",
+  "toaster_success_password": "Succès - Mot de passe modifié",
+  "toaster_error_inactive": "Erreur - Votre compte a été désactivé. En cas d’erreur, veuillez contacter notre service client.",
+  "toaster_error_invalid": "Mauvais mot de passe ou email.",
+    "successHeader": "Succès",
+    "successMessage": "Vous êtes désormais connecté en tant que",
+    "loginButton": "Se connecter", 
+    "invalidCredentialsMessage": "Wrong Email or Password", 
+    "listTitle": "Liste des contacts",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "E-mail",
+    "function": "Fonction",
+    "active": "Actif",
+    "profile": "Profil",
+    "areas": "Zones",
+    "actions": "Actions",
+    "newContact": "Nouveau contact",
+    "addFilters": "Ajouter des filtres",
+   "exportSuccess": "Un email contenant votre liste de contacts vous sera envoyé prochainement, veuillez vérifier votre boîte mail.",
+    "all": "[Tous]",
+    "activeValues": {
+      "true": "vrai",
+      "false": "faux"
+    },
+    "profileValues": {
+      "supplier": "Fournisseur",
+      "client": "Client",
+      "buyer": "Acheteur",
+      "businessDev": "Développeur d'affaire",
+      "zoneAdmin": "Admin de Zone",
+      "support": "Support",
+      "centralAdmin": "Admin Central"
+    },
+    "functionValues": {
+      "director": "Directeur Commercial",
+      "billingManager": "Responsable Facturation",
+      "ceo": "PDG",
+     "assistant": "Assistant",
+      "customerCare": "Customer Care",
+      "other": "Autres"
+    }
+  
+}
