@@ -51,7 +51,7 @@ test.describe('Reset Password:', () => {
     allure.story('Reset password when using  Inactif email');
     await forgotPassword.goto();
     await forgotPassword.resetPassword(credentials.inactive_username);
-    await expect(page.locator('#warning')).toContainText('Your account has been deactivated');
+    await expect(page.locator('#warning')).toContainText('Your account has been desactivated. In case of error, please contact our customer service department');
   });
 
   test('A2SQA2-2526 | @P0 @Login Fails reset password when using wrong email', async ({ page }) => {

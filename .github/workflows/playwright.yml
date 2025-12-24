@@ -106,7 +106,7 @@ jobs:
           publish_branch: gh-pages
           destination_dir: run-${{ github.run_number }}
           keep_files: true
-          force_orphan: false
+          force_orphan: true
           commit_message: "🚀 Publish Allure report run #${{ github.run_number }}"
 
       - name: Send Allure Report Email
