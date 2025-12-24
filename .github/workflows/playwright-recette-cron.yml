@@ -3,7 +3,7 @@ name: Playwright Recette (Cron + Allure + Mail)
 on:
   schedule:
     # 10h heure de Paris
-    - cron: "0 11 * * *"   # 10h CEST (hiver)
+    - cron: "0 9 * * *"   # 10h CEST (hiver)
     - cron: "0 10 * * *"    # 10h CEST (été)
     # 15h heure de Paris
     - cron: "0 14 * * *"   # 18h CET (hiver)
@@ -40,7 +40,7 @@ jobs:
           docker run --rm \
             -v ${{ github.workspace }}/.env.recette:/app/.env.recette \
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
-            playwright-tests npx playwright test --grep @P0  --reporter=line,allure-playwright --retries=2 || true
+            playwright-tests npx playwright test --grep @P0  --reporter=line,allure-playwright || true
 
       - name: Generate Allure report
         if: always()
