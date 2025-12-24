@@ -1,0 +1,4 @@
+Contract ID: 37681
+Declaration frequency: Quarterly
+supplier: 329780-R.B.C PARIS
+invoicingCountryField: France

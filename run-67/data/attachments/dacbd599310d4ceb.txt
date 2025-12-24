@@ -1,0 +1,4 @@
+Contract ID: 37630
+Declaration frequency: Quarterly
+supplier: 372816-Naber Kaffee Manufaktur GmbH
+invoicingCountryField: Austria
