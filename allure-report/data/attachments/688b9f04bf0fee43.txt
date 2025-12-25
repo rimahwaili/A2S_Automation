@@ -1,0 +1,3 @@
+Declaration frequency: Annually
+supplier: 56684-COCA COLA EUROPACIFIC PARTNERS FRANCE
+invoicingCountryField: France
