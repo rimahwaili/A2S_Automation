@@ -4,7 +4,7 @@ import { ContractPage } from '../../pages/EditContractPage';
 import { LoginPage } from '../../pages/LoginPage';
 import { allure } from 'allure-playwright';
 
-test.setTimeout(300_000);
+//test.setTimeout(300_000);
 
  let contractsPage: ContractsPage;
  test.beforeEach(async ({ page }) => {
