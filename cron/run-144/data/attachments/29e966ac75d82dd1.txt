@@ -1,0 +1,4 @@
+Contract ID: 30627
+Declaration frequency: Quarterly
+supplier: ME-971166-Hartmann Tresore Middle East Llc.
+invoicingCountryField: United Arab Emirates
