@@ -1,0 +1,4 @@
+Contract ID: 41319
+Declaration frequency: Annually
+supplier: 40367-CIAT FRANCE
+invoicingCountryField: CORP

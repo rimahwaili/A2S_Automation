@@ -1,0 +1,8 @@
+{
+  anticipated: false,
+  period: 'S1',
+  year: 2028,
+  startDate: '01/01/2028',
+  endDate: '06/30/2028',
+  country: 'Hungary'
+}

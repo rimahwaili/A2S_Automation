@@ -1,0 +1,396 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: recette
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+              - text: Contracts
+          - paragraph [ref=e61]:
+            - img [ref=e62]
+          - paragraph [ref=e63]:
+            - link [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/30627
+              - text: MEA-00077 - 1.1
+          - paragraph [ref=e65]:
+            - img [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading [level=2] [ref=e70]:
+            - generic [ref=e71]: valid
+            - text: Contract - MEA-00077 - 1.1
+          - generic [ref=e72]:
+            - generic [ref=e74] [cursor=pointer]: Main Information
+            - generic [ref=e76] [cursor=pointer]: Invoicing Information
+            - generic [ref=e78] [cursor=pointer]: Documents (0)
+            - generic [ref=e80] [cursor=pointer]: Services
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - generic [ref=e86]:
+                    - heading [level=2] [ref=e88]: Main Information
+                    - generic [ref=e91]:
+                      - generic [ref=e92]: "Supplier:"
+                      - link [ref=e95] [cursor=pointer]:
+                        - /url: /suppliers/8781
+                        - text: ME-971166-Hartmann Tresore Middle East Llc.
+                    - generic [ref=e98]:
+                      - generic [ref=e99]: "Number:"
+                      - generic [ref=e101]: MEA-00077
+                    - generic [ref=e104]:
+                      - generic [ref=e105]: "Name:"
+                      - generic [ref=e106]:
+                        - generic [ref=e107]:
+                          - generic [ref=e109] [cursor=pointer]: Nomination and Services Agreement
+                          - generic [ref=e112]:
+                            - textbox [ref=e114]
+                            - list [ref=e115]
+                        - link [ref=e116] [cursor=pointer]:
+                          - /url: /contract_titles/new
+                          - generic [ref=e117]: 
+                          - text: New
+                    - generic [ref=e120]:
+                      - generic [ref=e121]: "Type:"
+                      - generic [ref=e123]: P2
+                    - generic [ref=e126]:
+                      - generic [ref=e127]: "Description: (visible by customers in the directory)"
+                      - textbox [ref=e129]
+                    - generic [ref=e132]:
+                      - generic [ref=e133]: "Categories:"
+                      - list [ref=e135]:
+                        - listitem [ref=e136]: E00052 Access control (locks and safes)
+                    - generic [ref=e139]:
+                      - generic [ref=e140]: "Main Category:"
+                      - generic [ref=e142]:
+                        - generic [ref=e144] [cursor=pointer]: E00052 Access control (locks and safes)
+                        - generic [ref=e147]:
+                          - textbox [ref=e149]
+                          - list [ref=e150]
+                    - generic [ref=e153]:
+                      - generic [ref=e154]: "Brands:"
+                      - generic [ref=e156]: None
+                    - generic [ref=e159]:
+                      - generic [ref=e160]: "Category Manager:"
+                      - generic [ref=e162]:
+                        - generic [ref=e164] [cursor=pointer]: claire.luna@accor.com
+                        - generic [ref=e167]:
+                          - textbox [ref=e169]
+                          - list [ref=e170]
+                    - generic [ref=e173]:
+                      - generic [ref=e174]: "E Procurement:"
+                      - textbox [ref=e176]: "N"
+                    - generic [ref=e179]:
+                      - generic [ref=e180]: "Former Numbers:"
+                      - textbox [ref=e182]
+                    - generic [ref=e185]:
+                      - generic [ref=e186]: "Opex:"
+                      - generic [ref=e187]:
+                        - spinbutton [ref=e188]
+                        - generic [ref=e189]: "%"
+                  - generic [ref=e190]:
+                    - heading [level=2] [ref=e192]: Declaration
+                    - generic [ref=e195]:
+                      - generic [ref=e196]: "Declaration Frequency:"
+                      - generic [ref=e198]: Quarterly
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: "Allow specific frequency for services:"
+                      - generic [ref=e204]: This frequency is applied to all services
+                - generic [ref=e205]:
+                  - generic [ref=e206]:
+                    - heading [level=2] [ref=e208]: Contracts Dates
+                    - generic [ref=e211]:
+                      - generic [ref=e212]: "Silent Extension: *"
+                      - combobox [ref=e214]
+                    - generic [ref=e217]:
+                      - generic [ref=e218]: "Actual Beginning Date:"
+                      - generic [ref=e220]: 2017-01-01
+                    - generic [ref=e224]: "Actual End Date:"
+                    - generic [ref=e227]:
+                      - generic [ref=e228]: "Declarative Start Quarter:"
+                      - generic [ref=e230]: 1st of January
+                    - generic [ref=e233]:
+                      - generic [ref=e234]: "Declarative Start Year:"
+                      - generic [ref=e236]: "2017"
+                    - generic [ref=e239]:
+                      - generic [ref=e240]: "Signing date:"
+                      - generic [ref=e241]:
+                        - textbox [ref=e242]: 01/01/2017
+                        - generic [ref=e244] [cursor=pointer]: 
+                    - generic [ref=e247]:
+                      - generic [ref=e248]: "Theoretical end date:"
+                      - generic [ref=e249]:
+                        - textbox [ref=e250]: 01/01/2019
+                        - generic [ref=e252] [cursor=pointer]: 
+                    - generic [ref=e256]: "Declarative End Quarter:"
+                    - generic [ref=e260]: "Declarative End Year:"
+                  - generic [ref=e261]:
+                    - heading [level=2] [ref=e263]: Contract Terms
+                    - generic [ref=e266]:
+                      - generic [ref=e267]: "Invoicing country:"
+                      - link [ref=e270] [cursor=pointer]:
+                        - /url: /countries/234
+                        - text: United Arab Emirates
+                    - generic [ref=e273]:
+                      - generic [ref=e274]: "Currency:"
+                      - link [ref=e277] [cursor=pointer]:
+                        - /url: /currencies/9
+                        - text: AED
+                    - generic [ref=e280]:
+                      - generic [ref=e281]: "Duration (months) = Term:"
+                      - generic [ref=e283]: "24"
+                    - generic [ref=e286]:
+                      - generic [ref=e287]: "Covered Perimeter: *"
+                      - list [ref=e289]:
+                        - listitem [ref=e290]: SUB-SAHARA AFRICA (full)
+                        - listitem [ref=e291]: ASIA (3 / 36)
+                        - listitem [ref=e292]: MAGHREB (full)
+                        - listitem [ref=e293]: NEAR AND MIDDLE EAST (full)
+                    - generic [ref=e296]:
+                      - generic [ref=e297]: "Declaration Contacts:"
+                      - generic [ref=e299]:
+                        - list [ref=e300]:
+                          - listitem [ref=e301]:
+                            - textbox [ref=e302]: Select Some Options
+                        - list [ref=e304]
+                    - generic [ref=e307]:
+                      - generic [ref=e308]: "Payment Term:"
+                      - generic [ref=e309]:
+                        - generic [ref=e310]:
+                          - generic [ref=e312] [cursor=pointer]: 45 days billing date
+                          - generic [ref=e315]:
+                            - textbox [ref=e317]
+                            - list [ref=e318]
+                        - link [ref=e319] [cursor=pointer]:
+                          - /url: /contract_payment_terms/new
+                          - generic [ref=e320]: 
+                          - text: New
+                    - generic [ref=e323]:
+                      - generic [ref=e324]: "Payment Mode:"
+                      - generic [ref=e325]:
+                        - generic [ref=e326]:
+                          - generic [ref=e328] [cursor=pointer]: TRANSFER
+                          - generic [ref=e331]:
+                            - textbox [ref=e333]
+                            - list [ref=e334]
+                        - link [ref=e335] [cursor=pointer]:
+                          - /url: /contract_payment_modes/new
+                          - generic [ref=e336]: 
+                          - text: New
+                    - generic [ref=e339]:
+                      - generic [ref=e340]: "Cancellation Term:"
+                      - generic [ref=e341]:
+                        - generic [ref=e342]:
+                          - generic [ref=e344] [cursor=pointer]: Voidable at any time
+                          - generic [ref=e347]:
+                            - textbox [ref=e349]
+                            - list [ref=e350]
+                        - link [ref=e351] [cursor=pointer]:
+                          - /url: /contract_cancellation_terms/new
+                          - generic [ref=e352]: 
+                          - text: New
+                    - generic [ref=e355]:
+                      - generic [ref=e356]: "Expected Contract Value:"
+                      - spinbutton [ref=e358]
+              - generic [ref=e359]:
+                - heading [level=2] [ref=e360]: Invoicing Details
+                - generic [ref=e361]: No address is filled in the supplier form
+                - list [ref=e362]
+                - link [ref=e365] [cursor=pointer]:
+                  - /url: /currencies/9
+                  - text: AED
+                - textbox [ref=e366]: Hartmann Tresore Middle East Llc.
+                - generic [ref=e367]: Quarterly
+                - generic [ref=e368]: This periodicity is applied to all services
+                - spinbutton [ref=e369]
+                - combobox [ref=e370]
+                - spinbutton [ref=e371]
+                - textbox [ref=e372]
+              - button [ref=e375] [cursor=pointer]: + Add new Document
+              - link [ref=e377] [cursor=pointer]:
+                - /url: /suppliers/show/8781?@all_documents=true&to_tab=document
+                - text: View all supplier documents
+              - generic [ref=e379]:
+                - link [ref=e380] [cursor=pointer]:
+                  - /url: /contracts/list
+                  - text: Back to the list
+                - link [ref=e381] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/30627?trans_name=contracts_error_from_validated
+                  - text: Error
+                - link [ref=e382] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/30627?trans_name=contracts_archived_from_validated&date_impacted=&value_impacted=
+                  - text: Archive
+                - link [ref=e383] [cursor=pointer]:
+                  - /url: /contracts/version/30627
+                  - text: Versioning
+                - link [ref=e384] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/30627?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                  - text: Renew
+                - link [ref=e385] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/30627?declarative_impact=true
+                  - text: Submit
+            - listitem [ref=e387]:
+              - generic [ref=e388] [cursor=pointer]: Classic Procurement Service Fee
+              - img [ref=e389]
+            - heading [level=3] [ref=e391]: Service details
+            - generic [ref=e392]:
+              - generic [ref=e394]:
+                - generic [ref=e395]: "Name:"
+                - textbox [ref=e401]
+              - generic [ref=e403]:
+                - generic [ref=e404]: "Depth of declaration: *"
+                - generic [ref=e405]: Hotel
+              - generic [ref=e408]: Redistribution
+              - generic [ref=e411]:
+                - generic [ref=e412]: "Description:"
+                - textbox [ref=e413]
+              - generic [ref=e415]:
+                - generic [ref=e416]: "Declared By:"
+                - combobox [ref=e417]
+              - generic [ref=e420]: "Maximum Amount:"
+              - generic [ref=e422]:
+                - generic [ref=e423]: "Tax:"
+                - textbox [ref=e424]: "5.0"
+                - generic [ref=e425]: "%"
+              - generic [ref=e427]:
+                - generic [ref=e428]: "Declaration Frequency:"
+                - generic [ref=e429]: Quarterly
+              - generic [ref=e431]:
+                - generic [ref=e432]: "Invoicing Periodicity:"
+                - generic [ref=e433]: Quarterly
+              - generic [ref=e435]:
+                - generic [ref=e436]: "Import data from ASR:"
+                - textbox [ref=e437]
+            - list [ref=e439]:
+              - generic [ref=e441]: 3% of Agreement for specific product and services
+              - img [ref=e443] [cursor=pointer]
+            - generic [ref=e444] [cursor=pointer]: Save this Service
+      - generic [ref=e445]:
+        - generic [ref=e446]: "Version: 2.31.10"
+        - generic [ref=e447]:
+          - link [ref=e448] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e449] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e451]:
+    - document [ref=e452]:
+      - generic [ref=e453]:
+        - button [ref=e454] [cursor=pointer]: ×
+        - generic [ref=e455]:
+          - banner [ref=e456]:
+            - heading [level=1] [ref=e457]: End dates confirmation
+          - generic [ref=e459]:
+            - paragraph [ref=e460]: "Warning! declarations can be cancelled by this action Before saving, please confirm the following dates:"
+            - generic [ref=e461]:
+              - generic [ref=e462]:
+                - generic [ref=e465]:
+                  - generic [ref=e466]: "End Quarter:"
+                  - combobox [ref=e468]
+                - generic [ref=e471]:
+                  - generic [ref=e472]: "End Year:"
+                  - textbox [ref=e474]: "2027"
+                - generic [ref=e477]:
+                  - generic [ref=e478]: "Contract end date:"
+                  - generic [ref=e479]:
+                    - textbox [ref=e480]: 12/29/2027
+                    - generic [ref=e482]: 
+              - button [ref=e484] [cursor=pointer]: Confirm and save
+  - dialog [ref=e487]:
+    - paragraph [ref=e491]: Share your feedback!💡
+    - paragraph [ref=e495]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e498]:
+      - strong [ref=e499]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e504]:
+      - generic [ref=e505]:
+        - radio "1"
+        - generic [ref=e506]: "1"
+        - generic [ref=e507]: Very difficult
+      - generic [ref=e508]:
+        - radio "2"
+        - generic [ref=e509]: "2"
+      - generic [ref=e510]:
+        - radio "3"
+        - generic [ref=e511]: "3"
+      - generic [ref=e512]:
+        - radio "4"
+        - generic [ref=e513]: "4"
+      - generic [ref=e514]:
+        - radio "5"
+        - generic [ref=e515]: "5"
+        - generic [ref=e516]: Very easy
+    - generic [ref=e518]:
+      - button "Remind me later" [ref=e520] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e521]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e522] [cursor=pointer]: ×
+```

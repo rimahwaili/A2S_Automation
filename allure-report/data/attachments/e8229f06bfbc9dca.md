@@ -1,0 +1,114 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: recette
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - heading [level=1] [ref=e58]: Confirmation required
+        - generic [ref=e59]:
+          - paragraph [ref=e61]: Warning! This contract will be put in error, all of its declarations will be irreversibly cancelled, do you confirm this action?
+          - link [ref=e63] [cursor=pointer]:
+            - /url: /contracts/version/41235?user_confirmed=true
+            - text: Submit
+      - generic [ref=e64]:
+        - generic [ref=e65]: "Version: 2.31.10"
+        - generic [ref=e66]:
+          - link [ref=e67] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e68] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e71]:
+    - paragraph [ref=e75]: Share your feedback!💡
+    - paragraph [ref=e79]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e82]:
+      - strong [ref=e83]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e88]:
+      - generic [ref=e89]:
+        - radio "1"
+        - generic [ref=e90]: "1"
+        - generic [ref=e91]: Very difficult
+      - generic [ref=e92]:
+        - radio "2"
+        - generic [ref=e93]: "2"
+      - generic [ref=e94]:
+        - radio "3"
+        - generic [ref=e95]: "3"
+      - generic [ref=e96]:
+        - radio "4"
+        - generic [ref=e97]: "4"
+      - generic [ref=e98]:
+        - radio "5"
+        - generic [ref=e99]: "5"
+        - generic [ref=e100]: Very easy
+    - generic [ref=e102]:
+      - button "Remind me later" [ref=e104] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e105]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e106] [cursor=pointer]: ×
+```
