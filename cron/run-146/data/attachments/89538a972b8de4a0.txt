@@ -1,0 +1,4 @@
+Contract ID: 39047
+Declaration frequency: Quarterly
+supplier: 316099-Service-Bund National Vertriebsgesellschaft mbH
+invoicingCountryField: Germany

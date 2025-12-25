@@ -1,0 +1,4 @@
+Contract ID: 41343
+Declaration frequency: Annually
+supplier: 44931-SNEF
+invoicingCountryField: France

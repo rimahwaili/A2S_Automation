@@ -1,0 +1,8 @@
+{
+  anticipated: true,
+  period: 'Q4',
+  year: 2026,
+  startDate: '10/01/2026',
+  endDate: '12/31/2026',
+  country: 'Peru'
+}
