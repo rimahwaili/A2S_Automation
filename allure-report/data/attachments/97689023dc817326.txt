@@ -1,0 +1,4 @@
+Contract ID: 34726
+Declaration frequency: Quarterly
+supplier: 301933-WILLIAMS TELECOMMUNICATIONS CORP
+invoicingCountryField: Canada
