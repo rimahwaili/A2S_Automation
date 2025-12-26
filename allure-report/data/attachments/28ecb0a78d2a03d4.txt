@@ -1,0 +1,6 @@
+Contract ID: 31431
+Declaration frequency: Quarterly
+supplier: 334070-Alfadot Kft.
+invoicingCountryField: Hungary
+Page 1: Contract - 1 20 E0L005 HU 01540 - 1.1
+Page 2: Contract - 1 20 E0L005 HU 01540 - 2.1
