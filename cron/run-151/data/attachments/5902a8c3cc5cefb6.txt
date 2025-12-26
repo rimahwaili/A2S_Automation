@@ -1,0 +1,10 @@
+Contract ID: 41280
+Declaration frequency: Quarterly
+supplier: 9271-DIVERSEY FRANCE SAS
+invoicingCountryField: France
+Contract ID: 41366
+Polling for Validate button (max 3 minutes)...
+Page reloaded, checking Validate link...
+Validate link is visible! Clicking...
+Confirmation modal is visible
+Clicked Yes button in modal
