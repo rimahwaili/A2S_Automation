@@ -1,0 +1,6 @@
+Contract ID: 39541
+Declaration frequency: Annually
+supplier: 396789-DAZN Limited
+invoicingCountryField: Germany
+Page 1: Contract - DES3-24-5-030 - 2.1
+Page 2: Contract - DES3-24-5-030 - 3.1

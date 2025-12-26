@@ -1,0 +1,6 @@
+Contract ID: 40683
+Declaration frequency: Quarterly
+supplier: S100197-DIVERSEY KFT.
+invoicingCountryField: Hungary
+Page 1: Contract - 26033026 - 3.1
+Page 2: Contract - 26033026 - 4.1

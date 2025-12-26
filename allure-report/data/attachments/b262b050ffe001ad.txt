@@ -1,0 +1,9 @@
+Contract ID: 41343
+Declaration frequency: Annually
+supplier: 44931-SNEF
+invoicingCountryField: France
+warning message: Validation is not allowed until contract 'FRP2-25-7-200 Oneshot - 1.7' versioning process is complete
+Contract ID: 41353
+Polling for Validate button (max 3 minutes)...
+Page reloaded, checking Validate link...
+Validate link not ready yet, waiting for next reload...

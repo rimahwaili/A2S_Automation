@@ -1,0 +1,471 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: recette
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]:
+            - link "Fever Tree - CAD - 1.1" [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/34747
+          - paragraph [ref=e65]:
+            - img "arrow-right" [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading "Expired Contract - Fever Tree - CAD - 1.1" [level=2] [ref=e70]:
+            - generic [ref=e71]: Expired
+            - text: Contract - Fever Tree - CAD - 1.1
+          - generic [ref=e72]:
+            - generic [ref=e74] [cursor=pointer]: Main Information
+            - generic [ref=e76] [cursor=pointer]: Invoicing Information
+            - generic [ref=e78] [cursor=pointer]: Documents (0)
+            - generic [ref=e80] [cursor=pointer]: Services
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - generic [ref=e86]:
+                    - heading "Main Information" [level=2] [ref=e88]
+                    - generic [ref=e91]:
+                      - generic [ref=e92]: "Supplier:"
+                      - link "308624-FEVER TREE USA" [ref=e95] [cursor=pointer]:
+                        - /url: /suppliers/11085
+                    - generic [ref=e98]:
+                      - generic [ref=e99]: "Number:"
+                      - generic [ref=e101]: Fever Tree - CAD
+                    - generic [ref=e104]:
+                      - generic [ref=e105]: "Name:"
+                      - generic [ref=e106]:
+                        - generic [ref=e107]:
+                          - generic [ref=e109] [cursor=pointer]: Agreement for the Provision of Goods
+                          - generic [ref=e112]:
+                            - textbox [ref=e114]
+                            - list [ref=e115]
+                        - link "New" [ref=e116] [cursor=pointer]:
+                          - /url: /contract_titles/new
+                          - generic [ref=e117]: 
+                          - text: New
+                    - generic [ref=e120]:
+                      - generic [ref=e121]: "Type:"
+                      - generic [ref=e123]: P2
+                    - generic [ref=e126]:
+                      - generic [ref=e127]:
+                        - text: "Description:"
+                        - text: (visible by customers in the directory)
+                      - 'textbox "Description: (visible by customers in the directory)" [ref=e129]'
+                    - generic [ref=e132]:
+                      - generic [ref=e133]: "Categories:"
+                      - list [ref=e135]:
+                        - listitem [ref=e136]: A00004 Beer, mineral water, soft drinks
+                    - generic [ref=e139]:
+                      - generic [ref=e140]: "Main Category:"
+                      - generic [ref=e142]:
+                        - generic [ref=e144] [cursor=pointer]: A00004 Beer, mineral water, soft drinks
+                        - generic [ref=e147]:
+                          - textbox [ref=e149]
+                          - list [ref=e150]
+                    - generic [ref=e153]:
+                      - generic [ref=e154]: "Brands:"
+                      - generic [ref=e156]: None
+                    - generic [ref=e159]:
+                      - generic [ref=e160]: "Category Manager:"
+                      - generic [ref=e162]:
+                        - generic [ref=e164] [cursor=pointer]: gerrick.gaudet.buyer@accor.com
+                        - generic [ref=e167]:
+                          - textbox [ref=e169]
+                          - list [ref=e170]
+                    - generic [ref=e173]:
+                      - generic [ref=e174]: "E Procurement:"
+                      - textbox "E Procurement:" [ref=e176]
+                    - generic [ref=e179]:
+                      - generic [ref=e180]: "Former Numbers:"
+                      - textbox "Former Numbers:" [ref=e182]
+                    - generic [ref=e185]:
+                      - generic [ref=e186]: "Opex:"
+                      - generic [ref=e187]:
+                        - spinbutton "Opex:" [ref=e188]
+                        - generic [ref=e189]: "%"
+                  - generic [ref=e190]:
+                    - heading "Declaration" [level=2] [ref=e192]
+                    - generic [ref=e195]:
+                      - generic [ref=e196]: "Declaration Frequency:"
+                      - generic [ref=e198]: Quarterly
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: "Allow specific frequency for services:"
+                      - generic [ref=e204]: This frequency is applied to all services
+                - generic [ref=e205]:
+                  - generic [ref=e206]:
+                    - heading "Contracts Dates" [level=2] [ref=e208]
+                    - generic [ref=e211]:
+                      - generic [ref=e212]: "Silent Extension: *"
+                      - img "Ok" [ref=e215]
+                    - generic [ref=e218]:
+                      - generic [ref=e219]: "Actual Beginning Date:"
+                      - generic [ref=e221]: 2021-12-31
+                    - generic [ref=e224]:
+                      - generic [ref=e225]: "Actual End Date:"
+                      - generic [ref=e227]: 2023-12-31
+                    - generic [ref=e230]:
+                      - generic [ref=e231]: "Declarative Start Quarter:"
+                      - generic [ref=e233]: 1st of January
+                    - generic [ref=e236]:
+                      - generic [ref=e237]: "Declarative Start Year:"
+                      - generic [ref=e239]: "2022"
+                    - generic [ref=e242]:
+                      - generic [ref=e243]: "Signing date:"
+                      - generic [ref=e244]:
+                        - textbox "Signing date:" [ref=e245]: 12/31/2021
+                        - generic [ref=e247] [cursor=pointer]: 
+                    - generic [ref=e250]:
+                      - generic [ref=e251]: "Theoretical end date:"
+                      - generic [ref=e252]:
+                        - textbox "Theoretical end date:" [ref=e253]: 12/30/2023
+                        - generic [ref=e255] [cursor=pointer]: 
+                    - generic [ref=e258]:
+                      - generic [ref=e259]: "Declarative End Quarter:"
+                      - generic [ref=e261]: 31st of December
+                    - generic [ref=e264]:
+                      - generic [ref=e265]: "Declarative End Year:"
+                      - generic [ref=e267]: "2023"
+                  - generic [ref=e268]:
+                    - heading "Contract Terms" [level=2] [ref=e270]
+                    - generic [ref=e273]:
+                      - generic [ref=e274]: "Invoicing country:"
+                      - link "Canada" [ref=e277] [cursor=pointer]:
+                        - /url: /countries/41
+                    - generic [ref=e280]:
+                      - generic [ref=e281]: "Currency:"
+                      - link "CAD" [ref=e284] [cursor=pointer]:
+                        - /url: /currencies/10
+                    - generic [ref=e287]:
+                      - generic [ref=e288]: "Duration (months) = Term:"
+                      - generic [ref=e290]: "24"
+                    - generic [ref=e293]:
+                      - generic [ref=e294]: "Covered Perimeter: *"
+                      - list [ref=e296]:
+                        - listitem [ref=e297]: NORTH AMERICA (1 / 4)
+                    - generic [ref=e300]:
+                      - generic [ref=e301]: "Declaration Contacts:"
+                      - generic [ref=e303]:
+                        - list [ref=e304]:
+                          - listitem [ref=e305] [cursor=pointer]: lauren.walker@fever-tree.com
+                          - listitem [ref=e307]:
+                            - textbox [ref=e308]
+                        - list [ref=e310]
+                    - generic [ref=e313]:
+                      - generic [ref=e314]: "Payment Term:"
+                      - generic [ref=e315]:
+                        - generic [ref=e316]:
+                          - generic [ref=e318] [cursor=pointer]: 30 days at billing receipt
+                          - generic [ref=e321]:
+                            - textbox [ref=e323]
+                            - list [ref=e324]
+                        - link "New" [ref=e325] [cursor=pointer]:
+                          - /url: /contract_payment_terms/new
+                          - generic [ref=e326]: 
+                          - text: New
+                    - generic [ref=e329]:
+                      - generic [ref=e330]: "Payment Mode:"
+                      - generic [ref=e331]:
+                        - generic [ref=e332]:
+                          - generic [ref=e334] [cursor=pointer]: TRANSFER
+                          - generic [ref=e337]:
+                            - textbox [ref=e339]
+                            - list [ref=e340]
+                        - link "New" [ref=e341] [cursor=pointer]:
+                          - /url: /contract_payment_modes/new
+                          - generic [ref=e342]: 
+                          - text: New
+                    - generic [ref=e345]:
+                      - generic [ref=e346]: "Cancellation Term:"
+                      - generic [ref=e347]:
+                        - generic [ref=e348]:
+                          - generic [ref=e350] [cursor=pointer]: "[Select]"
+                          - generic [ref=e353]:
+                            - textbox [ref=e355]
+                            - list [ref=e356]
+                        - link "New" [ref=e357] [cursor=pointer]:
+                          - /url: /contract_cancellation_terms/new
+                          - generic [ref=e358]: 
+                          - text: New
+                    - generic [ref=e361]:
+                      - generic [ref=e362]: "Expected Contract Value:"
+                      - spinbutton "Expected Contract Value:" [ref=e364]
+              - generic [ref=e365]:
+                - heading "Invoicing Details" [level=2] [ref=e366]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Address:"
+                      - generic [ref=e367]: No address is filled in the supplier form
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Contacts:"
+                      - generic:
+                        - generic:
+                          - list [ref=e368]:
+                            - listitem [ref=e369] [cursor=pointer]: kellan.rowland@molsoncoors.com
+                            - listitem [ref=e371] [cursor=pointer]: lauren.walker@fever-tree.com
+                            - listitem:
+                              - textbox
+                          - generic [ref=e373]:
+                            - list
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Currency:"
+                      - link "CAD" [ref=e375] [cursor=pointer]:
+                        - /url: /currencies/10
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Company Name on Invoice:"
+                      - textbox "Company Name on Invoice:" [ref=e376]: FEVER TREE USA
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Periodicity:"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Allow specific invoicing for services:"
+                      - generic [ref=e377]: This periodicity is applied to all services
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Deposit Amount:"
+                      - spinbutton "Deposit Amount:" [ref=e378]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Prepayment:"
+                      - combobox "Prepayment:" [ref=e379]:
+                        - option [selected]
+                        - option
+                        - option "Quarterly"
+                        - option "Semesterly on the N-1 basis"
+                        - option "Semesterly on the basis of the real N"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Package Amount:"
+                      - spinbutton "Package Amount:" [ref=e380]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "AR code:"
+                      - generic [ref=e381]: "284361"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Intracommunity VAT:"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "your references:"
+                      - textbox "your references:" [ref=e382]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "AP code:"
+              - generic:
+                - button "+ Add new Document" [disabled] [ref=e385]
+                - link "View all supplier documents" [ref=e387] [cursor=pointer]:
+                  - /url: /suppliers/show/11085?@all_documents=true&to_tab=document
+              - generic [ref=e389]:
+                - link "Back to the list" [ref=e390] [cursor=pointer]:
+                  - /url: /contracts/list
+                - link "Archive" [ref=e391] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/34747?trans_name=contracts_archived_from_expired&date_impacted=&value_impacted=
+                - link "Error" [ref=e392] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/34747?trans_name=contracts_error_from_expired
+                - link "Versioning" [ref=e393] [cursor=pointer]:
+                  - /url: /contracts/version/34747
+                - link "Renew" [ref=e394] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/34747?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                - link "Submit" [ref=e395] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/34747?declarative_impact=true
+            - generic:
+              - generic:
+                - generic:
+                  - generic [ref=e396]:
+                    - heading "Services List" [level=3]
+                  - list:
+                    - listitem [ref=e397]:
+                      - generic [ref=e398] [cursor=pointer]: Classic Procurement Service Fee
+                      - img "arrow" [ref=e399]
+                - generic:
+                  - heading "Service details" [level=3] [ref=e401]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - group:
+                          - generic [ref=e402]:
+                            - generic [ref=e404]:
+                              - generic:
+                                - generic [ref=e405]: "Name:"
+                                - generic:
+                                  - generic:
+                                    - generic [ref=e406] [cursor=pointer]:
+                                      - generic: Classic Procurement Service Fee
+                                    - generic [ref=e409]:
+                                      - textbox [ref=e411]
+                                      - list
+                            - generic [ref=e413]:
+                              - generic:
+                                - generic [ref=e414]: "Depth of declaration: *"
+                                - generic [ref=e415]: Hotel
+                            - generic [ref=e417]:
+                              - generic:
+                                - generic [ref=e418]: Redistribution
+                                - generic [ref=e419]:
+                                  - generic:
+                                    - generic: "No"
+                                    - generic: "Yes"
+                            - generic [ref=e421]:
+                              - generic:
+                                - generic [ref=e422]: "Description:"
+                                - textbox "Description:" [ref=e423]
+                            - generic [ref=e425]:
+                              - generic:
+                                - generic [ref=e426]: "Declared By:"
+                                - combobox "Declared By:" [ref=e427]:
+                                  - option "Supplier" [selected]
+                                  - option "Buyer"
+                                  - option "Back-Office"
+                            - generic [ref=e430]: "Maximum Amount:"
+                            - generic [ref=e432]:
+                              - generic:
+                                - generic [ref=e433]: "Tax:"
+                                - generic:
+                                  - textbox "Tax:" [ref=e434]
+                                  - generic [ref=e435]: "%"
+                            - generic [ref=e437]:
+                              - generic:
+                                - generic [ref=e438]: "Declaration Frequency:"
+                                - generic [ref=e439]: Quarterly
+                            - generic [ref=e442]: "Invoicing Periodicity:"
+                            - generic [ref=e444]:
+                              - generic:
+                                - generic [ref=e445]: "Import data from ASR:"
+                                - textbox "Import data from ASR:" [ref=e446]
+                    - generic [ref=e447]:
+                      - heading "Sub-Services" [level=3]
+                    - list [ref=e448]:
+                      - listitem:
+                        - generic [ref=e450]: Fever Tree 1 / cs - CAD
+                        - generic [ref=e451]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/19118?edit_mode=true
+                              - img "Self And Assoc" [ref=e452] [cursor=pointer]
+                    - generic [ref=e453] [cursor=pointer]: Save this Service
+      - generic [ref=e454]:
+        - generic [ref=e455]: "Version: 2.31.10"
+        - generic [ref=e456]:
+          - link "User Guide" [ref=e457] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link "Terms & Conditions" [ref=e458] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+  - dialog [ref=e460]:
+    - document [ref=e461]:
+      - generic [ref=e462]:
+        - button "Close" [ref=e463] [cursor=pointer]: ×
+        - generic [ref=e464]:
+          - banner [ref=e465]:
+            - heading "End dates confirmation" [level=1] [ref=e466]
+          - generic [ref=e468]:
+            - paragraph [ref=e469]:
+              - text: Warning! declarations can be cancelled by this action
+              - text: "Before saving, please confirm the following dates:"
+            - paragraph [ref=e470]: The end year must match the end date.
+            - generic [ref=e473]:
+              - generic [ref=e474]: "End Quarter:"
+              - combobox [ref=e476]:
+                - option "[Select]"
+                - option "31st of March"
+                - option "30th of June"
+                - option "30th of September"
+                - option "31st of December" [selected]
+            - generic [ref=e479]:
+              - generic [ref=e480]: "End Year:"
+              - textbox [ref=e482]: "2027"
+            - generic [ref=e485]:
+              - generic [ref=e486]: "Contract end date:"
+              - generic [ref=e487]:
+                - textbox [active] [ref=e488]: 12/29/2027
+                - generic [ref=e490]: 
+          - button "Confirm and save" [disabled] [ref=e492]
+```
