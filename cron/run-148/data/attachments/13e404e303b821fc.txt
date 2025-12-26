@@ -1,0 +1,6 @@
+Contract ID: 34747
+Declaration frequency: Quarterly
+supplier: 308624-FEVER TREE USA
+invoicingCountryField: Canada
+contract id 1: Contract - Fever Tree - CAD - 1.1
+contract id 2: Contract - Fever Tree - CAD - 2.1
