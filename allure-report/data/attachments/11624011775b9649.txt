@@ -1,0 +1,4 @@
+Detected UI language: EN
+No Pendo banner found
+Detected UI language: EN
+Apply filters: { email: 'AreaAdmin7815@yopmail.com' }

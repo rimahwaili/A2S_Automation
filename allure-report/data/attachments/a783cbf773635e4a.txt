@@ -1,0 +1,3 @@
+Declaration frequency: Quarterly
+supplier: 114558-WIFIRST
+invoicingCountryField: Contract H ENA
