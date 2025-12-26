@@ -1,0 +1,4 @@
+Contract ID: 40315
+Declaration frequency: Annually
+supplier: 251045-FRONERI ICE CREAM DEUTSCHLAND GMBH
+invoicingCountryField: Germany

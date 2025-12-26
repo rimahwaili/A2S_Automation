@@ -1,0 +1,6 @@
+Contract ID: 33834
+Declaration frequency: Quarterly
+supplier: 186785-CARMOSINA COMERCIAL
+invoicingCountryField: Brazil
+Page 1: Contract - 293110131 - 1.1
+Page 2: Contract - 293110131 - 2.1

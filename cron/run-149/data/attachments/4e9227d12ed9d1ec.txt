@@ -1,0 +1,9 @@
+Contract ID: 41216
+Declaration frequency: Quarterly
+supplier: 9271-DIVERSEY FRANCE SAS
+invoicingCountryField: France
+warning message: Validation is not allowed until contract 'CON-JU20WLUC - 1.1' versioning process is complete
+Contract ID: 41360
+Polling for Validate button (max 3 minutes)...
+Page reloaded, checking Validate link...
+Validate link not ready yet, waiting for next reload...
