@@ -1,0 +1,6 @@
+Contract ID: 33828
+Declaration frequency: Quarterly
+supplier: 154063-CANAA
+invoicingCountryField: Brazil
+Page 1: Contract - 18216053 - 1.1
+Page 2: Contract - 18216053 - 2.1

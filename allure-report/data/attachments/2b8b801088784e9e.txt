@@ -1,0 +1,4 @@
+Contract ID: 37265
+Declaration frequency: Quarterly
+supplier: 777-FloWater - NCA
+invoicingCountryField: Canada
