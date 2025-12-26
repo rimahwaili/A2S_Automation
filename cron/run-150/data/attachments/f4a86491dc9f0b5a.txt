@@ -1,0 +1,4 @@
+Contract ID: 40899
+Declaration frequency: Annually
+supplier: 280281-BRIOCHES FONTENEAU
+invoicingCountryField: France

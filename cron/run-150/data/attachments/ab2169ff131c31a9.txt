@@ -1,0 +1,4 @@
+Contract ID: 39581
+Declaration frequency: Annually
+supplier: 37142-NIEHOFFS VAIHINGER FRUCHTSAFT GMBH
+invoicingCountryField: Austria
