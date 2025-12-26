@@ -1,0 +1,4 @@
+Contract ID: 28103
+Declaration frequency: Annually
+supplier: 76601-CARRIER EMEA SAS
+invoicingCountryField: CORP
