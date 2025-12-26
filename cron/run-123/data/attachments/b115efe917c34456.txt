@@ -1,0 +1,3 @@
+Declaration frequency: Annually
+supplier: 287942-Gebrüder Peters Gebäudetechnik AG
+invoicingCountryField: Germany

@@ -1,0 +1,4 @@
+Contract ID: 25856
+Declaration frequency: Quarterly
+supplier: 55523-ENERCLIM
+invoicingCountryField: France
