@@ -1,0 +1,4 @@
+Contract ID: 39698
+Declaration frequency: Annually
+supplier: 296472-ESSITY GMBH
+invoicingCountryField: CORP

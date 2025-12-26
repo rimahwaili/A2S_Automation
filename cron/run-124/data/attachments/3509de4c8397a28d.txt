@@ -1,0 +1,4 @@
+Contract ID: 27260
+Declaration frequency: Annually
+supplier: 57778-USEO ( ex I.P.I.)
+invoicingCountryField: France
