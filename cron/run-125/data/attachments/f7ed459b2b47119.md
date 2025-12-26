@@ -1,0 +1,125 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - heading [level=1] [ref=e58]: End dates confirmation
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: "Warning! declarations can be cancelled by this action Before saving, please confirm the following dates:"
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - generic [ref=e66]:
+                - generic [ref=e67]: "End Quarter:"
+                - combobox [ref=e69]
+              - generic [ref=e72]:
+                - generic [ref=e73]: "End Year:"
+                - textbox [ref=e75]
+              - generic [ref=e78]:
+                - generic [ref=e79]: "Contract end date:"
+                - generic [ref=e80]:
+                  - textbox [ref=e81]
+                  - generic [ref=e83]: 
+            - button [ref=e85] [cursor=pointer]: Confirm and save
+      - generic [ref=e86]:
+        - generic [ref=e87]: "Version: 2.30.4"
+        - generic [ref=e88]:
+          - link [ref=e89] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e90] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e93]:
+    - paragraph [ref=e97]: Share your feedback!💡
+    - paragraph [ref=e101]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e104]:
+      - strong [ref=e105]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e110]:
+      - generic [ref=e111]:
+        - radio "1"
+        - generic [ref=e112]: "1"
+        - generic [ref=e113]: Very difficult
+      - generic [ref=e114]:
+        - radio "2"
+        - generic [ref=e115]: "2"
+      - generic [ref=e116]:
+        - radio "3"
+        - generic [ref=e117]: "3"
+      - generic [ref=e118]:
+        - radio "4"
+        - generic [ref=e119]: "4"
+      - generic [ref=e120]:
+        - radio "5"
+        - generic [ref=e121]: "5"
+        - generic [ref=e122]: Very easy
+    - generic [ref=e124]:
+      - button "Remind me later" [ref=e126] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e127]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e128] [cursor=pointer]: ×
+```

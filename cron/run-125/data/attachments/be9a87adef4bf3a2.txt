@@ -1,0 +1,8 @@
+{
+  anticipated: false,
+  period: 'Q2',
+  year: 2028,
+  startDate: '04/01/2028',
+  endDate: '06/30/2028',
+  country: 'Canada'
+}

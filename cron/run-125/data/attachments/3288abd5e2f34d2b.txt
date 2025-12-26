@@ -1,0 +1,4 @@
+Contract ID: 24828
+Declaration frequency: Quarterly
+supplier: 75859-RAMERY BATIMENT
+invoicingCountryField: France
