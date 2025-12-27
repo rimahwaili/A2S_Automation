@@ -1,0 +1,2 @@
+Detected UI language: EN
+No Pendo banner found
