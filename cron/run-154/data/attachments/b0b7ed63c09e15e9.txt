@@ -1,0 +1,4 @@
+Contract ID: 41337
+Declaration frequency: Annually
+supplier: 45038-EXTERION MEDIA FRANCE
+invoicingCountryField: France

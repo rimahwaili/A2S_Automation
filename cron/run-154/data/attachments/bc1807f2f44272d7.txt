@@ -1,0 +1,4 @@
+Contract ID: 25826
+Declaration frequency: Quarterly
+supplier: 43802-BACARDI MARTINI FRANCE
+invoicingCountryField: France
