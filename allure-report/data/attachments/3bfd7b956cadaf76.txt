@@ -1,0 +1,3 @@
+Declaration frequency: Annually
+supplier: 324203-LA LIMONADERIE DE PARIS
+invoicingCountryField: France

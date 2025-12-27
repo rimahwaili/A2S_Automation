@@ -1,0 +1,4 @@
+Contract ID: 37734
+Declaration frequency: Annually
+supplier: 255586-Vattenfall Real Estate Energy Sales GmbH
+invoicingCountryField: Germany

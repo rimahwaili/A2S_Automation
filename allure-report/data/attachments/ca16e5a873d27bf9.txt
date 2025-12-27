@@ -1,0 +1,8 @@
+{
+  anticipated: false,
+  period: 'Q3',
+  year: 2028,
+  startDate: '07/01/2028',
+  endDate: '09/30/2028',
+  country: 'Peru'
+}
