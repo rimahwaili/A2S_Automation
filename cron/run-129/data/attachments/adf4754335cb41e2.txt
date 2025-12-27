@@ -1,0 +1,3 @@
+Declaration frequency: Quarterly
+supplier: 239548-ELECTRABEL NV
+invoicingCountryField: Belgium

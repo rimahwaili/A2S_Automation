@@ -1,0 +1,415 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+              - text: Contracts
+          - paragraph [ref=e61]:
+            - img [ref=e62]
+          - paragraph [ref=e63]:
+            - link [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/37734
+              - text: DE2-21-4-267 - 5.1
+          - paragraph [ref=e65]:
+            - img [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading [level=2] [ref=e70]:
+            - generic [ref=e71]: to renew
+            - text: Contract - DE2-21-4-267 - 5.1
+          - paragraph [ref=e72]:
+            - generic [ref=e73]:
+              - text: Renewed from contract n°
+              - link [ref=e74] [cursor=pointer]:
+                - /url: /contracts/edit/37733
+                - text: DE2-21-4-267 - 4.1
+          - generic [ref=e75]:
+            - generic [ref=e77] [cursor=pointer]: Main Information
+            - generic [ref=e79] [cursor=pointer]: Invoicing Information
+            - generic [ref=e81] [cursor=pointer]: Documents (0)
+            - generic [ref=e83] [cursor=pointer]: Services
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e87]:
+                - generic [ref=e88]:
+                  - generic [ref=e89]:
+                    - heading [level=2] [ref=e91]: Main Information
+                    - generic [ref=e94]:
+                      - generic [ref=e95]: "Supplier:"
+                      - link [ref=e98] [cursor=pointer]:
+                        - /url: /suppliers/5824
+                        - text: 255586-Vattenfall Real Estate Energy Sales GmbH
+                    - generic [ref=e101]:
+                      - generic [ref=e102]: "Number:"
+                      - generic [ref=e104]: DE2-21-4-267
+                    - generic [ref=e107]:
+                      - generic [ref=e108]: "Name:"
+                      - generic [ref=e109]:
+                        - generic [ref=e110]:
+                          - generic [ref=e112] [cursor=pointer]: Cooperation Agreement
+                          - generic [ref=e115]:
+                            - textbox [ref=e117]
+                            - list [ref=e118]
+                        - link [ref=e119] [cursor=pointer]:
+                          - /url: /contract_titles/new
+                          - generic [ref=e120]: 
+                          - text: New
+                    - generic [ref=e123]:
+                      - generic [ref=e124]: "Type:"
+                      - generic [ref=e126]: P2
+                    - generic [ref=e129]:
+                      - generic [ref=e130]: "Description: (visible by customers in the directory)"
+                      - textbox [ref=e132]
+                    - generic [ref=e135]:
+                      - generic [ref=e136]: "Categories:"
+                      - list [ref=e138]:
+                        - listitem [ref=e139]: E00056 Electricity
+                    - generic [ref=e142]:
+                      - generic [ref=e143]: "Main Category:"
+                      - generic [ref=e145]:
+                        - generic [ref=e147] [cursor=pointer]: E00056 Electricity
+                        - generic [ref=e150]:
+                          - textbox [ref=e152]
+                          - list [ref=e153]
+                    - generic [ref=e156]:
+                      - generic [ref=e157]: "Brands:"
+                      - generic [ref=e159]: None
+                    - generic [ref=e162]:
+                      - generic [ref=e163]: "Category Manager:"
+                      - generic [ref=e165]:
+                        - generic [ref=e167] [cursor=pointer]: valerie.beaugeard@accor.com
+                        - generic [ref=e170]:
+                          - textbox [ref=e172]
+                          - list [ref=e173]
+                    - generic [ref=e176]:
+                      - generic [ref=e177]: "E Procurement:"
+                      - textbox [ref=e179]: "N"
+                    - generic [ref=e182]:
+                      - generic [ref=e183]: "Former Numbers:"
+                      - textbox [ref=e185]
+                    - generic [ref=e188]:
+                      - generic [ref=e189]: "Opex:"
+                      - generic [ref=e190]:
+                        - spinbutton [ref=e191]
+                        - generic [ref=e192]: "%"
+                  - generic [ref=e193]:
+                    - heading [level=2] [ref=e195]: Declaration
+                    - generic [ref=e198]:
+                      - generic [ref=e199]: "Declaration Frequency:"
+                      - generic [ref=e201]: Annually
+                    - generic [ref=e204]:
+                      - generic [ref=e205]: "Allow specific frequency for services:"
+                      - generic [ref=e207]: This frequency is applied to all services
+                - generic [ref=e208]:
+                  - generic [ref=e209]:
+                    - heading [level=2] [ref=e211]: Contracts Dates
+                    - generic [ref=e214]:
+                      - generic [ref=e215]: "Silent Extension: *"
+                      - combobox [ref=e217]
+                    - generic [ref=e220]:
+                      - generic [ref=e221]: "Contract Start date:"
+                      - generic [ref=e222]:
+                        - textbox [ref=e223]: 01/01/2025
+                        - generic [ref=e225] [cursor=pointer]: 
+                    - generic [ref=e228]:
+                      - generic [ref=e229]: "Contract end date: *"
+                      - generic [ref=e230]:
+                        - textbox [ref=e231]: 12/31/2025
+                        - generic [ref=e233] [cursor=pointer]: 
+                    - generic [ref=e236]:
+                      - generic [ref=e237]: "Declarative Start Quarter:"
+                      - generic [ref=e239]: 1st of January
+                    - generic [ref=e242]:
+                      - generic [ref=e243]: "Declarative Start Year:"
+                      - generic [ref=e245]: "2025"
+                    - generic [ref=e248]:
+                      - generic [ref=e249]: "Signing date:"
+                      - generic [ref=e250]:
+                        - textbox [ref=e251]: 05/06/2021
+                        - generic [ref=e253] [cursor=pointer]: 
+                    - generic [ref=e256]:
+                      - generic [ref=e257]: "Theoretical end date:"
+                      - generic [ref=e258]:
+                        - textbox [ref=e259]
+                        - generic [ref=e261] [cursor=pointer]: 
+                    - generic [ref=e264]:
+                      - generic [ref=e265]: "Declarative End Quarter:"
+                      - combobox [ref=e267]
+                    - generic [ref=e270]:
+                      - generic [ref=e271]: "Declarative End Year:"
+                      - textbox [ref=e273]: "2025"
+                  - generic [ref=e274]:
+                    - heading [level=2] [ref=e276]: Contract Terms
+                    - generic [ref=e279]:
+                      - generic [ref=e280]: "Invoicing country:"
+                      - link [ref=e283] [cursor=pointer]:
+                        - /url: /countries/83
+                        - text: Germany
+                    - generic [ref=e286]:
+                      - generic [ref=e287]: "Currency:"
+                      - link [ref=e290] [cursor=pointer]:
+                        - /url: /currencies/1
+                        - text: EUR
+                    - generic [ref=e293]:
+                      - generic [ref=e294]: "Duration (months) = Term:"
+                      - generic [ref=e296]: "12"
+                    - generic [ref=e299]:
+                      - generic [ref=e300]: "Covered Perimeter: *"
+                      - list [ref=e302]:
+                        - listitem [ref=e303]: NORTHERN AND CENTRAL EUROPE (1 / 23)
+                    - generic [ref=e306]:
+                      - generic [ref=e307]: "Declaration Contacts:"
+                      - generic [ref=e309]:
+                        - list [ref=e310]:
+                          - listitem [ref=e311] [cursor=pointer]: kooperationspartnermanagement@vattenfall.com
+                          - listitem [ref=e313]:
+                            - textbox [ref=e314]
+                        - list [ref=e316]
+                    - generic [ref=e319]:
+                      - generic [ref=e320]: "Payment Term:"
+                      - generic [ref=e321]:
+                        - generic [ref=e322]:
+                          - generic [ref=e324] [cursor=pointer]: At billing receipt
+                          - generic [ref=e327]:
+                            - textbox [ref=e329]
+                            - list [ref=e330]
+                        - link [ref=e331] [cursor=pointer]:
+                          - /url: /contract_payment_terms/new
+                          - generic [ref=e332]: 
+                          - text: New
+                    - generic [ref=e335]:
+                      - generic [ref=e336]: "Payment Mode:"
+                      - generic [ref=e337]:
+                        - generic [ref=e338]:
+                          - generic [ref=e340] [cursor=pointer]: TRANSFER
+                          - generic [ref=e343]:
+                            - textbox [ref=e345]
+                            - list [ref=e346]
+                        - link [ref=e347] [cursor=pointer]:
+                          - /url: /contract_payment_modes/new
+                          - generic [ref=e348]: 
+                          - text: New
+                    - generic [ref=e351]:
+                      - generic [ref=e352]: "Cancellation Term:"
+                      - generic [ref=e353]:
+                        - generic [ref=e354]:
+                          - generic [ref=e356] [cursor=pointer]: "[Select]"
+                          - generic [ref=e359]:
+                            - textbox [ref=e361]
+                            - list [ref=e362]
+                        - link [ref=e363] [cursor=pointer]:
+                          - /url: /contract_cancellation_terms/new
+                          - generic [ref=e364]: 
+                          - text: New
+                    - generic [ref=e367]:
+                      - generic [ref=e368]: "Expected Contract Value:"
+                      - spinbutton [ref=e370]
+              - generic [ref=e371]:
+                - heading [level=2] [ref=e372]: Invoicing Details
+                - generic [ref=e373]: Postfach 110245 - Rechnungsprüfung 6520 / Bestellnummer Accor / 10832 / Berlin / Germany
+                - list [ref=e374]:
+                  - listitem [ref=e375] [cursor=pointer]: rechnungseingang@vattenfall.com
+                  - listitem [ref=e377] [cursor=pointer]: maria.helm@vattenfall.de
+                - link [ref=e381] [cursor=pointer]:
+                  - /url: /currencies/1
+                  - text: EUR
+                - textbox [ref=e382]
+                - generic [ref=e383]: Annually
+                - generic [ref=e384]: This periodicity is applied to all services
+                - spinbutton [ref=e385]
+                - combobox [ref=e386]
+                - spinbutton [ref=e387]
+                - generic [ref=e388]: "284445"
+                - generic [ref=e389]: DE815512494
+                - textbox [ref=e390]
+                - generic [ref=e391]: "255586"
+              - button [ref=e394] [cursor=pointer]: + Add new Document
+              - link [ref=e396] [cursor=pointer]:
+                - /url: /suppliers/show/5824?@all_documents=true&to_tab=document
+                - text: View all supplier documents
+              - generic [ref=e398]:
+                - link [ref=e399] [cursor=pointer]:
+                  - /url: /contracts/list
+                  - text: Back to the list
+                - link [ref=e400] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/37734?trans_name=contracts_error_from_to_renew
+                  - text: Error
+                - link [ref=e401] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/37734?trans_name=contracts_archived_from_to_renew&date_impacted=&value_impacted=
+                  - text: Archive
+                - link [ref=e402] [cursor=pointer]:
+                  - /url: /contracts/version/37734
+                  - text: Versioning
+                - link [ref=e403] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/37734?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                  - text: Renew
+                - link [ref=e404] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/37734?declarative_impact=true
+                  - text: Submit
+            - listitem [ref=e406]:
+              - generic [ref=e407] [cursor=pointer]: Classic Procurement Service Fee
+              - img [ref=e408]
+            - heading [level=3] [ref=e410]: Service details
+            - generic [ref=e411]:
+              - generic [ref=e413]:
+                - generic [ref=e414]: "Name:"
+                - textbox [ref=e420]
+              - generic [ref=e422]:
+                - generic [ref=e423]: "Depth of declaration: *"
+                - generic [ref=e424]: Hotel
+              - generic [ref=e427]: Redistribution
+              - generic [ref=e430]:
+                - generic [ref=e431]: "Description:"
+                - textbox [ref=e432]
+              - generic [ref=e434]:
+                - generic [ref=e435]: "Declared By:"
+                - combobox [ref=e436]
+              - generic [ref=e439]: "Maximum Amount:"
+              - generic [ref=e441]:
+                - generic [ref=e442]: "Tax:"
+                - textbox [ref=e443]: "19.0"
+                - generic [ref=e444]: "%"
+              - generic [ref=e446]:
+                - generic [ref=e447]: "Declaration Frequency:"
+                - generic [ref=e448]: Annually
+              - generic [ref=e450]:
+                - generic [ref=e451]: "Invoicing Periodicity:"
+                - generic [ref=e452]: Annually
+              - generic [ref=e454]:
+                - generic [ref=e455]: "Import data from ASR:"
+                - textbox [ref=e456]
+            - list [ref=e458]:
+              - generic [ref=e460]: Provision - 0,120 ct/KWh (Eurocent pro Kilowattstunde)
+              - img [ref=e462] [cursor=pointer]
+            - generic [ref=e463] [cursor=pointer]: Save this Service
+      - generic [ref=e464]:
+        - generic [ref=e465]: "Version: 2.30.4"
+        - generic [ref=e466]:
+          - link [ref=e467] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e468] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e470]:
+    - document [ref=e471]:
+      - generic [ref=e472]:
+        - button [ref=e473] [cursor=pointer]: ×
+        - generic [ref=e474]:
+          - banner [ref=e475]:
+            - heading [level=1] [ref=e476]: End dates confirmation
+          - generic [ref=e478]:
+            - paragraph [ref=e479]: "Warning! declarations can be cancelled by this action Before saving, please confirm the following dates:"
+            - generic [ref=e480]:
+              - generic [ref=e481]:
+                - generic [ref=e484]:
+                  - generic [ref=e485]: "End Quarter:"
+                  - combobox [ref=e487]
+                - generic [ref=e490]:
+                  - generic [ref=e491]: "End Year:"
+                  - textbox [ref=e493]: "2027"
+                - generic [ref=e496]:
+                  - generic [ref=e497]: "Contract end date:"
+                  - generic [ref=e498]:
+                    - textbox [ref=e499]: 12/31/2025
+                    - generic [ref=e501]: 
+              - button [ref=e503] [cursor=pointer]: Confirm and save
+  - dialog [ref=e506]:
+    - paragraph [ref=e510]: Share your feedback!💡
+    - paragraph [ref=e514]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e517]:
+      - strong [ref=e518]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e523]:
+      - generic [ref=e524]:
+        - radio "1"
+        - generic [ref=e525]: "1"
+        - generic [ref=e526]: Very difficult
+      - generic [ref=e527]:
+        - radio "2"
+        - generic [ref=e528]: "2"
+      - generic [ref=e529]:
+        - radio "3"
+        - generic [ref=e530]: "3"
+      - generic [ref=e531]:
+        - radio "4"
+        - generic [ref=e532]: "4"
+      - generic [ref=e533]:
+        - radio "5"
+        - generic [ref=e534]: "5"
+        - generic [ref=e535]: Very easy
+    - generic [ref=e537]:
+      - button "Remind me later" [ref=e539] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e540]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e541] [cursor=pointer]: ×
+```

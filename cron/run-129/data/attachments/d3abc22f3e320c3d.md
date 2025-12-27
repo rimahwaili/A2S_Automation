@@ -1,0 +1,334 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+              - text: Contracts
+          - paragraph [ref=e61]:
+            - img [ref=e62]
+          - paragraph [ref=e63]: Creation
+        - heading [level=2] [ref=e64]:  New Contract
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e70] [cursor=pointer]: Main Information
+            - generic [ref=e72] [cursor=pointer]: Invoicing Information
+          - generic [ref=e73]:
+            - generic [ref=e75]:
+              - generic [ref=e76]:
+                - generic [ref=e77]:
+                  - heading [level=2] [ref=e79]: Main Information
+                  - generic [ref=e82]:
+                    - generic [ref=e83]: "Supplier: *"
+                    - generic [ref=e85]:
+                      - generic [ref=e87] [cursor=pointer]: "[Select]"
+                      - generic [ref=e90]:
+                        - textbox [ref=e92]: "9271"
+                        - list [ref=e93]:
+                          - listitem [ref=e94] [cursor=pointer]:
+                            - emphasis [ref=e95]: "9271"
+                            - text: "-DIVERSEY FRANCE SAS"
+                  - generic [ref=e98]:
+                    - generic [ref=e99]: "Number:"
+                    - textbox [ref=e101]
+                  - generic [ref=e104]:
+                    - generic [ref=e105]: "Name: *"
+                    - generic [ref=e106]:
+                      - generic [ref=e107]:
+                        - generic [ref=e109] [cursor=pointer]: "[Select]"
+                        - generic [ref=e112]:
+                          - textbox [ref=e114]
+                          - list [ref=e115]
+                      - link [ref=e116] [cursor=pointer]:
+                        - /url: /contract_titles/new
+                        - generic [ref=e117]: 
+                        - text: New
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: "Type:"
+                    - combobox [ref=e123]
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: "Description: (visible by customers in the directory)"
+                    - textbox [ref=e129]
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: "Categories: *"
+                    - generic [ref=e134]:
+                      - generic [ref=e135]:
+                        - list [ref=e136]:
+                          - listitem [ref=e137]:
+                            - textbox [ref=e138]: Select Some Options
+                        - list [ref=e140]
+                      - link [ref=e141] [cursor=pointer]:
+                        - /url: /categories/new
+                        - generic [ref=e142]: 
+                        - text: New
+                  - generic [ref=e145]:
+                    - generic [ref=e146]: "Main Category: *"
+                    - generic [ref=e148]:
+                      - generic [ref=e150] [cursor=pointer]: "[Select]"
+                      - generic [ref=e153]:
+                        - textbox [ref=e155]
+                        - list [ref=e156]
+                  - generic [ref=e159]:
+                    - generic [ref=e160]: "Brands:"
+                    - generic [ref=e162]:
+                      - list [ref=e163]:
+                        - listitem [ref=e164]:
+                          - textbox [ref=e165]: Select Some Options
+                      - list [ref=e167]
+                  - generic [ref=e170]:
+                    - generic [ref=e171]: "Category Manager: *"
+                    - generic [ref=e173]:
+                      - generic [ref=e175] [cursor=pointer]: "[Select]"
+                      - generic [ref=e178]:
+                        - textbox [ref=e180]
+                        - list [ref=e181]
+                  - generic [ref=e184]:
+                    - generic [ref=e185]: "E Procurement:"
+                    - textbox [ref=e187]
+                  - generic [ref=e190]:
+                    - generic [ref=e191]: "Former Numbers:"
+                    - textbox [ref=e193]
+                  - generic [ref=e196]:
+                    - generic [ref=e197]: "Opex:"
+                    - generic [ref=e198]:
+                      - spinbutton [ref=e199]
+                      - generic [ref=e200]: "%"
+                - generic [ref=e201]:
+                  - heading [level=2] [ref=e203]: Declaration
+                  - generic [ref=e206]:
+                    - generic [ref=e207]: "Declaration Frequency:"
+                    - combobox [ref=e209]
+                  - generic [ref=e212]:
+                    - generic [ref=e213]: "Allow specific frequency for services:"
+                    - combobox [ref=e215]
+              - generic [ref=e216]:
+                - generic [ref=e217]:
+                  - heading [level=2] [ref=e219]: Contracts Dates
+                  - generic [ref=e222]:
+                    - generic [ref=e223]: "Silent Extension: *"
+                    - combobox [ref=e225]
+                  - generic [ref=e228]:
+                    - generic [ref=e229]: "Contract Start date: *"
+                    - generic [ref=e230]:
+                      - textbox [ref=e231]
+                      - generic [ref=e233] [cursor=pointer]: 
+                  - generic [ref=e236]:
+                    - generic [ref=e237]: "Contract end date:"
+                    - generic [ref=e238]:
+                      - textbox [ref=e239]
+                      - generic [ref=e241] [cursor=pointer]: 
+                  - generic [ref=e244]:
+                    - generic [ref=e245]: "Declarative Start Quarter: *"
+                    - combobox [ref=e247]
+                  - generic [ref=e250]:
+                    - generic [ref=e251]: "Declarative Start Year: *"
+                    - spinbutton [ref=e253]
+                  - generic [ref=e256]:
+                    - generic [ref=e257]: "Signing date:"
+                    - generic [ref=e258]:
+                      - textbox [ref=e259]
+                      - generic [ref=e261] [cursor=pointer]: 
+                  - generic [ref=e264]:
+                    - generic [ref=e265]: "Theoretical end date:"
+                    - generic [ref=e266]:
+                      - textbox [ref=e267]
+                      - generic [ref=e269] [cursor=pointer]: 
+                  - generic [ref=e272]:
+                    - generic [ref=e273]: "Declarative End Quarter:"
+                    - combobox [ref=e275]
+                  - generic [ref=e278]:
+                    - generic [ref=e279]: "Declarative End Year:"
+                    - textbox [ref=e281]
+                - generic [ref=e282]:
+                  - heading [level=2] [ref=e284]: Contract Terms
+                  - generic [ref=e287]:
+                    - generic [ref=e288]: "Invoicing country: *"
+                    - generic [ref=e290]:
+                      - generic [ref=e292] [cursor=pointer]: "[Select]"
+                      - generic [ref=e295]:
+                        - textbox [ref=e297]
+                        - list [ref=e298]
+                  - generic [ref=e301]:
+                    - generic [ref=e302]: "Currency: *"
+                    - generic [ref=e304]:
+                      - generic [ref=e306] [cursor=pointer]: "[Select]"
+                      - generic [ref=e309]:
+                        - textbox [ref=e311]
+                        - list [ref=e312]
+                  - generic [ref=e315]:
+                    - generic [ref=e316]: "Duration (months) = Term:"
+                    - spinbutton [ref=e318]
+                  - generic [ref=e321]:
+                    - generic [ref=e322]: "Covered Perimeter: *"
+                    - generic [ref=e324]: None
+                  - link [ref=e331] [cursor=pointer]:
+                    - /url: /contracts/country_selection_modal
+                    - text: Change zone
+                  - generic [ref=e334]:
+                    - generic [ref=e335]: "Declaration Contacts:"
+                    - generic [ref=e337]:
+                      - list [ref=e338]:
+                        - listitem [ref=e339]:
+                          - textbox [ref=e340]: Select Some Options
+                      - list [ref=e342]
+                  - generic [ref=e345]:
+                    - generic [ref=e346]: "Payment Term: *"
+                    - generic [ref=e347]:
+                      - generic [ref=e348]:
+                        - generic [ref=e350] [cursor=pointer]: "[Select]"
+                        - generic [ref=e353]:
+                          - textbox [ref=e355]
+                          - list [ref=e356]
+                      - link [ref=e357] [cursor=pointer]:
+                        - /url: /contract_payment_terms/new
+                        - generic [ref=e358]: 
+                        - text: New
+                  - generic [ref=e361]:
+                    - generic [ref=e362]: "Payment Mode: *"
+                    - generic [ref=e363]:
+                      - generic [ref=e364]:
+                        - generic [ref=e366] [cursor=pointer]: "[Select]"
+                        - generic [ref=e369]:
+                          - textbox [ref=e371]
+                          - list [ref=e372]
+                      - link [ref=e373] [cursor=pointer]:
+                        - /url: /contract_payment_modes/new
+                        - generic [ref=e374]: 
+                        - text: New
+                  - generic [ref=e377]:
+                    - generic [ref=e378]: "Cancellation Term:"
+                    - generic [ref=e379]:
+                      - generic [ref=e380]:
+                        - generic [ref=e382] [cursor=pointer]: "[Select]"
+                        - generic [ref=e385]:
+                          - textbox [ref=e387]
+                          - list [ref=e388]
+                      - link [ref=e389] [cursor=pointer]:
+                        - /url: /contract_cancellation_terms/new
+                        - generic [ref=e390]: 
+                        - text: New
+                  - generic [ref=e393]:
+                    - generic [ref=e394]: "Expected Contract Value:"
+                    - spinbutton [ref=e396]
+            - generic [ref=e397]:
+              - heading [level=2] [ref=e398]: Invoicing Details
+              - textbox [ref=e404]
+              - list [ref=e405]
+              - textbox [ref=e412]
+              - textbox [ref=e413]
+              - combobox [ref=e414]
+              - combobox [ref=e415]
+              - spinbutton [ref=e416]
+              - combobox [ref=e417]
+              - spinbutton [ref=e418]
+              - textbox [ref=e419]
+              - textbox [ref=e420]
+              - textbox [ref=e421]
+              - textbox [ref=e422]
+            - button [ref=e424] [cursor=pointer]: Create
+      - generic [ref=e425]:
+        - generic [ref=e426]: "Version: 2.30.4"
+        - generic [ref=e427]:
+          - link [ref=e428] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e429] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e432]:
+    - paragraph [ref=e436]: Share your feedback!💡
+    - paragraph [ref=e440]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e443]:
+      - strong [ref=e444]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e449]:
+      - generic [ref=e450]:
+        - radio "1"
+        - generic [ref=e451]: "1"
+        - generic [ref=e452]: Very difficult
+      - generic [ref=e453]:
+        - radio "2"
+        - generic [ref=e454]: "2"
+      - generic [ref=e455]:
+        - radio "3"
+        - generic [ref=e456]: "3"
+      - generic [ref=e457]:
+        - radio "4"
+        - generic [ref=e458]: "4"
+      - generic [ref=e459]:
+        - radio "5"
+        - generic [ref=e460]: "5"
+        - generic [ref=e461]: Very easy
+    - generic [ref=e463]:
+      - button "Remind me later" [ref=e465] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e466]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e467] [cursor=pointer]: ×
+```
