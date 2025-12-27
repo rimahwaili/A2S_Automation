@@ -1,0 +1,4 @@
+Contract ID: 40570
+Declaration frequency: Annually
+supplier: 403810-BRITVIC EMEA LIMITED
+invoicingCountryField: CORP

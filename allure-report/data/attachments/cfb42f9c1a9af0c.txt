@@ -1,0 +1,3 @@
+Declaration frequency: Annually
+supplier: 94542-NESTLE NESPRESSO S.A.
+invoicingCountryField: CORP
