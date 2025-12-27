@@ -1,0 +1,12 @@
+Detected UI language: EN
+No Pendo banner found
+Detected UI language: EN
+Apply filters: { email: 'AreaAdmin8286@yopmail.com' }
+✅ Filters successfully applied
+Opening the contact details page...
+✅ Contact details page opened successfully
+✅ Contact Details page is visible
+✅ Contact basic information verified
+✅ Change Password modal opened
+⚠️ Testing invalid password: invalid / Valid@260994!!
+❌ Password mismatch validation triggered

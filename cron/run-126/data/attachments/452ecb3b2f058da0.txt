@@ -1,0 +1,3 @@
+Declaration frequency: Annually
+supplier: 77928-Fachingen Heil- und Mineralbrunnen GmbH
+invoicingCountryField: Germany

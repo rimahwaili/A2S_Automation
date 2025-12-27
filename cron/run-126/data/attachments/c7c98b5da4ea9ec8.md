@@ -1,0 +1,373 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link [ref=e60] [cursor=pointer]:
+              - /url: /suppliers/index
+              - text: Suppliers
+          - paragraph [ref=e61]:
+            - img [ref=e62]
+          - paragraph [ref=e63]: Creation
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - heading [level=1] [ref=e66]: New Supplier
+            - generic [ref=e67]:
+              - generic [ref=e68] [cursor=pointer]: Profile
+              - generic [ref=e69] [cursor=pointer]: Contacts (0) & Addresses
+              - generic [ref=e70] [cursor=pointer]: Directory Information
+              - generic [ref=e71] [cursor=pointer]: Contracts (0)
+          - generic [ref=e72]:
+            - group [ref=e73]:
+              - generic [ref=e74]:
+                - generic [ref=e75]:
+                  - generic [ref=e76]:
+                    - generic [ref=e77]:
+                      - heading [level=2] [ref=e79]: ID
+                      - generic [ref=e82]:
+                        - generic [ref=e83]: "Code: *"
+                        - textbox [ref=e85]: Test Supplier Automation 1766818671472
+                      - generic [ref=e88]:
+                        - generic [ref=e89]: "Name: *"
+                        - textbox [ref=e91]: Test Supplier Automation 1766818671472
+                      - generic [ref=e94]:
+                        - generic [ref=e95]: "Legal name:"
+                        - textbox [ref=e97]
+                      - generic [ref=e100]:
+                        - generic [ref=e101]: "Status:"
+                        - generic [ref=e103]:
+                          - generic [ref=e105] [cursor=pointer]: Not Logged
+                          - generic [ref=e108]:
+                            - textbox [ref=e110]
+                            - list [ref=e111]
+                      - generic [ref=e115]: "Type:"
+                      - generic [ref=e119]:
+                        - generic [ref=e120]: "Has Active Contracts:"
+                        - img [ref=e123]
+                      - generic [ref=e126]:
+                        - generic [ref=e127]: "Distribution model:"
+                        - combobox [ref=e129]
+                      - generic [ref=e133]: "Declaration areas:"
+                      - generic [ref=e137]:
+                        - generic [ref=e138]: "Invoicing Currency:"
+                        - generic [ref=e140]:
+                          - generic [ref=e142] [cursor=pointer]: "[Select]"
+                          - generic [ref=e145]:
+                            - textbox [ref=e147]
+                            - list [ref=e148]
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: Anticipated
+                        - generic [ref=e155]:
+                          - generic [ref=e156]: "No"
+                          - generic [ref=e157]: "Yes"
+                    - generic [ref=e158]:
+                      - heading [level=2] [ref=e160]: Administrative information
+                      - generic [ref=e163]:
+                        - generic [ref=e164]: "Domain:"
+                        - textbox [ref=e166]
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "RCS Number:"
+                        - textbox [ref=e172]
+                      - generic [ref=e175]:
+                        - generic [ref=e176]: "City Registration Number:"
+                        - textbox [ref=e178]
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "Holding Company:"
+                        - textbox [ref=e184]
+                      - generic [ref=e187]:
+                        - generic [ref=e188]: "Fiscal ID:"
+                        - textbox [ref=e190]
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "VAT Number:"
+                        - textbox [active] [ref=e196]: FR123456789
+                      - generic [ref=e199]:
+                        - generic [ref=e200]: "AR Code:"
+                        - textbox [ref=e202]
+                      - generic [ref=e205]:
+                        - generic [ref=e206]: "AP Code:"
+                        - textbox [ref=e208]
+                      - generic [ref=e211]:
+                        - generic [ref=e212]: "Master Code:"
+                        - textbox [ref=e214]
+                      - generic [ref=e217]:
+                        - generic [ref=e218]: "Duns Code1:"
+                        - textbox [ref=e220]
+                      - generic [ref=e223]:
+                        - generic [ref=e224]: "Duns Code2:"
+                        - textbox [ref=e226]
+                      - generic [ref=e229]:
+                        - generic [ref=e230]: "Duns Code3:"
+                        - textbox [ref=e232]
+                      - generic [ref=e235]:
+                        - generic [ref=e236]: "Legal Status:"
+                        - generic [ref=e238]:
+                          - generic [ref=e240] [cursor=pointer]: "[Select]"
+                          - generic [ref=e243]:
+                            - textbox [ref=e245]
+                            - list [ref=e246]
+                      - generic [ref=e250]:
+                        - generic [ref=e251]: Capital ()
+                        - textbox [ref=e253]
+                  - generic [ref=e254]:
+                    - generic [ref=e255]:
+                      - heading [level=2] [ref=e257]: Dashboard
+                      - generic [ref=e260]:
+                        - generic [ref=e261]: "Nomination for Declaration:"
+                        - combobox [ref=e263]
+                      - generic [ref=e266]:
+                        - generic [ref=e267]: "Nomination for Control:"
+                        - combobox [ref=e269]
+                      - generic [ref=e273]: "First referenced since:"
+                      - generic [ref=e277]:
+                        - generic [ref=e278]: "BI Forced reference End Date:"
+                        - generic [ref=e279]:
+                          - textbox [ref=e280]
+                          - generic [ref=e282] [cursor=pointer]: 
+                    - generic [ref=e283]:
+                      - heading [level=2] [ref=e285]: Suppliers Categories
+                      - generic [ref=e288]:
+                        - generic [ref=e289]: "Categories:"
+                        - generic [ref=e291]:
+                          - list [ref=e292]:
+                            - listitem [ref=e293]:
+                              - textbox [ref=e294]: Select Some Options
+                          - list [ref=e296]
+                      - generic [ref=e299]:
+                        - generic [ref=e300]: "Main Category:"
+                        - generic [ref=e302]:
+                          - generic [ref=e304] [cursor=pointer]: "[Select]"
+                          - generic [ref=e307]:
+                            - textbox [ref=e309]
+                            - list [ref=e310]
+                - generic [ref=e311]:
+                  - heading [level=2] [ref=e312]: Supplier's Directory Self Update
+                  - generic [ref=e315]:
+                    - list [ref=e316]
+                    - list [ref=e318]
+                - generic [ref=e319]:
+                  - heading [level=2] [ref=e320]: Supplier's Addresses
+                  - table [ref=e321]:
+                    - rowgroup [ref=e322]:
+                      - row [ref=e323]:
+                        - cell [ref=e324]: Address 1
+                        - cell [ref=e325]: Address 2
+                        - cell [ref=e326]: ZIP code
+                        - cell [ref=e327]: City
+                        - cell [ref=e328]: Country
+                        - cell [ref=e329]: Function Site
+                        - cell [ref=e330]: Other Function Site
+                        - cell [ref=e331]: Actions
+                  - generic [ref=e332] [cursor=pointer]:
+                    - img [ref=e333]
+                    - paragraph [ref=e334]: Add
+                - generic [ref=e335]:
+                  - heading [level=2] [ref=e336]: CSR
+                  - table [ref=e337]:
+                    - rowgroup [ref=e338]:
+                      - row [ref=e339]:
+                        - cell [ref=e340]: Corporate Social Responsibility
+                        - cell [ref=e341]: Level
+                        - cell [ref=e342]: Date
+                        - cell [ref=e343]: Actions
+                  - generic [ref=e344] [cursor=pointer]:
+                    - img [ref=e345]
+                    - paragraph [ref=e346]: Add
+                - heading [level=2] [ref=e347]: Directory
+                - generic [ref=e348]:
+                  - generic [ref=e349]:
+                    - heading [level=2] [ref=e350]: About
+                    - textbox [ref=e353]
+                    - textbox [ref=e356]
+                    - textbox [ref=e359]
+                    - rowgroup [ref=e360]:
+                      - row [ref=e361]:
+                        - cell [ref=e362]:
+                          - generic [ref=e364] [cursor=pointer]:
+                            - img [ref=e365]
+                            - text: Add file
+                        - text: 
+                  - generic [ref=e366]:
+                    - heading [level=2] [ref=e367]: How to order
+                    - textbox [ref=e370]
+                    - textbox [ref=e373]
+                    - textbox [ref=e376]
+                    - textbox [ref=e379]
+                    - textbox [ref=e382]
+                    - generic [ref=e385]:
+                      - combobox [ref=e387] [cursor=pointer]:
+                        - generic [ref=e388]:
+                          - generic [ref=e390]: No country selected
+                          - generic [ref=e391]: 
+                      - textbox [ref=e392]
+                    - textbox [ref=e395]
+                    - generic [ref=e397]:
+                      - textbox [ref=e399]
+                      - textbox [ref=e401]
+                      - textbox [ref=e403]
+                      - generic [ref=e405]:
+                        - generic [ref=e407] [cursor=pointer]: Select an Option
+                        - generic [ref=e410]:
+                          - textbox [ref=e412]
+                          - list [ref=e413]
+                  - generic [ref=e414]:
+                    - heading [level=2] [ref=e415]: Catalog Categories
+                    - generic [ref=e418]: None
+                    - link [ref=e420] [cursor=pointer]:
+                      - /url: /suppliers/categories_selection/
+                      - text: Select categories
+                - generic [ref=e421]:
+                  - generic [ref=e422]:
+                    - heading [level=2] [ref=e423]: From Buyer
+                    - textbox [ref=e426]
+                    - textbox [ref=e429]
+                    - combobox [ref=e432]
+                    - generic [ref=e435]: None
+                    - link [ref=e439] [cursor=pointer]:
+                      - /url: /suppliers/country_selection_modal
+                      - text: Change zone
+                  - generic [ref=e440]:
+                    - heading [level=2] [ref=e441]: Conditions
+                    - textbox [ref=e444]
+                    - textbox [ref=e447]
+                    - textbox [ref=e450]
+                    - textbox [ref=e453]
+                    - textbox [ref=e456]
+                    - textbox [ref=e459]
+                    - combobox [ref=e462]
+                    - textbox [ref=e465]
+                - generic [ref=e466]:
+                  - heading [level=2] [ref=e467]: Suppliers Contracts
+                  - grid [ref=e469]:
+                    - rowgroup [ref=e470]:
+                      - row [ref=e471]:
+                        - columnheader [ref=e472] [cursor=pointer]:
+                          - generic [ref=e473]: Actions
+                        - columnheader [ref=e474] [cursor=pointer]:
+                          - generic [ref=e475]: Number
+                        - columnheader [ref=e476] [cursor=pointer]:
+                          - generic [ref=e477]: Type
+                        - columnheader [ref=e478] [cursor=pointer]:
+                          - generic [ref=e479]: Contract Status
+                        - columnheader [ref=e480] [cursor=pointer]:
+                          - generic [ref=e481]: Main Category
+                        - columnheader [ref=e482] [cursor=pointer]:
+                          - generic [ref=e483]: Invoicing country
+                        - columnheader [ref=e484] [cursor=pointer]:
+                          - generic [ref=e485]: Beginning Date
+                        - columnheader [ref=e486] [cursor=pointer]:
+                          - generic [ref=e487]: Ending Date
+                        - columnheader [ref=e488] [cursor=pointer]:
+                          - generic [ref=e489]: Declaration Frequency
+                  - link [ref=e490] [cursor=pointer]:
+                    - /url: /contracts/new?supplier_id=
+                    - text: New Contract
+            - generic [ref=e491]:
+              - link [ref=e492] [cursor=pointer]:
+                - /url: /suppliers/list
+                - text: Back to the list
+              - button [ref=e493] [cursor=pointer]: Submit
+      - generic [ref=e494]:
+        - generic [ref=e495]: "Version: 2.30.4"
+        - generic [ref=e496]:
+          - link [ref=e497] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e498] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [ref=e501]:
+    - paragraph [ref=e505]: Share your feedback!💡
+    - paragraph [ref=e509]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e512]:
+      - strong [ref=e513]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e518]:
+      - generic [ref=e519]:
+        - radio "1"
+        - generic [ref=e520]: "1"
+        - generic [ref=e521]: Very difficult
+      - generic [ref=e522]:
+        - radio "2"
+        - generic [ref=e523]: "2"
+      - generic [ref=e524]:
+        - radio "3"
+        - generic [ref=e525]: "3"
+      - generic [ref=e526]:
+        - radio "4"
+        - generic [ref=e527]: "4"
+      - generic [ref=e528]:
+        - radio "5"
+        - generic [ref=e529]: "5"
+        - generic [ref=e530]: Very easy
+    - generic [ref=e532]:
+      - button "Remind me later" [ref=e534] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e535]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e536] [cursor=pointer]: ×
+```

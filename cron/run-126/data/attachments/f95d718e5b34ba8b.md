@@ -1,0 +1,402 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+              - text: Contracts
+          - paragraph [ref=e61]:
+            - img [ref=e62]
+          - paragraph [ref=e63]:
+            - link [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/41057
+              - text: PLP2-25-1-030-MKT BOOST - 1.2
+          - paragraph [ref=e65]:
+            - img [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading [level=2] [ref=e70]:
+            - generic [ref=e71]: to renew
+            - text: Contract - PLP2-25-1-030-MKT BOOST - 1.2
+          - paragraph [ref=e72]:
+            - generic [ref=e73]:
+              - text: Versioned from contract n°
+              - link [ref=e74] [cursor=pointer]:
+                - /url: /contracts/edit/41056
+                - text: PLP2-25-1-030-MKT BOOST - 1.1
+          - generic [ref=e75]:
+            - generic [ref=e77] [cursor=pointer]: Main Information
+            - generic [ref=e79] [cursor=pointer]: Invoicing Information
+            - generic [ref=e81] [cursor=pointer]: Documents (0)
+            - generic [ref=e83] [cursor=pointer]: Services
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e87]:
+                - generic [ref=e88]:
+                  - generic [ref=e89]:
+                    - heading [level=2] [ref=e91]: Main Information
+                    - generic [ref=e94]:
+                      - generic [ref=e95]: "Supplier:"
+                      - link [ref=e98] [cursor=pointer]:
+                        - /url: /suppliers/9438
+                        - text: KON0003-Coca-Cola HBC Polska
+                    - generic [ref=e101]:
+                      - generic [ref=e102]: "Number:"
+                      - generic [ref=e104]: PLP2-25-1-030-MKT BOOST
+                    - generic [ref=e107]:
+                      - generic [ref=e108]: "Name:"
+                      - generic [ref=e109]:
+                        - generic [ref=e110]:
+                          - generic [ref=e112] [cursor=pointer]: Fixed-price digital marketing service contract
+                          - generic [ref=e115]:
+                            - textbox [ref=e117]
+                            - list [ref=e118]
+                        - link [ref=e119] [cursor=pointer]:
+                          - /url: /contract_titles/new
+                          - generic [ref=e120]: 
+                          - text: New
+                    - generic [ref=e123]:
+                      - generic [ref=e124]: "Type:"
+                      - generic [ref=e126]: P4
+                    - generic [ref=e129]:
+                      - generic [ref=e130]: "Description: (visible by customers in the directory)"
+                      - textbox [ref=e132]
+                    - generic [ref=e135]:
+                      - generic [ref=e136]: "Categories:"
+                      - list [ref=e138]:
+                        - listitem [ref=e139]: A00004 Beer, mineral water, soft drinks
+                        - listitem [ref=e140]: A00005 Wine, spirits, champagne
+                    - generic [ref=e143]:
+                      - generic [ref=e144]: "Main Category:"
+                      - generic [ref=e146]:
+                        - generic [ref=e148] [cursor=pointer]: A00004 Beer, mineral water, soft drinks
+                        - generic [ref=e151]:
+                          - textbox [ref=e153]
+                          - list [ref=e154]
+                    - generic [ref=e157]:
+                      - generic [ref=e158]: "Brands:"
+                      - generic [ref=e160]: None
+                    - generic [ref=e163]:
+                      - generic [ref=e164]: "Category Manager:"
+                      - generic [ref=e166]:
+                        - generic [ref=e168] [cursor=pointer]: agnieszka.reczuch@accor.com
+                        - generic [ref=e171]:
+                          - textbox [ref=e173]
+                          - list [ref=e174]
+                    - generic [ref=e177]:
+                      - generic [ref=e178]: "E Procurement:"
+                      - textbox [ref=e180]
+                    - generic [ref=e183]:
+                      - generic [ref=e184]: "Former Numbers:"
+                      - textbox [ref=e186]
+                    - generic [ref=e189]:
+                      - generic [ref=e190]: "Opex:"
+                      - generic [ref=e191]:
+                        - spinbutton [ref=e192]
+                        - generic [ref=e193]: "%"
+                  - generic [ref=e194]:
+                    - heading [level=2] [ref=e196]: Declaration
+                    - generic [ref=e199]:
+                      - generic [ref=e200]: "Declaration Frequency:"
+                      - generic [ref=e202]: Quarterly
+                    - generic [ref=e205]:
+                      - generic [ref=e206]: "Allow specific frequency for services:"
+                      - generic [ref=e208]: This frequency is applied to all services
+                - generic [ref=e209]:
+                  - generic [ref=e210]:
+                    - heading [level=2] [ref=e212]: Contracts Dates
+                    - generic [ref=e215]:
+                      - generic [ref=e216]: "Silent Extension: *"
+                      - combobox [ref=e218]
+                    - generic [ref=e221]:
+                      - generic [ref=e222]: "Contract Start date:"
+                      - generic [ref=e223]:
+                        - textbox [ref=e224]: 12/01/2025
+                        - generic [ref=e226] [cursor=pointer]: 
+                    - generic [ref=e229]:
+                      - generic [ref=e230]: "Contract end date: *"
+                      - generic [ref=e231]:
+                        - textbox [ref=e232]: 12/14/2025
+                        - generic [ref=e234] [cursor=pointer]: 
+                    - generic [ref=e237]:
+                      - generic [ref=e238]: "Declarative Start Quarter:"
+                      - generic [ref=e240]: 1st of October
+                    - generic [ref=e243]:
+                      - generic [ref=e244]: "Declarative Start Year:"
+                      - generic [ref=e246]: "2025"
+                    - generic [ref=e249]:
+                      - generic [ref=e250]: "Signing date:"
+                      - generic [ref=e251]:
+                        - textbox [ref=e252]: 12/03/2025
+                        - generic [ref=e254] [cursor=pointer]: 
+                    - generic [ref=e257]:
+                      - generic [ref=e258]: "Theoretical end date:"
+                      - generic [ref=e259]:
+                        - textbox [ref=e260]
+                        - generic [ref=e262] [cursor=pointer]: 
+                    - generic [ref=e265]:
+                      - generic [ref=e266]: "Declarative End Quarter:"
+                      - combobox [ref=e268]
+                    - generic [ref=e271]:
+                      - generic [ref=e272]: "Declarative End Year:"
+                      - textbox [ref=e274]: "2025"
+                  - generic [ref=e275]:
+                    - heading [level=2] [ref=e277]: Contract Terms
+                    - generic [ref=e280]:
+                      - generic [ref=e281]: "Invoicing country:"
+                      - link [ref=e284] [cursor=pointer]:
+                        - /url: /countries/177
+                        - text: Poland
+                    - generic [ref=e287]:
+                      - generic [ref=e288]: "Currency:"
+                      - link [ref=e291] [cursor=pointer]:
+                        - /url: /currencies/8
+                        - text: PLN
+                    - generic [ref=e294]:
+                      - generic [ref=e295]: "Duration (months) = Term:"
+                      - generic [ref=e297]: "3"
+                    - generic [ref=e300]:
+                      - generic [ref=e301]: "Covered Perimeter: *"
+                      - list [ref=e303]:
+                        - listitem [ref=e304]: NORTHERN AND CENTRAL EUROPE (1 / 23)
+                    - generic [ref=e307]:
+                      - generic [ref=e308]: "Declaration Contacts:"
+                      - generic [ref=e310]:
+                        - list [ref=e311]:
+                          - listitem [ref=e312]:
+                            - textbox [ref=e313]: Select Some Options
+                        - list [ref=e315]
+                    - generic [ref=e318]:
+                      - generic [ref=e319]: "Payment Term:"
+                      - generic [ref=e320]:
+                        - generic [ref=e321]:
+                          - generic [ref=e323] [cursor=pointer]: 30 days end of month
+                          - generic [ref=e326]:
+                            - textbox [ref=e328]
+                            - list [ref=e329]
+                        - link [ref=e330] [cursor=pointer]:
+                          - /url: /contract_payment_terms/new
+                          - generic [ref=e331]: 
+                          - text: New
+                    - generic [ref=e334]:
+                      - generic [ref=e335]: "Payment Mode:"
+                      - generic [ref=e336]:
+                        - generic [ref=e337]:
+                          - generic [ref=e339] [cursor=pointer]: TRANSFER
+                          - generic [ref=e342]:
+                            - textbox [ref=e344]
+                            - list [ref=e345]
+                        - link [ref=e346] [cursor=pointer]:
+                          - /url: /contract_payment_modes/new
+                          - generic [ref=e347]: 
+                          - text: New
+                    - generic [ref=e350]:
+                      - generic [ref=e351]: "Cancellation Term:"
+                      - generic [ref=e352]:
+                        - generic [ref=e353]:
+                          - generic [ref=e355] [cursor=pointer]: "[Select]"
+                          - generic [ref=e358]:
+                            - textbox [ref=e360]
+                            - list [ref=e361]
+                        - link [ref=e362] [cursor=pointer]:
+                          - /url: /contract_cancellation_terms/new
+                          - generic [ref=e363]: 
+                          - text: New
+                    - generic [ref=e366]:
+                      - generic [ref=e367]: "Expected Contract Value:"
+                      - spinbutton [ref=e369]
+              - generic [ref=e370]:
+                - heading [level=2] [ref=e371]: Invoicing Details
+                - generic [ref=e372]: ul.Żwirki i Wigury 16 / / 02-092 / Warszawa / Poland
+                - list [ref=e373]:
+                  - listitem [ref=e374] [cursor=pointer]: tomasz.szurek@cchellenic.com
+                  - listitem [ref=e376] [cursor=pointer]: arkadiusz.dlugopolski@cchellenic.com
+                - link [ref=e380] [cursor=pointer]:
+                  - /url: /currencies/8
+                  - text: PLN
+                - textbox [ref=e381]: COCA-COLA HBC POLSKA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ
+                - generic [ref=e382]: Quarterly
+                - generic [ref=e383]: This periodicity is applied to all services
+                - spinbutton [ref=e384]
+                - combobox [ref=e385]
+                - spinbutton [ref=e386]
+                - generic [ref=e387]: "5242106963"
+                - textbox [ref=e388]
+              - button [ref=e391] [cursor=pointer]: + Add new Document
+              - link [ref=e393] [cursor=pointer]:
+                - /url: /suppliers/show/9438?@all_documents=true&to_tab=document
+                - text: View all supplier documents
+              - generic [ref=e395]:
+                - link [ref=e396] [cursor=pointer]:
+                  - /url: /contracts/list
+                  - text: Back to the list
+                - link [ref=e397] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/41057?trans_name=contracts_error_from_to_renew
+                  - text: Error
+                - link [ref=e398] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/41057?trans_name=contracts_archived_from_to_renew&date_impacted=&value_impacted=
+                  - text: Archive
+                - link [ref=e399] [cursor=pointer]:
+                  - /url: /contracts/version/41057
+                  - text: Versioning
+                - link [ref=e400] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/41057?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                  - text: Renew
+                - link [ref=e401] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/41057?declarative_impact=true
+                  - text: Submit
+            - listitem [ref=e403]:
+              - generic [ref=e404] [cursor=pointer]: Astore digital marketing fee (Online Display Advertising) (marketing boost)
+              - img [ref=e405]
+            - heading [level=3] [ref=e407]: Service details
+            - generic [ref=e408]:
+              - generic [ref=e410]:
+                - generic [ref=e411]: "Name:"
+                - textbox [ref=e417]
+              - generic [ref=e419]:
+                - generic [ref=e420]: "Depth of declaration: *"
+                - generic [ref=e421]: Country
+              - generic [ref=e424]: Redistribution
+              - generic [ref=e427]:
+                - generic [ref=e428]: "Description:"
+                - textbox [ref=e429]: MKT BOOST VIP 122025
+              - generic [ref=e431]:
+                - generic [ref=e432]: "Declared By:"
+                - combobox [ref=e433]
+              - generic [ref=e436]: "Maximum Amount:"
+              - generic [ref=e438]:
+                - generic [ref=e439]: "Tax:"
+                - textbox [ref=e440]: "23.0"
+                - generic [ref=e441]: "%"
+              - generic [ref=e443]:
+                - generic [ref=e444]: "Declaration Frequency:"
+                - generic [ref=e445]: Quarterly
+              - generic [ref=e447]:
+                - generic [ref=e448]: "Invoicing Periodicity:"
+                - generic [ref=e449]: Quarterly
+              - generic [ref=e451]:
+                - generic [ref=e452]: "Import data from ASR:"
+                - textbox [ref=e453]
+            - list [ref=e455]:
+              - generic [ref=e457]: MKT BOOST VIP 12/2025
+              - img [ref=e459] [cursor=pointer]
+            - generic [ref=e460] [cursor=pointer]: Save this Service
+      - generic [ref=e461]:
+        - generic [ref=e462]: "Version: 2.30.4"
+        - generic [ref=e463]:
+          - link [ref=e464] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e465] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e467]:
+    - document [ref=e468]:
+      - generic [ref=e469]:
+        - button [ref=e470] [cursor=pointer]: ×
+        - generic [ref=e471]:
+          - banner [ref=e472]:
+            - heading [level=1] [ref=e473]: Confirmation required
+          - generic [ref=e474]:
+            - paragraph [ref=e476]: Warning! This contract will be put in error, all of its declarations will be irreversibly cancelled, do you confirm this action?
+            - link [ref=e478] [cursor=pointer]:
+              - /url: /contracts/version/41057?user_confirmed=true
+              - text: Submit
+  - dialog [ref=e481]:
+    - paragraph [ref=e485]: Share your feedback!💡
+    - paragraph [ref=e489]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e492]:
+      - strong [ref=e493]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e498]:
+      - generic [ref=e499]:
+        - radio "1"
+        - generic [ref=e500]: "1"
+        - generic [ref=e501]: Very difficult
+      - generic [ref=e502]:
+        - radio "2"
+        - generic [ref=e503]: "2"
+      - generic [ref=e504]:
+        - radio "3"
+        - generic [ref=e505]: "3"
+      - generic [ref=e506]:
+        - radio "4"
+        - generic [ref=e507]: "4"
+      - generic [ref=e508]:
+        - radio "5"
+        - generic [ref=e509]: "5"
+        - generic [ref=e510]: Very easy
+    - generic [ref=e512]:
+      - button "Remind me later" [ref=e514] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e515]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e516] [cursor=pointer]: ×
+```

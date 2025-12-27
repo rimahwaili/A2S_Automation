@@ -1,0 +1,3 @@
+Declaration frequency: Quarterly
+supplier: 104765-LES BOISSONS DU MAROC
+invoicingCountryField: Morocco

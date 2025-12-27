@@ -1,0 +1,759 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - button [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]: "All contracts : 11,842"
+          - button [ref=e60] [cursor=pointer]:
+            - generic [ref=e61]: "Draft contracts : 84"
+          - button [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: "Valid contracts : 4,034"
+          - button [ref=e64] [cursor=pointer]:
+            - generic [ref=e65]: "To renew contracts : 167"
+          - button [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: "Expired Contracts : 174"
+          - button [ref=e68] [cursor=pointer]:
+            - generic [ref=e69]: "Archived Contracts : 5,839"
+          - button [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]: "Archived Error : 1,544"
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - paragraph [ref=e76]: Filters
+                - img [ref=e78] [cursor=pointer]
+              - group [ref=e81]:
+                - generic [ref=e82]:
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: "Supplier:"
+                    - generic [ref=e88]:
+                      - generic [ref=e90] [cursor=pointer]: All
+                      - generic [ref=e93]:
+                        - textbox [ref=e95]:
+                          - /placeholder: Enter a value
+                        - list [ref=e96]
+                  - generic [ref=e99]:
+                    - generic [ref=e100]: "Number:"
+                    - textbox [ref=e102]:
+                      - /placeholder: All
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: "Type:"
+                    - generic [ref=e108]:
+                      - generic [ref=e110] [cursor=pointer]: All
+                      - generic [ref=e113]:
+                        - textbox [ref=e115]
+                        - list [ref=e116]
+                  - generic [ref=e119]:
+                    - generic [ref=e120]: "Main Category:"
+                    - generic [ref=e122]:
+                      - generic [ref=e124] [cursor=pointer]: All
+                      - generic [ref=e127]:
+                        - textbox [ref=e129]
+                        - list [ref=e130]
+                  - generic [ref=e133]:
+                    - generic [ref=e134]: "Former Numbers:"
+                    - textbox [ref=e136]
+                  - generic [ref=e139]:
+                    - generic [ref=e140]: "Category Manager:"
+                    - generic [ref=e142]:
+                      - generic [ref=e144] [cursor=pointer]: All
+                      - generic [ref=e147]:
+                        - textbox [ref=e149]:
+                          - /placeholder: Enter a value
+                        - list [ref=e150]
+                  - generic [ref=e153]:
+                    - generic [ref=e154]: "Invoicing country:"
+                    - generic [ref=e156]:
+                      - generic [ref=e158] [cursor=pointer]: All
+                      - generic [ref=e161]:
+                        - textbox [ref=e163]:
+                          - /placeholder: Enter a value
+                        - list [ref=e164]
+                  - generic [ref=e165]:
+                    - button [ref=e167] [cursor=pointer]: Reset filters
+                    - button [ref=e169] [cursor=pointer]: Apply filters
+            - link [ref=e171] [cursor=pointer]:
+              - /url: /contracts/export
+              - img [ref=e172]
+              - text: Export
+          - generic [ref=e173]:
+            - link [ref=e175] [cursor=pointer]:
+              - /url: /contracts/new
+              - generic [ref=e176]: 
+              - text: New Contract
+            - generic [ref=e177]:
+              - generic [ref=e178]:
+                - textbox [ref=e179]:
+                  - /placeholder: page
+                - button [ref=e180] [cursor=pointer]: Go to
+              - navigation [ref=e182]:
+                - list [ref=e183]:
+                  - listitem [ref=e184]:
+                    - link [ref=e185]:
+                      - /url: /contracts
+                      - text: «
+                  - listitem [ref=e186]:
+                    - link [ref=e187]:
+                      - /url: /contracts?page=1
+                      - text: "1"
+                  - listitem [ref=e188]:
+                    - link [ref=e189] [cursor=pointer]:
+                      - /url: /contracts?page=2
+                      - text: "2"
+                  - listitem [ref=e190]:
+                    - link [ref=e191] [cursor=pointer]:
+                      - /url: /contracts?page=3
+                      - text: "3"
+                  - listitem [ref=e192]:
+                    - link [ref=e193] [cursor=pointer]:
+                      - /url: "#"
+                      - text: …
+                  - listitem [ref=e194]:
+                    - link [ref=e195] [cursor=pointer]:
+                      - /url: /contracts?page=192
+                      - text: "192"
+                  - listitem [ref=e196]:
+                    - link [ref=e197] [cursor=pointer]:
+                      - /url: /contracts?page=193
+                      - text: "193"
+                  - listitem [ref=e198]:
+                    - link [ref=e199] [cursor=pointer]:
+                      - /url: /contracts?page=2
+                      - text: »
+          - table [ref=e204]:
+            - rowgroup [ref=e205]:
+              - row [ref=e206]:
+                - columnheader [ref=e207] [cursor=pointer]
+                - columnheader [ref=e208] [cursor=pointer]: Invoicing country
+                - columnheader [ref=e209] [cursor=pointer]: Number
+                - columnheader [ref=e210] [cursor=pointer]: Type
+                - columnheader [ref=e211] [cursor=pointer]: Supplier
+                - columnheader [ref=e212] [cursor=pointer]: Contract Status
+                - columnheader [ref=e213] [cursor=pointer]: Start Date
+                - columnheader [ref=e214] [cursor=pointer]: End date
+                - columnheader [ref=e215] [cursor=pointer]: Category Manager
+                - columnheader [ref=e216] [cursor=pointer]: Major Version
+                - columnheader [ref=e217] [cursor=pointer]: Minor version
+            - rowgroup [ref=e218]:
+              - row [ref=e219]:
+                - cell [ref=e220]:
+                  - generic [ref=e221]:
+                    - link [ref=e222] [cursor=pointer]:
+                      - /url: /contracts/show/26261
+                      - generic: 
+                    - link [ref=e223] [cursor=pointer]:
+                      - /url: /contracts/edit/26261
+                      - generic: 
+                - cell [ref=e224]:
+                  - generic [ref=e225]: Italy
+                - cell [ref=e226]: IT2GP183001
+                - cell [ref=e227]: P2
+                - cell [ref=e228]:
+                  - generic [ref=e229]: 76859-ADA COSMETICS INTERNATIONAL GMBH (AT)
+                - cell [ref=e230]: valid
+                - cell [ref=e231]:
+                  - generic [ref=e232]: 01/01/2019
+                - cell [ref=e233]
+                - cell [ref=e234]:
+                  - generic [ref=e235]: anais.bocquene@accor.com
+                - cell [ref=e236]: "1"
+                - cell [ref=e237]: "1"
+              - row [ref=e238]:
+                - cell [ref=e239]:
+                  - generic [ref=e240]:
+                    - link [ref=e241] [cursor=pointer]:
+                      - /url: /contracts/show/27260
+                      - generic: 
+                    - link [ref=e242] [cursor=pointer]:
+                      - /url: /contracts/edit/27260
+                      - generic: 
+                - cell [ref=e243]:
+                  - generic [ref=e244]: France
+                - cell [ref=e245]: FR4GP2216
+                - cell [ref=e246]: P4
+                - cell [ref=e247]:
+                  - generic [ref=e248]: 57778-USEO ( ex I.P.I.)
+                - cell [ref=e249]: valid
+                - cell [ref=e250]:
+                  - generic [ref=e251]: 07/01/2011
+                - cell [ref=e252]
+                - cell [ref=e253]:
+                  - generic [ref=e254]: anais.bocquene@accor.com
+                - cell [ref=e255]: "1"
+                - cell [ref=e256]: "1"
+              - row [ref=e257]:
+                - cell [ref=e258]:
+                  - generic [ref=e259]:
+                    - link [ref=e260] [cursor=pointer]:
+                      - /url: /contracts/show/36293
+                      - generic: 
+                    - link [ref=e261] [cursor=pointer]:
+                      - /url: /contracts/edit/36293
+                      - generic: 
+                - cell [ref=e262]:
+                  - generic [ref=e263]: Austria
+                - cell [ref=e264]: AT2-20-2-001
+                - cell [ref=e265]: P2
+                - cell [ref=e266]:
+                  - generic [ref=e267]: 76859-ADA COSMETICS INTERNATIONAL GMBH (AT)
+                - cell [ref=e268]: valid
+                - cell [ref=e269]:
+                  - generic [ref=e270]: 01/01/2014
+                - cell [ref=e271]
+                - cell [ref=e272]:
+                  - generic [ref=e273]: aurelie.duchemin@accor.com
+                - cell [ref=e274]: "1"
+                - cell [ref=e275]: "2"
+              - row [ref=e276]:
+                - cell [ref=e277]:
+                  - generic [ref=e278]:
+                    - link [ref=e279] [cursor=pointer]:
+                      - /url: /contracts/show/39002
+                      - generic: 
+                    - link [ref=e280] [cursor=pointer]:
+                      - /url: /contracts/edit/39002
+                      - generic: 
+                - cell [ref=e281]:
+                  - generic [ref=e282]: Belgium
+                - cell [ref=e283]: F13P300343
+                - cell [ref=e284]: P4
+                - cell [ref=e285]:
+                  - generic [ref=e286]: 94416-UNILEVER BELGIUM NV
+                - cell [ref=e287]: valid
+                - cell [ref=e288]:
+                  - generic [ref=e289]: 04/01/2023
+                - cell [ref=e290]
+                - cell [ref=e291]:
+                  - generic [ref=e292]: javier.defrutos@accor.com
+                - cell [ref=e293]: "3"
+                - cell [ref=e294]: "4"
+              - row [ref=e295]:
+                - cell [ref=e296]:
+                  - generic [ref=e297]:
+                    - link [ref=e298] [cursor=pointer]:
+                      - /url: /contracts/show/40591
+                      - generic: 
+                    - link [ref=e299] [cursor=pointer]:
+                      - /url: /contracts/edit/40591
+                      - generic: 
+                - cell [ref=e300]:
+                  - generic [ref=e301]: Brazil
+                - cell [ref=e302]: "293110593"
+                - cell [ref=e303]: P2
+                - cell [ref=e304]:
+                  - generic [ref=e305]: 170849-TOP SERVICE RJ ( SUNSET )
+                - cell [ref=e306]: valid
+                - cell [ref=e307]:
+                  - generic [ref=e308]: 04/01/2025
+                - cell [ref=e309]
+                - cell [ref=e310]:
+                  - generic [ref=e311]: mayra.sorrentino@accor.com
+                - cell [ref=e312]: "2"
+                - cell [ref=e313]: "1"
+              - row [ref=e314]:
+                - cell [ref=e315]:
+                  - generic [ref=e316]:
+                    - link [ref=e317] [cursor=pointer]:
+                      - /url: /contracts/show/34208
+                      - generic: 
+                    - link [ref=e318] [cursor=pointer]:
+                      - /url: /contracts/edit/34208
+                      - generic: 
+                - cell [ref=e319]:
+                  - generic [ref=e320]: Brazil
+                - cell [ref=e321]: "293110370"
+                - cell [ref=e322]: P2
+                - cell [ref=e323]:
+                  - generic [ref=e324]: 206813-ROCA BRASIL
+                - cell [ref=e325]: valid
+                - cell [ref=e326]:
+                  - generic [ref=e327]: 10/11/2021
+                - cell [ref=e328]
+                - cell [ref=e329]:
+                  - generic [ref=e330]: douglas.bruno@accor.com
+                - cell [ref=e331]: "1"
+                - cell [ref=e332]: "1"
+              - row [ref=e333]:
+                - cell [ref=e334]:
+                  - generic [ref=e335]:
+                    - link [ref=e336] [cursor=pointer]:
+                      - /url: /contracts/show/33749
+                      - generic: 
+                    - link [ref=e337] [cursor=pointer]:
+                      - /url: /contracts/edit/33749
+                      - generic: 
+                - cell [ref=e338]:
+                  - generic [ref=e339]: Brazil
+                - cell [ref=e340]: "293110237"
+                - cell [ref=e341]: P2
+                - cell [ref=e342]:
+                  - generic [ref=e343]: 290016-ACAO MAO DE OBRA TEMPORARIA
+                - cell [ref=e344]: valid
+                - cell [ref=e345]:
+                  - generic [ref=e346]: 10/11/2021
+                - cell [ref=e347]
+                - cell [ref=e348]:
+                  - generic [ref=e349]: leticia.brancate@accor.com
+                - cell [ref=e350]: "1"
+                - cell [ref=e351]: "1"
+              - row [ref=e352]:
+                - cell [ref=e353]:
+                  - generic [ref=e354]:
+                    - link [ref=e355] [cursor=pointer]:
+                      - /url: /contracts/show/38853
+                      - generic: 
+                    - link [ref=e356] [cursor=pointer]:
+                      - /url: /contracts/edit/38853
+                      - generic: 
+                - cell [ref=e357]:
+                  - generic [ref=e358]: Chile
+                - cell [ref=e359]: "100000672"
+                - cell [ref=e360]: P2
+                - cell [ref=e361]:
+                  - generic [ref=e362]: 10000672-PCP CONTROL DE PLAGAS
+                - cell [ref=e363]: valid
+                - cell [ref=e364]:
+                  - generic [ref=e365]: 05/01/2024
+                - cell [ref=e366]
+                - cell [ref=e367]:
+                  - generic [ref=e368]: claudio.zamorano@accor.com
+                - cell [ref=e369]: "1"
+                - cell [ref=e370]: "1"
+              - row [ref=e371]:
+                - cell [ref=e372]:
+                  - generic [ref=e373]:
+                    - link [ref=e374] [cursor=pointer]:
+                      - /url: /contracts/show/26509
+                      - generic: 
+                    - link [ref=e375] [cursor=pointer]:
+                      - /url: /contracts/edit/26509
+                      - generic: 
+                - cell [ref=e376]:
+                  - generic [ref=e377]: Portugal
+                - cell [ref=e378]: Prt 155-2018
+                - cell [ref=e379]: P2
+                - cell [ref=e380]:
+                  - generic [ref=e381]: 100557-RECHEIO - CASH & CARRY, S.A.
+                - cell [ref=e382]: valid
+                - cell [ref=e383]:
+                  - generic [ref=e384]: 01/01/2018
+                - cell [ref=e385]
+                - cell [ref=e386]:
+                  - generic [ref=e387]: helene.troffigue@accor.com
+                - cell [ref=e388]: "1"
+                - cell [ref=e389]: "1"
+              - row [ref=e390]:
+                - cell [ref=e391]:
+                  - generic [ref=e392]:
+                    - link [ref=e393] [cursor=pointer]:
+                      - /url: /contracts/show/29568
+                      - generic: 
+                    - link [ref=e394] [cursor=pointer]:
+                      - /url: /contracts/edit/29568
+                      - generic: 
+                - cell [ref=e395]:
+                  - generic [ref=e396]: France
+                - cell [ref=e397]: "1190506325"
+                - cell [ref=e398]: P2
+                - cell [ref=e399]:
+                  - generic [ref=e400]: 58933-LA COSTE DISTRIBUTION
+                - cell [ref=e401]: valid
+                - cell [ref=e402]:
+                  - generic [ref=e403]: 10/01/2019
+                - cell [ref=e404]
+                - cell [ref=e405]:
+                  - generic [ref=e406]: herve.seguinet@accor.com
+                - cell [ref=e407]: "1"
+                - cell [ref=e408]: "1"
+              - row [ref=e409]:
+                - cell [ref=e410]:
+                  - generic [ref=e411]:
+                    - link [ref=e412] [cursor=pointer]:
+                      - /url: /contracts/show/31150
+                      - generic: 
+                    - link [ref=e413] [cursor=pointer]:
+                      - /url: /contracts/edit/31150
+                      - generic: 
+                - cell [ref=e414]:
+                  - generic [ref=e415]: CORP
+                - cell [ref=e416]: GP2GP21127
+                - cell [ref=e417]: G2
+                - cell [ref=e418]:
+                  - generic [ref=e419]: 91878-SPECTRE
+                - cell [ref=e420]: valid
+                - cell [ref=e421]:
+                  - generic [ref=e422]: 01/01/2019
+                - cell [ref=e423]
+                - cell [ref=e424]:
+                  - generic [ref=e425]: thomas.lehuede@accor.com
+                - cell [ref=e426]: "1"
+                - cell [ref=e427]: "1"
+              - row [ref=e428]:
+                - cell [ref=e429]:
+                  - generic [ref=e430]:
+                    - link [ref=e431] [cursor=pointer]:
+                      - /url: /contracts/show/35300
+                      - generic: 
+                    - link [ref=e432] [cursor=pointer]:
+                      - /url: /contracts/edit/35300
+                      - generic: 
+                - cell [ref=e433]:
+                  - generic [ref=e434]: Brazil
+                - cell [ref=e435]: "293110482"
+                - cell [ref=e436]: P2
+                - cell [ref=e437]:
+                  - generic [ref=e438]: 249989-PRIME CATER
+                - cell [ref=e439]: valid
+                - cell [ref=e440]:
+                  - generic [ref=e441]: 03/30/2022
+                - cell [ref=e442]
+                - cell [ref=e443]:
+                  - generic [ref=e444]: carla.virissimo@accor.com
+                - cell [ref=e445]: "1"
+                - cell [ref=e446]: "1"
+              - row [ref=e447]:
+                - cell [ref=e448]:
+                  - generic [ref=e449]:
+                    - link [ref=e450] [cursor=pointer]:
+                      - /url: /contracts/show/27438
+                      - generic: 
+                    - link [ref=e451] [cursor=pointer]:
+                      - /url: /contracts/edit/27438
+                      - generic: 
+                - cell [ref=e452]:
+                  - generic [ref=e453]: Portugal
+                - cell [ref=e454]: Prt 143-2018
+                - cell [ref=e455]: P2
+                - cell [ref=e456]:
+                  - generic [ref=e457]: 103067-LYRECO PORTUGAL, S.A.
+                - cell [ref=e458]: valid
+                - cell [ref=e459]:
+                  - generic [ref=e460]: 04/12/2018
+                - cell [ref=e461]
+                - cell [ref=e462]:
+                  - generic [ref=e463]: jeanne.sanmiguel@accor.com
+                - cell [ref=e464]: "1"
+                - cell [ref=e465]: "1"
+              - row [ref=e466]:
+                - cell [ref=e467]:
+                  - generic [ref=e468]:
+                    - link [ref=e469] [cursor=pointer]:
+                      - /url: /contracts/show/36158
+                      - generic: 
+                    - link [ref=e470] [cursor=pointer]:
+                      - /url: /contracts/edit/36158
+                      - generic: 
+                - cell [ref=e471]:
+                  - generic [ref=e472]: Austria
+                - cell [ref=e473]: AT4-20-2-011
+                - cell [ref=e474]: P4
+                - cell [ref=e475]:
+                  - generic [ref=e476]: 42264-Kimberly-Clark GmbH
+                - cell [ref=e477]: valid
+                - cell [ref=e478]:
+                  - generic [ref=e479]: 08/01/2019
+                - cell [ref=e480]
+                - cell [ref=e481]:
+                  - generic [ref=e482]: aurelie.duchemin@accor.com
+                - cell [ref=e483]: "2"
+                - cell [ref=e484]: "2"
+              - row [ref=e485]:
+                - cell [ref=e486]:
+                  - generic [ref=e487]:
+                    - link [ref=e488] [cursor=pointer]:
+                      - /url: /contracts/show/33750
+                      - generic: 
+                    - link [ref=e489] [cursor=pointer]:
+                      - /url: /contracts/edit/33750
+                      - generic: 
+                - cell [ref=e490]:
+                  - generic [ref=e491]: Brazil
+                - cell [ref=e492]: "20258002"
+                - cell [ref=e493]: P2
+                - cell [ref=e494]:
+                  - generic [ref=e495]: 153210-ACF BRASIL
+                - cell [ref=e496]: valid
+                - cell [ref=e497]:
+                  - generic [ref=e498]: 01/01/2021
+                - cell [ref=e499]
+                - cell [ref=e500]:
+                  - generic [ref=e501]: mayra.sorrentino@accor.com
+                - cell [ref=e502]: "1"
+                - cell [ref=e503]: "1"
+              - row [ref=e504]:
+                - cell [ref=e505]:
+                  - generic [ref=e506]:
+                    - link [ref=e507] [cursor=pointer]:
+                      - /url: /contracts/show/25188
+                      - generic: 
+                    - link [ref=e508] [cursor=pointer]:
+                      - /url: /contracts/edit/25188
+                      - generic: 
+                - cell [ref=e509]:
+                  - generic [ref=e510]: France
+                - cell [ref=e511]: "2170195068"
+                - cell [ref=e512]: P2
+                - cell [ref=e513]:
+                  - generic [ref=e514]: 247532-STAFFMATCH FRANCE
+                - cell [ref=e515]: valid
+                - cell [ref=e516]:
+                  - generic [ref=e517]: 01/01/2019
+                - cell [ref=e518]
+                - cell [ref=e519]:
+                  - generic [ref=e520]: francisco.meirelles@accor.com
+                - cell [ref=e521]: "1"
+                - cell [ref=e522]: "1"
+              - row [ref=e523]:
+                - cell [ref=e524]:
+                  - generic [ref=e525]:
+                    - link [ref=e526] [cursor=pointer]:
+                      - /url: /contracts/show/40711
+                      - generic: 
+                    - link [ref=e527] [cursor=pointer]:
+                      - /url: /contracts/edit/40711
+                      - generic: 
+                - cell [ref=e528]:
+                  - generic [ref=e529]: Peru
+                - cell [ref=e530]: "3000114"
+                - cell [ref=e531]: P2
+                - cell [ref=e532]:
+                  - generic [ref=e533]: 3000114PE-JMA
+                - cell [ref=e534]: valid
+                - cell [ref=e535]:
+                  - generic [ref=e536]: 08/01/2025
+                - cell [ref=e537]
+                - cell [ref=e538]:
+                  - generic [ref=e539]: milagros.morales@accor.com
+                - cell [ref=e540]: "1"
+                - cell [ref=e541]: "1"
+              - row [ref=e542]:
+                - cell [ref=e543]:
+                  - generic [ref=e544]:
+                    - link [ref=e545] [cursor=pointer]:
+                      - /url: /contracts/show/39043
+                      - generic: 
+                    - link [ref=e546] [cursor=pointer]:
+                      - /url: /contracts/edit/39043
+                      - generic: 
+                - cell [ref=e547]:
+                  - generic [ref=e548]: CORP
+                - cell [ref=e549]: GPG2-24-6-052
+                - cell [ref=e550]: G2
+                - cell [ref=e551]:
+                  - generic [ref=e552]: 3763-ONITY S.L.
+                - cell [ref=e553]: valid
+                - cell [ref=e554]:
+                  - generic [ref=e555]: 01/01/2023
+                - cell [ref=e556]
+                - cell [ref=e557]:
+                  - generic [ref=e558]: guillaume.tap@accor.com
+                - cell [ref=e559]: "1"
+                - cell [ref=e560]: "1"
+              - row [ref=e561]:
+                - cell [ref=e562]:
+                  - generic [ref=e563]:
+                    - link [ref=e564] [cursor=pointer]:
+                      - /url: /contracts/show/25191
+                      - generic: 
+                    - link [ref=e565] [cursor=pointer]:
+                      - /url: /contracts/edit/25191
+                      - generic: 
+                - cell [ref=e566]:
+                  - generic [ref=e567]: France
+                - cell [ref=e568]: "28309088"
+                - cell [ref=e569]: P2
+                - cell [ref=e570]:
+                  - generic [ref=e571]: 1499-STANDARD TEXTILE SAS
+                - cell [ref=e572]: valid
+                - cell [ref=e573]:
+                  - generic [ref=e574]: 07/01/2013
+                - cell [ref=e575]
+                - cell [ref=e576]:
+                  - generic [ref=e577]: david.taylor@accor.com
+                - cell [ref=e578]: "1"
+                - cell [ref=e579]: "1"
+              - row [ref=e580]:
+                - cell [ref=e581]:
+                  - generic [ref=e582]:
+                    - link [ref=e583] [cursor=pointer]:
+                      - /url: /contracts/show/36948
+                      - generic: 
+                    - link [ref=e584] [cursor=pointer]:
+                      - /url: /contracts/edit/36948
+                      - generic: 
+                - cell [ref=e585]:
+                  - generic [ref=e586]: France
+                - cell [ref=e587]: FR2-23-1-134
+                - cell [ref=e588]: P2
+                - cell [ref=e589]:
+                  - generic [ref=e590]: 51449-DUPLEIX ETABLISSEMENT
+                - cell [ref=e591]: valid
+                - cell [ref=e592]:
+                  - generic [ref=e593]: 05/01/2023
+                - cell [ref=e594]
+                - cell [ref=e595]:
+                  - generic [ref=e596]: camille.hedan@accor.com
+                - cell [ref=e597]: "1"
+                - cell [ref=e598]: "1"
+              - row [ref=e599]:
+                - cell [ref=e600]:
+                  - generic [ref=e601]:
+                    - link [ref=e602] [cursor=pointer]:
+                      - /url: /contracts/show/35779
+                      - generic: 
+                    - link [ref=e603] [cursor=pointer]:
+                      - /url: /contracts/edit/35779
+                      - generic: 
+                - cell [ref=e604]:
+                  - generic [ref=e605]: United Kingdom
+                - cell [ref=e606]: 1 18 E00054 GB 00367
+                - cell [ref=e607]: P2
+                - cell [ref=e608]:
+                  - generic [ref=e609]: 33961-Eastwood Interior Contractors LTD
+                - cell [ref=e610]: valid
+                - cell [ref=e611]:
+                  - generic [ref=e612]: 01/01/2023
+                - cell [ref=e613]
+                - cell [ref=e614]:
+                  - generic [ref=e615]: amogh.bansal@accor.com
+                - cell [ref=e616]: "3"
+                - cell [ref=e617]: "1"
+        - navigation [ref=e619]:
+          - list [ref=e620]:
+            - listitem [ref=e621]:
+              - link [ref=e622]:
+                - /url: /contracts
+                - text: «
+            - listitem [ref=e623]:
+              - link [ref=e624]:
+                - /url: /contracts?page=1
+                - text: "1"
+            - listitem [ref=e625]:
+              - link [ref=e626] [cursor=pointer]:
+                - /url: /contracts?page=2
+                - text: "2"
+            - listitem [ref=e627]:
+              - link [ref=e628] [cursor=pointer]:
+                - /url: /contracts?page=3
+                - text: "3"
+            - listitem [ref=e629]:
+              - link [ref=e630] [cursor=pointer]:
+                - /url: "#"
+                - text: …
+            - listitem [ref=e631]:
+              - link [ref=e632] [cursor=pointer]:
+                - /url: /contracts?page=192
+                - text: "192"
+            - listitem [ref=e633]:
+              - link [ref=e634] [cursor=pointer]:
+                - /url: /contracts?page=193
+                - text: "193"
+            - listitem [ref=e635]:
+              - link [ref=e636] [cursor=pointer]:
+                - /url: /contracts?page=2
+                - text: »
+      - generic [ref=e637]:
+        - generic [ref=e638]: "Version: 2.30.4"
+        - generic [ref=e639]:
+          - link [ref=e640] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e641] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e644]:
+    - paragraph [ref=e648]: Share your feedback!💡
+    - paragraph [ref=e652]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e655]:
+      - strong [ref=e656]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e661]:
+      - generic [ref=e662]:
+        - radio "1"
+        - generic [ref=e663]: "1"
+        - generic [ref=e664]: Very difficult
+      - generic [ref=e665]:
+        - radio "2"
+        - generic [ref=e666]: "2"
+      - generic [ref=e667]:
+        - radio "3"
+        - generic [ref=e668]: "3"
+      - generic [ref=e669]:
+        - radio "4"
+        - generic [ref=e670]: "4"
+      - generic [ref=e671]:
+        - radio "5"
+        - generic [ref=e672]: "5"
+        - generic [ref=e673]: Very easy
+    - generic [ref=e675]:
+      - button "Remind me later" [ref=e677] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e678]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e679] [cursor=pointer]: ×
+```
