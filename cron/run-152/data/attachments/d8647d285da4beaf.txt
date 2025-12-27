@@ -1,0 +1,4 @@
+Contract ID: 38564
+Declaration frequency: Quarterly
+supplier: 296122-Flow Water
+invoicingCountryField: Canada

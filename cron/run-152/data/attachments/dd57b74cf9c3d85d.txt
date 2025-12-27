@@ -1,0 +1,4 @@
+Contract ID: 33829
+Declaration frequency: Quarterly
+supplier: 154196-CANOINHAS
+invoicingCountryField: Brazil
