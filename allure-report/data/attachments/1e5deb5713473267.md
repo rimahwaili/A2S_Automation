@@ -1,0 +1,780 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: recette
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - button [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]: "All contracts : 12,098"
+          - button [ref=e60] [cursor=pointer]:
+            - generic [ref=e61]: "Draft contracts : 212"
+          - button [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: "Valid contracts : 3,905"
+          - button [ref=e64] [cursor=pointer]:
+            - generic [ref=e65]: "To renew contracts : 106"
+          - button [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: "Expired Contracts : 143"
+          - button [ref=e68] [cursor=pointer]:
+            - generic [ref=e69]: "Archived Contracts : 5,967"
+          - button [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]: "Archived Error : 1,765"
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - paragraph [ref=e76]: Filters
+                - img [ref=e78] [cursor=pointer]
+              - group [ref=e81]:
+                - generic [ref=e82]:
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: "Supplier:"
+                    - generic [ref=e88]:
+                      - generic [ref=e90] [cursor=pointer]: All
+                      - generic [ref=e93]:
+                        - textbox [ref=e95]:
+                          - /placeholder: Enter a value
+                        - list [ref=e96]
+                  - generic [ref=e99]:
+                    - generic [ref=e100]: "Number:"
+                    - textbox [ref=e102]:
+                      - /placeholder: All
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: "Type:"
+                    - generic [ref=e108]:
+                      - generic [ref=e110] [cursor=pointer]: All
+                      - generic [ref=e113]:
+                        - textbox [ref=e115]
+                        - list [ref=e116]
+                  - generic [ref=e119]:
+                    - generic [ref=e120]: "Main Category:"
+                    - generic [ref=e122]:
+                      - generic [ref=e124] [cursor=pointer]: All
+                      - generic [ref=e127]:
+                        - textbox [ref=e129]
+                        - list [ref=e130]
+                  - generic [ref=e133]:
+                    - generic [ref=e134]: "Former Numbers:"
+                    - textbox [ref=e136]
+                  - generic [ref=e139]:
+                    - generic [ref=e140]: "Category Manager:"
+                    - generic [ref=e142]:
+                      - generic [ref=e144] [cursor=pointer]: All
+                      - generic [ref=e147]:
+                        - textbox [ref=e149]:
+                          - /placeholder: Enter a value
+                        - list [ref=e150]
+                  - generic [ref=e153]:
+                    - generic [ref=e154]: "Invoicing country:"
+                    - generic [ref=e156]:
+                      - generic [ref=e158] [cursor=pointer]: All
+                      - generic [ref=e161]:
+                        - textbox [ref=e163]:
+                          - /placeholder: Enter a value
+                        - list [ref=e164]
+                  - generic [ref=e165]:
+                    - button [ref=e167] [cursor=pointer]: Reset filters
+                    - button [ref=e169] [cursor=pointer]: Apply filters
+            - link [ref=e171] [cursor=pointer]:
+              - /url: /contracts/export
+              - img [ref=e172]
+              - text: Export
+          - generic [ref=e173]:
+            - link [ref=e175] [cursor=pointer]:
+              - /url: /contracts/new
+              - generic [ref=e176]: 
+              - text: New Contract
+            - generic [ref=e177]:
+              - generic [ref=e178]:
+                - textbox [ref=e179]:
+                  - /placeholder: page
+                - button [ref=e180] [cursor=pointer]: Go to
+              - navigation [ref=e182]:
+                - list [ref=e183]:
+                  - listitem [ref=e184]:
+                    - link [ref=e185]:
+                      - /url: /contracts
+                      - text: «
+                  - listitem [ref=e186]:
+                    - link [ref=e187]:
+                      - /url: /contracts?page=1
+                      - text: "1"
+                  - listitem [ref=e188]:
+                    - link [ref=e189] [cursor=pointer]:
+                      - /url: /contracts?page=2
+                      - text: "2"
+                  - listitem [ref=e190]:
+                    - link [ref=e191] [cursor=pointer]:
+                      - /url: /contracts?page=3
+                      - text: "3"
+                  - listitem [ref=e192]:
+                    - link [ref=e193] [cursor=pointer]:
+                      - /url: /contracts?page=4
+                      - text: "4"
+                  - listitem [ref=e194]:
+                    - link [ref=e195] [cursor=pointer]:
+                      - /url: /contracts?page=5
+                      - text: "5"
+                  - listitem [ref=e196]:
+                    - link [ref=e197] [cursor=pointer]:
+                      - /url: /contracts?page=6
+                      - text: "6"
+                  - listitem [ref=e198]:
+                    - link [ref=e199] [cursor=pointer]:
+                      - /url: /contracts?page=2
+                      - text: »
+          - table [ref=e204]:
+            - rowgroup [ref=e205]:
+              - row [ref=e206]:
+                - columnheader [ref=e207] [cursor=pointer]
+                - columnheader [ref=e208] [cursor=pointer]: Invoicing country
+                - columnheader [ref=e209] [cursor=pointer]: Number
+                - columnheader [ref=e210] [cursor=pointer]: Type
+                - columnheader [ref=e211] [cursor=pointer]: Supplier
+                - columnheader [ref=e212] [cursor=pointer]: Contract Status
+                - columnheader [ref=e213] [cursor=pointer]: Start Date
+                - columnheader [ref=e214] [cursor=pointer]: End date
+                - columnheader [ref=e215] [cursor=pointer]: Category Manager
+                - columnheader [ref=e216] [cursor=pointer]: Major Version
+                - columnheader [ref=e217] [cursor=pointer]: Minor version
+            - rowgroup [ref=e218]:
+              - row [ref=e219]:
+                - cell [ref=e220]:
+                  - generic [ref=e221]:
+                    - link [ref=e222] [cursor=pointer]:
+                      - /url: /contracts/show/39617
+                      - generic: 
+                    - link [ref=e223] [cursor=pointer]:
+                      - /url: /contracts/edit/39617
+                      - generic: 
+                - cell [ref=e224]:
+                  - generic [ref=e225]: France
+                - cell [ref=e226]: FR4GP1462
+                - cell [ref=e227]: P4
+                - cell [ref=e228]:
+                  - generic [ref=e229]: 118351-ETABLISSEMENT FAVRICHON ET VIGNON
+                - cell [ref=e230]: to renew
+                - cell [ref=e231]:
+                  - generic [ref=e232]: 01/01/2024
+                - cell [ref=e233]:
+                  - generic [ref=e234]: 03/30/2026
+                - cell [ref=e235]:
+                  - generic [ref=e236]: carlo.demarini@accor.com
+                - cell [ref=e237]: "3"
+                - cell [ref=e238]: "1"
+              - row [ref=e239]:
+                - cell [ref=e240]:
+                  - generic [ref=e241]:
+                    - link [ref=e242] [cursor=pointer]:
+                      - /url: /contracts/show/38564
+                      - generic: 
+                    - link [ref=e243] [cursor=pointer]:
+                      - /url: /contracts/edit/38564
+                      - generic: 
+                - cell [ref=e244]:
+                  - generic [ref=e245]: Canada
+                - cell [ref=e246]: CAP2-24-1-004
+                - cell [ref=e247]: P2
+                - cell [ref=e248]:
+                  - generic [ref=e249]: 296122-Flow Water
+                - cell [ref=e250]: to renew
+                - cell [ref=e251]:
+                  - generic [ref=e252]: 01/01/2024
+                - cell [ref=e253]:
+                  - generic [ref=e254]: 12/31/2025
+                - cell [ref=e255]:
+                  - generic [ref=e256]: gerrick.gaudet.buyer@accor.com
+                - cell [ref=e257]: "1"
+                - cell [ref=e258]: "1"
+              - row [ref=e259]:
+                - cell [ref=e260]:
+                  - generic [ref=e261]:
+                    - link [ref=e262] [cursor=pointer]:
+                      - /url: /contracts/show/40812
+                      - generic: 
+                    - link [ref=e263] [cursor=pointer]:
+                      - /url: /contracts/edit/40812
+                      - generic: 
+                - cell [ref=e264]:
+                  - generic [ref=e265]: CORP
+                - cell [ref=e266]: GPG2-25-1-174
+                - cell [ref=e267]: G2
+                - cell [ref=e268]:
+                  - generic [ref=e269]: 96791-NOVANDIE
+                - cell [ref=e270]: to renew
+                - cell [ref=e271]:
+                  - generic [ref=e272]: 01/01/2023
+                - cell [ref=e273]:
+                  - generic [ref=e274]: 12/31/2025
+                - cell [ref=e275]:
+                  - generic [ref=e276]: gelske.huyer@accor.com
+                - cell [ref=e277]: "1"
+                - cell [ref=e278]: "5"
+              - row [ref=e279]:
+                - cell [ref=e280]:
+                  - generic [ref=e281]:
+                    - link [ref=e282] [cursor=pointer]:
+                      - /url: /contracts/show/40827
+                      - generic: 
+                    - link [ref=e283] [cursor=pointer]:
+                      - /url: /contracts/edit/40827
+                      - generic: 
+                - cell [ref=e284]:
+                  - generic [ref=e285]: CORP
+                - cell [ref=e286]: GP2GP21096-GM Summit 2025-L&L
+                - cell [ref=e287]: G2
+                - cell [ref=e288]:
+                  - generic [ref=e289]: 283743-DEVIALET
+                - cell [ref=e290]: to renew
+                - cell [ref=e291]:
+                  - generic [ref=e292]: 01/01/2025
+                - cell [ref=e293]:
+                  - generic [ref=e294]: 12/31/2025
+                - cell [ref=e295]:
+                  - generic [ref=e296]: guillaume.tap@accor.com
+                - cell [ref=e297]: "1"
+                - cell [ref=e298]: "1"
+              - row [ref=e299]:
+                - cell [ref=e300]:
+                  - generic [ref=e301]:
+                    - link [ref=e302] [cursor=pointer]:
+                      - /url: /contracts/show/40828
+                      - generic: 
+                    - link [ref=e303] [cursor=pointer]:
+                      - /url: /contracts/edit/40828
+                      - generic: 
+                - cell [ref=e304]:
+                  - generic [ref=e305]: CORP
+                - cell [ref=e306]: GPG2-25-5-123-GM Summit 2025-L&L
+                - cell [ref=e307]: G2
+                - cell [ref=e308]:
+                  - generic [ref=e309]: 356441-BANG & OLUFSEN OPERATION A/S
+                - cell [ref=e310]: to renew
+                - cell [ref=e311]:
+                  - generic [ref=e312]: 01/01/2025
+                - cell [ref=e313]:
+                  - generic [ref=e314]: 12/31/2025
+                - cell [ref=e315]:
+                  - generic [ref=e316]: guillaume.tap@accor.com
+                - cell [ref=e317]: "1"
+                - cell [ref=e318]: "1"
+              - row [ref=e319]:
+                - cell [ref=e320]:
+                  - generic [ref=e321]:
+                    - link [ref=e322] [cursor=pointer]:
+                      - /url: /contracts/show/37181
+                      - generic: 
+                    - link [ref=e323] [cursor=pointer]:
+                      - /url: /contracts/edit/37181
+                      - generic: 
+                - cell [ref=e324]:
+                  - generic [ref=e325]: CORP
+                - cell [ref=e326]: GP4-23-1-032
+                - cell [ref=e327]: G4
+                - cell [ref=e328]:
+                  - generic [ref=e329]: 383530-LYRE'S
+                - cell [ref=e330]: to renew
+                - cell [ref=e331]:
+                  - generic [ref=e332]: 01/01/2023
+                - cell [ref=e333]:
+                  - generic [ref=e334]: 12/31/2025
+                - cell [ref=e335]:
+                  - generic [ref=e336]: jeanxavier.deschamps@accor.com
+                - cell [ref=e337]: "1"
+                - cell [ref=e338]: "1"
+              - row [ref=e339]:
+                - cell [ref=e340]:
+                  - generic [ref=e341]:
+                    - link [ref=e342] [cursor=pointer]:
+                      - /url: /contracts/show/40520
+                      - generic: 
+                    - link [ref=e343] [cursor=pointer]:
+                      - /url: /contracts/edit/40520
+                      - generic: 
+                - cell [ref=e344]:
+                  - generic [ref=e345]: France
+                - cell [ref=e346]: FRP4-24-1-053 MKT BOOST
+                - cell [ref=e347]: P4
+                - cell [ref=e348]:
+                  - generic [ref=e349]: 372260-BJORG ET COMPAGNIE
+                - cell [ref=e350]: to renew
+                - cell [ref=e351]:
+                  - generic [ref=e352]: 06/01/2025
+                - cell [ref=e353]:
+                  - generic [ref=e354]: 12/31/2025
+                - cell [ref=e355]:
+                  - generic [ref=e356]: camille.hedan@accor.com
+                - cell [ref=e357]: "1"
+                - cell [ref=e358]: "1"
+              - row [ref=e359]:
+                - cell [ref=e360]:
+                  - generic [ref=e361]:
+                    - link [ref=e362] [cursor=pointer]:
+                      - /url: /contracts/show/38529
+                      - generic: 
+                    - link [ref=e363] [cursor=pointer]:
+                      - /url: /contracts/edit/38529
+                      - generic: 
+                - cell [ref=e364]:
+                  - generic [ref=e365]: Germany
+                - cell [ref=e366]: DE2-21-6-160
+                - cell [ref=e367]: P2
+                - cell [ref=e368]:
+                  - generic [ref=e369]: 76828-KONWAY GmbH
+                - cell [ref=e370]: to renew
+                - cell [ref=e371]:
+                  - generic [ref=e372]: 01/01/2024
+                - cell [ref=e373]:
+                  - generic [ref=e374]: 12/31/2025
+                - cell [ref=e375]:
+                  - generic [ref=e376]: claudiu.paulescu@accor.com
+                - cell [ref=e377]: "3"
+                - cell [ref=e378]: "1"
+              - row [ref=e379]:
+                - cell [ref=e380]:
+                  - generic [ref=e381]:
+                    - link [ref=e382] [cursor=pointer]:
+                      - /url: /contracts/show/41018
+                      - generic: 
+                    - link [ref=e383] [cursor=pointer]:
+                      - /url: /contracts/edit/41018
+                      - generic: 
+                - cell [ref=e384]:
+                  - generic [ref=e385]: CORP
+                - cell [ref=e386]: GPG4-24-1-023-MKT BOOST
+                - cell [ref=e387]: G4
+                - cell [ref=e388]:
+                  - generic [ref=e389]: 94542-NESTLE NESPRESSO S.A.
+                - cell [ref=e390]: to renew
+                - cell [ref=e391]:
+                  - generic [ref=e392]: 04/27/2025
+                - cell [ref=e393]:
+                  - generic [ref=e394]: 12/14/2025
+                - cell [ref=e395]:
+                  - generic [ref=e396]: jeanxavier.deschamps@accor.com
+                - cell [ref=e397]: "2"
+                - cell [ref=e398]: "2"
+              - row [ref=e399]:
+                - cell [ref=e400]:
+                  - generic [ref=e401]:
+                    - link [ref=e402] [cursor=pointer]:
+                      - /url: /contracts/show/37324
+                      - generic: 
+                    - link [ref=e403] [cursor=pointer]:
+                      - /url: /contracts/edit/37324
+                      - generic: 
+                - cell [ref=e404]:
+                  - generic [ref=e405]: Austria
+                - cell [ref=e406]: AT4-20-1-019
+                - cell [ref=e407]: P4
+                - cell [ref=e408]:
+                  - generic [ref=e409]: 220397-Vöslauer Mineralwasser GmbH
+                - cell [ref=e410]: to renew
+                - cell [ref=e411]:
+                  - generic [ref=e412]: 01/01/2023
+                - cell [ref=e413]:
+                  - generic [ref=e414]: 12/31/2025
+                - cell [ref=e415]:
+                  - generic [ref=e416]: sonja.antonic@accor.com
+                - cell [ref=e417]: "3"
+                - cell [ref=e418]: "1"
+              - row [ref=e419]:
+                - cell [ref=e420]:
+                  - generic [ref=e421]:
+                    - link [ref=e422] [cursor=pointer]:
+                      - /url: /contracts/show/39516
+                      - generic: 
+                    - link [ref=e423] [cursor=pointer]:
+                      - /url: /contracts/edit/39516
+                      - generic: 
+                - cell [ref=e424]:
+                  - generic [ref=e425]: Belgium
+                - cell [ref=e426]: "1999984"
+                - cell [ref=e427]: P2
+                - cell [ref=e428]:
+                  - generic [ref=e429]: 38775-DIVERSEY BELGIUM
+                - cell [ref=e430]: to renew
+                - cell [ref=e431]:
+                  - generic [ref=e432]: 10/01/2024
+                - cell [ref=e433]:
+                  - generic [ref=e434]: 12/31/2025
+                - cell [ref=e435]:
+                  - generic [ref=e436]: aurelie.duchemin@accor.com
+                - cell [ref=e437]: "2"
+                - cell [ref=e438]: "1"
+              - row [ref=e439]:
+                - cell [ref=e440]:
+                  - generic [ref=e441]:
+                    - link [ref=e442] [cursor=pointer]:
+                      - /url: /contracts/show/39843
+                      - generic: 
+                    - link [ref=e443] [cursor=pointer]:
+                      - /url: /contracts/edit/39843
+                      - generic: 
+                - cell [ref=e444]:
+                  - generic [ref=e445]: Germany
+                - cell [ref=e446]: DE2-23-3-086
+                - cell [ref=e447]: P2
+                - cell [ref=e448]:
+                  - generic [ref=e449]: 12918-MAHAG Automobilhandel und Service GmbH & Co.oHG
+                - cell [ref=e450]: to renew
+                - cell [ref=e451]:
+                  - generic [ref=e452]: 01/01/2025
+                - cell [ref=e453]:
+                  - generic [ref=e454]: 12/31/2025
+                - cell [ref=e455]:
+                  - generic [ref=e456]: marion.etienne@accor.com
+                - cell [ref=e457]: "4"
+                - cell [ref=e458]: "1"
+              - row [ref=e459]:
+                - cell [ref=e460]:
+                  - generic [ref=e461]:
+                    - link [ref=e462] [cursor=pointer]:
+                      - /url: /contracts/show/37538
+                      - generic: 
+                    - link [ref=e463] [cursor=pointer]:
+                      - /url: /contracts/edit/37538
+                      - generic: 
+                - cell [ref=e464]:
+                  - generic [ref=e465]: Netherlands
+                - cell [ref=e466]: F10P300192-ST00
+                - cell [ref=e467]: P4
+                - cell [ref=e468]:
+                  - generic [ref=e469]: 9905-VRUMONA B.V.
+                - cell [ref=e470]: to renew
+                - cell [ref=e471]:
+                  - generic [ref=e472]: 01/01/2024
+                - cell [ref=e473]:
+                  - generic [ref=e474]: 12/31/2025
+                - cell [ref=e475]:
+                  - generic [ref=e476]: sonja.antonic@accor.com
+                - cell [ref=e477]: "4"
+                - cell [ref=e478]: "1"
+              - row [ref=e479]:
+                - cell [ref=e480]:
+                  - generic [ref=e481]:
+                    - link [ref=e482] [cursor=pointer]:
+                      - /url: /contracts/show/39535
+                      - generic: 
+                    - link [ref=e483] [cursor=pointer]:
+                      - /url: /contracts/edit/39535
+                      - generic: 
+                - cell [ref=e484]:
+                  - generic [ref=e485]: Contract H ENA
+                - cell [ref=e486]: HEH2-24-2-056
+                - cell [ref=e487]: H2
+                - cell [ref=e488]:
+                  - generic [ref=e489]: 101039-PHYTOMER
+                - cell [ref=e490]: to renew
+                - cell [ref=e491]:
+                  - generic [ref=e492]: 01/01/2025
+                - cell [ref=e493]:
+                  - generic [ref=e494]: 12/31/2025
+                - cell [ref=e495]:
+                  - generic [ref=e496]: anais.bocquene@accor.com
+                - cell [ref=e497]: "1"
+                - cell [ref=e498]: "3"
+              - row [ref=e499]:
+                - cell [ref=e500]:
+                  - generic [ref=e501]:
+                    - link [ref=e502] [cursor=pointer]:
+                      - /url: /contracts/show/38503
+                      - generic: 
+                    - link [ref=e503] [cursor=pointer]:
+                      - /url: /contracts/edit/38503
+                      - generic: 
+                - cell [ref=e504]:
+                  - generic [ref=e505]: CORP
+                - cell [ref=e506]: GP2-21-1-052-MOV
+                - cell [ref=e507]: G2
+                - cell [ref=e508]:
+                  - generic [ref=e509]: 260847-MOVENPICK Wein Schweiz AG
+                - cell [ref=e510]: to renew
+                - cell [ref=e511]:
+                  - generic [ref=e512]: 01/01/2024
+                - cell [ref=e513]:
+                  - generic [ref=e514]: 12/31/2025
+                - cell [ref=e515]:
+                  - generic [ref=e516]: gelske.huyer@accor.com
+                - cell [ref=e517]: "3"
+                - cell [ref=e518]: "2"
+              - row [ref=e519]:
+                - cell [ref=e520]:
+                  - generic [ref=e521]:
+                    - link [ref=e522] [cursor=pointer]:
+                      - /url: /contracts/show/39515
+                      - generic: 
+                    - link [ref=e523] [cursor=pointer]:
+                      - /url: /contracts/edit/39515
+                      - generic: 
+                - cell [ref=e524]:
+                  - generic [ref=e525]: United Kingdom
+                - cell [ref=e526]: 1 18 E00033 GB 00272
+                - cell [ref=e527]: P2
+                - cell [ref=e528]:
+                  - generic [ref=e529]: 36777-DIVERSEY
+                - cell [ref=e530]: to renew
+                - cell [ref=e531]:
+                  - generic [ref=e532]: 10/01/2024
+                - cell [ref=e533]:
+                  - generic [ref=e534]: 12/31/2025
+                - cell [ref=e535]:
+                  - generic [ref=e536]: aurelie.duchemin@accor.com
+                - cell [ref=e537]: "2"
+                - cell [ref=e538]: "1"
+              - row [ref=e539]:
+                - cell [ref=e540]:
+                  - generic [ref=e541]:
+                    - link [ref=e542] [cursor=pointer]:
+                      - /url: /contracts/show/40004
+                      - generic: 
+                    - link [ref=e543] [cursor=pointer]:
+                      - /url: /contracts/edit/40004
+                      - generic: 
+                - cell [ref=e544]:
+                  - generic [ref=e545]: France
+                - cell [ref=e546]: FR3-23-1-170 MISNNSPULS
+                - cell [ref=e547]: P3
+                - cell [ref=e548]:
+                  - generic [ref=e549]: 184804-BROWN FORMAN
+                - cell [ref=e550]: to renew
+                - cell [ref=e551]:
+                  - generic [ref=e552]: 04/01/2023
+                - cell [ref=e553]:
+                  - generic [ref=e554]: 03/31/2026
+                - cell [ref=e555]:
+                  - generic [ref=e556]: xuanmai.nguyen@accor.com
+                - cell [ref=e557]: "1"
+                - cell [ref=e558]: "1"
+              - row [ref=e559]:
+                - cell [ref=e560]:
+                  - generic [ref=e561]:
+                    - link [ref=e562] [cursor=pointer]:
+                      - /url: /contracts/show/38565
+                      - generic: 
+                    - link [ref=e563] [cursor=pointer]:
+                      - /url: /contracts/edit/38565
+                      - generic: 
+                - cell [ref=e564]:
+                  - generic [ref=e565]: Canada
+                - cell [ref=e566]: CAP2-24-1-005
+                - cell [ref=e567]: P2
+                - cell [ref=e568]:
+                  - generic [ref=e569]: 296122-Flow Water
+                - cell [ref=e570]: to renew
+                - cell [ref=e571]:
+                  - generic [ref=e572]: 01/01/2024
+                - cell [ref=e573]:
+                  - generic [ref=e574]: 12/31/2025
+                - cell [ref=e575]:
+                  - generic [ref=e576]: gerrick.gaudet.buyer@accor.com
+                - cell [ref=e577]: "1"
+                - cell [ref=e578]: "1"
+              - row [ref=e579]:
+                - cell [ref=e580]:
+                  - generic [ref=e581]:
+                    - link [ref=e582] [cursor=pointer]:
+                      - /url: /contracts/show/38178
+                      - generic: 
+                    - link [ref=e583] [cursor=pointer]:
+                      - /url: /contracts/edit/38178
+                      - generic: 
+                - cell [ref=e584]:
+                  - generic [ref=e585]: France
+                - cell [ref=e586]: FR-GP2GP2662
+                - cell [ref=e587]: P2
+                - cell [ref=e588]:
+                  - generic [ref=e589]: 58405-3F FILIPPI TARGETTI FRANCE
+                - cell [ref=e590]: to renew
+                - cell [ref=e591]:
+                  - generic [ref=e592]: 01/01/2024
+                - cell [ref=e593]:
+                  - generic [ref=e594]: 12/31/2025
+                - cell [ref=e595]:
+                  - generic [ref=e596]: catherine.machado@accor.com
+                - cell [ref=e597]: "2"
+                - cell [ref=e598]: "1"
+              - row [ref=e599]:
+                - cell [ref=e600]:
+                  - generic [ref=e601]:
+                    - link [ref=e602] [cursor=pointer]:
+                      - /url: /contracts/show/38285
+                      - generic: 
+                    - link [ref=e603] [cursor=pointer]:
+                      - /url: /contracts/edit/38285
+                      - generic: 
+                - cell [ref=e604]:
+                  - generic [ref=e605]: CORP
+                - cell [ref=e606]: GP3GP11143.
+                - cell [ref=e607]: G3
+                - cell [ref=e608]:
+                  - generic [ref=e609]: 79449-ANDROS FRANCE SNC
+                - cell [ref=e610]: to renew
+                - cell [ref=e611]:
+                  - generic [ref=e612]: 01/01/2023
+                - cell [ref=e613]:
+                  - generic [ref=e614]: 12/31/2025
+                - cell [ref=e615]:
+                  - generic [ref=e616]: gelske.huyer@accor.com
+                - cell [ref=e617]: "1"
+                - cell [ref=e618]: "1"
+              - row [ref=e619]:
+                - cell [ref=e620]:
+                  - generic [ref=e621]:
+                    - link [ref=e622] [cursor=pointer]:
+                      - /url: /contracts/show/40126
+                      - generic: 
+                    - link [ref=e623] [cursor=pointer]:
+                      - /url: /contracts/edit/40126
+                      - generic: 
+                - cell [ref=e624]:
+                  - generic [ref=e625]: United Kingdom
+                - cell [ref=e626]: GBS3-24-1-017
+                - cell [ref=e627]: S3
+                - cell [ref=e628]:
+                  - generic [ref=e629]: 72939-Gourmet Supplies
+                - cell [ref=e630]: to renew
+                - cell [ref=e631]:
+                  - generic [ref=e632]: 01/01/2025
+                - cell [ref=e633]:
+                  - generic [ref=e634]: 12/31/2025
+                - cell [ref=e635]:
+                  - generic [ref=e636]: aurore.guillou@accor.com
+                - cell [ref=e637]: "2"
+                - cell [ref=e638]: "1"
+        - navigation [ref=e640]:
+          - list [ref=e641]:
+            - listitem [ref=e642]:
+              - link [ref=e643]:
+                - /url: /contracts
+                - text: «
+            - listitem [ref=e644]:
+              - link [ref=e645]:
+                - /url: /contracts?page=1
+                - text: "1"
+            - listitem [ref=e646]:
+              - link [ref=e647] [cursor=pointer]:
+                - /url: /contracts?page=2
+                - text: "2"
+            - listitem [ref=e648]:
+              - link [ref=e649] [cursor=pointer]:
+                - /url: /contracts?page=3
+                - text: "3"
+            - listitem [ref=e650]:
+              - link [ref=e651] [cursor=pointer]:
+                - /url: /contracts?page=4
+                - text: "4"
+            - listitem [ref=e652]:
+              - link [ref=e653] [cursor=pointer]:
+                - /url: /contracts?page=5
+                - text: "5"
+            - listitem [ref=e654]:
+              - link [ref=e655] [cursor=pointer]:
+                - /url: /contracts?page=6
+                - text: "6"
+            - listitem [ref=e656]:
+              - link [ref=e657] [cursor=pointer]:
+                - /url: /contracts?page=2
+                - text: »
+      - generic [ref=e658]:
+        - generic [ref=e659]: "Version: 2.31.10"
+        - generic [ref=e660]:
+          - link [ref=e661] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e662] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e665]:
+    - paragraph [ref=e669]: Share your feedback!💡
+    - paragraph [ref=e673]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e676]:
+      - strong [ref=e677]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e682]:
+      - generic [ref=e683]:
+        - radio "1"
+        - generic [ref=e684]: "1"
+        - generic [ref=e685]: Very difficult
+      - generic [ref=e686]:
+        - radio "2"
+        - generic [ref=e687]: "2"
+      - generic [ref=e688]:
+        - radio "3"
+        - generic [ref=e689]: "3"
+      - generic [ref=e690]:
+        - radio "4"
+        - generic [ref=e691]: "4"
+      - generic [ref=e692]:
+        - radio "5"
+        - generic [ref=e693]: "5"
+        - generic [ref=e694]: Very easy
+    - generic [ref=e696]:
+      - button "Remind me later" [ref=e698] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e699]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e700] [cursor=pointer]: ×
+```

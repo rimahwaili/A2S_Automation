@@ -1,0 +1,384 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: recette
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+              - text: Contracts
+          - paragraph [ref=e61]:
+            - img [ref=e62]
+          - paragraph [ref=e63]:
+            - link [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/33829
+              - text: 29258004 - 1.1
+          - paragraph [ref=e65]:
+            - img [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading [level=2] [ref=e70]:
+            - generic [ref=e71]: valid
+            - text: Contract - 29258004 - 1.1
+          - generic [ref=e72]:
+            - generic [ref=e74] [cursor=pointer]: Main Information
+            - generic [ref=e76] [cursor=pointer]: Invoicing Information
+            - generic [ref=e78] [cursor=pointer]: Documents (0)
+            - generic [ref=e80] [cursor=pointer]: Services
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - generic [ref=e86]:
+                    - heading [level=2] [ref=e88]: Main Information
+                    - generic [ref=e91]:
+                      - generic [ref=e92]: "Supplier:"
+                      - link [ref=e95] [cursor=pointer]:
+                        - /url: /suppliers/10174
+                        - text: 154196-CANOINHAS
+                    - generic [ref=e98]:
+                      - generic [ref=e99]: "Number:"
+                      - generic [ref=e101]: "29258004"
+                    - generic [ref=e104]:
+                      - generic [ref=e105]: "Name:"
+                      - generic [ref=e106]:
+                        - generic [ref=e107]:
+                          - generic [ref=e109] [cursor=pointer]: Contrato de homologação de produto
+                          - generic [ref=e112]:
+                            - textbox [ref=e114]
+                            - list [ref=e115]
+                        - link [ref=e116] [cursor=pointer]:
+                          - /url: /contract_titles/new
+                          - generic [ref=e117]: 
+                          - text: New
+                    - generic [ref=e120]:
+                      - generic [ref=e121]: "Type:"
+                      - generic [ref=e123]: P2
+                    - generic [ref=e126]:
+                      - generic [ref=e127]: "Description: (visible by customers in the directory)"
+                      - textbox [ref=e129]
+                    - generic [ref=e132]:
+                      - generic [ref=e133]: "Categories:"
+                      - list [ref=e135]:
+                        - listitem [ref=e136]: E00031 Disposable products
+                    - generic [ref=e139]:
+                      - generic [ref=e140]: "Main Category:"
+                      - generic [ref=e142]:
+                        - generic [ref=e144] [cursor=pointer]: E00031 Disposable products
+                        - generic [ref=e147]:
+                          - textbox [ref=e149]
+                          - list [ref=e150]
+                    - generic [ref=e153]:
+                      - generic [ref=e154]: "Brands:"
+                      - generic [ref=e156]: None
+                    - generic [ref=e159]:
+                      - generic [ref=e160]: "Category Manager:"
+                      - generic [ref=e162]:
+                        - generic [ref=e164] [cursor=pointer]: mayra.sorrentino@accor.com
+                        - generic [ref=e167]:
+                          - textbox [ref=e169]
+                          - list [ref=e170]
+                    - generic [ref=e173]:
+                      - generic [ref=e174]: "E Procurement:"
+                      - textbox [ref=e176]: "N"
+                    - generic [ref=e179]:
+                      - generic [ref=e180]: "Former Numbers:"
+                      - textbox [ref=e182]
+                    - generic [ref=e185]:
+                      - generic [ref=e186]: "Opex:"
+                      - generic [ref=e187]:
+                        - spinbutton [ref=e188]
+                        - generic [ref=e189]: "%"
+                  - generic [ref=e190]:
+                    - heading [level=2] [ref=e192]: Declaration
+                    - generic [ref=e195]:
+                      - generic [ref=e196]: "Declaration Frequency:"
+                      - generic [ref=e198]: Quarterly
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: "Allow specific frequency for services:"
+                      - generic [ref=e204]: This frequency is applied to all services
+                - generic [ref=e205]:
+                  - generic [ref=e206]:
+                    - heading [level=2] [ref=e208]: Contracts Dates
+                    - generic [ref=e211]:
+                      - generic [ref=e212]: "Silent Extension: *"
+                      - combobox [ref=e214]
+                    - generic [ref=e217]:
+                      - generic [ref=e218]: "Actual Beginning Date:"
+                      - generic [ref=e220]: 2021-01-01
+                    - generic [ref=e224]: "Actual End Date:"
+                    - generic [ref=e227]:
+                      - generic [ref=e228]: "Declarative Start Quarter:"
+                      - generic [ref=e230]: 1st of January
+                    - generic [ref=e233]:
+                      - generic [ref=e234]: "Declarative Start Year:"
+                      - generic [ref=e236]: "2021"
+                    - generic [ref=e239]:
+                      - generic [ref=e240]: "Signing date:"
+                      - generic [ref=e241]:
+                        - textbox [ref=e242]: 11/27/2013
+                        - generic [ref=e244] [cursor=pointer]: 
+                    - generic [ref=e247]:
+                      - generic [ref=e248]: "Theoretical end date:"
+                      - generic [ref=e249]:
+                        - textbox [ref=e250]: 10/09/2021
+                        - generic [ref=e252] [cursor=pointer]: 
+                    - generic [ref=e256]: "Declarative End Quarter:"
+                    - generic [ref=e260]: "Declarative End Year:"
+                  - generic [ref=e261]:
+                    - heading [level=2] [ref=e263]: Contract Terms
+                    - generic [ref=e266]:
+                      - generic [ref=e267]: "Invoicing country:"
+                      - link [ref=e270] [cursor=pointer]:
+                        - /url: /countries/32
+                        - text: Brazil
+                    - generic [ref=e273]:
+                      - generic [ref=e274]: "Currency:"
+                      - link [ref=e277] [cursor=pointer]:
+                        - /url: /currencies/33
+                        - text: BRL
+                    - generic [ref=e280]:
+                      - generic [ref=e281]: "Duration (months) = Term:"
+                      - generic [ref=e283]: "9"
+                    - generic [ref=e286]:
+                      - generic [ref=e287]: "Covered Perimeter: *"
+                      - list [ref=e289]:
+                        - listitem [ref=e290]: CENTRAL AND LATIN AMERICA (1 / 43)
+                    - generic [ref=e293]:
+                      - generic [ref=e294]: "Declaration Contacts:"
+                      - generic [ref=e296]:
+                        - list [ref=e297]:
+                          - listitem [ref=e298] [cursor=pointer]: marlene.vendas@canoinhas.com.br
+                          - listitem [ref=e300]:
+                            - textbox [ref=e301]
+                        - list [ref=e303]
+                    - generic [ref=e306]:
+                      - generic [ref=e307]: "Payment Term:"
+                      - generic [ref=e308]:
+                        - generic [ref=e309]:
+                          - generic [ref=e311] [cursor=pointer]: 20 days billing date
+                          - generic [ref=e314]:
+                            - textbox [ref=e316]
+                            - list [ref=e317]
+                        - link [ref=e318] [cursor=pointer]:
+                          - /url: /contract_payment_terms/new
+                          - generic [ref=e319]: 
+                          - text: New
+                    - generic [ref=e322]:
+                      - generic [ref=e323]: "Payment Mode:"
+                      - generic [ref=e324]:
+                        - generic [ref=e325]:
+                          - generic [ref=e327] [cursor=pointer]: OTHER
+                          - generic [ref=e330]:
+                            - textbox [ref=e332]
+                            - list [ref=e333]
+                        - link [ref=e334] [cursor=pointer]:
+                          - /url: /contract_payment_modes/new
+                          - generic [ref=e335]: 
+                          - text: New
+                    - generic [ref=e338]:
+                      - generic [ref=e339]: "Cancellation Term:"
+                      - generic [ref=e340]:
+                        - generic [ref=e341]:
+                          - generic [ref=e343] [cursor=pointer]: "[Select]"
+                          - generic [ref=e346]:
+                            - textbox [ref=e348]
+                            - list [ref=e349]
+                        - link [ref=e350] [cursor=pointer]:
+                          - /url: /contract_cancellation_terms/new
+                          - generic [ref=e351]: 
+                          - text: New
+                    - generic [ref=e354]:
+                      - generic [ref=e355]: "Expected Contract Value:"
+                      - spinbutton [ref=e357]
+              - generic [ref=e358]:
+                - heading [level=2] [ref=e359]: Invoicing Details
+                - generic [ref=e360]: No address is filled in the supplier form
+                - list [ref=e361]:
+                  - listitem [ref=e362] [cursor=pointer]: marlene.vendas@canoinhas.com.br
+                - link [ref=e366] [cursor=pointer]:
+                  - /url: /currencies/33
+                  - text: BRL
+                - textbox [ref=e367]: CIA CANOINHAS DE PAPEL
+                - generic [ref=e368]: Quarterly
+                - generic [ref=e369]: This periodicity is applied to all services
+                - spinbutton [ref=e370]
+                - combobox [ref=e371]
+                - spinbutton [ref=e372]
+                - textbox [ref=e373]
+              - button [ref=e376] [cursor=pointer]: + Add new Document
+              - link [ref=e378] [cursor=pointer]:
+                - /url: /suppliers/show/10174?@all_documents=true&to_tab=document
+                - text: View all supplier documents
+              - generic [ref=e380]:
+                - link [ref=e381] [cursor=pointer]:
+                  - /url: /contracts/list
+                  - text: Back to the list
+                - link [ref=e382] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/33829?trans_name=contracts_error_from_validated
+                  - text: Error
+                - link [ref=e383] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/33829?trans_name=contracts_archived_from_validated&date_impacted=&value_impacted=
+                  - text: Archive
+                - link [ref=e384] [cursor=pointer]:
+                  - /url: /contracts/version/33829
+                  - text: Versioning
+                - link [ref=e385] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/33829?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                  - text: Renew
+                - link [ref=e386] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/33829?declarative_impact=true
+                  - text: Submit
+            - listitem [ref=e388]:
+              - generic [ref=e389] [cursor=pointer]: Classic Procurement Service Fee
+              - img [ref=e390]
+            - heading [level=3] [ref=e392]: Service details
+            - generic [ref=e393]:
+              - generic [ref=e395]:
+                - generic [ref=e396]: "Name:"
+                - textbox [ref=e402]
+              - generic [ref=e404]:
+                - generic [ref=e405]: "Depth of declaration: *"
+                - generic [ref=e406]: Hotel
+              - generic [ref=e409]: Redistribution
+              - generic [ref=e412]:
+                - generic [ref=e413]: "Description:"
+                - textbox [ref=e414]
+              - generic [ref=e416]:
+                - generic [ref=e417]: "Declared By:"
+                - combobox [ref=e418]
+              - generic [ref=e421]: "Maximum Amount:"
+              - generic [ref=e423]:
+                - generic [ref=e424]: "Tax:"
+                - textbox [ref=e425]: "-1.5"
+                - generic [ref=e426]: "%"
+              - generic [ref=e428]:
+                - generic [ref=e429]: "Declaration Frequency:"
+                - generic [ref=e430]: Quarterly
+              - generic [ref=e432]:
+                - generic [ref=e433]: "Invoicing Periodicity:"
+                - generic [ref=e434]: Quarterly
+              - generic [ref=e436]:
+                - generic [ref=e437]: "Import data from ASR:"
+                - textbox [ref=e438]
+            - list [ref=e440]:
+              - generic [ref=e442]: Taxa P2 6%
+              - img [ref=e444] [cursor=pointer]
+            - generic [ref=e445] [cursor=pointer]: Save this Service
+      - generic [ref=e446]:
+        - generic [ref=e447]: "Version: 2.31.10"
+        - generic [ref=e448]:
+          - link [ref=e449] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e450] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [active] [ref=e452]:
+    - document [ref=e453]:
+      - generic [ref=e454]:
+        - button [ref=e455] [cursor=pointer]: ×
+        - generic [ref=e456]:
+          - banner [ref=e457]:
+            - heading [level=1] [ref=e458]: Error confirmation
+          - generic [ref=e459]:
+            - paragraph [ref=e460]: This action will cancel all the declarations of this contract in an irreversible way, do you really want to set in error this contract ?
+            - generic [ref=e462]:
+              - button [ref=e463] [cursor=pointer]: Confirm and save
+              - button [ref=e464] [cursor=pointer]: Cancel
+  - dialog [ref=e467]:
+    - paragraph [ref=e471]: Share your feedback!💡
+    - paragraph [ref=e475]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e478]:
+      - strong [ref=e479]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e484]:
+      - generic [ref=e485]:
+        - radio "1"
+        - generic [ref=e486]: "1"
+        - generic [ref=e487]: Very difficult
+      - generic [ref=e488]:
+        - radio "2"
+        - generic [ref=e489]: "2"
+      - generic [ref=e490]:
+        - radio "3"
+        - generic [ref=e491]: "3"
+      - generic [ref=e492]:
+        - radio "4"
+        - generic [ref=e493]: "4"
+      - generic [ref=e494]:
+        - radio "5"
+        - generic [ref=e495]: "5"
+        - generic [ref=e496]: Very easy
+    - generic [ref=e498]:
+      - button "Remind me later" [ref=e500] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e501]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e502] [cursor=pointer]: ×
+```
