@@ -1,0 +1,4 @@
+Detected UI language: EN
+No Pendo banner found
+Detected UI language: EN
+Apply filters: { email: 'Supplier2742@yopmail.com' }

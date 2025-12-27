@@ -1,0 +1,3 @@
+Declaration frequency: Quarterly
+supplier: 58405-3F FILIPPI TARGETTI FRANCE
+invoicingCountryField: Contract H ENA
