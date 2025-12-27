@@ -1,0 +1,8 @@
+{
+  anticipated: true,
+  period: 'Q3',
+  year: 2026,
+  startDate: '07/01/2026',
+  endDate: '09/30/2026',
+  country: 'Canada'
+}

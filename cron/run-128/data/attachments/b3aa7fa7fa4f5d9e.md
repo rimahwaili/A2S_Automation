@@ -1,0 +1,216 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - link [ref=e61] [cursor=pointer]:
+            - /url: /contacts/index
+            - text: Contacts
+          - generic [ref=e62]: /
+          - generic [ref=e63]: Creation
+        - heading [level=2] [ref=e66]:  New Contact
+        - generic [ref=e69]:
+          - group [ref=e70]:
+            - generic [ref=e71]:
+              - generic [ref=e73]:
+                - generic [ref=e74]: Description
+                - generic [ref=e75]:
+                  - generic [ref=e76]:
+                    - generic [ref=e77]: "Active:"
+                    - checkbox [checked] [ref=e79] [cursor=pointer]
+                  - generic [ref=e80]:
+                    - generic [ref=e81]: "First name: *"
+                    - textbox [ref=e83]: Test
+                  - generic [ref=e84]:
+                    - generic [ref=e85]: "Last name: *"
+                    - textbox [ref=e87]: Auto
+                  - generic [ref=e88]:
+                    - generic [ref=e89]: "Email: *"
+                    - textbox [ref=e91]: Support5160@yopmail.com
+                  - generic [ref=e92]:
+                    - generic [ref=e93]: "Profile: *"
+                    - generic [ref=e94]:
+                      - combobox
+                      - combobox [expanded] [ref=e95] [cursor=pointer]:
+                        - generic [ref=e97]: "[Select]"
+                        - img [ref=e98]
+                  - generic [ref=e100]:
+                    - generic [ref=e101]: "Function:"
+                    - combobox [ref=e103] [cursor=pointer]:
+                      - generic [ref=e105]: "[Select]"
+                      - img [ref=e106]
+                  - generic [ref=e108]:
+                    - generic [ref=e109]: "Phone:"
+                    - generic [ref=e111]:
+                      - combobox [ref=e113] [cursor=pointer]:
+                        - generic [ref=e114]:
+                          - generic [ref=e116]: No country selected
+                          - generic [ref=e117]: 
+                      - textbox [ref=e118]
+                  - generic [ref=e119]:
+                    - generic [ref=e120]: "Mobile:"
+                    - generic [ref=e122]:
+                      - combobox [ref=e124] [cursor=pointer]:
+                        - generic [ref=e125]:
+                          - generic [ref=e127]: No country selected
+                          - generic [ref=e128]: 
+                      - textbox [ref=e129]
+                  - generic [ref=e130]:
+                    - generic [ref=e131]: "Address:"
+                    - textbox [ref=e133]
+                  - generic [ref=e134]:
+                    - generic [ref=e135]: "Address 2:"
+                    - textbox [ref=e137]
+                  - generic [ref=e138]:
+                    - generic [ref=e139]: "ZIP Code:"
+                    - textbox [ref=e141]
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: "City:"
+                    - textbox [ref=e145]
+                  - generic [ref=e146]:
+                    - generic [ref=e147]: "Country:"
+                    - combobox [ref=e149] [cursor=pointer]:
+                      - generic [ref=e151]: "[Select]"
+                      - img [ref=e152]
+              - generic [ref=e155]:
+                - generic [ref=e156]: Contact Settings
+                - generic [ref=e157]:
+                  - generic [ref=e158]:
+                    - generic [ref=e159]: "Language:"
+                    - combobox [ref=e161] [cursor=pointer]:
+                      - generic [ref=e163]: English
+                      - img [ref=e164]
+                  - generic [ref=e166]:
+                    - generic [ref=e167]: "Number format:"
+                    - combobox [ref=e169] [cursor=pointer]:
+                      - generic [ref=e171]: 1,000.10
+                      - img [ref=e172]
+                  - generic [ref=e174]:
+                    - generic [ref=e175]: "Date format:"
+                    - combobox [ref=e177] [cursor=pointer]:
+                      - generic [ref=e179]: mm/dd/yyyy
+                      - img [ref=e180]
+                  - generic [ref=e182]:
+                    - generic [ref=e183]: "Currency:"
+                    - combobox [ref=e185] [cursor=pointer]:
+                      - generic [ref=e187]: "[Select]"
+                      - img [ref=e188]
+          - generic [ref=e190]:
+            - button [ref=e191] [cursor=pointer]: Cancel
+            - button [ref=e192] [cursor=pointer]:
+              - text: Save
+              - generic [ref=e193]: 
+      - generic [ref=e194]:
+        - generic [ref=e195]: "Version: 2.30.4"
+        - generic [ref=e196]:
+          - link [ref=e197] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e198] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - listbox [ref=e199]:
+    - generic [ref=e200]:
+      - option [selected] [ref=e201] [cursor=pointer]: "[Select]"
+      - option [ref=e202] [cursor=pointer]: Supplier
+      - option [ref=e203] [cursor=pointer]: Client
+      - option [ref=e204] [cursor=pointer]: Buyer
+      - option [ref=e205] [cursor=pointer]: Business Developer
+      - option [ref=e206] [cursor=pointer]: Area Admin
+      - option [ref=e207] [cursor=pointer]: Support
+      - option [ref=e208] [cursor=pointer]: Central Admin
+  - dialog [active] [ref=e211]:
+    - paragraph [ref=e215]: Share your feedback!💡
+    - paragraph [ref=e219]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e222]:
+      - strong [ref=e223]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e228]:
+      - generic [ref=e229]:
+        - radio "1"
+        - generic [ref=e230]: "1"
+        - generic [ref=e231]: Very difficult
+      - generic [ref=e232]:
+        - radio "2"
+        - generic [ref=e233]: "2"
+      - generic [ref=e234]:
+        - radio "3"
+        - generic [ref=e235]: "3"
+      - generic [ref=e236]:
+        - radio "4"
+        - generic [ref=e237]: "4"
+      - generic [ref=e238]:
+        - radio "5"
+        - generic [ref=e239]: "5"
+        - generic [ref=e240]: Very easy
+    - generic [ref=e242]:
+      - button "Remind me later" [ref=e244] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e245]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e246] [cursor=pointer]: ×
+```

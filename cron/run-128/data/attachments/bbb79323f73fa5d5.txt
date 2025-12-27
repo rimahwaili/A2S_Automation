@@ -1,0 +1,4 @@
+Contract ID: 41057
+Declaration frequency: Quarterly
+supplier: KON0003-Coca-Cola HBC Polska
+invoicingCountryField: Poland

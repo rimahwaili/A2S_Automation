@@ -1,0 +1,3 @@
+Declaration frequency: Annually
+supplier: 62103-QUALLEO ENVIRONNEMENT
+invoicingCountryField: France

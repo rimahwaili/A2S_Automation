@@ -1,0 +1,407 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+              - text: Contracts
+          - paragraph [ref=e61]:
+            - img [ref=e62]
+          - paragraph [ref=e63]:
+            - link [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/39698
+              - text: GPG4-25-2-020-MKT BOOST - 1.1
+          - paragraph [ref=e65]:
+            - img [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading [level=2] [ref=e70]:
+            - generic [ref=e71]: Expired
+            - text: Contract - GPG4-25-2-020-MKT BOOST - 1.1
+          - generic [ref=e72]:
+            - generic [ref=e74] [cursor=pointer]: Main Information
+            - generic [ref=e76] [cursor=pointer]: Invoicing Information
+            - generic [ref=e78] [cursor=pointer]: Documents (0)
+            - generic [ref=e80] [cursor=pointer]: Services
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - generic [ref=e86]:
+                    - heading [level=2] [ref=e88]: Main Information
+                    - generic [ref=e91]:
+                      - generic [ref=e92]: "Supplier:"
+                      - link [ref=e95] [cursor=pointer]:
+                        - /url: /suppliers/6979
+                        - text: 296472-ESSITY GMBH
+                    - generic [ref=e98]:
+                      - generic [ref=e99]: "Number:"
+                      - generic [ref=e101]: GPG4-25-2-020-MKT BOOST
+                    - generic [ref=e104]:
+                      - generic [ref=e105]: "Name:"
+                      - generic [ref=e106]:
+                        - generic [ref=e107]:
+                          - generic [ref=e109] [cursor=pointer]: Contrat de Référencement International et de Services
+                          - generic [ref=e112]:
+                            - textbox [ref=e114]
+                            - list [ref=e115]
+                        - link [ref=e116] [cursor=pointer]:
+                          - /url: /contract_titles/new
+                          - generic [ref=e117]: 
+                          - text: New
+                    - generic [ref=e120]:
+                      - generic [ref=e121]: "Type:"
+                      - generic [ref=e123]: G4
+                    - generic [ref=e126]:
+                      - generic [ref=e127]: "Description: (visible by customers in the directory)"
+                      - textbox [ref=e129]
+                    - generic [ref=e132]:
+                      - generic [ref=e133]: "Categories:"
+                      - list [ref=e135]:
+                        - listitem [ref=e136]: E00031 Disposable products
+                    - generic [ref=e139]:
+                      - generic [ref=e140]: "Main Category:"
+                      - generic [ref=e142]:
+                        - generic [ref=e144] [cursor=pointer]: E00031 Disposable products
+                        - generic [ref=e147]:
+                          - textbox [ref=e149]
+                          - list [ref=e150]
+                    - generic [ref=e153]:
+                      - generic [ref=e154]: "Brands:"
+                      - generic [ref=e156]: None
+                    - generic [ref=e159]:
+                      - generic [ref=e160]: "Category Manager:"
+                      - generic [ref=e162]:
+                        - generic [ref=e164] [cursor=pointer]: carla.broseghini@accor.com
+                        - generic [ref=e167]:
+                          - textbox [ref=e169]
+                          - list [ref=e170]
+                    - generic [ref=e173]:
+                      - generic [ref=e174]: "E Procurement:"
+                      - textbox [ref=e176]
+                    - generic [ref=e179]:
+                      - generic [ref=e180]: "Former Numbers:"
+                      - textbox [ref=e182]
+                    - generic [ref=e185]:
+                      - generic [ref=e186]: "Opex:"
+                      - generic [ref=e187]:
+                        - spinbutton [ref=e188]: "50.0"
+                        - generic [ref=e189]: "%"
+                  - generic [ref=e190]:
+                    - heading [level=2] [ref=e192]: Declaration
+                    - generic [ref=e195]:
+                      - generic [ref=e196]: "Declaration Frequency:"
+                      - generic [ref=e198]: Annually
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: "Allow specific frequency for services:"
+                      - generic [ref=e204]: This frequency is applied to all services
+                - generic [ref=e205]:
+                  - generic [ref=e206]:
+                    - heading [level=2] [ref=e208]: Contracts Dates
+                    - generic [ref=e211]:
+                      - generic [ref=e212]: "Silent Extension: *"
+                      - img [ref=e215]
+                    - generic [ref=e218]:
+                      - generic [ref=e219]: "Contract Start date:"
+                      - generic [ref=e220]:
+                        - textbox [ref=e221]: 11/01/2025
+                        - generic [ref=e223] [cursor=pointer]: 
+                    - generic [ref=e226]:
+                      - generic [ref=e227]: "Contract end date:"
+                      - generic [ref=e228]:
+                        - textbox [ref=e229]: 11/15/2025
+                        - generic [ref=e231] [cursor=pointer]: 
+                    - generic [ref=e234]:
+                      - generic [ref=e235]: "Declarative Start Quarter:"
+                      - generic [ref=e237]: 1st of October
+                    - generic [ref=e240]:
+                      - generic [ref=e241]: "Declarative Start Year:"
+                      - generic [ref=e243]: "2025"
+                    - generic [ref=e246]:
+                      - generic [ref=e247]: "Signing date:"
+                      - generic [ref=e248]:
+                        - textbox [ref=e249]: 02/28/2025
+                        - generic [ref=e251] [cursor=pointer]: 
+                    - generic [ref=e254]:
+                      - generic [ref=e255]: "Theoretical end date:"
+                      - generic [ref=e256]:
+                        - textbox [ref=e257]
+                        - generic [ref=e259] [cursor=pointer]: 
+                    - generic [ref=e262]:
+                      - generic [ref=e263]: "Declarative End Quarter:"
+                      - combobox [ref=e265]
+                    - generic [ref=e268]:
+                      - generic [ref=e269]: "Declarative End Year:"
+                      - textbox [ref=e271]: "2025"
+                  - generic [ref=e272]:
+                    - heading [level=2] [ref=e274]: Contract Terms
+                    - generic [ref=e277]:
+                      - generic [ref=e278]: "Invoicing country:"
+                      - link [ref=e281] [cursor=pointer]:
+                        - /url: /countries/251
+                        - text: CORP
+                    - generic [ref=e284]:
+                      - generic [ref=e285]: "Currency:"
+                      - link [ref=e288] [cursor=pointer]:
+                        - /url: /currencies/1
+                        - text: EUR
+                    - generic [ref=e291]:
+                      - generic [ref=e292]: "Duration (months) = Term:"
+                      - generic [ref=e294]: "3"
+                    - generic [ref=e297]:
+                      - generic [ref=e298]: "Covered Perimeter: *"
+                      - list [ref=e300]:
+                        - listitem [ref=e301]: SUB-SAHARA AFRICA (full)
+                        - listitem [ref=e302]: CENTRAL AND LATIN AMERICA (full)
+                        - listitem [ref=e303]: NORTH AMERICA (full)
+                        - listitem [ref=e304]: ANTARTIC (full)
+                        - listitem [ref=e305]: ASIA (full)
+                        - listitem [ref=e306]: DOM TOM (full)
+                        - listitem [ref=e307]: EASTERN EUROPE (15 / 16)
+                        - listitem [ref=e308]: NORTHERN AND CENTRAL EUROPE (full)
+                        - listitem [ref=e309]: SOUTHERN EUROPE (full)
+                        - listitem [ref=e310]: MAGHREB (full)
+                        - listitem [ref=e311]: OCEANIA (full)
+                        - listitem [ref=e312]: NEAR AND MIDDLE EAST (full)
+                    - generic [ref=e315]:
+                      - generic [ref=e316]: "Declaration Contacts:"
+                      - generic [ref=e318]:
+                        - list [ref=e319]:
+                          - listitem [ref=e320] [cursor=pointer]: ron.goselink@essity.com
+                          - listitem [ref=e322]:
+                            - textbox [ref=e323]
+                        - list [ref=e325]
+                    - generic [ref=e328]:
+                      - generic [ref=e329]: "Payment Term:"
+                      - generic [ref=e330]:
+                        - generic [ref=e331]:
+                          - generic [ref=e333] [cursor=pointer]: 30 days end of month
+                          - generic [ref=e336]:
+                            - textbox [ref=e338]
+                            - list [ref=e339]
+                        - link [ref=e340] [cursor=pointer]:
+                          - /url: /contract_payment_terms/new
+                          - generic [ref=e341]: 
+                          - text: New
+                    - generic [ref=e344]:
+                      - generic [ref=e345]: "Payment Mode:"
+                      - generic [ref=e346]:
+                        - generic [ref=e347]:
+                          - generic [ref=e349] [cursor=pointer]: OTHER
+                          - generic [ref=e352]:
+                            - textbox [ref=e354]
+                            - list [ref=e355]
+                        - link [ref=e356] [cursor=pointer]:
+                          - /url: /contract_payment_modes/new
+                          - generic [ref=e357]: 
+                          - text: New
+                    - generic [ref=e360]:
+                      - generic [ref=e361]: "Cancellation Term:"
+                      - generic [ref=e362]:
+                        - generic [ref=e363]:
+                          - generic [ref=e365] [cursor=pointer]: "[Select]"
+                          - generic [ref=e368]:
+                            - textbox [ref=e370]
+                            - list [ref=e371]
+                        - link [ref=e372] [cursor=pointer]:
+                          - /url: /contract_cancellation_terms/new
+                          - generic [ref=e373]: 
+                          - text: New
+                    - generic [ref=e376]:
+                      - generic [ref=e377]: "Expected Contract Value:"
+                      - spinbutton [ref=e379]
+              - generic [ref=e380]:
+                - heading [level=2] [ref=e381]: Invoicing Details
+                - generic [ref=e382]: SANDHOFERSTR.176 / / 68305 / MANHEIM / Germany
+                - list [ref=e383]:
+                  - listitem [ref=e384] [cursor=pointer]: ron.goselink@essity.com
+                  - listitem [ref=e386] [cursor=pointer]: bruno.tassis@essity.com
+                - link [ref=e390] [cursor=pointer]:
+                  - /url: /currencies/1
+                  - text: EUR
+                - textbox [ref=e391]: ESSITY GMBH
+                - generic [ref=e392]: Annually
+                - generic [ref=e393]: This periodicity is applied to all services
+                - spinbutton [ref=e394]
+                - combobox [ref=e395]
+                - spinbutton [ref=e396]
+                - generic [ref=e397]: "282805"
+                - generic [ref=e398]: DE131165925
+                - textbox [ref=e399]
+              - button [ref=e402] [cursor=pointer]: + Add new Document
+              - link [ref=e404] [cursor=pointer]:
+                - /url: /suppliers/show/6979?@all_documents=true&to_tab=document
+                - text: View all supplier documents
+              - generic [ref=e406]:
+                - link [ref=e407] [cursor=pointer]:
+                  - /url: /contracts/list
+                  - text: Back to the list
+                - link [ref=e408] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/39698?trans_name=contracts_archived_from_expired&date_impacted=&value_impacted=
+                  - text: Archive
+                - link [ref=e409] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/39698?trans_name=contracts_error_from_expired
+                  - text: Error
+                - link [ref=e410] [cursor=pointer]:
+                  - /url: /contracts/version/39698
+                  - text: Versioning
+                - link [ref=e411] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/39698?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                  - text: Renew
+                - link [ref=e412] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/39698?declarative_impact=true
+                  - text: Submit
+            - listitem [ref=e414]:
+              - generic [ref=e415] [cursor=pointer]: Astore digital marketing fee (Online Display Advertising) (marketing boost)
+              - img [ref=e416]
+            - heading [level=3] [ref=e418]: Service details
+            - generic [ref=e419]:
+              - generic [ref=e421]:
+                - generic [ref=e422]: "Name:"
+                - textbox [ref=e428]
+              - generic [ref=e430]:
+                - generic [ref=e431]: "Depth of declaration: *"
+                - generic [ref=e432]: Hotel
+              - generic [ref=e435]: Redistribution
+              - generic [ref=e438]:
+                - generic [ref=e439]: "Description:"
+                - textbox [ref=e440]
+              - generic [ref=e442]:
+                - generic [ref=e443]: "Declared By:"
+                - combobox [ref=e444]
+              - generic [ref=e447]: "Maximum Amount:"
+              - generic [ref=e449]:
+                - generic [ref=e450]: "Tax:"
+                - textbox [ref=e451]: "0.0"
+                - generic [ref=e452]: "%"
+              - generic [ref=e454]:
+                - generic [ref=e455]: "Declaration Frequency:"
+                - generic [ref=e456]: Annually
+              - generic [ref=e458]:
+                - generic [ref=e459]: "Invoicing Periodicity:"
+                - generic [ref=e460]: Annually
+              - generic [ref=e462]:
+                - generic [ref=e463]: "Import data from ASR:"
+                - textbox [ref=e464]
+            - list [ref=e466]:
+              - generic [ref=e468]: Premium Pack, will be active on Astore Shop (France / Germany / United Kingdom)
+              - img [ref=e470] [cursor=pointer]
+            - generic [ref=e471] [cursor=pointer]: Save this Service
+      - generic [ref=e472]:
+        - generic [ref=e473]: "Version: 2.30.4"
+        - generic [ref=e474]:
+          - link [ref=e475] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+            - text: User Guide
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link [ref=e476] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+            - text: Terms & Conditions
+  - dialog [ref=e480]:
+    - paragraph [ref=e484]: Share your feedback!💡
+    - paragraph [ref=e488]: We're conducting this survey to gather your feedback and improve AstoreSuite based on your needs.
+    - paragraph [ref=e491]:
+      - strong [ref=e492]: How easy is it to use Astore Suite? (intuitivity, navigation, ... )
+      - text: "*"
+    - radiogroup "How easy is it to use Astore Suite? (intuitivity, navigation, ... ) *" [ref=e497]:
+      - generic [ref=e498]:
+        - radio "1"
+        - generic [ref=e499]: "1"
+        - generic [ref=e500]: Very difficult
+      - generic [ref=e501]:
+        - radio "2"
+        - generic [ref=e502]: "2"
+      - generic [ref=e503]:
+        - radio "3"
+        - generic [ref=e504]: "3"
+      - generic [ref=e505]:
+        - radio "4"
+        - generic [ref=e506]: "4"
+      - generic [ref=e507]:
+        - radio "5"
+        - generic [ref=e508]: "5"
+        - generic [ref=e509]: Very easy
+    - generic [ref=e511]:
+      - button "Remind me later" [ref=e513] [cursor=pointer]
+      - generic "Please complete all required questions." [ref=e514]:
+        - button "Submit" [disabled]
+    - button "Close" [ref=e515] [cursor=pointer]: ×
+  - dialog [active] [ref=e516]:
+    - document [ref=e517]:
+      - generic [ref=e518]:
+        - button "Close" [ref=e519] [cursor=pointer]: ×
+        - generic [ref=e520]:
+          - banner [ref=e521]:
+            - heading "Confirmation required" [level=1] [ref=e522]
+          - generic [ref=e523]:
+            - paragraph [ref=e525]: Warning! This contract will be put in error, all of its declarations will be irreversibly cancelled, do you confirm this action?
+            - link "Submit" [ref=e527] [cursor=pointer]:
+              - /url: /contracts/version/39698?user_confirmed=true
+```

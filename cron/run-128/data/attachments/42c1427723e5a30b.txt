@@ -1,0 +1,3 @@
+Declaration frequency: Quarterly
+supplier: 5125-GUZMAN GASTRONOMIA, S.L.
+invoicingCountryField: Spain
