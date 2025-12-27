@@ -1,0 +1,4 @@
+Contract ID: 41286
+Declaration frequency: Quarterly
+supplier: 9271-DIVERSEY FRANCE SAS
+invoicingCountryField: France
