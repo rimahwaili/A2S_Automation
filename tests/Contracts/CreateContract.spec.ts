@@ -17,6 +17,7 @@ test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.login();
+    await loginPage.checkAndClosePendoPopupIfPresent();
     contractsPage = new ContractsPage(page);
     await contractsPage.goto();
   });
@@ -25,7 +26,7 @@ test.beforeEach(async ({ page }) => {
     
     allure.label('feature', 'Contract');
     allure.epic('Contract');
-    allure.story('Create a Valid contract');
+    allure.story('Create a Valid contract with End date less than 6 months');
     allure.severity('critical'); 
     const contractsPage = new ContractsPage(page);
 
@@ -82,7 +83,7 @@ test.beforeEach(async ({ page }) => {
     
     allure.label('feature', 'Contract');
     allure.epic('Contract');
-    allure.story('Create a Valid contract');
+    allure.story('Create a Valid contract with End date more than 6 months');
     allure.severity('critical'); 
     const contractsPage = new ContractsPage(page);
 

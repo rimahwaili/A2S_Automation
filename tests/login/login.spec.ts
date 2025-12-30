@@ -33,8 +33,9 @@ test.describe('Login Tests', () => {
   }
     const toast = page.locator(loginSelectors.successToast);
     await expect(toast).toBeVisible();
-     await expect(toast.locator(loginSelectors.toastHeader)).toContainText(/Succès|Success/i);
-  await expect(toast.locator(loginSelectors.toastMessage)).toContainText(credentials.username);
+    await expect(toast.locator(loginSelectors.toastHeader)).toContainText(/Succès|Success/i);
+    await expect(toast.locator(loginSelectors.toastMessage)).toContainText(credentials.username);
+    await loginPage.checkAndClosePendoPopupIfPresent();
   });
 
   

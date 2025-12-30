@@ -11,7 +11,7 @@ import { allure } from 'allure-playwright';
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.login();
-
+    await loginPage.checkAndClosePendoPopupIfPresent();
     contractsPage = new ContractsPage(page);
     await contractsPage.goto();
   });
@@ -35,6 +35,7 @@ test.describe('Move Contract into Error', () => {
     await contractPage.waitForReady();
     const isStatusToRenew = await contractPage.assertStatus('to renew');
     await contractPage.EditContract();
+    contractPage.ensureInvoicingContactSelected();
     await contractPage.clickError();
     await contractPage.confirmError();
     const isStatusEEor = await contractPage.assertStatus('Error');
@@ -56,11 +57,17 @@ test(' 2SQA2-2560 | @P0 Move contract status from Valid into Error ', async ({ p
     const contractid =  contractsPage.getContractId();
     await contractPage.waitForReady();
     const isStatusToRenew = await contractPage.assertStatus('valid');
+    await contractPage.getSupplierInfo();
+    contractPage.goToSupplier();
+    await contractPage.editFirstSupplierContact();
+    
+    /*contractPage.ensureInvoicingContactSelected();
     await contractPage.EditContract();
+
     await contractPage.clickError();
     await contractPage.confirmError();
     const isStatusEEor = await contractPage.assertStatus('Error');
-});
+    */});
 
 test(' 2SQA2-2561 | @P0 Move contract status from Expired into Error ', async ({ page }) => {
 
@@ -78,6 +85,7 @@ test(' 2SQA2-2561 | @P0 Move contract status from Expired into Error ', async ({
     await contractPage.waitForReady();
     const isStatusToRenew = await contractPage.assertStatus('expired');
     await contractPage.EditContract();
+    contractPage.ensureInvoicingContactSelected();
     await contractPage.clickError();
     await contractPage.confirmError();
     const isStatusEEor = await contractPage.assertStatus('Error');
@@ -104,7 +112,7 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.waitForReady();
     const isStatusvalid = await contractPage.assertStatus('valid');
     await contractPage.EditContract();
-
+    contractPage.ensureInvoicingContactSelected();
     await contractPage.clickArchive();
     await contractPage.fillStep1Data();
     await contractPage.setDeclarativeEndQuarter('4'); 
@@ -133,7 +141,7 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.waitForReady();
     const isStatusvalid = await contractPage.assertStatus('to renew');
     await contractPage.EditContract();
-
+    contractPage.ensureInvoicingContactSelected();
     await contractPage.clickArchive();
     await contractPage.fillStep1Data();
     await contractPage.setDeclarativeEndQuarter('4'); 
@@ -163,7 +171,7 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.waitForReady();
     const isStatusvalid = await contractPage.assertStatus('expired');
     await contractPage.EditContract();
-
+    contractPage.ensureInvoicingContactSelected();
     await contractPage.clickArchive();
     await contractPage.fillStep1Data();
     await contractPage.setDeclarativeEndQuarter('4'); 

@@ -54,7 +54,32 @@ async detectLanguage() {
     await this.loginButton.click();
   }
 
-  // ✅ Fixed: successToast is a string selector, not an object
+async checkAndClosePendoPopupIfPresent() {
+  const popup = this.page.locator('#pendo-guide-container');
+  console.log('🔍 Checking if Pendo popup is displayed...');
+  const isVisible = await popup
+    .waitFor({ state: 'visible', timeout: 5000 })
+    .then(() => true)
+    .catch(() => false);
+  if (isVisible) {
+    console.log('✅ Pendo popup detected');
+    await expect(
+      popup.locator('text=Share your feedback')
+    ).toBeVisible();
+    console.log('🧪 Popup content verified');
+    await popup.locator('button[aria-label="Close"]').click();
+    console.log('❌ Pendo popup closed');
+    await expect(popup).toBeHidden();
+    console.log('✔️ Pendo popup successfully closed');
+  } else {
+    console.log('ℹ️ No Pendo popup displayed – test continues');
+  }
+}
+
+
+
+
+
   async getSuccessToast() {
     return this.page.locator(loginSelectors.successToast);
   }
