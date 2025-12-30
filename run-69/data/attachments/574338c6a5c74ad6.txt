@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 27340
+Declaration frequency: Annually
+supplier: 243671-ALLOMATCH
+invoicingCountryField: France
+contract id 1: Contract - FR4GP2705 - 1.1
+contract id 2: Contract - FR4GP2705 - 2.1

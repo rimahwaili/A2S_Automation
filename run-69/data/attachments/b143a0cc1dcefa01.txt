@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 33838
+Supplier URL: /suppliers/10185
+Supplier Name: 350922-CASTINNI
+Supplier URL: /suppliers/10185
+Supplier Name: 350922-CASTINNI
+➡ Opening supplier page: /suppliers/10185
+/suppliers/10185
