@@ -1,6 +1,8 @@
 import { Locator, Page, expect } from '@playwright/test';
 import { contractPageElements } from '../selectors/ContractEdit.selectors';
 import { Version } from '../helpers/versioning.helper';
+import { CreateSuppliersPage } from './CreateSuppliersPage';
+import { CreateSuppliersSelectors } from '../selectors/CreateSupplier.selectors';
 
 export class ContractPage {
   readonly page: Page;
@@ -58,6 +60,7 @@ export class ContractPage {
 // confirmation modal
     readonly confirmationModal: Locator; 
     readonly yesButton: Locator ;  
+    readonly contactsTab: Locator;
       
   constructor(page: Page) {
     this.page = page;
@@ -113,6 +116,8 @@ export class ContractPage {
     this.confirmationModal = page.locator('[data-window="general-confirmation-modal"]');
     this.yesButton = this.confirmationModal.getByRole('button', { name: 'Yes' });
 
+
+    this.contactsTab = page.getByText(CreateSuppliersSelectors.form.contactsTabText);
   }
 
   // Naviguer vers un contrat donné
@@ -364,5 +369,106 @@ async waitUntilValidateEnabled(maxWaitMs = 180_000) {
 
   throw new Error('Validate link did not become ready within timeout');
 }
+
+ async clickInvoicingTab() {
+    const invoicingTab = this.page.locator('.scope-filter[data-scope-id="2"]');
+    console.log('➡ Clicking "Invoicing Information" tab...');
+    await invoicingTab.click();
+  }
+
+  async tabHasError(): Promise<boolean> {
+    const invoicingTab = this.page.locator('.scope-filter[data-scope-id="2"]');
+    const errorTitle = await invoicingTab.getAttribute('data-error-title');
+    console.log(`ℹ️ Tab error title: ${errorTitle}`);
+    return !!errorTitle;
+  }
+
+async ensureInvoicingContactSelected() {
+  console.log('➡ Preparing Invoicing Information tab');
+
+  //await this.waitForErrorModalToClose();
+const invoicingTab = this.page.locator('.scope-filter[data-scope-id="2"]');
+ // await invoicingTab.scrollIntoViewIfNeeded();
+
+  // Safe click — can use force if overlay still exists but hidden
+  await invoicingTab.click({ force: true });
+
+    const contactSpan = this.page.locator('span[data-field="invoicing_contacts"]');
+    const text = (await contactSpan.textContent())?.trim();
+    console.log(`Invoicing field content: "${text}"`);
+    return text !== 'None' && text !== '';
+    console.log(text !== 'None' && text !== '');
+}
+
+async getSupplierInfo(): Promise<{url: string} | null> {
+    const supplierLink = this.page.locator('span[data-field="supplier"] a');
+    if (await supplierLink.count() === 0) {
+      console.log('⚠ No supplier link found');
+      return null;
+    }
+
+    const url = (await supplierLink.getAttribute('href')) || '';
+    const name = (await supplierLink.textContent())?.trim() || '';
+
+    console.log('Supplier URL:', url);
+    console.log('Supplier Name:', name);
+
+    return { url};
+  }
+
+  // Navigate to the supplier page
+async goToSupplier(): Promise<void> {
+  const info = await this.getSupplierInfo();
+  if (!info || !info.url) {
+    console.log('⚠ Cannot navigate — supplier link not found');
+    return;
+  }
+
+  console.log(`➡ Opening supplier page: ${info.url}`);
+console.log(info.url);
+  // Open in a new page/tab to avoid issues with current page
+  const supplierPage = await this.page.context().newPage();
+  // Navigate on the NEW page, not this.page
+  await supplierPage.goto(info.url);
+  const contactsLabel = supplierPage.getByText(/Contacts \(\d+\) & Addresses/);
+await contactsLabel.click();
+
+  console.log('✅ Supplier page loaded in new tab');
+}
+
+
+async editFirstSupplierContact(): Promise<void> {
+const editBtn = this.page.locator("//a[starts-with(@href,'/suppliers/edit/')");
+
+
+    
+    // Scroll into view (CRITICAL)
+    await editBtn.scrollIntoViewIfNeeded();
+    await editBtn.click();
+    console.log('➡ Clicked Edit button for supplier contacts');
+
+    /// Locate all rows in the supplier table
+const rows = this.page.locator('#supplier_8781_contact_modules_nested_assoc tbody tr');
+const rowCount = await rows.count();
+
+for (let i = 0; i < rowCount; i++) {
+    const row = rows.nth(i);
+    const contactType = await row.locator('td.nested_contact_kind span').innerText();
+
+    if (contactType.trim() === 'Supplier') {
+        const invoicingCheckbox = row.locator('td.nested_financial input[type="checkbox"]');
+        await invoicingCheckbox.scrollIntoViewIfNeeded();
+        
+        if (!(await invoicingCheckbox.isChecked())) {
+            await invoicingCheckbox.check();
+            console.log(`✅ Checked Invoicing for row ${i + 1} (Supplier)`);
+        } else {
+            console.log(`ℹ️ Invoicing already checked for row ${i + 1} (Supplier)`);
+        }
+
+        break; // stop after the first Supplier row
+    }
+}
+  }
 
 }

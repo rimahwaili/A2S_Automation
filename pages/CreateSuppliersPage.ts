@@ -201,4 +201,43 @@ async verifyAllTabsExist() {
   await expect(this.tabActivity).toBeVisible();
 }
 
+async editFirstSupplierContact(): Promise<void> {
+    // 1️⃣ Click the Edit button (adjust selector as needed)
+    const editButton = this.page.locator('button:has-text("Edit")');
+    await editButton.click();
+    console.log('➡ Clicked Edit button for supplier contacts');
+
+    // 2️⃣ Wait for the table to be visible
+    const table = this.page.locator('table#contact_modules_nested_assoc');
+    await table.waitFor({ state: 'visible' });
+
+    // 3️⃣ Locate the first row with contact_kind = "Supplier"
+    const firstSupplierRow = table.locator('tr').filter({
+      has: this.page.locator('span[data-field="contact_kind"]:text-is("Supplier")')
+    }).first();
+
+    if (await firstSupplierRow.count() === 0) {
+      console.log('⚠ No supplier contact found in the table');
+      return;
+    }
+
+    // 4️⃣ Check the invoicing (financial) field
+    const financialField = firstSupplierRow.locator('span[data-field="financial"]');
+    const value = await financialField.getAttribute('data-value');
+
+    if (value === 'true') {
+      console.log('✅ First supplier contact already has invoicing enabled');
+    } else {
+      console.log('⚠ First supplier contact does not have invoicing, clicking to enable');
+      await financialField.click();
+
+      // Optional: wait for value to become true
+      await this.page.waitForFunction(
+        async (el) => await el.getAttribute('data-value') === 'true',
+        financialField
+      );
+      console.log('✅ Invoicing enabled for first supplier contact');
+    }
+  }
+
 }

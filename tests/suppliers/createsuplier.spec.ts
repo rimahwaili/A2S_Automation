@@ -13,7 +13,7 @@ test.describe('Suppliers module', () => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.login();
-
+    await loginPage.checkAndClosePendoPopupIfPresent();
     suppliersPage = new SuppliersPage(page);
     createSuppliersPage = new CreateSuppliersPage(page);
 

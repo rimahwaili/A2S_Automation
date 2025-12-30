@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import { DeclarativeCampaignsPage } from '../../pages/declarativeCompaigns/DeclarativeCompainsPage';
 import { LoginPage } from '../../pages/LoginPage';
 import { NewDeclarativeCampaignPage } from '../../pages/declarativeCompaigns/NewDeclarativeCompaignsPage';
+import { allure } from 'allure-playwright';
 
 
 let declarativeCompaigns: DeclarativeCampaignsPage;
@@ -9,6 +10,7 @@ let declarativeCompaigns: DeclarativeCampaignsPage;
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.login();
+    await loginPage.checkAndClosePendoPopupIfPresent();
 
     declarativeCompaigns = new DeclarativeCampaignsPage(page);
     await declarativeCompaigns.goto();
@@ -18,7 +20,13 @@ test.describe('Declarative Campaigns Tests', () => {
 
 
 test('A2SQA2-2601 | @P0 Create and Launch declarative campaign', async ({ page }) => {
-    const listPage = new DeclarativeCampaignsPage(page);
+
+    allure.label('feature', 'Declarative Campaigns');
+    allure.epic('Declarative Campaigns');
+    allure.story('ative campaign');
+    allure.severity('critical'); 
+
+  const listPage = new DeclarativeCampaignsPage(page);
     const formPage = new NewDeclarativeCampaignPage(page);
 
     // 1️⃣ Open list
