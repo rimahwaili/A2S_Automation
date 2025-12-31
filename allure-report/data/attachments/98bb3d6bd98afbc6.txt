@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 33749
+Declaration frequency: Quarterly
+supplier: 290016-ACAO MAO DE OBRA TEMPORARIA
+invoicingCountryField: Brazil
+Page 1: Contract - 293110237 - 1.1
+Page 2: Contract - 293110237 - 2.1

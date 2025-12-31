@@ -1,0 +1,807 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]:
+            - link "FR4-23-1-148 - 3.1" [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/40305
+          - paragraph [ref=e65]:
+            - img "arrow-right" [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading "to renew Contract - FR4-23-1-148 - 3.1" [level=2] [ref=e70]:
+            - generic [ref=e71]: to renew
+            - text: Contract - FR4-23-1-148 - 3.1
+          - paragraph [ref=e72]:
+            - generic [ref=e73]:
+              - text: Renewed from contract n°
+              - link "FR4-23-1-148 - 2.1" [ref=e74] [cursor=pointer]:
+                - /url: /contracts/edit/39825
+          - generic [ref=e75]:
+            - generic [ref=e77] [cursor=pointer]: Main Information
+            - generic [ref=e79] [cursor=pointer]: Invoicing Information
+            - generic [ref=e81] [cursor=pointer]: Documents (0)
+            - generic [ref=e83] [cursor=pointer]: Services
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e86]:
+                      - heading "Main Information" [level=2] [ref=e87]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Supplier:"
+                            - link "43530-UNILEVER FRANCE" [ref=e89] [cursor=pointer]:
+                              - /url: /suppliers/6549
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Number:"
+                            - generic [ref=e90]: FR4-23-1-148
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Name:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e91] [cursor=pointer]:
+                                  - generic: Nominating and services Agreement
+                                - generic [ref=e94]:
+                                  - textbox [ref=e96]
+                                  - list
+                              - link "New":
+                                - /url: /contract_titles/new
+                                - generic [ref=e97] [cursor=pointer]: 
+                                - text: New
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Type:"
+                            - generic [ref=e98]: P4
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - text: "Description:"
+                              - text: (visible by customers in the directory)
+                            - 'textbox "Description: (visible by customers in the directory)" [ref=e99]'
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Categories:"
+                            - list [ref=e100]:
+                              - listitem [ref=e101]: A00014 Dry goods
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Main Category:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e102] [cursor=pointer]:
+                                  - generic: A00014 Dry goods
+                                - generic [ref=e105]:
+                                  - textbox [ref=e107]
+                                  - list
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Brands:"
+                            - generic [ref=e108]: None
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Category Manager:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e109] [cursor=pointer]:
+                                  - generic: purnima.dharmaraj@accor.com
+                                - generic [ref=e112]:
+                                  - textbox [ref=e114]
+                                  - list
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "E Procurement:"
+                            - textbox "E Procurement:" [ref=e115]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Former Numbers:"
+                            - textbox "Former Numbers:" [ref=e116]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Opex:"
+                            - generic:
+                              - spinbutton "Opex:" [ref=e117]: "100.0"
+                              - generic [ref=e118]: "%"
+                    - generic [ref=e119]:
+                      - heading "Declaration" [level=2] [ref=e120]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declaration Frequency:"
+                            - generic [ref=e121]: Annually
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Allow specific frequency for services:"
+                            - generic [ref=e122]: This frequency is applied to all services
+                  - generic:
+                    - generic [ref=e123]:
+                      - heading "Contracts Dates" [level=2] [ref=e124]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Silent Extension: *"
+                            - 'combobox "Silent Extension: *" [ref=e125]':
+                              - option "Yes"
+                              - option "No" [selected]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Contract Start date:"
+                            - generic [ref=e126]:
+                              - textbox "Contract Start date:" [ref=e127]: 01/01/2025
+                              - generic [ref=e129] [cursor=pointer]: 
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Contract end date: *"
+                            - generic [ref=e130]:
+                              - 'textbox "Contract end date: * Contract end date: *" [ref=e131]': 12/31/2025
+                              - generic [ref=e133] [cursor=pointer]: 
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declarative Start Quarter:"
+                            - generic [ref=e134]: 1st of January
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declarative Start Year:"
+                            - generic [ref=e135]: "2025"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Signing date:"
+                            - generic [ref=e136]:
+                              - textbox "Signing date:" [ref=e137]: 05/28/2025
+                              - generic [ref=e139] [cursor=pointer]: 
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Theoretical end date:"
+                            - generic [ref=e140]:
+                              - textbox "Theoretical end date:" [ref=e141]
+                              - generic [ref=e143] [cursor=pointer]: 
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declarative End Quarter:"
+                            - 'combobox "Declarative End Quarter: Declarative End Quarter:" [ref=e144]':
+                              - option "[Select]"
+                              - option "31st of March"
+                              - option "30th of June"
+                              - option "30th of September"
+                              - option "31st of December" [selected]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declarative End Year:"
+                            - 'textbox "Declarative End Year: Declarative End Year:" [ref=e145]': "2025"
+                    - generic [ref=e146]:
+                      - heading "Contract Terms" [level=2] [ref=e147]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Invoicing country:"
+                            - link "France" [ref=e149] [cursor=pointer]:
+                              - /url: /countries/76
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Currency:"
+                            - link "EUR" [ref=e151] [cursor=pointer]:
+                              - /url: /currencies/1
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Duration (months) = Term:"
+                            - generic [ref=e152]: "12"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Covered Perimeter: *"
+                            - list [ref=e153]:
+                              - listitem [ref=e154]: SOUTHERN EUROPE (3 / 13)
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declaration Contacts:"
+                            - generic:
+                              - generic:
+                                - list [ref=e155]:
+                                  - listitem [ref=e156] [cursor=pointer]: loic.ble@unilever.com
+                                  - listitem:
+                                    - textbox
+                                - generic [ref=e158]:
+                                  - list
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Payment Term:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e159] [cursor=pointer]:
+                                  - generic: 30 days end of month
+                                - generic [ref=e162]:
+                                  - textbox [ref=e164]
+                                  - list
+                              - link "New":
+                                - /url: /contract_payment_terms/new
+                                - generic [ref=e165] [cursor=pointer]: 
+                                - text: New
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Payment Mode:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e166] [cursor=pointer]:
+                                  - generic: OTHER
+                                - generic [ref=e169]:
+                                  - textbox [ref=e171]
+                                  - list
+                              - link "New":
+                                - /url: /contract_payment_modes/new
+                                - generic [ref=e172] [cursor=pointer]: 
+                                - text: New
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Cancellation Term:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e173] [cursor=pointer]:
+                                  - generic: 2 months
+                                - generic [ref=e176]:
+                                  - textbox [ref=e178]
+                                  - list
+                              - link "New":
+                                - /url: /contract_cancellation_terms/new
+                                - generic [ref=e179] [cursor=pointer]: 
+                                - text: New
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Expected Contract Value:"
+                            - spinbutton "Expected Contract Value:" [ref=e180]
+              - generic [ref=e184]:
+                - heading "Invoicing Details" [level=2] [ref=e186]
+                - generic [ref=e189]:
+                  - generic [ref=e190]: "Invoicing Address:"
+                  - generic [ref=e192]: 20 RUE DES 2 GARES / CS90056 - TSA68888 / 92842 / RUEIL MALMAISON / France
+                - generic [ref=e195]:
+                  - generic [ref=e196]: "Invoicing Contacts:"
+                  - generic [ref=e198]:
+                    - list [ref=e199]:
+                      - listitem [ref=e200] [cursor=pointer]: loic.ble@unilever.com
+                      - listitem [ref=e202]:
+                        - textbox [ref=e203]
+                    - list [ref=e205]
+                - generic [ref=e208]:
+                  - generic [ref=e209]: "Invoicing Currency:"
+                  - link "EUR" [ref=e212] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e215]:
+                  - generic [ref=e216]: "Company Name on Invoice:"
+                  - textbox "Company Name on Invoice:" [ref=e218]: UNILEVER FRANCE
+                - generic [ref=e221]:
+                  - generic [ref=e222]: "Invoicing Periodicity:"
+                  - generic [ref=e224]: Annually
+                - generic [ref=e227]:
+                  - generic [ref=e228]: "Allow specific invoicing for services:"
+                  - generic [ref=e230]: This periodicity is applied to all services
+                - generic [ref=e233]:
+                  - generic [ref=e234]: "Deposit Amount:"
+                  - spinbutton "Deposit Amount:" [ref=e236]
+                - generic [ref=e239]:
+                  - generic [ref=e240]: "Prepayment:"
+                  - combobox "Prepayment:" [ref=e242]:
+                    - option [selected]
+                    - option
+                    - option "Quarterly"
+                    - option "Semesterly on the N-1 basis"
+                    - option "Semesterly on the basis of the real N"
+                - generic [ref=e245]:
+                  - generic [ref=e246]: "Package Amount:"
+                  - spinbutton "Package Amount:" [ref=e248]
+                - generic [ref=e251]:
+                  - generic [ref=e252]: "AR code:"
+                  - generic [ref=e254]: "6945"
+                - generic [ref=e257]:
+                  - generic [ref=e258]: "Intracommunity VAT:"
+                  - generic [ref=e260]: FR 16 552 119 216
+                - generic [ref=e263]:
+                  - generic [ref=e264]: "your references:"
+                  - textbox "your references:" [ref=e266]
+                - generic [ref=e270]: "AP code:"
+              - generic:
+                - button "+ Add new Document" [ref=e274] [cursor=pointer]
+                - link "View all supplier documents" [ref=e276] [cursor=pointer]:
+                  - /url: /suppliers/show/6549?@all_documents=true&to_tab=document
+              - generic [ref=e278]:
+                - link "Back to the list" [ref=e279] [cursor=pointer]:
+                  - /url: /contracts/list
+                - link "Error" [ref=e280] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/40305?trans_name=contracts_error_from_to_renew
+                - link "Archive" [ref=e281] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/40305?trans_name=contracts_archived_from_to_renew&date_impacted=&value_impacted=
+                - link "Versioning" [ref=e282] [cursor=pointer]:
+                  - /url: /contracts/version/40305
+                - link "Renew" [ref=e283] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/40305?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                - link "Submit" [ref=e284] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/40305?declarative_impact=true
+            - generic:
+              - generic:
+                - generic:
+                  - generic [ref=e285]:
+                    - heading "Services List" [level=3]
+                  - list:
+                    - listitem [ref=e286]:
+                      - generic [ref=e287] [cursor=pointer]: Classic Procurement Service Fee
+                      - img "arrow" [ref=e288]
+                - generic:
+                  - heading "Service details" [level=3] [ref=e290]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - group:
+                          - generic [ref=e291]:
+                            - generic [ref=e293]:
+                              - generic:
+                                - generic [ref=e294]: "Name:"
+                                - generic:
+                                  - generic:
+                                    - generic [ref=e295] [cursor=pointer]:
+                                      - generic: Classic Procurement Service Fee
+                                    - generic [ref=e298]:
+                                      - textbox [ref=e300]
+                                      - list
+                            - generic [ref=e302]:
+                              - generic:
+                                - generic [ref=e303]: "Depth of declaration: *"
+                                - generic [ref=e304]: Country - Brand
+                            - generic [ref=e306]:
+                              - generic:
+                                - generic [ref=e307]: Redistribution
+                                - generic [ref=e308]:
+                                  - generic:
+                                    - generic: "No"
+                                    - generic: "Yes"
+                            - generic [ref=e310]:
+                              - generic:
+                                - generic [ref=e311]: "Description:"
+                                - textbox "Description:" [ref=e312]
+                            - generic [ref=e314]:
+                              - generic:
+                                - generic [ref=e315]: "Declared By:"
+                                - combobox "Declared By:" [ref=e316]:
+                                  - option "Supplier"
+                                  - option "Buyer" [selected]
+                                  - option "Back-Office"
+                            - generic [ref=e319]: "Maximum Amount:"
+                            - generic [ref=e321]:
+                              - generic:
+                                - generic [ref=e322]: "Tax:"
+                                - generic:
+                                  - textbox "Tax:" [ref=e323]: "20.0"
+                                  - generic [ref=e324]: "%"
+                            - generic [ref=e326]:
+                              - generic:
+                                - generic [ref=e327]: "Declaration Frequency:"
+                                - generic [ref=e328]: Annually
+                            - generic [ref=e330]:
+                              - generic:
+                                - generic [ref=e331]: "Invoicing Periodicity:"
+                                - generic [ref=e332]: Annually
+                            - generic [ref=e334]:
+                              - generic:
+                                - generic [ref=e335]: "Import data from ASR:"
+                                - textbox "Import data from ASR:" [ref=e336]
+                    - generic [ref=e337]:
+                      - heading "Sub-Services" [level=3]
+                    - list [ref=e338]:
+                      - listitem:
+                        - generic [ref=e340]: Forfait annuel 2500 € HT (facturé en Janvier N+1)
+                        - generic [ref=e341]:
+                          - paragraph: "Conditions: 0"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35321?edit_mode=true
+                              - img "Self And Assoc" [ref=e342] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e344]: "Référencement du Référencé ou de ses produits et/ou services : Amora Dosettes & Seaux - €1,80/unit"
+                        - generic [ref=e345]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35515?edit_mode=true
+                              - img "Self And Assoc" [ref=e346] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e348]: "Référencement du Référencé ou de ses produits et/ou services : Amora Sauces Salades 5L - €1,95/unit"
+                        - generic [ref=e349]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35516?edit_mode=true
+                              - img "Self And Assoc" [ref=e350] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e352]: "Référencement du Référencé ou de ses produits et/ou services : Amora Sauces Salades 1L - €1,15/unit"
+                        - generic [ref=e353]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35517?edit_mode=true
+                              - img "Self And Assoc" [ref=e354] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e356]: "Référencement du Référencé ou de ses produits et/ou services : Amora Squeezes - €0,55/unit"
+                        - generic [ref=e357]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35518?edit_mode=true
+                              - img "Self And Assoc" [ref=e358] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e360]: "Référencement du Référencé ou de ses produits et/ou services : Hellmanns Seaux - €3,50/unit"
+                        - generic [ref=e361]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35519?edit_mode=true
+                              - img "Self And Assoc" [ref=e362] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e364]: "Référencement du Référencé ou de ses produits et/ou services : Hellmanns Dosettes - €1,95/unit"
+                        - generic [ref=e365]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35520?edit_mode=true
+                              - img "Self And Assoc" [ref=e366] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e368]: "Référencement du Référencé ou de ses produits et/ou services : Hellmanns Squeezes - €1,05/unit"
+                        - generic [ref=e369]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35521?edit_mode=true
+                              - img "Self And Assoc" [ref=e370] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e372]: "Référencement du Référencé ou de ses produits et/ou services : Hellmanns Sauce Sandwich - €0,65/unit"
+                        - generic [ref=e373]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35522?edit_mode=true
+                              - img "Self And Assoc" [ref=e374] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e376]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Concentres liquide - €2,35/unit"
+                        - generic [ref=e377]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35523?edit_mode=true
+                              - img "Self And Assoc" [ref=e378] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e380]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Jus Deshydrates - €2,35/unit"
+                        - generic [ref=e381]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35524?edit_mode=true
+                              - img "Self And Assoc" [ref=e382] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e384]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Fonds Deshydrate - €1,95/unit"
+                        - generic [ref=e385]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35525?edit_mode=true
+                              - img "Self And Assoc" [ref=e386] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e388]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Fonds Deshydrate - €1,95/unit"
+                        - generic [ref=e389]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35526?edit_mode=true
+                              - img "Self And Assoc" [ref=e390] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e392]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Texture - €1,95/unit"
+                        - generic [ref=e393]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35527?edit_mode=true
+                              - img "Self And Assoc" [ref=e394] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e396]: "Référencement du Référencé ou de ses produits et/ou services : Knorr MEP+PE+Couronnement Legumes+Saveurs intenses - €1,55/unit"
+                        - generic [ref=e397]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35528?edit_mode=true
+                              - img "Self And Assoc" [ref=e398] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e400]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Sauces Elaborees Deshydratees - €1,65/unit"
+                        - generic [ref=e401]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35529?edit_mode=true
+                              - img "Self And Assoc" [ref=e402] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e404]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Base tomates - €1,25/unit"
+                        - generic [ref=e405]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35531?edit_mode=true
+                              - img "Self And Assoc" [ref=e406] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e408]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Bouillons - €1,65/unit"
+                        - generic [ref=e409]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35530?edit_mode=true
+                              - img "Self And Assoc" [ref=e410] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e412]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Taboule - €1,25/unit"
+                        - generic [ref=e413]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35532?edit_mode=true
+                              - img "Self And Assoc" [ref=e414] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e416]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Bouillons & Fonds 1,2,3 <5Kg - €0,95/unit"
+                        - generic [ref=e417]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35533?edit_mode=true
+                              - img "Self And Assoc" [ref=e418] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e420]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Potages & Potages Superieur (TBC) - €1,05/unit"
+                        - generic [ref=e421]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35534?edit_mode=true
+                              - img "Self And Assoc" [ref=e422] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e424]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Roux 1Kg - €0,65/unit"
+                        - generic [ref=e425]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35535?edit_mode=true
+                              - img "Self And Assoc" [ref=e426] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e428]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Sauces Liquidies Garde D’or - €0,45/unit"
+                        - generic [ref=e429]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35536?edit_mode=true
+                              - img "Self And Assoc" [ref=e430] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e432]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Aides Culinaires - €0,15/unit"
+                        - generic [ref=e433]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35537?edit_mode=true
+                              - img "Self And Assoc" [ref=e434] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e436]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Termine souffle gratin - €1,65/unit"
+                        - generic [ref=e437]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35538?edit_mode=true
+                              - img "Self And Assoc" [ref=e438] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e440]: "Référencement du Référencé ou de ses produits et/ou services : Knorr Termine souffle gratin - €1,65/unit Knorr Jus liquid - €0,65/unit"
+                        - generic [ref=e441]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35539?edit_mode=true
+                              - img "Self And Assoc" [ref=e442] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e444]: "Référencement du Référencé ou de ses produits et/ou services : Maille Inspi+Sauces vinaigrettes - €1,25/unit"
+                        - generic [ref=e445]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35540?edit_mode=true
+                              - img "Self And Assoc" [ref=e446] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e448]: "Référencement du Référencé ou de ses produits et/ou services : Maizena 700g - €0,65/unit"
+                        - generic [ref=e449]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35541?edit_mode=true
+                              - img "Self And Assoc" [ref=e450] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e452]: "Référencement du Référencé ou de ses produits et/ou services : Tabasco - €1,25/unit"
+                        - generic [ref=e453]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35542?edit_mode=true
+                              - img "Self And Assoc" [ref=e454] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e456]: "Référencement du Référencé ou de ses produits et/ou services : TVB 6x1Kg - €7,6/unit"
+                        - generic [ref=e457]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35543?edit_mode=true
+                              - img "Self And Assoc" [ref=e458] [cursor=pointer]
+                      - listitem:
+                        - generic [ref=e460]: "Référencement du Référencé ou de ses produits et/ou services : TVB - €2,35/unit"
+                        - generic [ref=e461]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/35544?edit_mode=true
+                              - img "Self And Assoc" [ref=e462] [cursor=pointer]
+                    - generic [ref=e463] [cursor=pointer]: Save this Service
+      - generic [ref=e464]:
+        - generic [ref=e465]: "Version: 2.30.4"
+        - generic [ref=e466]:
+          - link "User Guide" [ref=e467] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2025 Astore Suite |"
+          - link "Terms & Conditions" [ref=e468] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+  - dialog [ref=e470]:
+    - document [ref=e471]:
+      - generic [ref=e472]:
+        - button "Close" [ref=e473] [cursor=pointer]: ×
+        - generic [ref=e474]:
+          - banner [ref=e475]:
+            - heading "End dates confirmation" [level=1] [ref=e476]
+          - generic [ref=e478]:
+            - paragraph [ref=e479]:
+              - text: Warning! declarations can be cancelled by this action
+              - text: "Before saving, please confirm the following dates:"
+            - generic [ref=e480]:
+              - generic [ref=e482]:
+                - generic [ref=e483]: "Declarative End Quarter:"
+                - combobox [ref=e485]:
+                  - option "[Select]"
+                  - option "31st of March"
+                  - option "30th of June"
+                  - option "30th of September"
+                  - option "31st of December" [selected]
+              - generic [ref=e487]:
+                - generic [ref=e488]: "Declarative End Year:"
+                - textbox [active] [ref=e490]: "2027"
+              - generic [ref=e492]:
+                - generic [ref=e493]: "Contract end date: *"
+                - generic [ref=e494]:
+                  - textbox [ref=e495]: 12/29/2027
+                  - generic [ref=e497]: 
+          - button "Confirm and save" [ref=e499] [cursor=pointer]
+```

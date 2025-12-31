@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40922
+Declaration frequency: Quarterly
+supplier: 217367-ILLY CAFFE S.P.A
+invoicingCountryField: CORP
