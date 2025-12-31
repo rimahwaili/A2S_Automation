@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 27260
+Supplier URL: /suppliers/5364
+Supplier Name: 57778-USEO ( ex I.P.I.)
+Supplier URL: /suppliers/5364
+Supplier Name: 57778-USEO ( ex I.P.I.)
+➡ Opening supplier page: /suppliers/5364
+/suppliers/5364
