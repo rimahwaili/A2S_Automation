@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41034
+Declaration frequency: Quarterly
+supplier: 31869-ITK Facility Management & Elektrotechnik GmbH
+invoicingCountryField: Austria

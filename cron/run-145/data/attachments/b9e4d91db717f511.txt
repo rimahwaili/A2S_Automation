@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 25826
+Declaration frequency: Quarterly
+supplier: 43802-BACARDI MARTINI FRANCE
+invoicingCountryField: France
