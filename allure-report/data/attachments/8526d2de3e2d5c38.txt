@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39511
+Declaration frequency: Quarterly
+supplier: 116363-Société des Produits Nestlé SA
+invoicingCountryField: Contract H ENA
