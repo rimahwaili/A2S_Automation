@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39757
+Supplier URL: /suppliers/10937
+Supplier Name: S100307-LYRECO CE
+Supplier URL: /suppliers/10937
+Supplier Name: S100307-LYRECO CE
+➡ Opening supplier page: /suppliers/10937
+/suppliers/10937

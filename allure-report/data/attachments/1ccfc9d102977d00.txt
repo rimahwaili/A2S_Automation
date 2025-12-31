@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38178
+Declaration frequency: Quarterly
+supplier: 58405-3F FILIPPI TARGETTI FRANCE
+invoicingCountryField: France
