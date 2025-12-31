@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39791
+Declaration frequency: Annually
+supplier: S100199-E2 Hungary Zrt. (MET Magyarország Zrt.)
+invoicingCountryField: Hungary
+contract id 1: Contract - HUP2-24-4-018 - 2.2
+contract id 2: Contract - HUP2-24-4-018 - 3.1
