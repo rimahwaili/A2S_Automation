@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 33850
+Supplier URL: /suppliers/10201
+Supplier Name: 143694-CM CORP
+Supplier URL: /suppliers/10201
+Supplier Name: 143694-CM CORP
+➡ Opening supplier page: /suppliers/10201
+/suppliers/10201
