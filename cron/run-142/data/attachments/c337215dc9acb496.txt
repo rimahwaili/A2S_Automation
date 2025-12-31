@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39002
+Declaration frequency: Annually
+supplier: 94416-UNILEVER BELGIUM NV
+invoicingCountryField: Belgium
+Page 1: Contract - F13P300343 - 3.4
+Page 2: Contract - F13P300343 - 4.1

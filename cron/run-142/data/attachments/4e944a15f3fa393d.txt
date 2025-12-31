@@ -1,0 +1,10 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+{
+  anticipated: true,
+  period: 'Y',
+  year: 2028,
+  startDate: '01/01/2028',
+  endDate: '12/31/2028',
+  country: 'Italy'
+}
