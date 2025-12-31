@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 26509
+Supplier URL: /suppliers/6859
+Supplier Name: 100557-RECHEIO - CASH & CARRY, S.A.
+Supplier URL: /suppliers/6859
+Supplier Name: 100557-RECHEIO - CASH & CARRY, S.A.
+➡ Opening supplier page: /suppliers/6859
+/suppliers/6859

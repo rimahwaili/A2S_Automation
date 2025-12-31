@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 31150
+Declaration frequency: Quarterly
+supplier: 91878-SPECTRE
+invoicingCountryField: CORP
