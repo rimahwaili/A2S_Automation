@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40299
+Declaration frequency: Quarterly
+supplier: 36399-Shred-IT Credit Control
+invoicingCountryField: United Kingdom
