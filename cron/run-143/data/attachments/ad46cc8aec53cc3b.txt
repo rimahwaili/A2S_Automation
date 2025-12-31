@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40591
+Supplier URL: /suppliers/12391
+Supplier Name: 170849-TOP SERVICE RJ  ( SUNSET )
+Supplier URL: /suppliers/12391
+Supplier Name: 170849-TOP SERVICE RJ  ( SUNSET )
+➡ Opening supplier page: /suppliers/12391
+/suppliers/12391

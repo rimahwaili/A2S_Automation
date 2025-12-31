@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40305
+Declaration frequency: Annually
+supplier: 43530-UNILEVER FRANCE
+invoicingCountryField: France
+Page 1: Contract - FR4-23-1-148 - 3.1
+Page 2: Contract - FR4-23-1-148 - 4.1
