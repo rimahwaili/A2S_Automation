@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36116
+Declaration frequency: Quarterly
+supplier: 378361-SPIM ENERGIES
+invoicingCountryField: France

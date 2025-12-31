@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40720
+Supplier URL: /suppliers/12699
+Supplier Name: 3000121PE-LA CALERA
+Supplier URL: /suppliers/12699
+Supplier Name: 3000121PE-LA CALERA
+➡ Opening supplier page: /suppliers/12699
+/suppliers/12699
