@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40961
+Declaration frequency: Annually
+supplier: TEMP 110-MCI 02787.H6365 Essendi UK
+invoicingCountryField: United Kingdom
