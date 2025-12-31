@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 24780
+Declaration frequency: Quarterly
+supplier: 53199-GROUPE ETUDES TRAVAUX ET PILOTAGE
+invoicingCountryField: France
