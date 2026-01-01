@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39004
+Declaration frequency: Annually
+supplier: 115414-ORANGINA SCHWEPPES
+invoicingCountryField: France

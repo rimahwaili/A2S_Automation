@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 35865
+Declaration frequency: Annually
+supplier: 376313-Danone Deutschland GmbH (old 102444)
+invoicingCountryField: Germany
