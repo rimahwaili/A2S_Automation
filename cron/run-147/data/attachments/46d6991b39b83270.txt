@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40923
+Declaration frequency: Quarterly
+supplier: 406111-CARAMBAR & Co
+invoicingCountryField: France
