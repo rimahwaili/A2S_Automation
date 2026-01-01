@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 25153
+Declaration frequency: Quarterly
+supplier: 63862-MAINTENANCE TECHNIQUE OPTIMISEE
+invoicingCountryField: France
+contract id 1: Contract - 2130542680 - 1.1
+contract id 2: Contract - 2130542680 - 2.1

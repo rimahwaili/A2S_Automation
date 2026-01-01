@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36116
+Supplier URL: /suppliers/11570
+Supplier Name: 378361-SPIM ENERGIES
+Supplier URL: /suppliers/11570
+Supplier Name: 378361-SPIM ENERGIES
+➡ Opening supplier page: /suppliers/11570
+/suppliers/11570

@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38974
+Declaration frequency: Annually
+supplier: 115414-ORANGINA SCHWEPPES
+invoicingCountryField: France
+Page 1: Contract - FRP4-24-1-128 - 1.1
+Page 2: Contract - FRP4-24-1-128 - 2.1
