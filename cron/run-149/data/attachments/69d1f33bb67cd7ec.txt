@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40751
+Declaration frequency: Quarterly
+supplier: 78458-PERNOD RICARD
+invoicingCountryField: CORP

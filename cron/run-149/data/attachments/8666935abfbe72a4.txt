@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 35113
+Declaration frequency: Quarterly
+supplier: 159358-WINE
+invoicingCountryField: Brazil
+Page 1: Contract - 293110475 - 1.1
+Page 2: Contract - 293110475 - 2.1
