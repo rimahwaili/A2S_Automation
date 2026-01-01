@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36948
+Supplier URL: /suppliers/11683
+Supplier Name: 51449-DUPLEIX ETABLISSEMENT
+Supplier URL: /suppliers/11683
+Supplier Name: 51449-DUPLEIX ETABLISSEMENT
+➡ Opening supplier page: /suppliers/11683
+/suppliers/11683
