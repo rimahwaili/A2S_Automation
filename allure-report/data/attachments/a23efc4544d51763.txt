@@ -1,0 +1,5 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Declaration frequency: Annually
+supplier: 77928-Fachingen Heil- und Mineralbrunnen GmbH
+invoicingCountryField: Germany

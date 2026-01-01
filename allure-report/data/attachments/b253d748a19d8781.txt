@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40940
+Declaration frequency: Quarterly
+supplier: 3067-MCI 02785.H6455 Essendi UK
+invoicingCountryField: United Kingdom
