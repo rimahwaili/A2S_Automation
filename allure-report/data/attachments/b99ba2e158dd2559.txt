@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 35300
+Supplier URL: /suppliers/11321
+Supplier Name: 249989-PRIME CATER
+Supplier URL: /suppliers/11321
+Supplier Name: 249989-PRIME CATER
+➡ Opening supplier page: /suppliers/11321
+/suppliers/11321
