@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 33750
+Declaration frequency: Quarterly
+supplier: 153210-ACF BRASIL
+invoicingCountryField: Brazil
