@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Detected UI language: EN
+No Pendo banner found
+Detected UI language: EN
+Apply filters: { email: 'Buyer2324@yopmail.com' }
+✅ Filters successfully applied
+Opening the contact details page...
