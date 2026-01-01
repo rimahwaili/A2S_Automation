@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40923
+Declaration frequency: Quarterly
+supplier: 406111-CARAMBAR & Co
+invoicingCountryField: France
+Page 1: Contract - FRP4-25-1-329 MKT BOOTS - 1.1
+Page 2: Contract - FRP4-25-1-329 MKT BOOTS - 2.1

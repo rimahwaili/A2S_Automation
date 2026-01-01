@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40916
+Declaration frequency: Quarterly
+supplier: KON0380-Makro Cash And Carry Polska S.A.
+invoicingCountryField: Poland

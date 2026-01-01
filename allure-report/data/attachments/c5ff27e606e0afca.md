@@ -1,0 +1,383 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: FRP4-25-1-329 MKT BOOTS - 1.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "to renew Contract - FRP4-25-1-329 MKT BOOTS - 1.1" [level=2] [ref=e67]:
+          - generic [ref=e68]: to renew
+          - text: Contract - FRP4-25-1-329 MKT BOOTS - 1.1
+        - generic [ref=e69]:
+          - generic [ref=e71] [cursor=pointer]: Main Information
+          - generic [ref=e73] [cursor=pointer]: Invoicing Information
+          - generic [ref=e75] [cursor=pointer]: Documents (0)
+          - generic [ref=e77] [cursor=pointer]: Services
+        - generic [ref=e78]:
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e79]:
+                  - heading "Main Information" [level=2] [ref=e80]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Supplier:"
+                        - link "406111-CARAMBAR & Co" [ref=e82] [cursor=pointer]:
+                          - /url: /suppliers/12747
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Number:"
+                        - generic [ref=e83]: FRP4-25-1-329 MKT BOOTS
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Name:"
+                        - generic [ref=e84]: Fixed-price digital marketing service contract
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Type:"
+                        - generic [ref=e85]: P4
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - text: "Description:"
+                          - text: (visible by customers in the directory)
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Categories:"
+                        - list [ref=e86]:
+                          - listitem [ref=e87]: A00014 Dry goods
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Main Category:"
+                        - link "A00014 Dry goods" [ref=e89] [cursor=pointer]:
+                          - /url: /categories/189
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Brands:"
+                        - generic [ref=e90]: None
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Category Manager:"
+                        - link "carlo.demarini@accor.com" [ref=e92] [cursor=pointer]:
+                          - /url: /contacts/41586
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "E Procurement:"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Former Numbers:"
+                        - generic:
+                          - list
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Opex:"
+                - generic [ref=e93]:
+                  - heading "Declaration" [level=2] [ref=e94]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Declaration Frequency:"
+                        - generic [ref=e95]: Quarterly
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Allow specific frequency for services:"
+                        - generic [ref=e96]: This frequency is applied to all services
+              - generic:
+                - generic [ref=e97]:
+                  - heading "Contracts Dates" [level=2] [ref=e98]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Silent Extension:"
+                        - img "ko" [ref=e100]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Contract Start date:"
+                        - generic [ref=e101]: 01/01/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Contract end date:"
+                        - generic [ref=e102]: 12/31/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Declarative start Date:"
+                        - generic [ref=e103]: 01/01/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Signing date:"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Creation Date:"
+                        - generic [ref=e104]: 10/30/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Theoretical end date:"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Declarative end date:"
+                        - generic [ref=e105]: 12/31/2025
+                - generic [ref=e106]:
+                  - heading "Contract Terms" [level=2] [ref=e107]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Invoicing country:"
+                        - link "France" [ref=e109] [cursor=pointer]:
+                          - /url: /countries/76
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Currency:"
+                        - link "EUR" [ref=e111] [cursor=pointer]:
+                          - /url: /currencies/1
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Duration (months) = Term:"
+                        - generic [ref=e112]: "12"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Covered Perimeter: *"
+                        - list [ref=e113]:
+                          - listitem [ref=e114]: SOUTHERN EUROPE (3 / 13)
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Declaration Contacts:"
+                        - generic [ref=e115]: None
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Payment Term:"
+                        - link "30 days end of month" [ref=e117] [cursor=pointer]:
+                          - /url: /contract_payment_terms/3
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Payment Mode:"
+                        - link "OTHER" [ref=e119] [cursor=pointer]:
+                          - /url: /contract_payment_modes/4
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Cancellation Term:"
+                        - link "1 month" [ref=e121] [cursor=pointer]:
+                          - /url: /contract_cancellation_terms/2
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "Expected Contract Value:"
+          - generic [ref=e125]:
+            - heading "Invoicing Details" [level=2] [ref=e127]
+            - generic [ref=e130]:
+              - generic [ref=e131]: "Invoicing Address:"
+              - generic [ref=e133]: 9 RUE MAURICE MALLET / / 92130 / ISSY LES MOULINEAUX / France
+            - generic [ref=e136]:
+              - generic [ref=e137]: "Invoicing Contacts:"
+              - list [ref=e139]:
+                - listitem [ref=e140]:
+                  - link "frederic.desselle@carambarco.com" [ref=e141] [cursor=pointer]:
+                    - /url: /contacts/51262
+            - generic [ref=e144]:
+              - generic [ref=e145]: "Invoicing Currency:"
+              - link "EUR" [ref=e148] [cursor=pointer]:
+                - /url: /currencies/1
+            - generic [ref=e152]: "Company Name on Invoice:"
+            - generic [ref=e156]:
+              - generic [ref=e157]: "Invoicing Periodicity:"
+              - generic [ref=e159]: Annually
+            - generic [ref=e162]:
+              - generic [ref=e163]: "Allow specific invoicing for services:"
+              - generic [ref=e165]: This periodicity is applied to all services
+            - generic [ref=e169]: "Deposit Amount:"
+            - generic [ref=e174]: "Prepayment:"
+            - generic [ref=e179]: "Package Amount:"
+            - generic [ref=e183]:
+              - generic [ref=e184]: "AR code:"
+              - generic [ref=e186]: "694650"
+            - generic [ref=e189]:
+              - generic [ref=e190]: "Intracommunity VAT:"
+              - generic [ref=e192]: FR56824239214
+            - generic [ref=e196]: "your references:"
+            - generic [ref=e201]: "AP code:"
+          - link "View all supplier documents" [ref=e206] [cursor=pointer]:
+            - /url: /suppliers/show/12747?@all_documents=true&to_tab=document
+          - generic [ref=e207]:
+            - link "Back to the list" [ref=e208] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e209] [cursor=pointer]:
+              - /url: /contracts/simulator/40923
+            - link "Edit" [ref=e210] [cursor=pointer]:
+              - /url: /contracts/edit/40923
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e211]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e212]:
+                    - generic [ref=e213] [cursor=pointer]: Astore digital marketing fee (Online Display Advertising) (marketing boost)
+                    - img "arrow" [ref=e214]
+              - generic:
+                - heading "Service details" [level=3] [ref=e216]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e217]:
+                        - generic [ref=e219]:
+                          - generic:
+                            - generic [ref=e220]: "Name:"
+                            - generic [ref=e221]: Astore digital marketing fee (Online Display Advertising) (marketing boost)
+                        - generic [ref=e223]:
+                          - generic:
+                            - generic [ref=e224]: "Depth of declaration:"
+                            - generic [ref=e225]: Country - Brand
+                        - generic [ref=e227]:
+                          - generic:
+                            - generic [ref=e228]: "Redistribution:"
+                            - img "ko" [ref=e230]
+                        - generic [ref=e232]:
+                          - generic:
+                            - generic [ref=e233]: "Description:"
+                            - generic [ref=e234]: NON REDISTRIBUE
+                        - generic [ref=e236]:
+                          - generic:
+                            - generic [ref=e237]: "Declared By:"
+                            - generic [ref=e238]: Buyer
+                        - generic [ref=e241]: "Maximum Amount:"
+                        - generic [ref=e243]:
+                          - generic:
+                            - generic [ref=e244]: "Tax:"
+                            - generic "20.0" [ref=e245]: 20 %
+                        - generic [ref=e247]:
+                          - generic:
+                            - generic [ref=e248]: "Declaration Frequency:"
+                            - generic [ref=e249]: Quarterly
+                        - generic [ref=e251]:
+                          - generic:
+                            - generic [ref=e252]: "Invoicing Periodicity:"
+                            - generic [ref=e253]: Annually
+                        - generic [ref=e256]: "Import data from ASR:"
+                  - generic [ref=e257]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e258]:
+                    - listitem:
+                      - generic [ref=e260]: MKT BOOST Package Premium 2025
+                      - generic [ref=e261]:
+                        - paragraph: "Conditions: 0"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/37163?edit_mode=
+                            - img "Self And Assoc" [ref=e262] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e264]: MKT BOOST Package Premium 2026
+                      - generic [ref=e265]:
+                        - paragraph: "Conditions: 0"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/37164?edit_mode=
+                            - img "Self And Assoc" [ref=e266] [cursor=pointer]
+      - generic [ref=e267]:
+        - generic [ref=e268]: "Version: 2.30.4"
+        - generic [ref=e269]:
+          - link "User Guide" [ref=e270] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e271] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```
