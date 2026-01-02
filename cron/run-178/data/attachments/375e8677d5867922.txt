@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38663
+Declaration frequency: Quarterly
+supplier: 46428-BAFFY
+invoicingCountryField: France
+contract id 1: Contract - FRP2-24-7-092 - 1.1
+contract id 2: Contract - FRP2-24-7-092 - 2.1
