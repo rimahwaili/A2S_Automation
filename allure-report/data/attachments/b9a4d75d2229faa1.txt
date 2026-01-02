@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40499
+Supplier URL: /suppliers/10645
+Supplier Name: 130160-PROTERIO PROTEÇÃO CONTRA INCENDIO LTDA
+Supplier URL: /suppliers/10645
+Supplier Name: 130160-PROTERIO PROTEÇÃO CONTRA INCENDIO LTDA
+➡ Opening supplier page: /suppliers/10645
+/suppliers/10645
