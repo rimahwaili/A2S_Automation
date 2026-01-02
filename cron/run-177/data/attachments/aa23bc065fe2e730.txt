@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36517
+Declaration frequency: Annually
+supplier: 344249-AXPO ITALIA SPA
+invoicingCountryField: Italy
