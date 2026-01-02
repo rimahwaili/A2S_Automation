@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38246
+Declaration frequency: Annually
+supplier: 44685-L.I.D
+invoicingCountryField: France
+Page 1: Contract - FRP3-24-1-023-MNNSNS - 1.1
+Page 2: Contract - FRP3-24-1-023-MNNSNS - 2.1

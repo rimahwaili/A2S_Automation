@@ -1,0 +1,3 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Generated Contract Number: CON-PDXEOQ8A

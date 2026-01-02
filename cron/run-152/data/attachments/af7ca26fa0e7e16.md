@@ -1,0 +1,518 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: FRP4-24-2-121 - 1.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "valid Contract - FRP4-24-2-121 - 1.1" [level=2] [ref=e67]:
+          - generic [ref=e68]: valid
+          - text: Contract - FRP4-24-2-121 - 1.1
+        - generic [ref=e69]:
+          - generic [ref=e71] [cursor=pointer]: Main Information
+          - generic [ref=e73] [cursor=pointer]: Invoicing Information
+          - generic [ref=e75] [cursor=pointer]: Documents (0)
+          - generic [ref=e77] [cursor=pointer]: Services
+        - generic [ref=e78]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]:
+                - heading "Main Information" [level=2] [ref=e84]
+                - generic [ref=e87]:
+                  - generic [ref=e88]: "Supplier:"
+                  - link "3302-JET'SAC - SPHERE PROFESSIONNEL" [ref=e91] [cursor=pointer]:
+                    - /url: /suppliers/5365
+                - generic [ref=e94]:
+                  - generic [ref=e95]: "Number:"
+                  - generic [ref=e97]: FRP4-24-2-121
+                - generic [ref=e100]:
+                  - generic [ref=e101]: "Name:"
+                  - generic [ref=e103]: Contrat de Référencement et de Services
+                - generic [ref=e106]:
+                  - generic [ref=e107]: "Type:"
+                  - generic [ref=e109]: P4
+                - generic [ref=e113]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e117]:
+                  - generic [ref=e118]: "Categories:"
+                  - list [ref=e120]:
+                    - listitem [ref=e121]: E00031 Disposable products
+                - generic [ref=e124]:
+                  - generic [ref=e125]: "Main Category:"
+                  - link "E00031 Disposable products" [ref=e128] [cursor=pointer]:
+                    - /url: /categories/217
+                - generic [ref=e131]:
+                  - generic [ref=e132]: "Brands:"
+                  - generic [ref=e134]: None
+                - generic [ref=e137]:
+                  - generic [ref=e138]: "Category Manager:"
+                  - link "anais.bocquene@accor.com" [ref=e141] [cursor=pointer]:
+                    - /url: /contacts/10474
+                - generic [ref=e145]: "E Procurement:"
+                - generic [ref=e149]:
+                  - generic [ref=e150]: "Former Numbers:"
+                  - generic [ref=e151]:
+                    - list
+                - generic [ref=e154]:
+                  - generic [ref=e155]: "Opex:"
+                  - generic "100.0" [ref=e157]: 100 %
+              - generic [ref=e158]:
+                - heading "Declaration" [level=2] [ref=e160]
+                - generic [ref=e163]:
+                  - generic [ref=e164]: "Declaration Frequency:"
+                  - generic [ref=e166]: Annually
+                - generic [ref=e169]:
+                  - generic [ref=e170]: "Allow specific frequency for services:"
+                  - generic [ref=e172]: This frequency is applied to all services
+            - generic [ref=e173]:
+              - generic [ref=e174]:
+                - heading "Contracts Dates" [level=2] [ref=e176]
+                - generic [ref=e179]:
+                  - generic [ref=e180]: "Silent Extension:"
+                  - img "ok" [ref=e183]
+                - generic [ref=e186]:
+                  - generic [ref=e187]: "Contract Start date:"
+                  - generic [ref=e189]: 07/01/2024
+                - generic [ref=e193]: "Contract end date:"
+                - generic [ref=e196]:
+                  - generic [ref=e197]: "Declarative start Date:"
+                  - generic [ref=e199]: 07/01/2024
+                - generic [ref=e202]:
+                  - generic [ref=e203]: "Signing date:"
+                  - generic [ref=e205]: 11/29/2024
+                - generic [ref=e208]:
+                  - generic [ref=e209]: "Creation Date:"
+                  - generic [ref=e211]: 07/15/2024
+                - generic [ref=e215]: "Theoretical end date:"
+                - generic [ref=e219]: "Declarative end date:"
+              - generic [ref=e220]:
+                - heading "Contract Terms" [level=2] [ref=e222]
+                - generic [ref=e225]:
+                  - generic [ref=e226]: "Invoicing country:"
+                  - link "France" [ref=e229] [cursor=pointer]:
+                    - /url: /countries/76
+                - generic [ref=e232]:
+                  - generic [ref=e233]: "Currency:"
+                  - link "EUR" [ref=e236] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e240]: "Duration (months) = Term:"
+                - generic [ref=e244]:
+                  - generic [ref=e245]: "Covered Perimeter: *"
+                  - list [ref=e247]:
+                    - listitem [ref=e248]: SOUTHERN EUROPE (3 / 13)
+                - generic [ref=e251]:
+                  - generic [ref=e252]: "Declaration Contacts:"
+                  - list [ref=e254]:
+                    - listitem [ref=e255]:
+                      - link "jetsac.commercial@sphere.eu" [ref=e256] [cursor=pointer]:
+                        - /url: /contacts/16736
+                - generic [ref=e259]:
+                  - generic [ref=e260]: "Payment Term:"
+                  - link "30 days end of month" [ref=e263] [cursor=pointer]:
+                    - /url: /contract_payment_terms/3
+                - generic [ref=e266]:
+                  - generic [ref=e267]: "Payment Mode:"
+                  - link "OTHER" [ref=e270] [cursor=pointer]:
+                    - /url: /contract_payment_modes/4
+                - generic [ref=e273]:
+                  - generic [ref=e274]: "Cancellation Term:"
+                  - link "2 months" [ref=e277] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/3
+                - generic [ref=e281]: "Expected Contract Value:"
+          - generic [ref=e283]:
+            - heading "Invoicing Details" [level=2] [ref=e284]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e285]: ZONE INDUSTRIELLE OUEST-BOULEVARD DE MALLING - BP 101 / - / 62260 / AUCHEL / France
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e286]:
+                    - listitem [ref=e287]:
+                      - link "jetsac-facturedemat@sphere.eu" [ref=e288] [cursor=pointer]:
+                        - /url: /contacts/50060
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "EUR" [ref=e290] [cursor=pointer]:
+                    - /url: /currencies/1
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e291]: JET'SAC - SPHERE PROFESSIONNEL
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+                  - generic [ref=e292]: Annually
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e293]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e294]: "8931"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+                  - generic [ref=e295]: FR-32403090426
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e299] [cursor=pointer]:
+            - /url: /suppliers/show/5365?@all_documents=true&to_tab=document
+          - generic [ref=e300]:
+            - link "Back to the list" [ref=e301] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e302] [cursor=pointer]:
+              - /url: /contracts/simulator/38948
+            - link "Edit" [ref=e303] [cursor=pointer]:
+              - /url: /contracts/edit/38948
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e304]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e305]:
+                    - generic [ref=e306] [cursor=pointer]: Classic Procurement Service Fee
+                    - img "arrow" [ref=e307]
+                  - listitem [ref=e308]:
+                    - generic [ref=e309] [cursor=pointer]: Basic admin fee
+              - generic:
+                - heading "Service details" [level=3] [ref=e311]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e312]:
+                        - generic [ref=e314]:
+                          - generic:
+                            - generic [ref=e315]: "Name:"
+                            - generic [ref=e316]: Classic Procurement Service Fee
+                        - generic [ref=e318]:
+                          - generic:
+                            - generic [ref=e319]: "Depth of declaration:"
+                            - generic [ref=e320]: Country - Brand
+                        - generic [ref=e322]:
+                          - generic:
+                            - generic [ref=e323]: "Redistribution:"
+                            - img "ok" [ref=e325]
+                        - generic [ref=e328]: "Description:"
+                        - generic [ref=e330]:
+                          - generic:
+                            - generic [ref=e331]: "Declared By:"
+                            - generic [ref=e332]: Buyer
+                        - generic [ref=e335]: "Maximum Amount:"
+                        - generic [ref=e337]:
+                          - generic:
+                            - generic [ref=e338]: "Tax:"
+                            - generic "20.0" [ref=e339]: 20 %
+                        - generic [ref=e341]:
+                          - generic:
+                            - generic [ref=e342]: "Declaration Frequency:"
+                            - generic [ref=e343]: Annually
+                        - generic [ref=e345]:
+                          - generic:
+                            - generic [ref=e346]: "Invoicing Periodicity:"
+                            - generic [ref=e347]: Annually
+                        - generic [ref=e350]: "Import data from ASR:"
+                  - generic [ref=e351]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e352]:
+                    - listitem:
+                      - generic [ref=e354]: . 19% CA Film étirable PRO 300*0,45 m (ACCO300FEPV45/AFPFABD45)
+                      - generic [ref=e355]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32012?edit_mode=
+                            - img "Self And Assoc" [ref=e356] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e358]: . 20% CA sac type 7L compostable OK Home Compost (AFPBRHC007NT)
+                      - generic [ref=e359]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32013?edit_mode=
+                            - img "Self And Assoc" [ref=e360] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e362]: . 20% CA Sac type 20 L compostable Ok Home Compost
+                      - generic [ref=e363]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32015?edit_mode=
+                            - img "Self And Assoc" [ref=e364] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e366]: . 44% CA sac type 20 L blanc 10 microns(ACCO020BC50A0)
+                      - generic [ref=e367]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32014?edit_mode=
+                            - img "Self And Assoc" [ref=e368] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e370]: . 36% CA Sac type 30 L noir 12 microns (ACCO030NO50A0)
+                      - generic [ref=e371]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32016?edit_mode=
+                            - img "Self And Assoc" [ref=e372] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e374]: . 29% CA Sac type 110 L noir 22 microns (ACCO110NO25A3)
+                      - generic [ref=e375]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32017?edit_mode=
+                            - img "Self And Assoc" [ref=e376] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e378]: . 24% Sac type 110 L noir 34 microns (ACCO110NO20BO)
+                      - generic [ref=e379]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32018?edit_mode=
+                            - img "Self And Assoc" [ref=e380] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e382]: . 29% CA Sac type 110 L transparent 34 microns (ACCO110TP20A0)
+                      - generic [ref=e383]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32019?edit_mode=
+                            - img "Self And Assoc" [ref=e384] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e386]: . 39% CA Sac type 130 L noir flexitene 25 microns (ACCO130NO25A0)
+                      - generic [ref=e387]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32020?edit_mode=
+                            - img "Self And Assoc" [ref=e388] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e390]: . 29% CA Sac type 160 L noir 39 microns (ACCO160NO10A2)
+                      - generic [ref=e391]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32022?edit_mode=
+                            - img "Self And Assoc" [ref=e392] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e394]: . 39% CA Sac type 130 L noir flexitene 38 microns (ACCO130NO20B0)
+                      - generic [ref=e395]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32021?edit_mode=
+                            - img "Self And Assoc" [ref=e396] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e398]: . 19% Sac type 130 L transparent 34 microns (FLXVO130TPR)
+                      - generic [ref=e399]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32023?edit_mode=
+                            - img "Self And Assoc" [ref=e400] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e402]: . 19% CA Sac type 160 L transparent sans lien, 50 microns (ACCO160TP20A0)
+                      - generic [ref=e403]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32024?edit_mode=
+                            - img "Self And Assoc" [ref=e404] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e406]: . 19% Sac type 130 L noir 55 microns (PRO130NOURM-1)
+                      - generic [ref=e407]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32025?edit_mode=
+                            - img "Self And Assoc" [ref=e408] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e410]: . 19% CA Sac type 100 L noir 39 microns (PRO100NOS)
+                      - generic [ref=e411]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32026?edit_mode=
+                            - img "Self And Assoc" [ref=e412] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e414]: . 19% Sac type 130 L noir 49 microns (PRO130NORM-1)
+                      - generic [ref=e415]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32027?edit_mode=
+                            - img "Self And Assoc" [ref=e416] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e418]: . 19% CA Sac type 130 L bleu 34 microns (FLXVO130BXR)
+                      - generic [ref=e419]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32029?edit_mode=
+                            - img "Self And Assoc" [ref=e420] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e422]: . 19% CA Sac type 50 L blanc 14 microns (MDR050BC)
+                      - generic [ref=e423]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32028?edit_mode=
+                            - img "Self And Assoc" [ref=e424] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e426]: . 24% CA Sac 110 L noir 34 μ (SGR110NO20A0)
+                      - generic [ref=e427]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32031?edit_mode=
+                            - img "Self And Assoc" [ref=e428] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e430]: . 39% CA Sac 130L BD 39μ 820X1150MM noir C/10X20 (PRO130NOS-1)
+                      - generic [ref=e431]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32030?edit_mode=
+                            - img "Self And Assoc" [ref=e432] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e434]: . 24% CA Sac 110 L Argent noir à liens coulissants 32 μ 15*12 (AFPCX110SAN)
+                      - generic [ref=e435]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32032?edit_mode=
+                            - img "Self And Assoc" [ref=e436] [cursor=pointer]
+      - generic [ref=e437]:
+        - generic [ref=e438]: "Version: 2.30.4"
+        - generic [ref=e439]:
+          - link "User Guide" [ref=e440] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e441] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```

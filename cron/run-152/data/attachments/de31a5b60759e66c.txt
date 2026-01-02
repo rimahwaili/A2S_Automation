@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41020
+Declaration frequency: Quarterly
+supplier: 55525-SEGAFREDO ZANETTI
+invoicingCountryField: CORP
