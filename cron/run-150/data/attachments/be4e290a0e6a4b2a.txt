@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39734
+Declaration frequency: Quarterly
+supplier: KON0392-Firma Handlowo Usługowa Demaro Waldemar Grejman
+invoicingCountryField: Poland
+Page 1: Contract - PLP2-25-2-003 - 1.1
+Page 2: Contract - PLP2-25-2-003 - 2.1

@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40557
+Declaration frequency: Annually
+supplier: 361752-BBSPA France
+invoicingCountryField: France
