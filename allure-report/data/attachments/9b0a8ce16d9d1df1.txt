@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38032
+Declaration frequency: Annually
+supplier: 389054-RED BULL SPAIN S.L.
+invoicingCountryField: Spain
