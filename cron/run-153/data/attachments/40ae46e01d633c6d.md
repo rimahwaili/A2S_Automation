@@ -1,0 +1,492 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]:
+            - link "FRP3-24-1-050-MGPUL - 1.2" [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/39319
+          - paragraph [ref=e65]:
+            - img "arrow-right" [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading "to renew Contract - FRP3-24-1-050-MGPUL - 1.2" [level=2] [ref=e70]:
+            - generic [ref=e71]: to renew
+            - text: Contract - FRP3-24-1-050-MGPUL - 1.2
+          - paragraph [ref=e72]:
+            - generic [ref=e73]:
+              - text: Versioned from contract n°
+              - link "FRP3-24-1-050-MGPUL - 1.1" [ref=e74] [cursor=pointer]:
+                - /url: /contracts/edit/38432
+          - generic [ref=e75]:
+            - generic [ref=e77] [cursor=pointer]: Main Information
+            - generic [ref=e79] [cursor=pointer]: Invoicing Information
+            - generic [ref=e81] [cursor=pointer]: Documents (0)
+            - generic [ref=e83] [cursor=pointer]: Services
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e87]:
+                - generic [ref=e88]:
+                  - generic [ref=e89]:
+                    - heading "Main Information" [level=2] [ref=e91]
+                    - generic [ref=e94]:
+                      - generic [ref=e95]: "Supplier:"
+                      - link "46389-LAURENT-PERRIER DIFFUSION" [ref=e98] [cursor=pointer]:
+                        - /url: /suppliers/4502
+                    - generic [ref=e101]:
+                      - generic [ref=e102]: "Number:"
+                      - generic [ref=e104]: FRP3-24-1-050-MGPUL
+                    - generic [ref=e107]:
+                      - generic [ref=e108]: "Name:"
+                      - generic [ref=e109]:
+                        - generic [ref=e110]:
+                          - generic [ref=e112] [cursor=pointer]: Nominating and services Agreement
+                          - generic [ref=e115]:
+                            - textbox [ref=e117]
+                            - list [ref=e118]
+                        - link "New" [ref=e119] [cursor=pointer]:
+                          - /url: /contract_titles/new
+                          - generic [ref=e120]: 
+                          - text: New
+                    - generic [ref=e123]:
+                      - generic [ref=e124]: "Type:"
+                      - generic [ref=e126]: P3
+                    - generic [ref=e129]:
+                      - generic [ref=e130]:
+                        - text: "Description:"
+                        - text: (visible by customers in the directory)
+                      - 'textbox "Description: (visible by customers in the directory)" [ref=e132]'
+                    - generic [ref=e135]:
+                      - generic [ref=e136]: "Categories:"
+                      - list [ref=e138]:
+                        - listitem [ref=e139]: A00005 Wine, spirits, champagne
+                    - generic [ref=e142]:
+                      - generic [ref=e143]: "Main Category:"
+                      - generic [ref=e145]:
+                        - generic [ref=e147] [cursor=pointer]: A00005 Wine, spirits, champagne
+                        - generic [ref=e150]:
+                          - textbox [ref=e152]
+                          - list [ref=e153]
+                    - generic [ref=e156]:
+                      - generic [ref=e157]: "Brands:"
+                      - generic [ref=e159]: None
+                    - generic [ref=e162]:
+                      - generic [ref=e163]: "Category Manager:"
+                      - generic [ref=e165]:
+                        - generic [ref=e167] [cursor=pointer]: xuanmai.nguyen@accor.com
+                        - generic [ref=e170]:
+                          - textbox [ref=e172]
+                          - list [ref=e173]
+                    - generic [ref=e176]:
+                      - generic [ref=e177]: "E Procurement:"
+                      - textbox "E Procurement:" [ref=e179]
+                    - generic [ref=e182]:
+                      - generic [ref=e183]: "Former Numbers:"
+                      - textbox "Former Numbers:" [ref=e185]
+                    - generic [ref=e188]:
+                      - generic [ref=e189]: "Opex:"
+                      - generic [ref=e190]:
+                        - spinbutton "Opex:" [ref=e191]: "100.0"
+                        - generic [ref=e192]: "%"
+                  - generic [ref=e193]:
+                    - heading "Declaration" [level=2] [ref=e195]
+                    - generic [ref=e198]:
+                      - generic [ref=e199]: "Declaration Frequency:"
+                      - generic [ref=e201]: Annually
+                    - generic [ref=e204]:
+                      - generic [ref=e205]: "Allow specific frequency for services:"
+                      - generic [ref=e207]: This frequency is applied to all services
+                - generic [ref=e208]:
+                  - generic [ref=e209]:
+                    - heading "Contracts Dates" [level=2] [ref=e211]
+                    - generic [ref=e214]:
+                      - generic [ref=e215]: "Silent Extension: *"
+                      - 'combobox "Silent Extension: *" [ref=e217]':
+                        - option "Yes"
+                        - option "No" [selected]
+                    - generic [ref=e220]:
+                      - generic [ref=e221]: "Contract Start date:"
+                      - generic [ref=e222]:
+                        - textbox "Contract Start date:" [ref=e223]: 04/01/2024
+                        - generic [ref=e225] [cursor=pointer]: 
+                    - generic [ref=e228]:
+                      - generic [ref=e229]: "Contract end date: *"
+                      - generic [ref=e230]:
+                        - 'textbox "Contract end date: * Contract end date: *" [ref=e231]': 03/31/2026
+                        - generic [ref=e233] [cursor=pointer]: 
+                    - generic [ref=e236]:
+                      - generic [ref=e237]: "Declarative Start Quarter:"
+                      - generic [ref=e239]: 1st of January
+                    - generic [ref=e242]:
+                      - generic [ref=e243]: "Declarative Start Year:"
+                      - generic [ref=e245]: "2024"
+                    - generic [ref=e248]:
+                      - generic [ref=e249]: "Signing date:"
+                      - generic [ref=e250]:
+                        - textbox "Signing date:" [ref=e251]: 12/10/2024
+                        - generic [ref=e253] [cursor=pointer]: 
+                    - generic [ref=e256]:
+                      - generic [ref=e257]: "Theoretical end date:"
+                      - generic [ref=e258]:
+                        - textbox "Theoretical end date:" [ref=e259]
+                        - generic [ref=e261] [cursor=pointer]: 
+                    - generic [ref=e264]:
+                      - generic [ref=e265]: "Declarative End Quarter:"
+                      - 'combobox "Declarative End Quarter: Declarative End Quarter:" [ref=e267]':
+                        - option "[Select]"
+                        - option "31st of March"
+                        - option "30th of June"
+                        - option "30th of September"
+                        - option "31st of December" [selected]
+                    - generic [ref=e270]:
+                      - generic [ref=e271]: "Declarative End Year:"
+                      - 'textbox "Declarative End Year: Declarative End Year:" [ref=e273]': "2025"
+                  - generic [ref=e274]:
+                    - heading "Contract Terms" [level=2] [ref=e276]
+                    - generic [ref=e279]:
+                      - generic [ref=e280]: "Invoicing country:"
+                      - link "France" [ref=e283] [cursor=pointer]:
+                        - /url: /countries/76
+                    - generic [ref=e286]:
+                      - generic [ref=e287]: "Currency:"
+                      - link "EUR" [ref=e290] [cursor=pointer]:
+                        - /url: /currencies/1
+                    - generic [ref=e293]:
+                      - generic [ref=e294]: "Duration (months) = Term:"
+                      - generic [ref=e296]: "24"
+                    - generic [ref=e299]:
+                      - generic [ref=e300]: "Covered Perimeter: *"
+                      - list [ref=e302]:
+                        - listitem [ref=e303]: SOUTHERN EUROPE (3 / 13)
+                    - generic [ref=e306]:
+                      - generic [ref=e307]: "Declaration Contacts:"
+                      - generic [ref=e309]:
+                        - list [ref=e310]:
+                          - listitem [ref=e311] [cursor=pointer]: marie-christine.bismes@laurent-perrier.fr
+                          - listitem [ref=e313]:
+                            - textbox [ref=e314]
+                        - list [ref=e316]
+                    - generic [ref=e319]:
+                      - generic [ref=e320]: "Payment Term:"
+                      - generic [ref=e321]:
+                        - generic [ref=e322]:
+                          - generic [ref=e324] [cursor=pointer]: 30 days end of month
+                          - generic [ref=e327]:
+                            - textbox [ref=e329]
+                            - list [ref=e330]
+                        - link "New" [ref=e331] [cursor=pointer]:
+                          - /url: /contract_payment_terms/new
+                          - generic [ref=e332]: 
+                          - text: New
+                    - generic [ref=e335]:
+                      - generic [ref=e336]: "Payment Mode:"
+                      - generic [ref=e337]:
+                        - generic [ref=e338]:
+                          - generic [ref=e340] [cursor=pointer]: OTHER
+                          - generic [ref=e343]:
+                            - textbox [ref=e345]
+                            - list [ref=e346]
+                        - link "New" [ref=e347] [cursor=pointer]:
+                          - /url: /contract_payment_modes/new
+                          - generic [ref=e348]: 
+                          - text: New
+                    - generic [ref=e351]:
+                      - generic [ref=e352]: "Cancellation Term:"
+                      - generic [ref=e353]:
+                        - generic [ref=e354]:
+                          - generic [ref=e356] [cursor=pointer]: 2 months
+                          - generic [ref=e359]:
+                            - textbox [ref=e361]
+                            - list [ref=e362]
+                        - link "New" [ref=e363] [cursor=pointer]:
+                          - /url: /contract_cancellation_terms/new
+                          - generic [ref=e364]: 
+                          - text: New
+                    - generic [ref=e367]:
+                      - generic [ref=e368]: "Expected Contract Value:"
+                      - spinbutton "Expected Contract Value:" [ref=e370]
+              - generic [ref=e371]:
+                - heading "Invoicing Details" [level=2] [ref=e372]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Address:"
+                      - generic [ref=e373]: BP 3 / DOMAINE DE TOURS SUR MARNE / 51150 / TOURS SUR MARNE / France
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Contacts:"
+                      - generic:
+                        - generic:
+                          - list [ref=e374]:
+                            - listitem [ref=e375] [cursor=pointer]: marie-christine.bismes@laurent-perrier.fr
+                            - listitem [ref=e377] [cursor=pointer]: bertrand.bignon@laurent-perrier.fr
+                            - listitem:
+                              - textbox
+                          - generic [ref=e379]:
+                            - list
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Currency:"
+                      - link "EUR" [ref=e381] [cursor=pointer]:
+                        - /url: /currencies/1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Company Name on Invoice:"
+                      - textbox "Company Name on Invoice:" [ref=e382]: LAURENT-PERRIER DIFFUSION
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Invoicing Periodicity:"
+                      - generic [ref=e383]: Annually
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Allow specific invoicing for services:"
+                      - generic [ref=e384]: This periodicity is applied to all services
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Deposit Amount:"
+                      - spinbutton "Deposit Amount:" [ref=e385]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Prepayment:"
+                      - combobox "Prepayment:" [ref=e386]:
+                        - option [selected]
+                        - option
+                        - option "Quarterly"
+                        - option "Semesterly on the N-1 basis"
+                        - option "Semesterly on the basis of the real N"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Package Amount:"
+                      - spinbutton "Package Amount:" [ref=e387]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "AR code:"
+                      - generic [ref=e388]: "6930"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Intracommunity VAT:"
+                      - generic [ref=e389]: FR 24 337 180 152
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "your references:"
+                      - textbox "your references:" [ref=e390]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "AP code:"
+              - generic:
+                - button "+ Add new Document" [ref=e393] [cursor=pointer]
+                - link "View all supplier documents" [ref=e395] [cursor=pointer]:
+                  - /url: /suppliers/show/4502?@all_documents=true&to_tab=document
+              - generic [ref=e397]:
+                - link "Back to the list" [ref=e398] [cursor=pointer]:
+                  - /url: /contracts/list
+                - link "Error" [ref=e399] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/39319?trans_name=contracts_error_from_to_renew
+                - link "Archive" [ref=e400] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/39319?trans_name=contracts_archived_from_to_renew&date_impacted=&value_impacted=
+                - link "Versioning" [ref=e401] [cursor=pointer]:
+                  - /url: /contracts/version/39319
+                - link "Renew" [ref=e402] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/39319?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                - link "Submit" [ref=e403] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/39319?declarative_impact=true
+            - generic:
+              - generic:
+                - generic:
+                  - generic [ref=e404]:
+                    - heading "Services List" [level=3]
+                  - list:
+                    - listitem [ref=e405]:
+                      - generic [ref=e406] [cursor=pointer]: Classic Procurement Service Fee
+                      - img "arrow" [ref=e407]
+                - generic:
+                  - heading "Service details" [level=3] [ref=e409]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - group:
+                          - generic [ref=e410]:
+                            - generic [ref=e412]:
+                              - generic:
+                                - generic [ref=e413]: "Name:"
+                                - generic:
+                                  - generic:
+                                    - generic [ref=e414] [cursor=pointer]:
+                                      - generic: Classic Procurement Service Fee
+                                    - generic [ref=e417]:
+                                      - textbox [ref=e419]
+                                      - list
+                            - generic [ref=e421]:
+                              - generic:
+                                - generic [ref=e422]: "Depth of declaration: *"
+                                - generic [ref=e423]: Country - Brand
+                            - generic [ref=e425]:
+                              - generic:
+                                - generic [ref=e426]: Redistribution
+                                - generic [ref=e427]:
+                                  - generic:
+                                    - generic: "No"
+                                    - generic: "Yes"
+                            - generic [ref=e429]:
+                              - generic:
+                                - generic [ref=e430]: "Description:"
+                                - textbox "Description:" [ref=e431]
+                            - generic [ref=e433]:
+                              - generic:
+                                - generic [ref=e434]: "Declared By:"
+                                - combobox "Declared By:" [ref=e435]:
+                                  - option "Supplier"
+                                  - option "Buyer" [selected]
+                                  - option "Back-Office"
+                            - generic [ref=e438]: "Maximum Amount:"
+                            - generic [ref=e440]:
+                              - generic:
+                                - generic [ref=e441]: "Tax:"
+                                - generic:
+                                  - textbox "Tax:" [ref=e442]: "20.0"
+                                  - generic [ref=e443]: "%"
+                            - generic [ref=e445]:
+                              - generic:
+                                - generic [ref=e446]: "Declaration Frequency:"
+                                - generic [ref=e447]: Annually
+                            - generic [ref=e449]:
+                              - generic:
+                                - generic [ref=e450]: "Invoicing Periodicity:"
+                                - generic [ref=e451]: Annually
+                            - generic [ref=e453]:
+                              - generic:
+                                - generic [ref=e454]: "Import data from ASR:"
+                                - textbox "Import data from ASR:" [ref=e455]
+                    - generic [ref=e456]:
+                      - heading "Sub-Services" [level=3]
+                    - list [ref=e457]:
+                      - listitem:
+                        - generic [ref=e459]: "Présence du/des produits sur les cartes restaurant : 40.000 € HT / AN"
+                        - generic [ref=e460]:
+                          - paragraph: "Conditions: 0"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/31990?edit_mode=true
+                              - img "Self And Assoc" [ref=e461] [cursor=pointer]
+                    - generic [ref=e462] [cursor=pointer]: Save this Service
+      - generic [ref=e463]:
+        - generic [ref=e464]: "Version: 2.30.4"
+        - generic [ref=e465]:
+          - link "User Guide" [ref=e466] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e467] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+  - dialog [ref=e469]:
+    - document [ref=e470]:
+      - generic [ref=e471]:
+        - button "Close" [ref=e472] [cursor=pointer]: ×
+        - generic [ref=e473]:
+          - banner [ref=e474]:
+            - heading "End dates confirmation" [level=1] [ref=e475]
+          - generic [ref=e477]:
+            - paragraph [ref=e478]:
+              - text: Warning! declarations can be cancelled by this action
+              - text: "Before saving, please confirm the following dates:"
+            - generic [ref=e479]:
+              - generic [ref=e481]:
+                - generic [ref=e482]: "Declarative End Quarter:"
+                - combobox [ref=e484]:
+                  - option "[Select]"
+                  - option "31st of March"
+                  - option "30th of June"
+                  - option "30th of September"
+                  - option "31st of December" [selected]
+              - generic [ref=e486]:
+                - generic [ref=e487]: "Declarative End Year:"
+                - textbox [active] [ref=e489]: "2027"
+              - generic [ref=e491]:
+                - generic [ref=e492]: "Contract end date: *"
+                - generic [ref=e493]:
+                  - textbox [ref=e494]: 12/29/2027
+                  - generic [ref=e496]: 
+          - button "Confirm and save" [ref=e498] [cursor=pointer]
+```

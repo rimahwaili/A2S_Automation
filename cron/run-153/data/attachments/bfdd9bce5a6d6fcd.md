@@ -1,0 +1,360 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: GP4GP2850 - 1.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "valid Contract - GP4GP2850 - 1.1" [level=2] [ref=e67]:
+          - generic [ref=e68]: valid
+          - text: Contract - GP4GP2850 - 1.1
+        - generic [ref=e69]:
+          - generic [ref=e71] [cursor=pointer]: Main Information
+          - generic [ref=e73] [cursor=pointer]: Invoicing Information
+          - generic [ref=e75] [cursor=pointer]: Documents (0)
+          - generic [ref=e77] [cursor=pointer]: Services
+        - generic [ref=e78]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]:
+                - heading "Main Information" [level=2] [ref=e84]
+                - generic [ref=e87]:
+                  - generic [ref=e88]: "Supplier:"
+                  - link "292568-LIONBRIDGE INTERNATIONAL UNLIMITED COMPANY" [ref=e91] [cursor=pointer]:
+                    - /url: /suppliers/7030
+                - generic [ref=e94]:
+                  - generic [ref=e95]: "Number:"
+                  - generic [ref=e97]: GP4GP2850
+                - generic [ref=e100]:
+                  - generic [ref=e101]: "Name:"
+                  - generic [ref=e103]: Master Services Agreement
+                - generic [ref=e106]:
+                  - generic [ref=e107]: "Type:"
+                  - generic [ref=e109]: G4
+                - generic [ref=e113]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e117]:
+                  - generic [ref=e118]: "Categories:"
+                  - list [ref=e120]:
+                    - listitem [ref=e121]: "E00072-5 Intellectual services : Translations and Intrepreting"
+                - generic [ref=e124]:
+                  - generic [ref=e125]: "Main Category:"
+                  - 'link "E00072-5 Intellectual services : Translations and Intrepreting" [ref=e128] [cursor=pointer]':
+                    - /url: /categories/340
+                - generic [ref=e131]:
+                  - generic [ref=e132]: "Brands:"
+                  - generic [ref=e134]: None
+                - generic [ref=e137]:
+                  - generic [ref=e138]: "Category Manager:"
+                  - link "ingrid.marquez@consulting-for.accor.com" [ref=e141] [cursor=pointer]:
+                    - /url: /contacts/43629
+                - generic [ref=e145]: "E Procurement:"
+                - generic [ref=e149]:
+                  - generic [ref=e150]: "Former Numbers:"
+                  - generic [ref=e151]:
+                    - list
+                - generic [ref=e154]:
+                  - generic [ref=e155]: "Opex:"
+                  - generic "50.0" [ref=e157]: 50 %
+              - generic [ref=e158]:
+                - heading "Declaration" [level=2] [ref=e160]
+                - generic [ref=e163]:
+                  - generic [ref=e164]: "Declaration Frequency:"
+                  - generic [ref=e166]: Annually
+                - generic [ref=e169]:
+                  - generic [ref=e170]: "Allow specific frequency for services:"
+                  - generic [ref=e172]: This frequency is applied to all services
+            - generic [ref=e173]:
+              - generic [ref=e174]:
+                - heading "Contracts Dates" [level=2] [ref=e176]
+                - generic [ref=e179]:
+                  - generic [ref=e180]: "Silent Extension:"
+                  - img "ok" [ref=e183]
+                - generic [ref=e186]:
+                  - generic [ref=e187]: "Contract Start date:"
+                  - generic [ref=e189]: 04/01/2018
+                - generic [ref=e193]: "Contract end date:"
+                - generic [ref=e196]:
+                  - generic [ref=e197]: "Declarative start Date:"
+                  - generic [ref=e199]: 04/01/2018
+                - generic [ref=e202]:
+                  - generic [ref=e203]: "Signing date:"
+                  - generic [ref=e205]: 04/17/2018
+                - generic [ref=e208]:
+                  - generic [ref=e209]: "Creation Date:"
+                  - generic [ref=e211]: 02/20/2020
+                - generic [ref=e214]:
+                  - generic [ref=e215]: "Theoretical end date:"
+                  - generic [ref=e217]: 04/01/2021
+                - generic [ref=e221]: "Declarative end date:"
+              - generic [ref=e222]:
+                - heading "Contract Terms" [level=2] [ref=e224]
+                - generic [ref=e227]:
+                  - generic [ref=e228]: "Invoicing country:"
+                  - link "CORP" [ref=e231] [cursor=pointer]:
+                    - /url: /countries/251
+                - generic [ref=e234]:
+                  - generic [ref=e235]: "Currency:"
+                  - link "EUR" [ref=e238] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e241]:
+                  - generic [ref=e242]: "Duration (months) = Term:"
+                  - generic [ref=e244]: "36"
+                - generic [ref=e247]:
+                  - generic [ref=e248]: "Covered Perimeter: *"
+                  - list [ref=e250]:
+                    - listitem [ref=e251]: SUB-SAHARA AFRICA (full)
+                    - listitem [ref=e252]: CENTRAL AND LATIN AMERICA (full)
+                    - listitem [ref=e253]: NORTH AMERICA (full)
+                    - listitem [ref=e254]: ANTARTIC (full)
+                    - listitem [ref=e255]: ASIA (full)
+                    - listitem [ref=e256]: DOM TOM (10 / 11)
+                    - listitem [ref=e257]: EASTERN EUROPE (full)
+                    - listitem [ref=e258]: NORTHERN AND CENTRAL EUROPE (full)
+                    - listitem [ref=e259]: SOUTHERN EUROPE (full)
+                    - listitem [ref=e260]: MAGHREB (full)
+                    - listitem [ref=e261]: OCEANIA (full)
+                    - listitem [ref=e262]: NEAR AND MIDDLE EAST (full)
+                - generic [ref=e265]:
+                  - generic [ref=e266]: "Declaration Contacts:"
+                  - list [ref=e268]:
+                    - listitem [ref=e269]:
+                      - link "lucie.serra@lionbridge.com" [ref=e270] [cursor=pointer]:
+                        - /url: /contacts/30982
+                - generic [ref=e273]:
+                  - generic [ref=e274]: "Payment Term:"
+                  - link "30 days end of month" [ref=e277] [cursor=pointer]:
+                    - /url: /contract_payment_terms/3
+                - generic [ref=e280]:
+                  - generic [ref=e281]: "Payment Mode:"
+                  - link "OTHER" [ref=e284] [cursor=pointer]:
+                    - /url: /contract_payment_modes/4
+                - generic [ref=e287]:
+                  - generic [ref=e288]: "Cancellation Term:"
+                  - link "15 days" [ref=e291] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/7
+                - generic [ref=e295]: "Expected Contract Value:"
+          - generic [ref=e297]:
+            - heading "Invoicing Details" [level=2] [ref=e298]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e299]: 3 West Pier Business Campus / Dun Laoghaire / A96 A621 / DUBLIN / Ireland
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e300]:
+                    - listitem [ref=e301]:
+                      - link "samuele.sette@lionbridge.com" [ref=e302] [cursor=pointer]:
+                        - /url: /contacts/38646
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "EUR" [ref=e304] [cursor=pointer]:
+                    - /url: /currencies/1
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e305]: LIONBRIDGE INTERNATIONAL UNLIMITED COMPANY
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+                  - generic [ref=e306]: Annually
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e307]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e308]: "285640"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+                  - generic [ref=e309]: IE6540945D
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e313] [cursor=pointer]:
+            - /url: /suppliers/show/7030?@all_documents=true&to_tab=document
+          - generic [ref=e314]:
+            - link "Back to the list" [ref=e315] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e316] [cursor=pointer]:
+              - /url: /contracts/simulator/28166
+            - link "Edit" [ref=e317] [cursor=pointer]:
+              - /url: /contracts/edit/28166
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e318]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e319]:
+                    - generic [ref=e320] [cursor=pointer]: Incentive Fee
+                    - img "arrow" [ref=e321]
+              - generic:
+                - heading "Service details" [level=3] [ref=e323]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e324]:
+                        - generic [ref=e326]:
+                          - generic:
+                            - generic [ref=e327]: "Name:"
+                            - generic [ref=e328]: Incentive Fee
+                        - generic [ref=e330]:
+                          - generic:
+                            - generic [ref=e331]: "Depth of declaration:"
+                            - generic [ref=e332]: Hotel
+                        - generic [ref=e334]:
+                          - generic:
+                            - generic [ref=e335]: "Redistribution:"
+                            - img "ok" [ref=e337]
+                        - generic [ref=e340]: "Description:"
+                        - generic [ref=e342]:
+                          - generic:
+                            - generic [ref=e343]: "Declared By:"
+                            - generic [ref=e344]: Buyer
+                        - generic [ref=e347]: "Maximum Amount:"
+                        - generic [ref=e349]:
+                          - generic:
+                            - generic [ref=e350]: "Tax:"
+                            - generic "0.0" [ref=e351]: 0 %
+                        - generic [ref=e353]:
+                          - generic:
+                            - generic [ref=e354]: "Declaration Frequency:"
+                            - generic [ref=e355]: Annually
+                        - generic [ref=e357]:
+                          - generic:
+                            - generic [ref=e358]: "Invoicing Periodicity:"
+                            - generic [ref=e359]: Annually
+                        - generic [ref=e362]: "Import data from ASR:"
+                  - generic [ref=e363]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e364]:
+                    - listitem:
+                      - generic [ref=e366]: CA < 3M€ 5%
+                      - generic [ref=e367]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/8343?edit_mode=
+                            - img "Self And Assoc" [ref=e368] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e370]: CA > 3M€ 6%
+                      - generic [ref=e371]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/12722?edit_mode=
+                            - img "Self And Assoc" [ref=e372] [cursor=pointer]
+      - generic [ref=e373]:
+        - generic [ref=e374]: "Version: 2.30.4"
+        - generic [ref=e375]:
+          - link "User Guide" [ref=e376] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e377] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```

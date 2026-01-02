@@ -1,0 +1,334 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: MAP2-25-1-014 - 2.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "Contract - MAP2-25-1-014 - 2.1" [level=2] [ref=e67]
+        - paragraph [ref=e68]:
+          - generic [ref=e69]:
+            - text: Renewed from contract n°
+            - link "MAP2-25-1-014 - 1.1" [ref=e70] [cursor=pointer]:
+              - /url: /contracts/show/39872
+        - generic [ref=e71]:
+          - generic [ref=e73] [cursor=pointer]: Main Information
+          - generic [ref=e75] [cursor=pointer]: Invoicing Information
+          - generic [ref=e77] [cursor=pointer]: Documents (0)
+          - generic [ref=e79] [cursor=pointer]: Services
+        - generic [ref=e80]:
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - heading "Main Information" [level=2] [ref=e86]
+                - generic [ref=e89]:
+                  - generic [ref=e90]: "Supplier:"
+                  - link "392636-ALKHADRA" [ref=e93] [cursor=pointer]:
+                    - /url: /suppliers/12156
+                - generic [ref=e96]:
+                  - generic [ref=e97]: "Number:"
+                  - generic [ref=e99]: MAP2-25-1-014
+                - generic [ref=e102]:
+                  - generic [ref=e103]: "Name:"
+                  - generic [ref=e105]: Nomination Agreement
+                - generic [ref=e108]:
+                  - generic [ref=e109]: "Type:"
+                  - generic [ref=e111]: P2
+                - generic [ref=e115]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e119]:
+                  - generic [ref=e120]: "Categories:"
+                  - list [ref=e122]:
+                    - listitem [ref=e123]: A00006 Fresh fruit & vegetables
+                - generic [ref=e126]:
+                  - generic [ref=e127]: "Main Category:"
+                  - link "A00006 Fresh fruit & vegetables" [ref=e130] [cursor=pointer]:
+                    - /url: /categories/230
+                - generic [ref=e133]:
+                  - generic [ref=e134]: "Brands:"
+                  - generic [ref=e136]: None
+                - generic [ref=e139]:
+                  - generic [ref=e140]: "Category Manager:"
+                  - link "hind.felhane@accor.com" [ref=e143] [cursor=pointer]:
+                    - /url: /contacts/43077
+                - generic [ref=e147]: "E Procurement:"
+                - generic [ref=e151]:
+                  - generic [ref=e152]: "Former Numbers:"
+                  - generic [ref=e153]:
+                    - list
+                - generic [ref=e157]: "Opex:"
+              - generic [ref=e159]:
+                - heading "Declaration" [level=2] [ref=e161]
+                - generic [ref=e164]:
+                  - generic [ref=e165]: "Declaration Frequency:"
+                  - generic [ref=e167]: Quarterly
+                - generic [ref=e170]:
+                  - generic [ref=e171]: "Allow specific frequency for services:"
+                  - generic [ref=e173]: This frequency is applied to all services
+            - generic [ref=e174]:
+              - generic [ref=e175]:
+                - heading "Contracts Dates" [level=2] [ref=e177]
+                - generic [ref=e180]:
+                  - generic [ref=e181]: "Silent Extension:"
+                  - img "ko" [ref=e184]
+                - generic [ref=e187]:
+                  - generic [ref=e188]: "Contract Start date:"
+                  - generic [ref=e190]: 04/01/2025
+                - generic [ref=e193]:
+                  - generic [ref=e194]: "Contract end date:"
+                  - generic [ref=e196]: 06/30/2025
+                - generic [ref=e199]:
+                  - generic [ref=e200]: "Declarative start Date:"
+                  - generic [ref=e202]: 04/01/2025
+                - generic [ref=e206]: "Signing date:"
+                - generic [ref=e209]:
+                  - generic [ref=e210]: "Creation Date:"
+                  - generic [ref=e212]: 03/17/2025
+                - generic [ref=e216]: "Theoretical end date:"
+                - generic [ref=e219]:
+                  - generic [ref=e220]: "Declarative end date:"
+                  - generic [ref=e222]: 06/30/2025
+              - generic [ref=e223]:
+                - heading "Contract Terms" [level=2] [ref=e225]
+                - generic [ref=e228]:
+                  - generic [ref=e229]: "Invoicing country:"
+                  - link "Morocco" [ref=e232] [cursor=pointer]:
+                    - /url: /countries/151
+                - generic [ref=e235]:
+                  - generic [ref=e236]: "Currency:"
+                  - link "MAD" [ref=e239] [cursor=pointer]:
+                    - /url: /currencies/86
+                - generic [ref=e242]:
+                  - generic [ref=e243]: "Duration (months) = Term:"
+                  - generic [ref=e245]: "3"
+                - generic [ref=e248]:
+                  - generic [ref=e249]: "Covered Perimeter: *"
+                  - list [ref=e251]:
+                    - listitem [ref=e252]: MAGHREB (1 / 7)
+                - generic [ref=e255]:
+                  - generic [ref=e256]: "Declaration Contacts:"
+                  - list [ref=e258]:
+                    - listitem [ref=e259]:
+                      - link "fruitsalkhadra@gmail.com" [ref=e260] [cursor=pointer]:
+                        - /url: /contacts/47846
+                - generic [ref=e263]:
+                  - generic [ref=e264]: "Payment Term:"
+                  - link "30 days end of month" [ref=e267] [cursor=pointer]:
+                    - /url: /contract_payment_terms/3
+                - generic [ref=e270]:
+                  - generic [ref=e271]: "Payment Mode:"
+                  - link "TRANSFER" [ref=e274] [cursor=pointer]:
+                    - /url: /contract_payment_modes/2
+                - generic [ref=e277]:
+                  - generic [ref=e278]: "Cancellation Term:"
+                  - generic [ref=e280]: None
+                - generic [ref=e284]: "Expected Contract Value:"
+          - generic [ref=e286]:
+            - heading "Invoicing Details" [level=2] [ref=e287]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e288]: No address is filled in the supplier form
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e289]:
+                    - listitem [ref=e290]:
+                      - link "fruitsalkhadra@gmail.com" [ref=e291] [cursor=pointer]:
+                        - /url: /contacts/47846
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "MAD" [ref=e293] [cursor=pointer]:
+                    - /url: /currencies/86
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e294]: ALKHADRA
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e295]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e299] [cursor=pointer]:
+            - /url: /suppliers/show/12156?@all_documents=true&to_tab=document
+          - generic [ref=e300]:
+            - link "Back to the list" [ref=e301] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e302] [cursor=pointer]:
+              - /url: /contracts/simulator/40629
+            - link "Edit" [ref=e303] [cursor=pointer]:
+              - /url: /contracts/edit/40629
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e304]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e305]:
+                    - generic [ref=e306] [cursor=pointer]: Classic Procurement Service Fee
+                    - img "arrow" [ref=e307]
+              - generic:
+                - heading "Service details" [level=3] [ref=e309]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e310]:
+                        - generic [ref=e312]:
+                          - generic:
+                            - generic [ref=e313]: "Name:"
+                            - generic [ref=e314]: Classic Procurement Service Fee
+                        - generic [ref=e316]:
+                          - generic:
+                            - generic [ref=e317]: "Depth of declaration:"
+                            - generic [ref=e318]: Hotel
+                        - generic [ref=e320]:
+                          - generic:
+                            - generic [ref=e321]: "Redistribution:"
+                            - img "ko" [ref=e323]
+                        - generic [ref=e326]: "Description:"
+                        - generic [ref=e328]:
+                          - generic:
+                            - generic [ref=e329]: "Declared By:"
+                            - generic [ref=e330]: Supplier
+                        - generic [ref=e333]: "Maximum Amount:"
+                        - generic [ref=e335]:
+                          - generic:
+                            - generic [ref=e336]: "Tax:"
+                            - generic "20.0" [ref=e337]: 20 %
+                        - generic [ref=e339]:
+                          - generic:
+                            - generic [ref=e340]: "Declaration Frequency:"
+                            - generic [ref=e341]: Quarterly
+                        - generic [ref=e344]: "Invoicing Periodicity:"
+                        - generic [ref=e347]: "Import data from ASR:"
+                  - generic [ref=e348]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e349]:
+                    - listitem:
+                      - generic [ref=e351]: Rémunération de service sur CA déclaré 2,54
+                      - generic [ref=e352]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/36158?edit_mode=
+                            - img "Self And Assoc" [ref=e353] [cursor=pointer]
+      - generic [ref=e354]:
+        - generic [ref=e355]: "Version: 2.30.4"
+        - generic [ref=e356]:
+          - link "User Guide" [ref=e357] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e358] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```
