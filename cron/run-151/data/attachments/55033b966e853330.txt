@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40712
+Supplier URL: /suppliers/12693
+Supplier Name: 3000115PE-ADRIMPEX
+Supplier URL: /suppliers/12693
+Supplier Name: 3000115PE-ADRIMPEX
+➡ Opening supplier page: /suppliers/12693
+/suppliers/12693

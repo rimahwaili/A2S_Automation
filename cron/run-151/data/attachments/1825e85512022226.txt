@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40398
+Declaration frequency: Annually
+supplier: 389686-UPFIELD FRANCE
+invoicingCountryField: France

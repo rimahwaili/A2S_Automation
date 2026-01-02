@@ -1,0 +1,349 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: FR2-23-2-109 MKT BOOT - 1.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "Contract - FR2-23-2-109 MKT BOOT - 1.1" [level=2] [ref=e67]
+        - generic [ref=e68]:
+          - generic [ref=e70] [cursor=pointer]: Main Information
+          - generic [ref=e72] [cursor=pointer]: Invoicing Information
+          - generic [ref=e74] [cursor=pointer]: Documents (0)
+          - generic [ref=e76] [cursor=pointer]: Services
+        - generic [ref=e77]:
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - heading "Main Information" [level=2] [ref=e83]
+                - generic [ref=e86]:
+                  - generic [ref=e87]: "Supplier:"
+                  - link "271658-AFFECTIVE" [ref=e90] [cursor=pointer]:
+                    - /url: /suppliers/11659
+                - generic [ref=e93]:
+                  - generic [ref=e94]: "Number:"
+                  - generic [ref=e96]: FR2-23-2-109 MKT BOOT
+                - generic [ref=e99]:
+                  - generic [ref=e100]: "Name:"
+                  - generic [ref=e102]: Fixed-price digital marketing service contract
+                - generic [ref=e105]:
+                  - generic [ref=e106]: "Type:"
+                  - generic [ref=e108]: P2
+                - generic [ref=e112]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e116]:
+                  - generic [ref=e117]: "Categories:"
+                  - list [ref=e119]:
+                    - listitem [ref=e120]: E00007 Promotional gifts
+                - generic [ref=e123]:
+                  - generic [ref=e124]: "Main Category:"
+                  - link "E00007 Promotional gifts" [ref=e127] [cursor=pointer]:
+                    - /url: /categories/198
+                - generic [ref=e130]:
+                  - generic [ref=e131]: "Brands:"
+                  - generic [ref=e133]: None
+                - generic [ref=e136]:
+                  - generic [ref=e137]: "Category Manager:"
+                  - link "jeanne.sanmiguel@accor.com" [ref=e140] [cursor=pointer]:
+                    - /url: /contacts/15036
+                - generic [ref=e144]: "E Procurement:"
+                - generic [ref=e148]:
+                  - generic [ref=e149]: "Former Numbers:"
+                  - generic [ref=e150]:
+                    - list
+                - generic [ref=e153]:
+                  - generic [ref=e154]: "Opex:"
+                  - generic "0.0" [ref=e156]: 0 %
+              - generic [ref=e157]:
+                - heading "Declaration" [level=2] [ref=e159]
+                - generic [ref=e162]:
+                  - generic [ref=e163]: "Declaration Frequency:"
+                  - generic [ref=e165]: Annually
+                - generic [ref=e168]:
+                  - generic [ref=e169]: "Allow specific frequency for services:"
+                  - generic [ref=e171]: This frequency is applied to all services
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - heading "Contracts Dates" [level=2] [ref=e175]
+                - generic [ref=e178]:
+                  - generic [ref=e179]: "Silent Extension:"
+                  - img "ko" [ref=e182]
+                - generic [ref=e185]:
+                  - generic [ref=e186]: "Contract Start date:"
+                  - generic [ref=e188]: 05/01/2025
+                - generic [ref=e191]:
+                  - generic [ref=e192]: "Contract end date:"
+                  - generic [ref=e194]: 06/30/2025
+                - generic [ref=e197]:
+                  - generic [ref=e198]: "Declarative start Date:"
+                  - generic [ref=e200]: 04/01/2025
+                - generic [ref=e203]:
+                  - generic [ref=e204]: "Signing date:"
+                  - generic [ref=e206]: 04/29/2025
+                - generic [ref=e209]:
+                  - generic [ref=e210]: "Creation Date:"
+                  - generic [ref=e212]: 05/15/2025
+                - generic [ref=e216]: "Theoretical end date:"
+                - generic [ref=e219]:
+                  - generic [ref=e220]: "Declarative end date:"
+                  - generic [ref=e222]: 06/30/2025
+              - generic [ref=e223]:
+                - heading "Contract Terms" [level=2] [ref=e225]
+                - generic [ref=e228]:
+                  - generic [ref=e229]: "Invoicing country:"
+                  - link "France" [ref=e232] [cursor=pointer]:
+                    - /url: /countries/76
+                - generic [ref=e235]:
+                  - generic [ref=e236]: "Currency:"
+                  - link "EUR" [ref=e239] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e242]:
+                  - generic [ref=e243]: "Duration (months) = Term:"
+                  - generic [ref=e245]: "3"
+                - generic [ref=e248]:
+                  - generic [ref=e249]: "Covered Perimeter: *"
+                  - list [ref=e251]:
+                    - listitem [ref=e252]: SOUTHERN EUROPE (3 / 13)
+                - generic [ref=e255]:
+                  - generic [ref=e256]: "Declaration Contacts:"
+                  - list [ref=e258]:
+                    - listitem [ref=e259]:
+                      - link "mathilde.debel@affective.fr" [ref=e260] [cursor=pointer]:
+                        - /url: /contacts/45426
+                - generic [ref=e263]:
+                  - generic [ref=e264]: "Payment Term:"
+                  - link "30 days end of month" [ref=e267] [cursor=pointer]:
+                    - /url: /contract_payment_terms/3
+                - generic [ref=e270]:
+                  - generic [ref=e271]: "Payment Mode:"
+                  - link "OTHER" [ref=e274] [cursor=pointer]:
+                    - /url: /contract_payment_modes/4
+                - generic [ref=e277]:
+                  - generic [ref=e278]: "Cancellation Term:"
+                  - link "2 months" [ref=e281] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/3
+                - generic [ref=e285]: "Expected Contract Value:"
+          - generic [ref=e287]:
+            - heading "Invoicing Details" [level=2] [ref=e288]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e289]: 9 rue des Augustins / / 59000 / LILLE / France
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e290]:
+                    - listitem [ref=e291]:
+                      - link "lorena.levaufre@affective.fr" [ref=e292] [cursor=pointer]:
+                        - /url: /contacts/45427
+                    - listitem [ref=e293]:
+                      - link "facturation@affective.fr" [ref=e294] [cursor=pointer]:
+                        - /url: /contacts/46677
+                    - listitem [ref=e295]:
+                      - link "julie.mendes@affective.fr" [ref=e296] [cursor=pointer]:
+                        - /url: /contacts/48547
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "EUR" [ref=e298] [cursor=pointer]:
+                    - /url: /currencies/1
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e299]: AFFECTIVE
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+                  - generic [ref=e300]: Annually
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e301]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e302]: "300795"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+                  - generic [ref=e303]: FR00789725108
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e307] [cursor=pointer]:
+            - /url: /suppliers/show/11659?@all_documents=true&to_tab=document
+          - generic [ref=e308]:
+            - link "Back to the list" [ref=e309] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e310] [cursor=pointer]:
+              - /url: /contracts/simulator/40289
+            - link "Edit" [ref=e311] [cursor=pointer]:
+              - /url: /contracts/edit/40289
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e312]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e313]:
+                    - generic [ref=e314] [cursor=pointer]: Astore digital marketing fee (Online Display Advertising) (marketing boost)
+                    - img "arrow" [ref=e315]
+              - generic:
+                - heading "Service details" [level=3] [ref=e317]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e318]:
+                        - generic [ref=e320]:
+                          - generic:
+                            - generic [ref=e321]: "Name:"
+                            - generic [ref=e322]: Astore digital marketing fee (Online Display Advertising) (marketing boost)
+                        - generic [ref=e324]:
+                          - generic:
+                            - generic [ref=e325]: "Depth of declaration:"
+                            - generic [ref=e326]: Hotel
+                        - generic [ref=e328]:
+                          - generic:
+                            - generic [ref=e329]: "Redistribution:"
+                            - img "ko" [ref=e331]
+                        - generic [ref=e333]:
+                          - generic:
+                            - generic [ref=e334]: "Description:"
+                            - generic [ref=e335]: NON REDISTRIBUE
+                        - generic [ref=e337]:
+                          - generic:
+                            - generic [ref=e338]: "Declared By:"
+                            - generic [ref=e339]: Supplier
+                        - generic [ref=e342]: "Maximum Amount:"
+                        - generic [ref=e344]:
+                          - generic:
+                            - generic [ref=e345]: "Tax:"
+                            - generic "20.0" [ref=e346]: 20 %
+                        - generic [ref=e348]:
+                          - generic:
+                            - generic [ref=e349]: "Declaration Frequency:"
+                            - generic [ref=e350]: Annually
+                        - generic [ref=e352]:
+                          - generic:
+                            - generic [ref=e353]: "Invoicing Periodicity:"
+                            - generic [ref=e354]: Annually
+                        - generic [ref=e357]: "Import data from ASR:"
+                  - generic [ref=e358]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e359]:
+                    - listitem:
+                      - generic [ref=e361]: MKT BOOST Package Basic 3.000 € HT
+                      - generic [ref=e362]:
+                        - paragraph: "Conditions: 0"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/35287?edit_mode=
+                            - img "Self And Assoc" [ref=e363] [cursor=pointer]
+      - generic [ref=e364]:
+        - generic [ref=e365]: "Version: 2.30.4"
+        - generic [ref=e366]:
+          - link "User Guide" [ref=e367] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e368] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```
