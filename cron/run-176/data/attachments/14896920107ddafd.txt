@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 37788
+Declaration frequency: Quarterly
+supplier: 107408-OMS Y VIÑAS , S.L.
+invoicingCountryField: Spain
+contract id 1: Contract - ES2-23-2-019 - 1.4
+contract id 2: Contract - ES2-23-2-019 - 2.1

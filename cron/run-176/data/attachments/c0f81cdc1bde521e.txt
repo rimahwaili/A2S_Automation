@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39680
+Supplier URL: /suppliers/12420
+Supplier Name: Temphu2-Bidfood Hungary Kft
+Supplier URL: /suppliers/12420
+Supplier Name: Temphu2-Bidfood Hungary Kft
+➡ Opening supplier page: /suppliers/12420
+/suppliers/12420
