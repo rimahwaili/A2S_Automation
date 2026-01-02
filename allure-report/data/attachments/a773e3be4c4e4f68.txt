@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39680
+Declaration frequency: Annually
+supplier: Temphu2-Bidfood Hungary Kft
+invoicingCountryField: Hungary
