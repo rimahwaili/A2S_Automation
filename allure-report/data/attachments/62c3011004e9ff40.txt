@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 35186
+Declaration frequency: Quarterly
+supplier: 105554-SCOTTO MUSIQUE
+invoicingCountryField: France
