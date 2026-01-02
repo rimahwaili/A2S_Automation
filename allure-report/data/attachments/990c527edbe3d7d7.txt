@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 37096
+Declaration frequency: Quarterly
+supplier: 379490-SAS 888
+invoicingCountryField: France
