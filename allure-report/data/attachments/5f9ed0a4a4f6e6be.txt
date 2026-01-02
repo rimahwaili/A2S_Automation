@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39319
+Declaration frequency: Annually
+supplier: 46389-LAURENT-PERRIER DIFFUSION
+invoicingCountryField: France
+Page 1: Contract - FRP3-24-1-050-MGPUL - 1.2
+Page 2: Contract - FRP3-24-1-050-MGPUL - 2.1
