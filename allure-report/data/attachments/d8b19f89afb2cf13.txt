@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38948
+Supplier URL: /suppliers/5365
+Supplier Name: 3302-JET'SAC - SPHERE PROFESSIONNEL
+Supplier URL: /suppliers/5365
+Supplier Name: 3302-JET'SAC - SPHERE PROFESSIONNEL
+➡ Opening supplier page: /suppliers/5365
+/suppliers/5365
