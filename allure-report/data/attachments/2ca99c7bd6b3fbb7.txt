@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39072
+Declaration frequency: Quarterly
+supplier: 21773-Konica Minolta Business Solutions Deutschland GmbH
+invoicingCountryField: Germany

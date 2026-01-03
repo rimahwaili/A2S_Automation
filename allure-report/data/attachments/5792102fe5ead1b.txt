@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36694
+Declaration frequency: Quarterly
+supplier: 316400-ADECCO ITALIA SPA
+invoicingCountryField: Italy
+Page 1: Contract - IT2-21-2-027 - 2.1
+Page 2: Contract - IT2-21-2-027 - 3.1

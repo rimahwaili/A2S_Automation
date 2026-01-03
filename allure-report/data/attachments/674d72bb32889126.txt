@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38379
+Declaration frequency: Annually
+supplier: 46461-SVS LA MARTINIQUAISE
+invoicingCountryField: France

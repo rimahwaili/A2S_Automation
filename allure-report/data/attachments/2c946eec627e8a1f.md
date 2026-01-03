@@ -1,0 +1,389 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: FR2-21-2-121 - 3.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "valid Contract - FR2-21-2-121 - 3.1" [level=2] [ref=e67]:
+          - generic [ref=e68]: valid
+          - text: Contract - FR2-21-2-121 - 3.1
+        - paragraph [ref=e69]:
+          - generic [ref=e70]:
+            - text: Renewed from contract n°
+            - link "FR2-21-2-121 - 2.1" [ref=e71] [cursor=pointer]:
+              - /url: /contracts/show/39376
+        - generic [ref=e72]:
+          - generic [ref=e74] [cursor=pointer]: Main Information
+          - generic [ref=e76] [cursor=pointer]: Invoicing Information
+          - generic [ref=e78] [cursor=pointer]: Documents (0)
+          - generic [ref=e80] [cursor=pointer]: Services
+        - generic [ref=e81]:
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - heading "Main Information" [level=2] [ref=e87]
+                - generic [ref=e90]:
+                  - generic [ref=e91]: "Supplier:"
+                  - link "339779-TAKE A WASTE" [ref=e94] [cursor=pointer]:
+                    - /url: /suppliers/10868
+                - generic [ref=e97]:
+                  - generic [ref=e98]: "Number:"
+                  - generic [ref=e100]: FR2-21-2-121
+                - generic [ref=e103]:
+                  - generic [ref=e104]: "Name:"
+                  - generic [ref=e106]: Nominating and services Agreement
+                - generic [ref=e109]:
+                  - generic [ref=e110]: "Type:"
+                  - generic [ref=e112]: P2
+                - generic [ref=e116]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e120]:
+                  - generic [ref=e121]: "Categories:"
+                  - list [ref=e123]:
+                    - listitem [ref=e124]: E0L018 Waste management & recycling
+                - generic [ref=e127]:
+                  - generic [ref=e128]: "Main Category:"
+                  - link "E0L018 Waste management & recycling" [ref=e131] [cursor=pointer]:
+                    - /url: /categories/228
+                - generic [ref=e134]:
+                  - generic [ref=e135]: "Brands:"
+                  - generic [ref=e137]: None
+                - generic [ref=e140]:
+                  - generic [ref=e141]: "Category Manager:"
+                  - link "maxime.bordelliard@accor.com" [ref=e144] [cursor=pointer]:
+                    - /url: /contacts/22469
+                - generic [ref=e148]: "E Procurement:"
+                - generic [ref=e152]:
+                  - generic [ref=e153]: "Former Numbers:"
+                  - generic [ref=e154]:
+                    - list
+                - generic [ref=e157]:
+                  - generic [ref=e158]: "Opex:"
+                  - generic "100.0" [ref=e160]: 100 %
+              - generic [ref=e161]:
+                - heading "Declaration" [level=2] [ref=e163]
+                - generic [ref=e166]:
+                  - generic [ref=e167]: "Declaration Frequency:"
+                  - generic [ref=e169]: Quarterly
+                - generic [ref=e172]:
+                  - generic [ref=e173]: "Allow specific frequency for services:"
+                  - generic [ref=e175]: This frequency is applied to all services
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - heading "Contracts Dates" [level=2] [ref=e179]
+                - generic [ref=e182]:
+                  - generic [ref=e183]: "Silent Extension:"
+                  - img "ok" [ref=e186]
+                - generic [ref=e189]:
+                  - generic [ref=e190]: "Contract Start date:"
+                  - generic [ref=e192]: 01/01/2025
+                - generic [ref=e196]: "Contract end date:"
+                - generic [ref=e199]:
+                  - generic [ref=e200]: "Declarative start Date:"
+                  - generic [ref=e202]: 01/01/2025
+                - generic [ref=e205]:
+                  - generic [ref=e206]: "Signing date:"
+                  - generic [ref=e208]: 01/13/2025
+                - generic [ref=e211]:
+                  - generic [ref=e212]: "Creation Date:"
+                  - generic [ref=e214]: 10/19/2021
+                - generic [ref=e218]: "Theoretical end date:"
+                - generic [ref=e222]: "Declarative end date:"
+              - generic [ref=e223]:
+                - heading "Contract Terms" [level=2] [ref=e225]
+                - generic [ref=e228]:
+                  - generic [ref=e229]: "Invoicing country:"
+                  - link "France" [ref=e232] [cursor=pointer]:
+                    - /url: /countries/76
+                - generic [ref=e235]:
+                  - generic [ref=e236]: "Currency:"
+                  - link "EUR" [ref=e239] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e243]: "Duration (months) = Term:"
+                - generic [ref=e247]:
+                  - generic [ref=e248]: "Covered Perimeter: *"
+                  - list [ref=e250]:
+                    - listitem [ref=e251]: SOUTHERN EUROPE (3 / 13)
+                - generic [ref=e254]:
+                  - generic [ref=e255]: "Declaration Contacts:"
+                  - list [ref=e257]:
+                    - listitem [ref=e258]:
+                      - link "mathieu@takeawaste.fr" [ref=e259] [cursor=pointer]:
+                        - /url: /contacts/39918
+                - generic [ref=e262]:
+                  - generic [ref=e263]: "Payment Term:"
+                  - link "30 days end of month" [ref=e266] [cursor=pointer]:
+                    - /url: /contract_payment_terms/3
+                - generic [ref=e269]:
+                  - generic [ref=e270]: "Payment Mode:"
+                  - link "OTHER" [ref=e273] [cursor=pointer]:
+                    - /url: /contract_payment_modes/4
+                - generic [ref=e276]:
+                  - generic [ref=e277]: "Cancellation Term:"
+                  - link "2 months" [ref=e280] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/3
+                - generic [ref=e284]: "Expected Contract Value:"
+          - generic [ref=e286]:
+            - heading "Invoicing Details" [level=2] [ref=e287]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e288]: 3 RUE POULBOT / / 75008 / PARIS / France
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e289]:
+                    - listitem [ref=e290]:
+                      - link "mathieu@takeawaste.fr" [ref=e291] [cursor=pointer]:
+                        - /url: /contacts/39918
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "EUR" [ref=e293] [cursor=pointer]:
+                    - /url: /currencies/1
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e294]: TAKE A WASTE
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+                  - generic [ref=e295]: Quarterly
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e296]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e297]: "293674"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+                  - generic [ref=e298]: FR47 844336156
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e302] [cursor=pointer]:
+            - /url: /suppliers/show/10868?@all_documents=true&to_tab=document
+          - generic [ref=e303]:
+            - link "Back to the list" [ref=e304] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e305] [cursor=pointer]:
+              - /url: /contracts/simulator/39568
+            - link "Edit" [ref=e306] [cursor=pointer]:
+              - /url: /contracts/edit/39568
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e307]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e308]:
+                    - generic [ref=e309] [cursor=pointer]: Classic Procurement Service Fee
+                    - img "arrow" [ref=e310]
+              - generic:
+                - heading "Service details" [level=3] [ref=e312]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e313]:
+                        - generic [ref=e315]:
+                          - generic:
+                            - generic [ref=e316]: "Name:"
+                            - generic [ref=e317]: Classic Procurement Service Fee
+                        - generic [ref=e319]:
+                          - generic:
+                            - generic [ref=e320]: "Depth of declaration:"
+                            - generic [ref=e321]: Hotel
+                        - generic [ref=e323]:
+                          - generic:
+                            - generic [ref=e324]: "Redistribution:"
+                            - img "ok" [ref=e326]
+                        - generic [ref=e328]:
+                          - generic:
+                            - generic [ref=e329]: "Description:"
+                            - generic [ref=e330]: "Méthode de calcul : Ces paliers s’entendent indépendants et cumulables. Par exemple, si Take a wast..."
+                        - generic [ref=e332]:
+                          - generic:
+                            - generic [ref=e333]: "Declared By:"
+                            - generic [ref=e334]: Supplier
+                        - generic [ref=e337]: "Maximum Amount:"
+                        - generic [ref=e339]:
+                          - generic:
+                            - generic [ref=e340]: "Tax:"
+                            - generic "20.0" [ref=e341]: 20 %
+                        - generic [ref=e343]:
+                          - generic:
+                            - generic [ref=e344]: "Declaration Frequency:"
+                            - generic [ref=e345]: Quarterly
+                        - generic [ref=e347]:
+                          - generic:
+                            - generic [ref=e348]: "Invoicing Periodicity:"
+                            - generic [ref=e349]: Quarterly
+                        - generic [ref=e352]: "Import data from ASR:"
+                  - generic [ref=e353]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e354]:
+                    - listitem:
+                      - generic [ref=e356]: "Si le nombre d’établissement client Take a waste est compris entre : - 0 et 49 : 85€/établissement"
+                      - generic [ref=e357]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32826?edit_mode=
+                            - img "Self And Assoc" [ref=e358] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e360]: "Si le nombre d’établissement client Take a waste est compris entre : 50 et 99 : 70€/établissement"
+                      - generic [ref=e361]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32842?edit_mode=
+                            - img "Self And Assoc" [ref=e362] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e364]: "Si le nombre d’établissement client Take a waste est compris entre : 100 et 199 : 55€/établissement"
+                      - generic [ref=e365]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32843?edit_mode=
+                            - img "Self And Assoc" [ref=e366] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e368]: "Si le nombre d’établissement client Take a waste est compris entre : 200 et 499 : 40€/établissement"
+                      - generic [ref=e369]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32844?edit_mode=
+                            - img "Self And Assoc" [ref=e370] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e372]: "Si le nombre d’établissement client Take a waste est compris entre : 500 et 999 : 25€/établissement"
+                      - generic [ref=e373]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32845?edit_mode=
+                            - img "Self And Assoc" [ref=e374] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e376]: "Si le nombre d’établissement client Take a waste est compris entre : 1000 et + : 20€/établissement"
+                      - generic [ref=e377]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/32846?edit_mode=
+                            - img "Self And Assoc" [ref=e378] [cursor=pointer]
+      - generic [ref=e379]:
+        - generic [ref=e380]: "Version: 2.30.4"
+        - generic [ref=e381]:
+          - link "User Guide" [ref=e382] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e383] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```
