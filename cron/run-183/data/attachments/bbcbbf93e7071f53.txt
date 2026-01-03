@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 28774
+Declaration frequency: Quarterly
+supplier: 342802-GRUPO ASIPAN SL
+invoicingCountryField: Spain
+contract id 1: Contract - 239-19 - 1.1
+contract id 2: Contract - 239-19 - 2.1
