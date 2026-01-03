@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40967
+Declaration frequency: Bi-Annually
+supplier: 381284-NATURALIM FRANCE MIEL
+invoicingCountryField: France
