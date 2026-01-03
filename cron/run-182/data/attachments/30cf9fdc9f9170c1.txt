@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38700
+Declaration frequency: Quarterly
+supplier: 3000007PE-CITO HOSPITALITY PERU
+invoicingCountryField: Peru
