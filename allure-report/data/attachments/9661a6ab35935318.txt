@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40627
+Declaration frequency: Annually
+supplier: 55224-CAPIC
+invoicingCountryField: France
+Page 1: Contract - FRS3-24-6-122 - 2.1
+Page 2: Contract - FRS3-24-6-122 - 3.1
