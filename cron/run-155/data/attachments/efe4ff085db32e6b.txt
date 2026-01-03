@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 34330
+Declaration frequency: Quarterly
+supplier: 363066-VARMERICQ
+invoicingCountryField: France
