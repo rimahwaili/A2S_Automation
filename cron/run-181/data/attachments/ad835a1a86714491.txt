@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 35360
+Declaration frequency: Quarterly
+supplier: V100302-CIPÓ Sütő és Cukrászipari Kft.
+invoicingCountryField: Hungary
+Page 1: Contract - HU2-22-1-013 - 1.1
+Page 2: Contract - HU2-22-1-013 - 2.1

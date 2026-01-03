@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 37232
+Supplier URL: /suppliers/4696
+Supplier Name: 2660-SEMIOS (ex INSIGNIS)
+Supplier URL: /suppliers/4696
+Supplier Name: 2660-SEMIOS (ex INSIGNIS)
+➡ Opening supplier page: /suppliers/4696
+/suppliers/4696

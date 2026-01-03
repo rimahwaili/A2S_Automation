@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 34859
+Declaration frequency: Quarterly
+supplier: 87800-STAPLES CONTRACT & COMMERCIAL INC
+invoicingCountryField: Canada
+contract id 1: Contract - Staples - CAN -NCA - 1.1
+contract id 2: Contract - Staples - CAN -NCA - 2.1
