@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40723
+Declaration frequency: Quarterly
+supplier: 3000123PE-LICORES PREMIUM
+invoicingCountryField: Peru
+Page 1: Contract - 3000123 - 1.1
+Page 2: Contract - 3000123 - 2.1
