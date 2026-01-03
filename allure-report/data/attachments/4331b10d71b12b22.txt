@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 32156
+Supplier URL: /suppliers/9675
+Supplier Name: KON0277-SP Celox Krzysztof Niewczas
+Supplier URL: /suppliers/9675
+Supplier Name: KON0277-SP Celox Krzysztof Niewczas
+➡ Opening supplier page: /suppliers/9675
+/suppliers/9675

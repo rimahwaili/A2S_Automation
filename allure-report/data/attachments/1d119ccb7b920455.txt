@@ -1,0 +1,13 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41233
+Declaration frequency: Quarterly
+supplier: 9271-DIVERSEY FRANCE SAS
+invoicingCountryField: France
+warning message: Validation is not allowed until contract 'CON-3GZ7TR07 - 1.1' versioning process is complete
+Contract ID: 41239
+Polling for Validate button (max 3 minutes)...
+Page reloaded, checking Validate link...
+Validate link is visible! Clicking...
+Confirmation modal is visible
+Clicked Yes button in modal

@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 35283
+Declaration frequency: Quarterly
+supplier: 45927-BOUYGUES ENERGIES ET SERVICES
+invoicingCountryField: France
+Page 1: Contract - FR2-22-5-095 - 1.1
+Page 2: Contract - FR2-22-5-095 - 2.1
