@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40937
+Declaration frequency: Annually
+supplier: 372962-Glen Grant Ltd d/b/a Campari UK
+invoicingCountryField: United Kingdom
+Page 1: Contract - GB4-22-1-026 - 4.1
+Page 2: Contract - GB4-22-1-026 - 5.1

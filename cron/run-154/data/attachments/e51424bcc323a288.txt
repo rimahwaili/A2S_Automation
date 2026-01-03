@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38951
+Declaration frequency: Annually
+supplier: 393971-OPEL FRANCE Stellantis
+invoicingCountryField: France
+Page 1: Contract - FRP4-24-3-123 - 1.1
+Page 2: Contract - FRP4-24-3-123 - 2.1

@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39498
+Declaration frequency: Quarterly
+supplier: 160837-BIC GRAPHIC EUROPE
+invoicingCountryField: Contract H ENA

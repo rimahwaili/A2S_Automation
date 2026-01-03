@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38954
+Supplier URL: /suppliers/12234
+Supplier Name: 393889-FCA FRANCE Stellantis
+Supplier URL: /suppliers/12234
+Supplier Name: 393889-FCA FRANCE Stellantis
+➡ Opening supplier page: /suppliers/12234
+/suppliers/12234
