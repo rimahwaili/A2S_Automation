@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41192
+Declaration frequency: Quarterly
+supplier: 9271-DIVERSEY FRANCE SAS
+invoicingCountryField: France
+Page 1: Contract - CON-M9XB32WL - 1.1
+Page 2: Contract - CON-M9XB32WL - 2.1
