@@ -75,11 +75,6 @@ async checkAndClosePendoPopupIfPresent() {
     console.log('ℹ️ No Pendo popup displayed – test continues');
   }
 }
-
-
-
-
-
   async getSuccessToast() {
     return this.page.locator(loginSelectors.successToast);
   }

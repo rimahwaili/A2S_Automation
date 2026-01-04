@@ -18,24 +18,34 @@ import { allure } from 'allure-playwright';
 
 test.describe('Move Contract into Error', () => {
   test(' 2SQA2-2562 | @P0 Move contract status from to renew into Error ', async ({ page }) => {
-
-    
+ 
     allure.label('feature', 'Contract');
     allure.epic('Contract');
     allure.story('Move contract status into Error');
     allure.severity('critical'); 
-
     const contractPage = new ContractPage(page);
     const contractsPage = new ContractsPage(page);
     contractsPage.clickToRenewtab();
     const rows = await contractsPage.getAllVisibleRows();
-
     await contractsPage.openFirstContract(1);
     const contractid =  contractsPage.getContractId();
     await contractPage.waitForReady();
     const isStatusToRenew = await contractPage.assertStatus('to renew');
+
+    if(await contractPage.ensureInvoicingContactSelected() === 0 ) {
+      console.log('Invoicing contact was not selected, selecting now...');
+      await contractPage.getSupplierInfo();
+      contractPage.goToSupplier();
+    }
+    else{ 
+      console.log('Invoicing contact is already selected.');
+      await contractPage.getSupplierInfo();
+      contractPage.goToSupplier();
+    }
+
     await contractPage.EditContract();
     contractPage.ensureInvoicingContactSelected();
+
     await contractPage.clickError();
     await contractPage.confirmError();
     const isStatusEEor = await contractPage.assertStatus('Error');
@@ -57,17 +67,23 @@ test(' 2SQA2-2560 | @P0 Move contract status from Valid into Error ', async ({ p
     const contractid =  contractsPage.getContractId();
     await contractPage.waitForReady();
     const isStatusToRenew = await contractPage.assertStatus('valid');
-    await contractPage.getSupplierInfo();
-    contractPage.goToSupplier();
-    await contractPage.editFirstSupplierContact();
-    
-    /*contractPage.ensureInvoicingContactSelected();
-    await contractPage.EditContract();
+ 
+    if(await contractPage.ensureInvoicingContactSelected() === 0 ) {
+      console.log('Invoicing contact was not selected, selecting now...');
+      await contractPage.getSupplierInfo();
+      contractPage.goToSupplier();
+    }
+    else{ 
+      console.log('Invoicing contact is already selected.');
+      await contractPage.getSupplierInfo();
+      contractPage.goToSupplier();
+    }
 
+    await contractPage.EditContract();
     await contractPage.clickError();
     await contractPage.confirmError();
     const isStatusEEor = await contractPage.assertStatus('Error');
-    */});
+  });
 
 test(' 2SQA2-2561 | @P0 Move contract status from Expired into Error ', async ({ page }) => {
 
@@ -84,6 +100,18 @@ test(' 2SQA2-2561 | @P0 Move contract status from Expired into Error ', async ({
     const contractid =  contractsPage.getContractId();
     await contractPage.waitForReady();
     const isStatusToRenew = await contractPage.assertStatus('expired');
+
+        if(await contractPage.ensureInvoicingContactSelected() === 0 ) {
+      console.log('Invoicing contact was not selected, selecting now...');
+      await contractPage.getSupplierInfo();
+      contractPage.goToSupplier();
+    }
+    else{ 
+      console.log('Invoicing contact is already selected.');
+      await contractPage.getSupplierInfo();
+      contractPage.goToSupplier();
+    }
+
     await contractPage.EditContract();
     contractPage.ensureInvoicingContactSelected();
     await contractPage.clickError();
@@ -112,7 +140,15 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.waitForReady();
     const isStatusvalid = await contractPage.assertStatus('valid');
     await contractPage.EditContract();
-    contractPage.ensureInvoicingContactSelected();
+    if(await contractPage.ensureInvoicingContactSelected() === 0 ) {
+      console.log('Invoicing contact was not selected, selecting now...');
+      await contractPage.getSupplierInfo();
+      contractPage.goToSupplier();
+    }
+    else{ 
+      console.log('Invoicing contact is already selected.');
+    }
+
     await contractPage.clickArchive();
     await contractPage.fillStep1Data();
     await contractPage.setDeclarativeEndQuarter('4'); 
@@ -120,6 +156,8 @@ test.describe('Move Contract into Archived  ', () =>{
   await contractPage.setActualEndDate('12/29/2027');
  await contractPage.endYearInput.first().click();
   await contractPage.confirmStep1();  
+
+
   await contractPage.confirmFinal();  
     const isStatusArchived = await contractPage.assertStatus('Archived');
   });
@@ -141,14 +179,23 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.waitForReady();
     const isStatusvalid = await contractPage.assertStatus('to renew');
     await contractPage.EditContract();
-    contractPage.ensureInvoicingContactSelected();
+
+    if(await contractPage.ensureInvoicingContactSelected() === 0 ) {
+      console.log('Invoicing contact was not selected, selecting now...');
+      await contractPage.getSupplierInfo();
+      contractPage.goToSupplier();
+    }
+    else{ 
+      console.log('Invoicing contact is already selected.');
+    }
+
     await contractPage.clickArchive();
     await contractPage.fillStep1Data();
     await contractPage.setDeclarativeEndQuarter('4'); 
     await contractPage.setDeclarativeEndYear('2027');
     await contractPage.setActualEndDate('12/29/2027');
     await contractPage.endYearInput.first().click();  
-    await contractPage.confirmStep1();  
+    //await contractPage.confirmStep1();  
     await contractPage.confirmFinal();  
     const isStatusArchived = await contractPage.assertStatus('Archived');
   });
@@ -171,13 +218,22 @@ test.describe('Move Contract into Archived  ', () =>{
     await contractPage.waitForReady();
     const isStatusvalid = await contractPage.assertStatus('expired');
     await contractPage.EditContract();
-    contractPage.ensureInvoicingContactSelected();
+     if(await contractPage.ensureInvoicingContactSelected() === 0 ) {
+      console.log('Invoicing contact was not selected, selecting now...');
+      await contractPage.getSupplierInfo();
+      contractPage.goToSupplier();
+    }
+    else{ 
+      console.log('Invoicing contact is already selected.');
+    }
+
     await contractPage.clickArchive();
     await contractPage.fillStep1Data();
     await contractPage.setDeclarativeEndQuarter('4'); 
   await contractPage.setDeclarativeEndYear('2027');
   await contractPage.setActualEndDate('12/29/2027');
- 
+     await contractPage.endYearInput.first().click();  
+
   await contractPage.confirmFinal();  
     const isStatusArchived = await contractPage.assertStatus('Archived');
   });
@@ -247,7 +303,6 @@ test.describe('Renew Contract ', () => {
 
   test(' A2SQA2-2573 | @P0 Renew To Renew Contract', async ({ page }) => {
 
-    
     allure.label('feature', 'Contract');
     allure.epic('Contract');
     allure.story('Renew contract');
@@ -272,14 +327,11 @@ test.describe('Renew Contract ', () => {
     await contractPage.setDeclarativeEndQuarter('4'); 
     await contractPage.setDeclarativeEndYear('2027');
     await contractPage.setActualEndDate('12/29/2027');
-    
     const context = page.context();
-    //await contractPage.confirmStep1(); 
     const [newPage] = await Promise.all([
     context.waitForEvent('page'),
     contractPage.confirmFinal() ]);
     await newPage.waitForLoadState();
-
     const pages = page.context().pages();
     const firstPage = pages[0];
     const secondPage = pages[1];
@@ -288,7 +340,6 @@ test.describe('Renew Contract ', () => {
     await firstPage.bringToFront();
 
     console.log('Page 1:', titlePage1);
- 
     const newcontractPage = new ContractPage(secondPage);
 
     await newcontractPage.EditContract();
