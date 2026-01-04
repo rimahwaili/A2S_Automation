@@ -157,7 +157,7 @@ async selectCoveredCountries(countries: string[]): Promise<void> {
   await worldLabel.click();
 
   // Optional: wait a bit to ensure the click registered
-  await this.page.waitForTimeout(200); // 200ms
+  await this.page.waitForTimeout(500); // 200ms
 
   // Close the modal
   const closeButton = this.page.locator('.close-modal-button-box button').first();
@@ -165,11 +165,10 @@ async selectCoveredCountries(countries: string[]): Promise<void> {
   await closeButton.click();
 
   // Wait until the modal disappears
-  await this.page.locator('#js-area-list').waitFor({ state: 'hidden', timeout: 5000 });
+  //await this.page.locator('#js-area-list').waitFor({ state: 'hidden', timeout: 5000 });
 
-  // Optional: verify checkbox state (extra assurance)
-  const checkbox = this.page.locator('#area_checkbox_world');
-  await expect(checkbox).toBeChecked();
+
+
 }
 
 

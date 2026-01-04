@@ -383,22 +383,37 @@ async waitUntilValidateEnabled(maxWaitMs = 180_000) {
     return !!errorTitle;
   }
 
-async ensureInvoicingContactSelected() {
-  console.log('➡ Preparing Invoicing Information tab');
+async  ensureInvoicingContactSelected(): Promise<number> {
+  console.log('➡ Ensuring we are on the contract page');
 
-  //await this.waitForErrorModalToClose();
-const invoicingTab = this.page.locator('.scope-filter[data-scope-id="2"]');
- // await invoicingTab.scrollIntoViewIfNeeded();
+  if (!this.page.url().match(/\/contracts\/edit\/\d+/)) {
+    console.log('⏳ Waiting for contract page navigation...');
+    await this.page.waitForURL(/\/contracts\/edit\/\d+/, { timeout: 15000 });
+  }
 
-  // Safe click — can use force if overlay still exists but hidden
+  console.log('✅ Contract page loaded');
+  const invoicingTab = this.page.locator('.scope-filter[data-scope-id="2"]');
+  await invoicingTab.waitFor({ state: 'attached', timeout: 5000 });
   await invoicingTab.click({ force: true });
+  console.log('✅ Invoicing tab clicked');
 
-    const contactSpan = this.page.locator('span[data-field="invoicing_contacts"]');
-    const text = (await contactSpan.textContent())?.trim();
-    console.log(`Invoicing field content: "${text}"`);
-    return text !== 'None' && text !== '';
-    console.log(text !== 'None' && text !== '');
+  //await expect(invoicingTab).toHaveClass(/active-scope/, { timeout: 5000 });
+  const contacts = this.page.locator(
+    'li[data-field="invoicing_contacts"] a'
+  );
+  const count = await contacts.count();
+
+  if (count === 0) {
+    console.log('⚠️ No invoicing contacts found');
+  }
+else{
+  const emails = await contacts.allTextContents();
+  console.log(`✅ Invoicing contacts found: ${emails.join(', ')}`);
 }
+  return count;
+
+}
+
 
 async getSupplierInfo(): Promise<{url: string} | null> {
     const supplierLink = this.page.locator('span[data-field="supplier"] a');
@@ -416,59 +431,86 @@ async getSupplierInfo(): Promise<{url: string} | null> {
     return { url};
   }
 
-  // Navigate to the supplier page
 async goToSupplier(): Promise<void> {
   const info = await this.getSupplierInfo();
-  if (!info || !info.url) {
+  if (!info?.url) {
     console.log('⚠ Cannot navigate — supplier link not found');
     return;
   }
-
-  console.log(`➡ Opening supplier page: ${info.url}`);
-console.log(info.url);
-  // Open in a new page/tab to avoid issues with current page
   const supplierPage = await this.page.context().newPage();
-  // Navigate on the NEW page, not this.page
-  await supplierPage.goto(info.url);
-  const contactsLabel = supplierPage.getByText(/Contacts \(\d+\) & Addresses/);
-await contactsLabel.click();
+  const supplierId = info.url.split('/').pop();
+  console.log('url edited:',`/suppliers/edit/${supplierId}`);
+
+  await supplierPage.goto(
+  `/suppliers/edit/${supplierId}`);
 
   console.log('✅ Supplier page loaded in new tab');
+  this.openTab(supplierPage, 'contact-radio');
+  await this.editFirstSupplierContact(supplierPage);
 }
 
 
-async editFirstSupplierContact(): Promise<void> {
-const editBtn = this.page.locator("//a[starts-with(@href,'/suppliers/edit/')");
+async openTab(page: Page, id: string) {
+  await page.evaluate((id) => {
+    const label = document.querySelector<HTMLLabelElement>(`.tabs-box label[for="${id}"]`);
+    if (!label) throw new Error(`Tab ${id} not found`);
+    label.click();
+  }, id);
+  console.log(`✅ Opened tab with id: ${id}`);
+  
+}
 
 
-    
-    // Scroll into view (CRITICAL)
-    await editBtn.scrollIntoViewIfNeeded();
-    await editBtn.click();
-    console.log('➡ Clicked Edit button for supplier contacts');
+async checkFirstContactInvoicing(): Promise<boolean> {
+  // Sélectionne la première ligne du tableau des contacts
+  const firstContactRow = this.page.locator("table:has-text(\"Supplier's Contacts\") tbody tr").first();
 
-    /// Locate all rows in the supplier table
-const rows = this.page.locator('#supplier_8781_contact_modules_nested_assoc tbody tr');
-const rowCount = await rows.count();
+  // Sélectionne la cellule "Invoicing" (ici la 7e colonne, index 6)
+  const invoicingCell = firstContactRow.locator("td").nth(6);
 
-for (let i = 0; i < rowCount; i++) {
+  // Récupère le texte de la cellule
+  const cellText = await invoicingCell.textContent();
+
+  // Vérifie si la cellule contient le check (✓)
+  const isChecked = cellText?.trim() === '✓';
+
+  console.log(`✅ Premier contact invoicing checked ? ${isChecked}`);
+  return isChecked;
+}
+
+
+async editFirstSupplierContact(page:Page): Promise<void> {
+
+const tbody = page.locator('tbody[aria-live="polite"]');
+
+  // Récupérer toutes les lignes de contacts
+  const rows = tbody.locator('tr[id^="nested_contact_module_"]');
+  const rowCount = await rows.count();
+  console.log('Rows found:', rowCount);
+  for (let i = 0; i < rowCount; i++) {
     const row = rows.nth(i);
-    const contactType = await row.locator('td.nested_contact_kind span').innerText();
+    const contactType = await row
+      .locator('td.nested_contact_kind span')
+      .innerText();
+    console.log('contact type:', contactType);
 
     if (contactType.trim() === 'Supplier') {
-        const invoicingCheckbox = row.locator('td.nested_financial input[type="checkbox"]');
-        await invoicingCheckbox.scrollIntoViewIfNeeded();
-        
-        if (!(await invoicingCheckbox.isChecked())) {
-            await invoicingCheckbox.check();
-            console.log(`✅ Checked Invoicing for row ${i + 1} (Supplier)`);
-        } else {
-            console.log(`ℹ️ Invoicing already checked for row ${i + 1} (Supplier)`);
-        }
+      const invoicingCheckbox = row.locator(
+        'td.nested_financial input[type="checkbox"]'
+      );
+      await invoicingCheckbox.scrollIntoViewIfNeeded();
 
-        break; // stop after the first Supplier row
+      if (!(await invoicingCheckbox.isChecked())) {
+        await invoicingCheckbox.check();
+        console.log(`✅ Checked Invoicing for Supplier row ${i + 1}`);
+      } else {
+        console.log(`ℹ️ Invoicing already checked for Supplier row ${i + 1}`);
+      }
+
+      break;
     }
-}
   }
+
+}
 
 }
