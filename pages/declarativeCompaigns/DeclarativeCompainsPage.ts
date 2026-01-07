@@ -146,7 +146,7 @@ static getRandomDates(period: 'Y' | 'S1' | 'S2' | 'Q1' | 'Q2' | 'Q3' | 'Q4', yea
     return Math.random() < 0.5;
   }
 
-rowByText(text: string): Locator {
+  async rowByText(text: string): Promise<Locator> {
     return this.rows.filter({ hasText: text });
   }
   // ===== FILTERS =====
@@ -163,7 +163,7 @@ rowByText(text: string): Locator {
   async clearFilters() {
     await this.clearFiltersBtn.click();
   }
-
+  
 
   // ===== ROW HELPERS =====
   rowByName(name: string): Locator {
@@ -204,10 +204,13 @@ rowByText(text: string): Locator {
 
   async seeAllDeclarations() {
     await this.seeAllDeclarationsLink.click();
-    await expect(this.page).toHaveURL(/\/declarations/);
+    await expect(this.page).toHaveURL(/\/declarative_campaign_participations\/list/);
   }
 
   async regenerateCampaign(campaignId: number) {
     await this.page.locator(`#declarative_campaigns_${campaignId} .regen-link a`).click();
   }
+
+
+
 }

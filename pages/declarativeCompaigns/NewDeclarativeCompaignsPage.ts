@@ -128,4 +128,12 @@ async selectCountry(country: string) {
   async save() {
     await this.saveButton.click();
   }
+
+
+  async  isDeclarativeCampaignAlreadyExists(): Promise<boolean> {
+  const error = this.page.locator(
+    'li[data-object="declarative_campaign"][data-attribute="base"]'
+  );
+  return await error.isVisible();
+}
 }

@@ -81,6 +81,40 @@ async selectMainCategory(label: string): Promise<void> {
   await chosen.locator('.chosen-single span', { hasText: label }).waitFor({ state: 'visible' });
 }
 
+async chooseFrequencies(
+  {
+    serviceFrequency,
+    declarationFrequency,
+  }: {
+    serviceFrequency?: string;
+    declarationFrequency?: string;
+  }
+) {
+  if (serviceFrequency) {
+    const serviceMap: Record<string, string> = {
+      'applied to all services': '1',
+      'for each service': '2',
+    };
+
+    await this.page
+      .locator('select[name$="[frequency_for_services]"]')
+      .selectOption(serviceMap[serviceFrequency]);
+  }
+
+  if (declarationFrequency) {
+    const declarationMap: Record<string, string> = {
+      quarterly: '1',
+      annually: '2',
+      'bi-annually': '3',
+    };
+
+    await this.page
+      .locator('select[name$="[declaration_frequency]"]')
+      .selectOption(declarationMap[declarationFrequency]);
+  }
+}
+
+
 
 
 async selectSilentExtension(value: string): Promise<void> {
@@ -141,36 +175,48 @@ async enterDurationMonths(duration: string): Promise<void> {
     }
 
 async selectCoveredCountries(countries: string[]): Promise<void> {
-  // Open the country selection modal
-  const modalTrigger = this.page.locator(
-    'a[title="country-list-modal"], a[href="/contracts/country_selection_modal"]'
+  const resultLocator = this.page.locator(
+    '#contracts_countries_0_cell div.input-group.col-md-10 span'
   );
-  await modalTrigger.waitFor({ state: 'visible' });
-  await modalTrigger.click();
 
-  // Wait for modal to appear
-  const worldLabel = this.page.locator('label[for="area_checkbox_world"]');
-  await worldLabel.waitFor({ state: 'visible', timeout: 5000 }); // wait up to 5s
+  let attempts = 0;
+  const maxAttempts = 5;
 
-  // Ensure the checkbox is clickable before clicking
-  await expect(worldLabel).toBeEnabled();
-  await worldLabel.click();
+  while (attempts < maxAttempts) {
+    attempts++;
 
-  // Optional: wait a bit to ensure the click registered
-  await this.page.waitForTimeout(500); // 200ms
+    // 🔹 Re-lire le texte au début de chaque itération
+    let text = (await resultLocator.innerText())?.trim().replace(/\s+/g, ' ') ?? '';
+    console.log(`Attempt ${attempts}: Current value = "${text}"`);
 
-  // Close the modal
-  const closeButton = this.page.locator('.close-modal-button-box button').first();
-  await expect(closeButton).toBeVisible();
-  await closeButton.click();
+    if (text === 'World') {
+      console.log('✅ Covered countries set to World');
+      return; // sort de la boucle et de la fonction
+    }
 
-  // Wait until the modal disappears
-  //await this.page.locator('#js-area-list').waitFor({ state: 'hidden', timeout: 5000 });
+    // Ouvrir le modal
+    const modalTrigger = this.page.locator(
+      'a[title="country-list-modal"], a[href="/contracts/country_selection_modal"]'
+    );
+    await modalTrigger.waitFor({ state: 'visible' });
+    await modalTrigger.click();
 
+    // Sélectionner "World"
+    const worldLabel = this.page.locator('label[for="area_checkbox_world"]');
+    await worldLabel.waitFor({ state: 'visible' });
+    await worldLabel.click();
 
+    // Fermer le modal
+    const closeButton = this.page.locator('.close-modal-button-box button').first();
+    await closeButton.waitFor({ state: 'visible' });
+    await closeButton.click();
 
+    // Petite pause avant prochaine tentative
+    await this.page.waitForTimeout(300);
+  }
+
+  throw new Error(`World not selected after ${maxAttempts} attempts`);
 }
-
 
 async selectDeclarationContacts(values: string[] = []): Promise<void> {
         await this.page.selectOption(CreateContractSelectors.declarationContactsSelect, values);
