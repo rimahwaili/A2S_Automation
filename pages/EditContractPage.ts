@@ -3,6 +3,7 @@ import { contractPageElements } from '../selectors/ContractEdit.selectors';
 import { Version } from '../helpers/versioning.helper';
 import { CreateSuppliersPage } from './CreateSuppliersPage';
 import { CreateSuppliersSelectors } from '../selectors/CreateSupplier.selectors';
+import { time } from 'console';
 
 export class ContractPage {
   readonly page: Page;
@@ -319,9 +320,10 @@ async assertValidateButtonVisible() {
     await expect(this.validate).toBeEnabled();
   }
 
-  async clickValidate() {
-    await this.validate.click();
-  }
+ async clickValidate() {
+  await this.validate.click();
+}
+
 
   async expectValidateEnabled() {
   await expect(this.validate).toBeEnabled();
@@ -334,6 +336,7 @@ async getContractId(): Promise<string | undefined> {
   console.log('Contract ID:', contractId);
   return contractId;
 }
+
 async waitUntilValidateEnabled(maxWaitMs = 180_000) {
   const interval = 10_000; // 10 seconds
   const startTime = Date.now();
@@ -396,8 +399,6 @@ async  ensureInvoicingContactSelected(): Promise<number> {
   await invoicingTab.waitFor({ state: 'attached', timeout: 5000 });
   await invoicingTab.click({ force: true });
   console.log('✅ Invoicing tab clicked');
-
-  //await expect(invoicingTab).toHaveClass(/active-scope/, { timeout: 5000 });
   const contacts = this.page.locator(
     'li[data-field="invoicing_contacts"] a'
   );
@@ -457,7 +458,203 @@ async openTab(page: Page, id: string) {
     label.click();
   }, id);
   console.log(`✅ Opened tab with id: ${id}`);
+}
+
+async clickScopeTabByText(label: string) {
+ const tab = this.page.locator(
+  `.scope-filter:has(.button-text:has-text("${label}"))`
+);
+
+await tab.waitFor({ state: 'visible', timeout: 10000 });
+await tab.scrollIntoViewIfNeeded();
+await tab.click();
+
+// attendre l'effet réel du clic
+const targetId = await tab.getAttribute('data-target');
+
+if (!targetId) {
+  throw new Error(`No data-target found for tab "${label}"`);
+}
+
+const targetBox = this.page.locator(`#${targetId}`);
+
+// ✅ wait for activation (CSS state change)
+/*await expect(targetBox).not.toHaveClass(/hidden-scope-box/, {
+  timeout: 5000,
+});*/
+
+console.log(`✅ Scope tab "${label}" activated`);
+}
+
+async addNewService(serviceName: string, data?: {
+  description?: string;
+  maxAmount?: string;
+  vat?: string;
+}) {
+await this.page.click('.astore-white-button');
+
+const chosenDropdown = this.page.locator('div.chosen-container.chosen-container-single')
+    .filter({ hasText: 'TBD' });
+
+  // 2️⃣ Scroll into view and click to open
+  await chosenDropdown.scrollIntoViewIfNeeded();
+  await chosenDropdown.click();
+
+  // 3️⃣ Wait for the options to appear
+  const optionList = chosenDropdown.locator('ul.chosen-results li.active-result');
+
+  // 4️⃣ Click the desired option
+  const optionToSelect = optionList.locator('text=Mobilisation Fee'); // change to any option
+  await optionToSelect.click();
+
+/*
+// 5️⃣ Cibler les options valides
+const options = chosen.locator('.chosen-results li:not(.assoc_none):not(.result-selected)');
+const count = await options.count();
+if (count === 0) {
+  console.warn('Aucune option valide trouvée');
+} else {
+  const randomIndex = Math.floor(Math.random() * count);
+  await options.nth(randomIndex).scrollIntoViewIfNeeded();
+  await options.nth(randomIndex).click({ force: true });
+}*/
+
+  // 5️⃣ Champs optionnels
+  const description = this.page
+    .locator('textarea[name^="contract_service"][name$="[description]"]:visible')
+    .last();
+
+  await expect(description).toBeVisible({ timeout: 15000 });
+  await description.fill("test description");
+  console.log(`✅ Service "${serviceName}" ajouté`);
+}
+
+
+async editSubService(serviceName: string) {
+  // 1️⃣ Locate the <a> by the child <img> title or alt attribute
+  const editLink = this.page.locator(`a.sub-service-edit img[title="${serviceName}"], a.sub-service-edit img[alt="${serviceName}"]`).locator('..');
+
+  // Wait until the <a> is visible
+  await editLink.waitFor({ state: 'visible', timeout: 10000 });
+
+  // Scroll and click
+  await editLink.scrollIntoViewIfNeeded({ timeout: 5000 });
+  await editLink.click();
+
+  // 2️⃣ Wait for the AJAX modal
+  const modal = this.page.locator('[data-window="edit-sub-service-modal"]');
+  await modal.waitFor({ state: 'visible', timeout: 10000 });
+
+  console.log(`✏️ Editing sub-service "${serviceName}"`);
+
+}
+
+async  setUnitAndValue(
+unit: 'TO' | 'Other' | 'Partial TO',
+  value: string) {
   
+const modal = this.page.locator('#edit-sub-service-modal');
+const saveButton = modal.locator(
+  '.sub-service-save-button.ajax-button'
+);
+
+
+await expect(modal).toBeVisible();
+
+await modal.locator('[data-dismiss="modal"]').click();
+
+const editLink = this.page.locator(
+  'a.sub-service-edit[data-window="edit-sub-service-modal"]'
+);
+
+await editLink.click();
+const condition = this.page.locator('.condition-form-box form').first();
+  // Unit
+  const unitSelect = condition.locator('select.unit-to-declare--input');
+  await unitSelect.waitFor({ state: 'attached' });
+  await unitSelect.selectOption({ label: unit }, { force: true });
+  await unitSelect.dispatchEvent('change');
+
+// Value
+  const input = this.page.locator('input[name^="contract_result"][name$="[value]"]');
+  await input.fill(value.toString());
+ await input.dispatchEvent('change');
+
+ // Verify
+ const current = await input.inputValue();
+ console.log(`✅ Set unit to "${unit}" and value to "${current}"`);
+// Save and close
+await input.fill(value.toString());
+const modal2 = this.page.locator('#edit-sub-service-modal');
+
+await expect(modal2).toBeVisible({ timeout: 10000 });
+await expect(saveButton).toBeVisible();
+await expect(
+  saveButton.locator('.loading-placeholder')
+).toBeHidden();
+await this.page.keyboard.press('Tab');
+await saveButton.click({force:true});
+await modal2.waitFor({ state: 'hidden', timeout: 100000 });
+
+// click Save this Service
+
+const saveSubServiceButton = this.page.locator(
+  '.astore-sharp-button.save-button:has-text("Save this Service")'
+);
+await expect(saveSubServiceButton).toBeVisible();
+await expect(
+  saveSubServiceButton.locator('.loading-placeholder')
+).toBeHidden();
+
+await saveSubServiceButton.scrollIntoViewIfNeeded();
+await this.ensureClickable(saveSubServiceButton);
+await saveSubServiceButton.click();
+// Wait for modal  to close 
+
+console.log('✅ Sub-service modal saved and closed');
+}
+
+
+async  ensureClickable(locator: Locator) {
+  await expect(locator).toBeVisible();
+
+  // 1️⃣ pointer-events must allow click
+  await locator.evaluate(el => {
+    const style = getComputedStyle(el);
+    if (style.pointerEvents === 'none') {
+      throw new Error('❌ Save button blocked by pointer-events:none');
+    }
+  });
+
+  // 2️⃣ must not look disabled
+  await expect(locator).not.toHaveClass(/disabled|inactive|loading|readonly/i);
+
+  // 3️⃣ must not be covered by another element
+  const box = await locator.boundingBox();
+  if (!box) throw new Error('❌ Save button has no bounding box');
+
+  await locator.page().evaluate(({ x, y }) => {
+    const el = document.elementFromPoint(x + 5, y + 5);
+    if (!el) throw new Error('❌ No element at Save button position');
+  }, box);
+}
+
+
+async checkSubserviceValue( expectedServiceName: string, expectedvalue: string): Promise<void> {
+
+//this.page.reload();
+const serviceSpan = this.page.locator('.sub-service-name > span');
+const text = (await serviceSpan.innerText()).trim();
+console.log(text);
+const parts = text.split(' - ');
+
+const serviceName = parts[0];  // "TBD"
+const percentagevalue = parts[1];        // "0.0"
+const percentage = parts[2]; 
+  // "%"
+expect(serviceName).toBe(expectedServiceName);     // check service name
+expect(Number(percentagevalue)).toBe(Number(expectedvalue));
+expect(percentage).toBe('%'); 
 }
 
 
@@ -481,8 +678,7 @@ async checkFirstContactInvoicing(): Promise<boolean> {
 
 async editFirstSupplierContact(page:Page): Promise<void> {
 
-const tbody = page.locator('tbody[aria-live="polite"]');
-
+  const tbody = page.locator('tbody[aria-live="polite"]');
   // Récupérer toutes les lignes de contacts
   const rows = tbody.locator('tr[id^="nested_contact_module_"]');
   const rowCount = await rows.count();

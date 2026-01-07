@@ -26,7 +26,7 @@ test('A2SQA2-2601 | @P0 Create and Launch declarative campaign', async ({ page }
     allure.story('ative campaign');
     allure.severity('critical'); 
 
-  const listPage = new DeclarativeCampaignsPage(page);
+    const listPage = new DeclarativeCampaignsPage(page);
     const formPage = new NewDeclarativeCampaignPage(page);
 
     // 1️⃣ Open list
@@ -52,25 +52,29 @@ test('A2SQA2-2601 | @P0 Create and Launch declarative campaign', async ({ page }
     await formPage.setEndingDate(endDate);
     await formPage.selectCountry(country);
     await listPage.selectPeriod(period);
-
-
     // 4️⃣ Save
     await formPage.save();
 
     // 5️⃣ Assert redirect
     await expect(page).toHaveURL(/\/declarative_campaigns/);
 
+
+  if(await formPage.isDeclarativeCampaignAlreadyExists()){
+      console.log('Declarative Campaign already exists.');
+      await formPage.selectCountry(country);
+      await formPage.save();
+    } 
     // 6️⃣ Assert campaign appears in table
     await formPage.verifySuccessMessage('Declaration Campaign was successfully created.');
-
     // Check start date
     await formPage.verifyStartDate(startDate);
-
     // Check end date
-    await formPage.verifyEndDate(endDate);
-
-    await formPage.clickEnable();
-    await formPage.launchCampaign();
+     await formPage.verifyEndDate(endDate);
+      //await formPage.verifySuccessMessage('Declaration Campaign was successfully launched.');
+      
+      await formPage.clickEnable();
+      await formPage.launchCampaign();
+      console.log('Declarative Campaign created successfully.');
   });
 
 });

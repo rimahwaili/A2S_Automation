@@ -32,12 +32,12 @@ test.describe('Move Contract into Error', () => {
     await contractPage.waitForReady();
     const isStatusToRenew = await contractPage.assertStatus('to renew');
     await contractPage.EditContract();
+    
     if(await contractPage.ensureInvoicingContactSelected() === 0 ) {
       console.log('Invoicing contact was not selected, selecting now...');
       await contractPage.getSupplierInfo();
       contractPage.goToSupplier();
-    }
-    else{ 
+    }else{ 
       console.log('Invoicing contact is already selected.');
       await contractPage.getSupplierInfo();
       contractPage.goToSupplier();
@@ -76,7 +76,6 @@ test(' 2SQA2-2560 | @P0 Move contract status from Valid into Error ', async ({ p
       contractPage.goToSupplier();
     }
 
-
     await contractPage.clickError();
     await contractPage.confirmError();
     const isStatusEEor = await contractPage.assertStatus('Error');
@@ -97,7 +96,7 @@ test(' 2SQA2-2561 | @P0 Move contract status from Expired into Error ', async ({
     const contractid =  contractsPage.getContractId();
     await contractPage.waitForReady();
     const isStatusToRenew = await contractPage.assertStatus('expired');
-    
+
     await contractPage.EditContract();
         if(await contractPage.ensureInvoicingContactSelected() === 0 ) {
       console.log('Invoicing contact was not selected, selecting now...');
@@ -622,3 +621,4 @@ await newContractPage.waitUntilValidateEnabled(300_000);
 
 });
 });
+
