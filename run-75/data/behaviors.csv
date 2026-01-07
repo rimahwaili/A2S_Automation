@@ -1,0 +1,8 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"24","","0","","0","0","","0"
+"1","Login","0","Login","0","0","Login with inactif credentials","0"
+"0","Login","1","Login","0","0","Reset password when using  Inactif email","0"
+"1","Login","0","Login","0","0","Login with valid credentials","0"
+"1","Login","0","Login","0","0","Sent password Reset correctly with valid email","0"
+"1","Login","0","Login","0","0","Login with invalid credentials","0"
+"0","Login","1","Login","0","0","Fails reset password when using wrong email","0"
