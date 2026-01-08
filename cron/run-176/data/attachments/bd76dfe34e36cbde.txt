@@ -1,0 +1,17 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41310
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/6399
+Supplier Name: 43618-GEORGES MONIN
+Supplier URL: /suppliers/6399
+Supplier Name: 43618-GEORGES MONIN
+url edited: /suppliers/edit/6399
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 22
+contact type: Supplier

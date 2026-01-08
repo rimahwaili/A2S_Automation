@@ -1,0 +1,339 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: DCM - USA - NCA - 2.2
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "Contract - DCM - USA - NCA - 2.2" [level=2] [ref=e67]
+        - paragraph [ref=e68]:
+          - generic [ref=e69]:
+            - text: Versioned from contract n°
+            - link "DCM - USA - NCA - 2.1" [ref=e70] [cursor=pointer]:
+              - /url: /contracts/show/35853
+        - generic [ref=e71]:
+          - generic [ref=e73] [cursor=pointer]: Main Information
+          - generic [ref=e75] [cursor=pointer]: Invoicing Information
+          - generic [ref=e77] [cursor=pointer]: Documents (0)
+          - generic [ref=e79] [cursor=pointer]: Services
+        - generic [ref=e80]:
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - heading "Main Information" [level=2] [ref=e86]
+                - generic [ref=e89]:
+                  - generic [ref=e90]: "Supplier:"
+                  - link "301423-DATA COMMUNICATIONS MANAGEMENT CORP - CAD" [ref=e93] [cursor=pointer]:
+                    - /url: /suppliers/11084
+                - generic [ref=e96]:
+                  - generic [ref=e97]: "Number:"
+                  - generic [ref=e99]: DCM - USA - NCA
+                - generic [ref=e102]:
+                  - generic [ref=e103]: "Name:"
+                  - generic [ref=e105]: Agreement for Specific Product and Services
+                - generic [ref=e108]:
+                  - generic [ref=e109]: "Type:"
+                  - generic [ref=e111]: P2
+                - generic [ref=e115]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e119]:
+                  - generic [ref=e120]: "Categories:"
+                  - list [ref=e122]:
+                    - listitem [ref=e123]: E00048 Printing
+                - generic [ref=e126]:
+                  - generic [ref=e127]: "Main Category:"
+                  - link "E00048 Printing" [ref=e130] [cursor=pointer]:
+                    - /url: /categories/221
+                - generic [ref=e133]:
+                  - generic [ref=e134]: "Brands:"
+                  - generic [ref=e136]: None
+                - generic [ref=e139]:
+                  - generic [ref=e140]: "Category Manager:"
+                  - link "christine.young.buyer@accor.com" [ref=e143] [cursor=pointer]:
+                    - /url: /contacts/41047
+                - generic [ref=e146]:
+                  - generic [ref=e147]: "E Procurement:"
+                  - generic [ref=e149]: "N"
+                - generic [ref=e152]:
+                  - generic [ref=e153]: "Former Numbers:"
+                  - generic [ref=e154]:
+                    - list
+                - generic [ref=e158]: "Opex:"
+              - generic [ref=e160]:
+                - heading "Declaration" [level=2] [ref=e162]
+                - generic [ref=e165]:
+                  - generic [ref=e166]: "Declaration Frequency:"
+                  - generic [ref=e168]: Quarterly
+                - generic [ref=e171]:
+                  - generic [ref=e172]: "Allow specific frequency for services:"
+                  - generic [ref=e174]: Each service may set its own frequency
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - heading "Contracts Dates" [level=2] [ref=e178]
+                - generic [ref=e181]:
+                  - generic [ref=e182]: "Silent Extension:"
+                  - img "ko" [ref=e185]
+                - generic [ref=e188]:
+                  - generic [ref=e189]: "Contract Start date:"
+                  - generic [ref=e191]: 12/28/2022
+                - generic [ref=e194]:
+                  - generic [ref=e195]: "Contract end date:"
+                  - generic [ref=e197]: 06/29/2026
+                - generic [ref=e200]:
+                  - generic [ref=e201]: "Declarative start Date:"
+                  - generic [ref=e203]: 01/01/2023
+                - generic [ref=e206]:
+                  - generic [ref=e207]: "Signing date:"
+                  - generic [ref=e209]: 12/09/2022
+                - generic [ref=e212]:
+                  - generic [ref=e213]: "Creation Date:"
+                  - generic [ref=e215]: 05/16/2022
+                - generic [ref=e219]: "Theoretical end date:"
+                - generic [ref=e222]:
+                  - generic [ref=e223]: "Declarative end date:"
+                  - generic [ref=e225]: 06/30/2026
+              - generic [ref=e226]:
+                - heading "Contract Terms" [level=2] [ref=e228]
+                - generic [ref=e231]:
+                  - generic [ref=e232]: "Invoicing country:"
+                  - link "Canada" [ref=e235] [cursor=pointer]:
+                    - /url: /countries/41
+                - generic [ref=e238]:
+                  - generic [ref=e239]: "Currency:"
+                  - link "USD" [ref=e242] [cursor=pointer]:
+                    - /url: /currencies/6
+                - generic [ref=e245]:
+                  - generic [ref=e246]: "Duration (months) = Term:"
+                  - generic [ref=e248]: "42"
+                - generic [ref=e251]:
+                  - generic [ref=e252]: "Covered Perimeter: *"
+                  - list [ref=e254]:
+                    - listitem [ref=e255]: NORTH AMERICA (full)
+                - generic [ref=e258]:
+                  - generic [ref=e259]: "Declaration Contacts:"
+                  - list [ref=e261]:
+                    - listitem [ref=e262]:
+                      - link "mmacdonald@datacm.com" [ref=e263] [cursor=pointer]:
+                        - /url: /contacts/41354
+                - generic [ref=e266]:
+                  - generic [ref=e267]: "Payment Term:"
+                  - link "30 days after the end of each period" [ref=e270] [cursor=pointer]:
+                    - /url: /contract_payment_terms/25
+                - generic [ref=e273]:
+                  - generic [ref=e274]: "Payment Mode:"
+                  - link "TRANSFER" [ref=e277] [cursor=pointer]:
+                    - /url: /contract_payment_modes/2
+                - generic [ref=e280]:
+                  - generic [ref=e281]: "Cancellation Term:"
+                  - link "6 months" [ref=e284] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/5
+                - generic [ref=e288]: "Expected Contract Value:"
+          - generic [ref=e290]:
+            - heading "Invoicing Details" [level=2] [ref=e291]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e292]: 9195 TORBRAM ROAD / / L6S 6H2 / Brampton / Canada
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e293]:
+                    - listitem [ref=e294]:
+                      - link "mmacdonald@datacm.com" [ref=e295] [cursor=pointer]:
+                        - /url: /contacts/41354
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "USD" [ref=e297] [cursor=pointer]:
+                    - /url: /currencies/6
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e298]: DATA COMMUNICATIONS MANAGEMENT CORP - CAD
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e299]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e300]: "290200"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e304] [cursor=pointer]:
+            - /url: /suppliers/show/11084?@all_documents=true&to_tab=document
+          - generic [ref=e305]:
+            - link "Back to the list" [ref=e306] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e307] [cursor=pointer]:
+              - /url: /contracts/simulator/36435
+            - link "Edit" [ref=e308] [cursor=pointer]:
+              - /url: /contracts/edit/36435
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e309]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e310]:
+                    - generic [ref=e311] [cursor=pointer]: Classic Procurement Service Fee
+                    - img "arrow" [ref=e312]
+                  - listitem [ref=e313]:
+                    - generic [ref=e314] [cursor=pointer]: Classic Procurement Service Fee
+              - generic:
+                - heading "Service details" [level=3] [ref=e316]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e317]:
+                        - generic [ref=e319]:
+                          - generic:
+                            - generic [ref=e320]: "Name:"
+                            - generic [ref=e321]: Classic Procurement Service Fee
+                        - generic [ref=e323]:
+                          - generic:
+                            - generic [ref=e324]: "Depth of declaration:"
+                            - generic [ref=e325]: Hotel
+                        - generic [ref=e327]:
+                          - generic:
+                            - generic [ref=e328]: "Redistribution:"
+                            - img "ok" [ref=e330]
+                        - generic [ref=e333]: "Description:"
+                        - generic [ref=e335]:
+                          - generic:
+                            - generic [ref=e336]: "Declared By:"
+                            - generic [ref=e337]: Supplier
+                        - generic [ref=e340]: "Maximum Amount:"
+                        - generic [ref=e343]: "Tax:"
+                        - generic [ref=e345]:
+                          - generic:
+                            - generic [ref=e346]: "Declaration Frequency:"
+                            - generic [ref=e347]: Quarterly
+                        - generic [ref=e350]: "Invoicing Periodicity:"
+                        - generic [ref=e353]: "Import data from ASR:"
+                  - generic [ref=e354]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e355]:
+                    - listitem:
+                      - generic [ref=e357]: P2 - 4.3% - DCM
+                      - generic [ref=e358]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/23499?edit_mode=
+                            - img "Self And Assoc" [ref=e359] [cursor=pointer]
+      - generic [ref=e360]:
+        - generic [ref=e361]: "Version: 2.31.12"
+        - generic [ref=e362]:
+          - link "User Guide" [ref=e363] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e364] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```

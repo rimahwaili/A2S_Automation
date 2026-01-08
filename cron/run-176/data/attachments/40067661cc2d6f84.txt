@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41317
+Declaration frequency: Annually
+supplier: 294855-RED BULL FRANCE
+invoicingCountryField: France
+Page 1: Contract - FR3-23-1-153-GLB 2.1 - 2.1
+Page 2: Contract - FR3-23-1-153-GLB 2.1 - 3.1
