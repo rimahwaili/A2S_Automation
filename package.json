@@ -1,0 +1,29 @@
+{
+  "name": "astoresuites",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:P0": "npx playwright test --grep '@P0'",
+    "test:P1": "npx playwright test --grep '@P1'",
+    "test:Login": "npx playwright test --grep '@Login'",
+    "test:recette": "cross-env ENV=recette npx playwright test",
+    "test:ppd": "cross-env ENV=ppd npx playwright test --grep '@P0'",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0",
+    "allure-cucumberjs": "^3.4.2",
+    "allure-playwright": "^3.4.1",
+    "cross-env": "^10.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}

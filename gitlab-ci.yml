@@ -1,0 +1,49 @@
+stages:
+  - test
+  - report
+
+variables:
+  # Dossier où Playwright va stocker les artefacts de test
+  PLAYWRIGHT_BROWSERS_PATH: 0
+  CI: "true"
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+before_script:
+  # Installer les dépendances du projet
+  - npm ci
+  # Installer les navigateurs Playwright
+  - npx playwright install --with-deps
+
+test:e2e:
+  stage: test
+  image: mcr.microsoft.com/playwright:v1.48.0-jammy
+  script:
+    # Exécuter les tests Playwright
+    - npx playwright test --reporter=line,allure-playwright
+  artifacts:
+    when: always
+    paths:
+      - allure-results
+      - playwright-report
+    expire_in: 7 days
+  allow_failure: false
+
+allure:report:
+  stage: report
+  image: openjdk:17-jdk-slim
+  script:
+    # Installer allure-commandline
+    - npm install -g allure-commandline
+    # Générer le rapport Allure
+    - allure generate allure-results --clean -o allure-report
+  artifacts:
+    when: always
+    paths:
+      - allure-report
+    expire_in: 14 days
+  dependencies:
+    - test:e2e
