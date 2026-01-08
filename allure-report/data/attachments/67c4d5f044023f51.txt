@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41104
+Declaration frequency: Annually
+supplier: 116164-HEINEKEN ENTREPRISE
+invoicingCountryField: France
