@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 33765
+Declaration frequency: Quarterly
+supplier: 243944-AMAZON CLEAN
+invoicingCountryField: Brazil
+Page 1: Contract - 293110214 - 1.1
+Page 2: Contract - 293110214 - 2.1
