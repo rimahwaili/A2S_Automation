@@ -1,0 +1,22 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36399
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/6523
+Supplier Name: 55525-SEGAFREDO ZANETTI
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+Supplier URL: /suppliers/6523
+Supplier Name: 55525-SEGAFREDO ZANETTI
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+url edited: /suppliers/edit/6523
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 44
+contact type: Supplier
+ℹ️ Invoicing already checked for Supplier row 1

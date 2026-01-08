@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38673
+Declaration frequency: Quarterly
+supplier: 4369-TRANSGOURMET OPERATIONS
+invoicingCountryField: France
+Page 1: Contract - FR2-23-1-198 OPE Poisson - 2.1
+Page 2: Contract - FR2-23-1-198 OPE Poisson - 3.1
