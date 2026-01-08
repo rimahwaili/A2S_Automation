@@ -1,0 +1,17 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36025
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/5764
+Supplier Name: 10871-Reidemeister & Ulrichs GmbH
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+Supplier URL: /suppliers/5764
+Supplier Name: 10871-Reidemeister & Ulrichs GmbH
+url edited: /suppliers/edit/5764
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found

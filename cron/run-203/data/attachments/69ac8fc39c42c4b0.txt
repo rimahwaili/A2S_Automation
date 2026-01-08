@@ -1,0 +1,13 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39761
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/7715
+Supplier Name: 32180-Brau Union Österreich AG
+Supplier URL: /suppliers/7715
+Supplier Name: 32180-Brau Union Österreich AG
+url edited: /suppliers/edit/7715
