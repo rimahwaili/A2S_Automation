@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41313
+Declaration frequency: Annually
+supplier: 358570-CAMPARI FRANCE
+invoicingCountryField: France
+Page 1: Contract - GLB1019new - 3.1
+Page 2: Contract - GLB1019new - 4.1

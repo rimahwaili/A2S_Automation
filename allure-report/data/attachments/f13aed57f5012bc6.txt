@@ -1,0 +1,13 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41319
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/6313
+Supplier Name: 184804-BROWN FORMAN
+Supplier URL: /suppliers/6313
+Supplier Name: 184804-BROWN FORMAN
+url edited: /suppliers/edit/6313

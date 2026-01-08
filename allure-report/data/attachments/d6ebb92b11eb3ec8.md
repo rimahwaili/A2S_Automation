@@ -1,0 +1,332 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: HEH2-25-2-081 - 1.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "Contract - HEH2-25-2-081 - 1.1" [level=2] [ref=e67]
+        - generic [ref=e68]:
+          - generic [ref=e70] [cursor=pointer]: Main Information
+          - generic [ref=e72] [cursor=pointer]: Invoicing Information
+          - generic [ref=e74] [cursor=pointer]: Documents (0)
+          - generic [ref=e76] [cursor=pointer]: Services
+        - generic [ref=e77]:
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - heading "Main Information" [level=2] [ref=e83]
+                - generic [ref=e86]:
+                  - generic [ref=e87]: "Supplier:"
+                  - link "58405-3F FILIPPI TARGETTI FRANCE" [ref=e90] [cursor=pointer]:
+                    - /url: /suppliers/4085
+                - generic [ref=e93]:
+                  - generic [ref=e94]: "Number:"
+                  - generic [ref=e96]: HEH2-25-2-081
+                - generic [ref=e99]:
+                  - generic [ref=e100]: "Name:"
+                  - generic [ref=e102]: Contrat de Référencement et de Services
+                - generic [ref=e105]:
+                  - generic [ref=e106]: "Type:"
+                  - generic [ref=e108]: H2
+                - generic [ref=e112]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e116]:
+                  - generic [ref=e117]: "Categories:"
+                  - list [ref=e119]:
+                    - listitem [ref=e120]: E00041 Uniforms
+                - generic [ref=e123]:
+                  - generic [ref=e124]: "Main Category:"
+                  - link "E00041 Uniforms" [ref=e127] [cursor=pointer]:
+                    - /url: /categories/188
+                - generic [ref=e130]:
+                  - generic [ref=e131]: "Brands:"
+                  - generic [ref=e133]: None
+                - generic [ref=e136]:
+                  - generic [ref=e137]: "Category Manager:"
+                  - link "catherine.machado@accor.com" [ref=e140] [cursor=pointer]:
+                    - /url: /contacts/45564
+                - generic [ref=e144]: "E Procurement:"
+                - generic [ref=e148]:
+                  - generic [ref=e149]: "Former Numbers:"
+                  - generic [ref=e150]:
+                    - list
+                - generic [ref=e154]: "Opex:"
+              - generic [ref=e156]:
+                - heading "Declaration" [level=2] [ref=e158]
+                - generic [ref=e161]:
+                  - generic [ref=e162]: "Declaration Frequency:"
+                  - generic [ref=e164]: Quarterly
+                - generic [ref=e167]:
+                  - generic [ref=e168]: "Allow specific frequency for services:"
+                  - generic [ref=e170]: This frequency is applied to all services
+            - generic [ref=e171]:
+              - generic [ref=e172]:
+                - heading "Contracts Dates" [level=2] [ref=e174]
+                - generic [ref=e177]:
+                  - generic [ref=e178]: "Silent Extension:"
+                  - img "ok" [ref=e181]
+                - generic [ref=e184]:
+                  - generic [ref=e185]: "Contract Start date:"
+                  - generic [ref=e187]: 01/01/2026
+                - generic [ref=e191]: "Contract end date:"
+                - generic [ref=e194]:
+                  - generic [ref=e195]: "Declarative start Date:"
+                  - generic [ref=e197]: 01/01/2026
+                - generic [ref=e201]: "Signing date:"
+                - generic [ref=e204]:
+                  - generic [ref=e205]: "Creation Date:"
+                  - generic [ref=e207]: 11/07/2025
+                - generic [ref=e211]: "Theoretical end date:"
+                - generic [ref=e215]: "Declarative end date:"
+              - generic [ref=e216]:
+                - heading "Contract Terms" [level=2] [ref=e218]
+                - generic [ref=e221]:
+                  - generic [ref=e222]: "Invoicing country:"
+                  - link "Contract H ENA" [ref=e225] [cursor=pointer]:
+                    - /url: /countries/253
+                - generic [ref=e228]:
+                  - generic [ref=e229]: "Currency:"
+                  - link "EUR" [ref=e232] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e236]: "Duration (months) = Term:"
+                - generic [ref=e240]:
+                  - generic [ref=e241]: "Covered Perimeter: *"
+                  - list [ref=e243]:
+                    - listitem [ref=e244]: ASIA (4 / 36)
+                    - listitem [ref=e245]: EASTERN EUROPE (12 / 16)
+                    - listitem [ref=e246]: NORTHERN AND CENTRAL EUROPE (16 / 23)
+                    - listitem [ref=e247]: SOUTHERN EUROPE (9 / 13)
+                    - listitem [ref=e248]: MAGHREB (3 / 7)
+                    - listitem [ref=e249]: NEAR AND MIDDLE EAST (1 / 15)
+                - generic [ref=e252]:
+                  - generic [ref=e253]: "Declaration Contacts:"
+                  - generic [ref=e255]: None
+                - generic [ref=e258]:
+                  - generic [ref=e259]: "Payment Term:"
+                  - link "30 days end of month" [ref=e262] [cursor=pointer]:
+                    - /url: /contract_payment_terms/3
+                - generic [ref=e265]:
+                  - generic [ref=e266]: "Payment Mode:"
+                  - link "OTHER" [ref=e269] [cursor=pointer]:
+                    - /url: /contract_payment_modes/4
+                - generic [ref=e272]:
+                  - generic [ref=e273]: "Cancellation Term:"
+                  - link "6 months" [ref=e276] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/5
+                - generic [ref=e280]: "Expected Contract Value:"
+          - generic [ref=e282]:
+            - heading "Invoicing Details" [level=2] [ref=e283]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e284]: 2 rue de la Renaissance Bât A / / 92160 / ANTONY / France
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e285]:
+                    - listitem [ref=e286]:
+                      - link "sophie.bouchard@targetti.com" [ref=e287] [cursor=pointer]:
+                        - /url: /contacts/41014
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "EUR" [ref=e289] [cursor=pointer]:
+                    - /url: /currencies/1
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e290]: 3F FILIPPI TARGETTI FRANCE
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e291]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e292]: "95658"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+                  - generic [ref=e293]: FR16328163191
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e297] [cursor=pointer]:
+            - /url: /suppliers/show/4085?@all_documents=true&to_tab=document
+          - generic [ref=e298]:
+            - link "Back to the list" [ref=e299] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e300] [cursor=pointer]:
+              - /url: /contracts/simulator/40963
+            - link "Edit" [ref=e301] [cursor=pointer]:
+              - /url: /contracts/edit/40963
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e302]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e303]:
+                    - generic [ref=e304] [cursor=pointer]: Classic Procurement Service Fee
+                    - img "arrow" [ref=e305]
+                  - listitem [ref=e306]:
+                    - generic [ref=e307] [cursor=pointer]: Astore non-digital marketing fee
+                  - listitem [ref=e308]:
+                    - generic [ref=e309] [cursor=pointer]: Basic admin fee
+              - generic:
+                - heading "Service details" [level=3] [ref=e311]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e312]:
+                        - generic [ref=e314]:
+                          - generic:
+                            - generic [ref=e315]: "Name:"
+                            - generic [ref=e316]: Classic Procurement Service Fee
+                        - generic [ref=e318]:
+                          - generic:
+                            - generic [ref=e319]: "Depth of declaration:"
+                            - generic [ref=e320]: Hotel
+                        - generic [ref=e322]:
+                          - generic:
+                            - generic [ref=e323]: "Redistribution:"
+                            - img "ok" [ref=e325]
+                        - generic [ref=e328]: "Description:"
+                        - generic [ref=e330]:
+                          - generic:
+                            - generic [ref=e331]: "Declared By:"
+                            - generic [ref=e332]: Supplier
+                        - generic [ref=e335]: "Maximum Amount:"
+                        - generic [ref=e337]:
+                          - generic:
+                            - generic [ref=e338]: "Tax:"
+                            - generic "20.0" [ref=e339]: 20 %
+                        - generic [ref=e341]:
+                          - generic:
+                            - generic [ref=e342]: "Declaration Frequency:"
+                            - generic [ref=e343]: Quarterly
+                        - generic [ref=e346]: "Invoicing Periodicity:"
+                        - generic [ref=e349]: "Import data from ASR:"
+                  - generic [ref=e350]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e351]:
+                    - listitem:
+                      - generic [ref=e353]: Classic Procurement Service Fee - 4.0 - %
+                      - generic [ref=e354]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/36951?edit_mode=
+                            - img "Self And Assoc" [ref=e355] [cursor=pointer]
+      - generic [ref=e356]:
+        - generic [ref=e357]: "Version: 2.31.12"
+        - generic [ref=e358]:
+          - link "User Guide" [ref=e359] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e360] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```

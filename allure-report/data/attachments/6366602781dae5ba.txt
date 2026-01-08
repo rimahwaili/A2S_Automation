@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36698
+Declaration frequency: Quarterly
+supplier: 352146-NEW MANUSEC
+invoicingCountryField: France
+Page 1: Contract - FR2-21-6-041 - 2.1
+Page 2: Contract - FR2-21-6-041 - 3.1

@@ -1,0 +1,9 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36450
+Declaration frequency: Quarterly
+supplier: 301741-Merchful
+invoicingCountryField: Canada
+warning message: Validation is not allowed until contract 'Merchful - CAN - NCA - 1.1' versioning process is complete
+Contract ID: 41609
+Polling for Validate button (max 3 minutes)...
