@@ -1,0 +1,3 @@
+Detected UI language: EN
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
