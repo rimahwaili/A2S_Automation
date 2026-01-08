@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40886
+Declaration frequency: Annually
+supplier: 82095-SOJUFEL PROVENCE PRODUCTION (Pressoirs de Provence)
+invoicingCountryField: France
