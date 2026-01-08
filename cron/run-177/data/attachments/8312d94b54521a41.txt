@@ -1,0 +1,7 @@
+Detected UI language: EN
+Apply filters: { active: 'true' }
+ Option "true" sélectionnée
+✅ Filters successfully applied
+Opening the contact details page...
+✅ Contact details page opened successfully
+✅ Contact Details page is visible
