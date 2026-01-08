@@ -1,0 +1,18 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 25230
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/4834
+Supplier Name: 45349-WURTH FRANCE SA
+Supplier URL: /suppliers/4834
+Supplier Name: 45349-WURTH FRANCE SA
+url edited: /suppliers/edit/4834
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 3
+contact type: Supplier
+ℹ️ Invoicing already checked for Supplier row 1
