@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40717
+Declaration frequency: Bi-Annually
+supplier: 124130-SCHNEIDER ELECTRIC BRASIL LTDA
+invoicingCountryField: CORP

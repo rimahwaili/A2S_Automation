@@ -1,0 +1,18 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41157
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/6484
+Supplier Name: 115291-NESTLE WATERS MARKETING DISTRIBUTION
+Supplier URL: /suppliers/6484
+Supplier Name: 115291-NESTLE WATERS MARKETING DISTRIBUTION
+url edited: /suppliers/edit/6484
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 5
+contact type: Supplier
+ℹ️ Invoicing already checked for Supplier row 1

@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38564
+Declaration frequency: Quarterly
+supplier: 296122-Flow Water
+invoicingCountryField: Canada
