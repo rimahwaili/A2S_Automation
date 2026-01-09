@@ -1,0 +1,11 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+{
+  anticipated: true,
+  period: 'Q2',
+  year: 2026,
+  startDate: '04/01/2026',
+  endDate: '06/30/2026',
+  country: 'Chile'
+}
+Declarative Campaign created successfully.

@@ -1,0 +1,353 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: DEP2-25-1-070 - 1.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "Contract - DEP2-25-1-070 - 1.1" [level=2] [ref=e67]
+        - generic [ref=e68]:
+          - generic [ref=e70] [cursor=pointer]: Main Information
+          - generic [ref=e72] [cursor=pointer]: Invoicing Information
+          - generic [ref=e74] [cursor=pointer]: Documents (0)
+          - generic [ref=e76] [cursor=pointer]: Services
+        - generic [ref=e77]:
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - heading "Main Information" [level=2] [ref=e83]
+                - generic [ref=e86]:
+                  - generic [ref=e87]: "Supplier:"
+                  - link "244840-Ernst Ludwig Kaiser GmbH u. Co.KG" [ref=e90] [cursor=pointer]:
+                    - /url: /suppliers/5618
+                - generic [ref=e93]:
+                  - generic [ref=e94]: "Number:"
+                  - generic [ref=e96]: DEP2-25-1-070
+                - generic [ref=e99]:
+                  - generic [ref=e100]: "Name:"
+                  - generic [ref=e102]: Nominating and services Agreement
+                - generic [ref=e105]:
+                  - generic [ref=e106]: "Type:"
+                  - generic [ref=e108]: P2
+                - generic [ref=e112]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e116]:
+                  - generic [ref=e117]: "Categories:"
+                  - list [ref=e119]:
+                    - listitem [ref=e120]: A00005 Wine, spirits, champagne
+                - generic [ref=e123]:
+                  - generic [ref=e124]: "Main Category:"
+                  - link "A00005 Wine, spirits, champagne" [ref=e127] [cursor=pointer]:
+                    - /url: /categories/218
+                - generic [ref=e130]:
+                  - generic [ref=e131]: "Brands:"
+                  - generic [ref=e133]: None
+                - generic [ref=e136]:
+                  - generic [ref=e137]: "Category Manager:"
+                  - link "sonja.antonic@accor.com" [ref=e140] [cursor=pointer]:
+                    - /url: /contacts/22300
+                - generic [ref=e144]: "E Procurement:"
+                - generic [ref=e148]:
+                  - generic [ref=e149]: "Former Numbers:"
+                  - generic [ref=e150]:
+                    - list
+                - generic [ref=e154]: "Opex:"
+              - generic [ref=e156]:
+                - heading "Declaration" [level=2] [ref=e158]
+                - generic [ref=e161]:
+                  - generic [ref=e162]: "Declaration Frequency:"
+                  - generic [ref=e164]: Quarterly
+                - generic [ref=e167]:
+                  - generic [ref=e168]: "Allow specific frequency for services:"
+                  - generic [ref=e170]: Each service may set its own frequency
+            - generic [ref=e171]:
+              - generic [ref=e172]:
+                - heading "Contracts Dates" [level=2] [ref=e174]
+                - generic [ref=e177]:
+                  - generic [ref=e178]: "Silent Extension:"
+                  - img "ko" [ref=e181]
+                - generic [ref=e184]:
+                  - generic [ref=e185]: "Contract Start date:"
+                  - generic [ref=e187]: 01/01/2026
+                - generic [ref=e190]:
+                  - generic [ref=e191]: "Contract end date:"
+                  - generic [ref=e193]: 12/31/2028
+                - generic [ref=e196]:
+                  - generic [ref=e197]: "Declarative start Date:"
+                  - generic [ref=e199]: 01/01/2026
+                - generic [ref=e202]:
+                  - generic [ref=e203]: "Signing date:"
+                  - generic [ref=e205]: 12/17/2025
+                - generic [ref=e208]:
+                  - generic [ref=e209]: "Creation Date:"
+                  - generic [ref=e211]: 12/22/2025
+                - generic [ref=e214]:
+                  - generic [ref=e215]: "Theoretical end date:"
+                  - generic [ref=e217]: 12/31/2027
+                - generic [ref=e220]:
+                  - generic [ref=e221]: "Declarative end date:"
+                  - generic [ref=e223]: 12/31/2028
+              - generic [ref=e224]:
+                - heading "Contract Terms" [level=2] [ref=e226]
+                - generic [ref=e229]:
+                  - generic [ref=e230]: "Invoicing country:"
+                  - link "Germany" [ref=e233] [cursor=pointer]:
+                    - /url: /countries/83
+                - generic [ref=e236]:
+                  - generic [ref=e237]: "Currency:"
+                  - link "EUR" [ref=e240] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e243]:
+                  - generic [ref=e244]: "Duration (months) = Term:"
+                  - generic [ref=e246]: "36"
+                - generic [ref=e249]:
+                  - generic [ref=e250]: "Covered Perimeter: *"
+                  - list [ref=e252]:
+                    - listitem [ref=e253]: NORTHERN AND CENTRAL EUROPE (1 / 23)
+                - generic [ref=e256]:
+                  - generic [ref=e257]: "Declaration Contacts:"
+                  - generic [ref=e259]: None
+                - generic [ref=e262]:
+                  - generic [ref=e263]: "Payment Term:"
+                  - link "30 days end of month" [ref=e266] [cursor=pointer]:
+                    - /url: /contract_payment_terms/3
+                - generic [ref=e269]:
+                  - generic [ref=e270]: "Payment Mode:"
+                  - link "TRANSFER" [ref=e273] [cursor=pointer]:
+                    - /url: /contract_payment_modes/2
+                - generic [ref=e276]:
+                  - generic [ref=e277]: "Cancellation Term:"
+                  - link "3 months" [ref=e280] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/4
+                - generic [ref=e284]: "Expected Contract Value:"
+          - generic [ref=e286]:
+            - heading "Invoicing Details" [level=2] [ref=e287]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e288]: Am Schäferbrunnen 9 / / 55268 / Nieder-Olm / Germany
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e289]:
+                    - listitem [ref=e290]:
+                      - link "info@weinhof-kaiser.de" [ref=e291] [cursor=pointer]:
+                        - /url: /contacts/18252
+                    - listitem [ref=e292]:
+                      - link "buchhaltung@weinhof-kaiser.de" [ref=e293] [cursor=pointer]:
+                        - /url: /contacts/37702
+                    - listitem [ref=e294]:
+                      - link "s.wuehrer@weinhof-kaiser.de" [ref=e295] [cursor=pointer]:
+                        - /url: /contacts/37703
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "EUR" [ref=e297] [cursor=pointer]:
+                    - /url: /currencies/1
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+                  - generic [ref=e298]: Quarterly
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e299]: Each service may set its own periodicity
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e300]: "277977"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+                  - generic [ref=e301]: DE149199093
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e305] [cursor=pointer]:
+            - /url: /suppliers/show/5618?@all_documents=true&to_tab=document
+          - generic [ref=e306]:
+            - link "Back to the list" [ref=e307] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e308] [cursor=pointer]:
+              - /url: /contracts/simulator/41324
+            - link "Edit" [ref=e309] [cursor=pointer]:
+              - /url: /contracts/edit/41324
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e310]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e311]:
+                    - generic [ref=e312] [cursor=pointer]: Classic Procurement Service Fee
+                    - img "arrow" [ref=e313]
+                  - listitem [ref=e314]:
+                    - generic [ref=e315] [cursor=pointer]: Astore Technology Fee/ Tech fee/ Intranet Fee
+              - generic:
+                - heading "Service details" [level=3] [ref=e317]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e318]:
+                        - generic [ref=e320]:
+                          - generic:
+                            - generic [ref=e321]: "Name:"
+                            - generic [ref=e322]: Classic Procurement Service Fee
+                        - generic [ref=e324]:
+                          - generic:
+                            - generic [ref=e325]: "Depth of declaration:"
+                            - generic [ref=e326]: Hotel
+                        - generic [ref=e328]:
+                          - generic:
+                            - generic [ref=e329]: "Redistribution:"
+                            - img "ko" [ref=e331]
+                        - generic [ref=e334]: "Description:"
+                        - generic [ref=e336]:
+                          - generic:
+                            - generic [ref=e337]: "Declared By:"
+                            - generic [ref=e338]: Supplier
+                        - generic [ref=e341]: "Maximum Amount:"
+                        - generic [ref=e343]:
+                          - generic:
+                            - generic [ref=e344]: "Tax:"
+                            - generic "19.0" [ref=e345]: 19 %
+                        - generic [ref=e347]:
+                          - generic:
+                            - generic [ref=e348]: "Declaration Frequency:"
+                            - generic [ref=e349]: Quarterly
+                        - generic [ref=e351]:
+                          - generic:
+                            - generic [ref=e352]: "Invoicing Periodicity:"
+                            - generic [ref=e353]: Quarterly
+                        - generic [ref=e356]: "Import data from ASR:"
+                  - generic [ref=e357]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e358]:
+                    - listitem:
+                      - generic [ref=e360]: Classic Procurement Service Fee - 1.55 - %
+                      - generic [ref=e361]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/37967?edit_mode=
+                            - img "Self And Assoc" [ref=e362] [cursor=pointer]
+                    - listitem:
+                      - generic [ref=e364]: Classic Procurement Service Fee - 0.0 - %
+                      - generic [ref=e365]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/37971?edit_mode=
+                            - img "Self And Assoc" [ref=e366] [cursor=pointer]
+      - generic [ref=e367]:
+        - generic [ref=e368]: "Version: 2.31.12"
+        - generic [ref=e369]:
+          - link "User Guide" [ref=e370] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e371] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```

@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39806
+Declaration frequency: Quarterly
+supplier: 186602-MULTI CONSEILS SECURITE
+invoicingCountryField: France
+Page 1: Contract - 2170365181 - 2.1
+Page 2: Contract - 2170365181 - 3.1
