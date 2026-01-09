@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 37451
+Declaration frequency: Quarterly
+supplier: 383036-POWER2GO
+invoicingCountryField: Brazil
+Page 1: Contract - 293110535 - 1.1
+Page 2: Contract - 293110535 - 2.1

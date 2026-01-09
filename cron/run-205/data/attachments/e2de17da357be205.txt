@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 34696
+Declaration frequency: Bi-Annually
+supplier: 86454-VIRGINIA LINEN SERVICE INC
+invoicingCountryField: United States
+contract id 1: Contract - Virginia Linen - USA - NCA - 1.1
+contract id 2: Contract - Virginia Linen - USA - NCA - 2.1
