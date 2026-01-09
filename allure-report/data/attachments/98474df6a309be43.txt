@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 32782
+Declaration frequency: Quarterly
+supplier: 100035-PROA
+invoicingCountryField: Chile
+Page 1: Contract - 1000035 - 1.1
+Page 2: Contract - 1000035 - 2.1
