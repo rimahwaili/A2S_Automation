@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 39951
+Declaration frequency: Quarterly
+supplier: S100049-PBS Hungária Kft.
+invoicingCountryField: Hungary
+Page 1: Contract - HUP2-25-3-014 - 1.1
+Page 2: Contract - HUP2-25-3-014 - 2.1

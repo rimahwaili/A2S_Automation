@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41146
+Declaration frequency: Annually
+supplier: 80859-BRASSERIE KRONENBOURG
+invoicingCountryField: France
+Page 1: Contract - FR3-23-1-152-MNNSPULNS - 3.1
+Page 2: Contract - FR3-23-1-152-MNNSPULNS - 4.1
