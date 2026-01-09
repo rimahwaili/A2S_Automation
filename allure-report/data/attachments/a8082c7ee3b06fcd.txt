@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 35651
+Declaration frequency: Quarterly
+supplier: 3011025-Path Water
+invoicingCountryField: Canada
+contract id 1: Contract - CA2-22-4-115 - 1.1
+contract id 2: Contract - CA2-22-4-115 - 2.1

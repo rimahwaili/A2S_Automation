@@ -1,0 +1,13 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 37432
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/6870
+Supplier Name: 100402-SCC - SOCIEDADE CENTRAL DE CERVEJAS E BEBIDAS, S.A.
+Supplier URL: /suppliers/6870
+Supplier Name: 100402-SCC - SOCIEDADE CENTRAL DE CERVEJAS E BEBIDAS, S.A.
+url edited: /suppliers/edit/6870

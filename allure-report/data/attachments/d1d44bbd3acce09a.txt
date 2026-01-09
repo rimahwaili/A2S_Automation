@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41168
+Declaration frequency: Annually
+supplier: 115291-NESTLE WATERS MARKETING DISTRIBUTION
+invoicingCountryField: France
+Page 1: Contract - FR3-23-1-156-Autres Part - 3.1
+Page 2: Contract - FR3-23-1-156-Autres Part - 4.1
