@@ -1,0 +1,293 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: CON-AL6U6CC1 - 1.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "Contract - CON-AL6U6CC1 - 1.1" [level=2] [ref=e67]
+        - generic [ref=e68]:
+          - generic [ref=e70] [cursor=pointer]: Main Information
+          - generic [ref=e72] [cursor=pointer]: Invoicing Information
+          - generic [ref=e74] [cursor=pointer]: Documents (0)
+          - generic [ref=e76] [cursor=pointer]: Services
+        - generic [ref=e77]:
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - heading "Main Information" [level=2] [ref=e83]
+                - generic [ref=e86]:
+                  - generic [ref=e87]: "Supplier:"
+                  - link "9271-DIVERSEY FRANCE SAS" [ref=e90] [cursor=pointer]:
+                    - /url: /suppliers/4316
+                - generic [ref=e93]:
+                  - generic [ref=e94]: "Number:"
+                  - generic [ref=e96]: CON-AL6U6CC1
+                - generic [ref=e99]:
+                  - generic [ref=e100]: "Name:"
+                  - generic [ref=e102]: Contrat cadre
+                - generic [ref=e105]:
+                  - generic [ref=e106]: "Type:"
+                  - generic [ref=e108]: P1
+                - generic [ref=e111]:
+                  - generic [ref=e112]:
+                    - text: "Description:"
+                    - text: (visible by customers in the directory)
+                  - generic [ref=e114]: This is a test contract.
+                - generic [ref=e117]:
+                  - generic [ref=e118]: "Categories:"
+                  - list [ref=e120]:
+                    - listitem [ref=e121]: E00007 Promotional gifts
+                - generic [ref=e124]:
+                  - generic [ref=e125]: "Main Category:"
+                  - link "E00007 Promotional gifts" [ref=e128] [cursor=pointer]:
+                    - /url: /categories/198
+                - generic [ref=e131]:
+                  - generic [ref=e132]: "Brands:"
+                  - generic [ref=e134]: None
+                - generic [ref=e137]:
+                  - generic [ref=e138]: "Category Manager:"
+                  - link "anais.bocquene@accor.com" [ref=e141] [cursor=pointer]:
+                    - /url: /contacts/10474
+                - generic [ref=e145]: "E Procurement:"
+                - generic [ref=e149]:
+                  - generic [ref=e150]: "Former Numbers:"
+                  - generic [ref=e151]:
+                    - list
+                - generic [ref=e155]: "Opex:"
+              - generic [ref=e157]:
+                - heading "Declaration" [level=2] [ref=e159]
+                - generic [ref=e162]:
+                  - generic [ref=e163]: "Declaration Frequency:"
+                  - generic [ref=e165]: Quarterly
+                - generic [ref=e168]:
+                  - generic [ref=e169]: "Allow specific frequency for services:"
+                  - generic [ref=e171]: This frequency is applied to all services
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - heading "Contracts Dates" [level=2] [ref=e175]
+                - generic [ref=e178]:
+                  - generic [ref=e179]: "Silent Extension:"
+                  - img "ko" [ref=e182]
+                - generic [ref=e185]:
+                  - generic [ref=e186]: "Contract Start date:"
+                  - generic [ref=e188]: 12/16/2025
+                - generic [ref=e191]:
+                  - generic [ref=e192]: "Contract end date:"
+                  - generic [ref=e194]: 03/31/2026
+                - generic [ref=e197]:
+                  - generic [ref=e198]: "Declarative start Date:"
+                  - generic [ref=e200]: 01/01/2025
+                - generic [ref=e203]:
+                  - generic [ref=e204]: "Signing date:"
+                  - generic [ref=e206]: 12/15/2025
+                - generic [ref=e209]:
+                  - generic [ref=e210]: "Creation Date:"
+                  - generic [ref=e212]: 01/09/2026
+                - generic [ref=e215]:
+                  - generic [ref=e216]: "Theoretical end date:"
+                  - generic [ref=e218]: 03/03/2026
+                - generic [ref=e221]:
+                  - generic [ref=e222]: "Declarative end date:"
+                  - generic [ref=e224]: 03/31/2026
+              - generic [ref=e225]:
+                - heading "Contract Terms" [level=2] [ref=e227]
+                - generic [ref=e230]:
+                  - generic [ref=e231]: "Invoicing country:"
+                  - link "France" [ref=e234] [cursor=pointer]:
+                    - /url: /countries/76
+                - generic [ref=e237]:
+                  - generic [ref=e238]: "Currency:"
+                  - link "EUR" [ref=e241] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e244]:
+                  - generic [ref=e245]: "Duration (months) = Term:"
+                  - generic [ref=e247]: "15"
+                - generic [ref=e250]:
+                  - generic [ref=e251]: "Covered Perimeter: *"
+                  - generic [ref=e253]: World
+                - generic [ref=e256]:
+                  - generic [ref=e257]: "Declaration Contacts:"
+                  - generic [ref=e259]: None
+                - generic [ref=e262]:
+                  - generic [ref=e263]: "Payment Term:"
+                  - link "30 days end of decade" [ref=e266] [cursor=pointer]:
+                    - /url: /contract_payment_terms/4
+                - generic [ref=e269]:
+                  - generic [ref=e270]: "Payment Mode:"
+                  - link "TRANSFER" [ref=e273] [cursor=pointer]:
+                    - /url: /contract_payment_modes/2
+                - generic [ref=e276]:
+                  - generic [ref=e277]: "Cancellation Term:"
+                  - link "6 months" [ref=e280] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/5
+                - generic [ref=e283]:
+                  - generic [ref=e284]: "Expected Contract Value:"
+                  - generic [ref=e286]: "100000"
+          - generic [ref=e287]:
+            - heading "Invoicing Details" [level=2] [ref=e288]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e289]: 201 RUE CARNOT / - / 94120 / FONTENAY SOUS BOIS / France
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e290]:
+                    - listitem [ref=e291]:
+                      - link "groussilhe@solenis.com" [ref=e292] [cursor=pointer]:
+                        - /url: /contacts/30645
+                    - listitem [ref=e293]:
+                      - link "tdang@solenis.com" [ref=e294] [cursor=pointer]:
+                        - /url: /contacts/46600
+                    - listitem [ref=e295]:
+                      - link "fedouard@solenis.com" [ref=e296] [cursor=pointer]:
+                        - /url: /contacts/49562
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "EUR" [ref=e298] [cursor=pointer]:
+                    - /url: /currencies/1
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e299]: DIVERSEY FRANCE SAS
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e300]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e301]: "275702"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+                  - generic [ref=e302]: FR 73 412 668 543
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e306] [cursor=pointer]:
+            - /url: /suppliers/show/4316?@all_documents=true&to_tab=document
+          - generic [ref=e307]:
+            - link "Back to the list" [ref=e308] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Edit" [ref=e309] [cursor=pointer]:
+              - /url: /contracts/edit/41625
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e310]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e311]: No services yet
+              - generic [ref=e312]: No services at the moment
+      - generic [ref=e313]:
+        - generic [ref=e314]: "Version: 2.31.12"
+        - generic [ref=e315]:
+          - link "User Guide" [ref=e316] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e317] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```
