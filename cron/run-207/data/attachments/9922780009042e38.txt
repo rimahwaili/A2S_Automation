@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36099
+Declaration frequency: Annually
+supplier: 301423-DATA COMMUNICATIONS MANAGEMENT CORP - CAD
+invoicingCountryField: Canada
