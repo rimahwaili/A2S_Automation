@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41029
+Declaration frequency: Quarterly
+supplier: 12220-NR Neue Raum- & Umweltpflege GmbH & Co.KG
+invoicingCountryField: Germany

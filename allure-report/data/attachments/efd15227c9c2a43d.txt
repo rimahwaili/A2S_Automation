@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41327
+Declaration frequency: Annually
+supplier: 45447-SOCIETE DES ETABLISSEMENTS CARTRON
+invoicingCountryField: France
