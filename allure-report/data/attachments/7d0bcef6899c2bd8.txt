@@ -1,0 +1,20 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40302
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/12056
+Supplier Name: 390562-BIOWELS
+Supplier URL: /suppliers/12056
+Supplier Name: 390562-BIOWELS
+url edited: /suppliers/edit/12056
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 12
+contact type: Buyer
+contact type: Buyer
+contact type: Supplier
+ℹ️ Invoicing already checked for Supplier row 3

@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40499
+Declaration frequency: Quarterly
+supplier: 130160-PROTERIO PROTEÇÃO CONTRA INCENDIO LTDA
+invoicingCountryField: Brazil
