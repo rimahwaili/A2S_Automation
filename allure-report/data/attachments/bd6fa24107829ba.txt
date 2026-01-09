@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41220
+Declaration frequency: Annually
+supplier: 77245-Steelite International PLC
+invoicingCountryField: CORP

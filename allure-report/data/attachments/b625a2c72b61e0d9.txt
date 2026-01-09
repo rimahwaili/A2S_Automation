@@ -1,0 +1,17 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 40954
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/9745
+Supplier Name: 72675-Anheuser-Busch InBev Deutschland GmbH & Co. KG
+Supplier URL: /suppliers/9745
+Supplier Name: 72675-Anheuser-Busch InBev Deutschland GmbH & Co. KG
+url edited: /suppliers/edit/9745
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 7
+contact type: Supplier

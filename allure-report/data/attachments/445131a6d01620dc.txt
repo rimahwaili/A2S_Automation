@@ -1,0 +1,19 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36448
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/11610
+Supplier Name: 378811-Casarovea USA Inc - USA
+Supplier URL: /suppliers/11610
+Supplier Name: 378811-Casarovea USA Inc - USA
+url edited: /suppliers/edit/11610
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 5
+contact type: Buyer
+contact type: Supplier
+ℹ️ Invoicing already checked for Supplier row 2
