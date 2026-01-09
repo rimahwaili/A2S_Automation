@@ -1,0 +1,13 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41057
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/9438
+Supplier Name: KON0003-Coca-Cola HBC Polska
+Supplier URL: /suppliers/9438
+Supplier Name: KON0003-Coca-Cola HBC Polska
+url edited: /suppliers/edit/9438

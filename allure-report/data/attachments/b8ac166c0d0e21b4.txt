@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36357
+Declaration frequency: Quarterly
+supplier: 31962-Facility Objektmanagement u. Service GmbH
+invoicingCountryField: Austria
+Page 1: Contract - AT2-20-7-020 - 1.2
+Page 2: Contract - AT2-20-7-020 - 2.1
