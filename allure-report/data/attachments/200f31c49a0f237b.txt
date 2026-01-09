@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 34726
+Declaration frequency: Quarterly
+supplier: 301933-WILLIAMS TELECOMMUNICATIONS CORP
+invoicingCountryField: Canada
+contract id 1: Contract - William - NCA - 1.1
+contract id 2: Contract - William - NCA - 2.1
