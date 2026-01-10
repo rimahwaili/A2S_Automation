@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 37266
+Declaration frequency: Quarterly
+supplier: 306958-DANONE WATERS OF AMERICA
+invoicingCountryField: United States
+contract id 1: Contract - Danone - USD - 1.1
+contract id 2: Contract - Danone - USD - 2.1

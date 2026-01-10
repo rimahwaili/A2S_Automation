@@ -1,0 +1,17 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 27340
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/6279
+Supplier Name: 243671-ALLOMATCH
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+Supplier URL: /suppliers/6279
+Supplier Name: 243671-ALLOMATCH
+url edited: /suppliers/edit/6279
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
