@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 24670
+Declaration frequency: Quarterly
+supplier: 285825-CHAZAL GROUPE
+invoicingCountryField: France
+Page 1: Contract - 1170125267 - 1.1
+Page 2: Contract - 1170125267 - 2.1

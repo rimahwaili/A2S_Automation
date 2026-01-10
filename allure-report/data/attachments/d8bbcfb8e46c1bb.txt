@@ -1,0 +1,17 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 38696
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/12131
+Supplier Name: 3000054PE-BONAVISTA
+Supplier URL: /suppliers/12131
+Supplier Name: 3000054PE-BONAVISTA
+url edited: /suppliers/edit/12131
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 3
+contact type: Supplier
