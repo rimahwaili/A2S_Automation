@@ -1,0 +1,5 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Declaration frequency: Quarterly
+supplier: KON0385-KONE sp. z o.o.
+invoicingCountryField: Poland

@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 34727
+Declaration frequency: Quarterly
+supplier: 363919-ROYAL HOLDINGS TECHNOLOGIES CORP. (xLabs)
+invoicingCountryField: Canada
+contract id 1: Contract - Xlabs - NCA - 1.1
+contract id 2: Contract - Xlabs - NCA - 2.1
