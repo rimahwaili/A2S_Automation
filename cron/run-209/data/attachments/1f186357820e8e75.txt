@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Generated Contract Number: CON-62GH2CP1
+Attempt 1: Current value = "None"
+Attempt 2: Current value = "None"
+Attempt 3: Current value = "None"
+Attempt 4: Current value = "World"
+✅ Covered countries set to World
