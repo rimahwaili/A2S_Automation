@@ -1,0 +1,5 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Declaration frequency: Annually
+supplier: 112905-SHOES FOR CREWS EUROPE LTD
+invoicingCountryField: Contract H ENA

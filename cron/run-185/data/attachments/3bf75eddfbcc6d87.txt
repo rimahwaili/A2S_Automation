@@ -1,0 +1,17 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 36874
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/11065
+Supplier Name: 86141-SPONGE-CUSHION, INC. A LEGGETT & PLATT COMPANY
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+Supplier URL: /suppliers/11065
+Supplier Name: 86141-SPONGE-CUSHION, INC. A LEGGETT & PLATT COMPANY
+url edited: /suppliers/edit/11065
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
