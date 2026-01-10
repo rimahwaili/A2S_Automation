@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41347
+Declaration frequency: Annually
+supplier: 118354-SAVENCIA FROMAGE & DAIRY FOODSERVICE
+invoicingCountryField: France
+contract id 1: Contract - FR4GP1463 - 5.1
+contract id 2: Contract - FR4GP1463 - 6.1

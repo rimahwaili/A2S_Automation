@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41388
+Declaration frequency: Annually
+supplier: 56684-COCA COLA EUROPACIFIC PARTNERS FRANCE
+invoicingCountryField: France
