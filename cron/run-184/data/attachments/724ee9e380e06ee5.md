@@ -1,0 +1,514 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]:
+            - link "CAP2-24-1-005 - 1.1" [ref=e64] [cursor=pointer]:
+              - /url: /contracts/show/38565
+          - paragraph [ref=e65]:
+            - img "arrow-right" [ref=e66]
+          - paragraph [ref=e67]: Edition
+        - text:                                                                                                                                                                         
+        - generic [ref=e69]:
+          - heading "to renew Contract - CAP2-24-1-005 - 1.1" [level=2] [ref=e70]:
+            - generic [ref=e71]: to renew
+            - text: Contract - CAP2-24-1-005 - 1.1
+          - generic [ref=e72]:
+            - generic [ref=e74] [cursor=pointer]: Main Information
+            - generic [ref=e76] [cursor=pointer]: Invoicing Information
+            - generic [ref=e78] [cursor=pointer]: Documents (0)
+            - generic [ref=e80] [cursor=pointer]: Services
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e83]:
+                      - heading "Main Information" [level=2] [ref=e84]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Supplier:"
+                            - link "296122-Flow Water" [ref=e86] [cursor=pointer]:
+                              - /url: /suppliers/11356
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Number:"
+                            - generic [ref=e87]: CAP2-24-1-005
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Name:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e88] [cursor=pointer]:
+                                  - generic: Agreement for Specific Product and Services
+                                - generic [ref=e91]:
+                                  - textbox [ref=e93]
+                                  - list
+                              - link "New":
+                                - /url: /contract_titles/new
+                                - generic [ref=e94] [cursor=pointer]: 
+                                - text: New
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Type:"
+                            - generic [ref=e95]: P2
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - text: "Description:"
+                              - text: (visible by customers in the directory)
+                            - 'textbox "Description: (visible by customers in the directory)" [ref=e96]': Flow Water - 14.0 - %
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Categories:"
+                            - list [ref=e97]:
+                              - listitem [ref=e98]: A00004 Beer, mineral water, soft drinks
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Main Category:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e99] [cursor=pointer]:
+                                  - generic: A00004 Beer, mineral water, soft drinks
+                                - generic [ref=e102]:
+                                  - textbox [ref=e104]
+                                  - list
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Brands:"
+                            - generic [ref=e105]: None
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Category Manager:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e106] [cursor=pointer]:
+                                  - generic: gerrick.gaudet.buyer@accor.com
+                                - generic [ref=e109]:
+                                  - textbox [ref=e111]
+                                  - list
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "E Procurement:"
+                            - textbox "E Procurement:" [ref=e112]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Former Numbers:"
+                            - textbox "Former Numbers:" [ref=e113]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Opex:"
+                            - generic:
+                              - spinbutton "Opex:" [ref=e114]
+                              - generic [ref=e115]: "%"
+                    - generic [ref=e116]:
+                      - heading "Declaration" [level=2] [ref=e117]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declaration Frequency:"
+                            - generic [ref=e118]: Quarterly
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Allow specific frequency for services:"
+                            - generic [ref=e119]: This frequency is applied to all services
+                  - generic:
+                    - generic [ref=e120]:
+                      - heading "Contracts Dates" [level=2] [ref=e121]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Silent Extension: *"
+                            - 'combobox "Silent Extension: *" [ref=e122]':
+                              - option "Yes"
+                              - option "No" [selected]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Actual Beginning Date:"
+                            - generic [ref=e123]: 2024-01-01
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Actual End Date:"
+                            - generic [ref=e124]: 2025-12-31
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declarative Start Quarter:"
+                            - generic [ref=e125]: 1st of October
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declarative Start Year:"
+                            - generic [ref=e126]: "2023"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Signing date:"
+                            - generic [ref=e127]:
+                              - textbox "Signing date:" [ref=e128]: 01/01/2024
+                              - generic [ref=e130] [cursor=pointer]: 
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Theoretical end date:"
+                            - generic [ref=e131]:
+                              - textbox "Theoretical end date:" [ref=e132]: 12/31/2025
+                              - generic [ref=e134] [cursor=pointer]: 
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declarative End Quarter:"
+                            - generic [ref=e135]: 31st of December
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declarative End Year:"
+                            - generic [ref=e136]: "2025"
+                    - generic [ref=e137]:
+                      - heading "Contract Terms" [level=2] [ref=e138]
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Invoicing country:"
+                            - link "Canada" [ref=e140] [cursor=pointer]:
+                              - /url: /countries/41
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Currency:"
+                            - link "USD" [ref=e142] [cursor=pointer]:
+                              - /url: /currencies/6
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Duration (months) = Term:"
+                            - generic [ref=e143]: "27"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Covered Perimeter: *"
+                            - list [ref=e144]:
+                              - listitem [ref=e145]: NORTH AMERICA (1 / 4)
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Declaration Contacts:"
+                            - generic:
+                              - generic:
+                                - list [ref=e146]:
+                                  - listitem:
+                                    - textbox: Select Some Options
+                                - generic [ref=e147]:
+                                  - list
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Payment Term:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e148] [cursor=pointer]:
+                                  - generic: 30 days at billing receipt
+                                - generic [ref=e151]:
+                                  - textbox [ref=e153]
+                                  - list
+                              - link "New":
+                                - /url: /contract_payment_terms/new
+                                - generic [ref=e154] [cursor=pointer]: 
+                                - text: New
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Payment Mode:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e155] [cursor=pointer]:
+                                  - generic: TRANSFER
+                                - generic [ref=e158]:
+                                  - textbox [ref=e160]
+                                  - list
+                              - link "New":
+                                - /url: /contract_payment_modes/new
+                                - generic [ref=e161] [cursor=pointer]: 
+                                - text: New
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Cancellation Term:"
+                            - generic:
+                              - generic:
+                                - generic [ref=e162] [cursor=pointer]:
+                                  - generic: "[Select]"
+                                - generic [ref=e165]:
+                                  - textbox [ref=e167]
+                                  - list
+                              - link "New":
+                                - /url: /contract_cancellation_terms/new
+                                - generic [ref=e168] [cursor=pointer]: 
+                                - text: New
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Expected Contract Value:"
+                            - spinbutton "Expected Contract Value:" [ref=e169]
+              - generic [ref=e173]:
+                - heading "Invoicing Details" [level=2] [ref=e175]
+                - generic [ref=e178]:
+                  - generic [ref=e179]: "Invoicing Address:"
+                  - generic [ref=e181]: 155 Industrial Pkwy / / L4G 3G6 / South Aurora / Canada
+                - generic [ref=e184]:
+                  - generic [ref=e185]: "Invoicing Contacts:"
+                  - generic [ref=e187]:
+                    - list [ref=e188]:
+                      - listitem [ref=e189] [cursor=pointer]: fabio.dileo@flowhydration.com
+                      - listitem [ref=e191]:
+                        - textbox [ref=e192]
+                    - list [ref=e194]
+                - generic [ref=e197]:
+                  - generic [ref=e198]: "Invoicing Currency:"
+                  - link "USD" [ref=e201] [cursor=pointer]:
+                    - /url: /currencies/6
+                - generic [ref=e204]:
+                  - generic [ref=e205]: "Company Name on Invoice:"
+                  - textbox "Company Name on Invoice:" [ref=e207]: Flow Water
+                - generic [ref=e211]: "Invoicing Periodicity:"
+                - generic [ref=e215]:
+                  - generic [ref=e216]: "Allow specific invoicing for services:"
+                  - generic [ref=e218]: This periodicity is applied to all services
+                - generic [ref=e221]:
+                  - generic [ref=e222]: "Deposit Amount:"
+                  - spinbutton "Deposit Amount:" [ref=e224]
+                - generic [ref=e227]:
+                  - generic [ref=e228]: "Prepayment:"
+                  - combobox "Prepayment:" [ref=e230]:
+                    - option [selected]
+                    - option
+                    - option "Quarterly"
+                    - option "Semesterly on the N-1 basis"
+                    - option "Semesterly on the basis of the real N"
+                - generic [ref=e233]:
+                  - generic [ref=e234]: "Package Amount:"
+                  - spinbutton "Package Amount:" [ref=e236]
+                - generic [ref=e239]:
+                  - generic [ref=e240]: "AR code:"
+                  - generic [ref=e242]: "296122"
+                - generic [ref=e246]: "Intracommunity VAT:"
+                - generic [ref=e250]:
+                  - generic [ref=e251]: "your references:"
+                  - textbox "your references:" [ref=e253]
+                - generic [ref=e257]: "AP code:"
+              - generic:
+                - button "+ Add new Document" [ref=e261] [cursor=pointer]
+                - link "View all supplier documents" [ref=e263] [cursor=pointer]:
+                  - /url: /suppliers/show/11356?@all_documents=true&to_tab=document
+              - generic [ref=e265]:
+                - link "Back to the list" [ref=e266] [cursor=pointer]:
+                  - /url: /contracts/list
+                - link "Error" [ref=e267] [cursor=pointer]:
+                  - /url: /contracts/confirm_error/38565?trans_name=contracts_error_from_to_renew
+                - link "Archive" [ref=e268] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/38565?trans_name=contracts_archived_from_to_renew&date_impacted=&value_impacted=
+                - link "Versioning" [ref=e269] [cursor=pointer]:
+                  - /url: /contracts/version/38565
+                - link "Renew" [ref=e270] [cursor=pointer]:
+                  - /url: /contracts/confirm_dates/38565?trans_name=renew&date_impacted=&value_impacted=&independant_form=true
+                - link "Submit" [ref=e271] [cursor=pointer]:
+                  - /url: /contracts/general_confirmation/38565?declarative_impact=true
+            - generic:
+              - generic:
+                - generic:
+                  - generic [ref=e272]:
+                    - heading "Services List" [level=3]
+                  - list:
+                    - listitem [ref=e273]:
+                      - generic [ref=e274] [cursor=pointer]: Classic Procurement Service Fee
+                      - img "arrow" [ref=e275]
+                - generic:
+                  - heading "Service details" [level=3] [ref=e277]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - group:
+                          - generic [ref=e278]:
+                            - generic [ref=e280]:
+                              - generic:
+                                - generic [ref=e281]: "Name:"
+                                - generic:
+                                  - generic:
+                                    - generic [ref=e282] [cursor=pointer]:
+                                      - generic: Classic Procurement Service Fee
+                                    - generic [ref=e285]:
+                                      - textbox [ref=e287]
+                                      - list
+                            - generic [ref=e289]:
+                              - generic:
+                                - generic [ref=e290]: "Depth of declaration: *"
+                                - generic [ref=e291]: Hotel
+                            - generic [ref=e293]:
+                              - generic:
+                                - generic [ref=e294]: Redistribution
+                                - generic [ref=e295]:
+                                  - generic:
+                                    - generic: "No"
+                                    - generic: "Yes"
+                            - generic [ref=e297]:
+                              - generic:
+                                - generic [ref=e298]: "Description:"
+                                - textbox "Description:" [ref=e299]: Flow Water - 14.0 - %
+                            - generic [ref=e301]:
+                              - generic:
+                                - generic [ref=e302]: "Declared By:"
+                                - combobox "Declared By:" [ref=e303]:
+                                  - option "Supplier" [selected]
+                                  - option "Buyer"
+                                  - option "Back-Office"
+                            - generic [ref=e306]: "Maximum Amount:"
+                            - generic [ref=e308]:
+                              - generic:
+                                - generic [ref=e309]: "Tax:"
+                                - generic:
+                                  - textbox "Tax:" [ref=e310]
+                                  - generic [ref=e311]: "%"
+                            - generic [ref=e313]:
+                              - generic:
+                                - generic [ref=e314]: "Declaration Frequency:"
+                                - generic [ref=e315]: Quarterly
+                            - generic [ref=e318]: "Invoicing Periodicity:"
+                            - generic [ref=e320]:
+                              - generic:
+                                - generic [ref=e321]: "Import data from ASR:"
+                                - textbox "Import data from ASR:" [ref=e322]
+                    - generic [ref=e323]:
+                      - heading "Sub-Services" [level=3]
+                    - list [ref=e324]:
+                      - listitem:
+                        - generic [ref=e326]: Flow Water - 14.0 - %
+                        - generic [ref=e327]:
+                          - paragraph: "Conditions: 1"
+                        - generic:
+                          - generic:
+                            - link "Self And Assoc":
+                              - /url: /contract_sub_services/self_and_assoc/30172?edit_mode=true
+                              - img "Self And Assoc" [ref=e328] [cursor=pointer]
+                    - generic [ref=e329] [cursor=pointer]: Save this Service
+      - generic [ref=e330]:
+        - generic [ref=e331]: "Version: 2.31.12"
+        - generic [ref=e332]:
+          - link "User Guide" [ref=e333] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e334] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+  - dialog [ref=e336]:
+    - document [ref=e337]:
+      - generic [ref=e338]:
+        - button "Close" [ref=e339] [cursor=pointer]: ×
+        - generic [ref=e340]:
+          - banner [ref=e341]:
+            - heading "End dates confirmation" [level=1] [ref=e342]
+          - generic [ref=e344]:
+            - paragraph [ref=e345]:
+              - text: Warning! declarations can be cancelled by this action
+              - text: "Before saving, please confirm the following dates:"
+            - generic [ref=e348]:
+              - generic [ref=e349]: "End Quarter:"
+              - combobox [ref=e351]:
+                - option "[Select]"
+                - option "31st of March"
+                - option "30th of June"
+                - option "30th of September"
+                - option "31st of December" [selected]
+            - generic [ref=e354]:
+              - generic [ref=e355]: "End Year:"
+              - textbox [active] [ref=e357]: "2027"
+            - generic [ref=e360]:
+              - generic [ref=e361]: "Contract end date:"
+              - generic [ref=e362]:
+                - textbox [ref=e363]: 12/29/2027
+                - generic [ref=e365]: 
+          - button "Confirm and save" [ref=e367] [cursor=pointer]
+```
