@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41183
+Declaration frequency: Annually
+supplier: 68861-ITAL PASSION
+invoicingCountryField: France
+contract id 1: Contract - FR4GP1269 - 2.1
+contract id 2: Contract - FR4GP1269 - 3.1

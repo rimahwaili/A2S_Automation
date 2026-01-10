@@ -1,0 +1,13 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41364
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/4829
+Supplier Name: 44717-VRANKEN POMMERY MONOPOLE
+Supplier URL: /suppliers/4829
+Supplier Name: 44717-VRANKEN POMMERY MONOPOLE
+url edited: /suppliers/edit/4829
