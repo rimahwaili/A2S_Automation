@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41221
+Declaration frequency: Annually
+supplier: 57952-ETABLISSEMENTS DUGAS
+invoicingCountryField: France
+Page 1: Contract - FR4-23-1-244 - 2.1
+Page 2: Contract - FR4-23-1-244 - 3.1

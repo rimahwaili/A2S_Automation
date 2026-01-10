@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 30677
+Declaration frequency: Quarterly
+supplier: ME-971130-Cachet
+invoicingCountryField: United Arab Emirates

@@ -1,0 +1,340 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: HEH2-25-6-095 - 1.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "Contract - HEH2-25-6-095 - 1.1" [level=2] [ref=e67]
+        - generic [ref=e68]:
+          - generic [ref=e70] [cursor=pointer]: Main Information
+          - generic [ref=e72] [cursor=pointer]: Invoicing Information
+          - generic [ref=e74] [cursor=pointer]: Documents (0)
+          - generic [ref=e76] [cursor=pointer]: Services
+        - generic [ref=e77]:
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - heading "Main Information" [level=2] [ref=e83]
+                - generic [ref=e86]:
+                  - generic [ref=e87]: "Supplier:"
+                  - link "46063-COLLINET" [ref=e90] [cursor=pointer]:
+                    - /url: /suppliers/3926
+                - generic [ref=e93]:
+                  - generic [ref=e94]: "Number:"
+                  - generic [ref=e96]: HEH2-25-6-095
+                - generic [ref=e99]:
+                  - generic [ref=e100]: "Name:"
+                  - generic [ref=e102]: Nominating and services Agreement
+                - generic [ref=e105]:
+                  - generic [ref=e106]: "Type:"
+                  - generic [ref=e108]: H2
+                - generic [ref=e112]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e116]:
+                  - generic [ref=e117]: "Categories:"
+                  - list [ref=e119]:
+                    - listitem [ref=e120]: E00068 Hotel furniture interior + exterior
+                - generic [ref=e123]:
+                  - generic [ref=e124]: "Main Category:"
+                  - link "E00068 Hotel furniture interior + exterior" [ref=e127] [cursor=pointer]:
+                    - /url: /categories/183
+                - generic [ref=e130]:
+                  - generic [ref=e131]: "Brands:"
+                  - generic [ref=e133]: None
+                - generic [ref=e136]:
+                  - generic [ref=e137]: "Category Manager:"
+                  - link "catherine.machado@accor.com" [ref=e140] [cursor=pointer]:
+                    - /url: /contacts/45564
+                - generic [ref=e144]: "E Procurement:"
+                - generic [ref=e148]:
+                  - generic [ref=e149]: "Former Numbers:"
+                  - generic [ref=e150]:
+                    - list
+                - generic [ref=e153]:
+                  - generic [ref=e154]: "Opex:"
+                  - generic "100.0" [ref=e156]: 100 %
+              - generic [ref=e157]:
+                - heading "Declaration" [level=2] [ref=e159]
+                - generic [ref=e162]:
+                  - generic [ref=e163]: "Declaration Frequency:"
+                  - generic [ref=e165]: Bi-Annually
+                - generic [ref=e168]:
+                  - generic [ref=e169]: "Allow specific frequency for services:"
+                  - generic [ref=e171]: This frequency is applied to all services
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - heading "Contracts Dates" [level=2] [ref=e175]
+                - generic [ref=e178]:
+                  - generic [ref=e179]: "Silent Extension:"
+                  - img "ok" [ref=e182]
+                - generic [ref=e185]:
+                  - generic [ref=e186]: "Contract Start date:"
+                  - generic [ref=e188]: 01/01/2026
+                - generic [ref=e192]: "Contract end date:"
+                - generic [ref=e195]:
+                  - generic [ref=e196]: "Declarative start Date:"
+                  - generic [ref=e198]: 01/01/2026
+                - generic [ref=e201]:
+                  - generic [ref=e202]: "Signing date:"
+                  - generic [ref=e204]: 11/26/2025
+                - generic [ref=e207]:
+                  - generic [ref=e208]: "Creation Date:"
+                  - generic [ref=e210]: 12/11/2025
+                - generic [ref=e214]: "Theoretical end date:"
+                - generic [ref=e218]: "Declarative end date:"
+              - generic [ref=e219]:
+                - heading "Contract Terms" [level=2] [ref=e221]
+                - generic [ref=e224]:
+                  - generic [ref=e225]: "Invoicing country:"
+                  - link "Contract H ENA" [ref=e228] [cursor=pointer]:
+                    - /url: /countries/253
+                - generic [ref=e231]:
+                  - generic [ref=e232]: "Currency:"
+                  - link "EUR" [ref=e235] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e239]: "Duration (months) = Term:"
+                - generic [ref=e243]:
+                  - generic [ref=e244]: "Covered Perimeter: *"
+                  - list [ref=e246]:
+                    - listitem [ref=e247]: ASIA (4 / 36)
+                    - listitem [ref=e248]: EASTERN EUROPE (13 / 16)
+                    - listitem [ref=e249]: NORTHERN AND CENTRAL EUROPE (16 / 23)
+                    - listitem [ref=e250]: SOUTHERN EUROPE (9 / 13)
+                    - listitem [ref=e251]: MAGHREB (3 / 7)
+                    - listitem [ref=e252]: NEAR AND MIDDLE EAST (1 / 15)
+                - generic [ref=e255]:
+                  - generic [ref=e256]: "Declaration Contacts:"
+                  - generic [ref=e258]: None
+                - generic [ref=e261]:
+                  - generic [ref=e262]: "Payment Term:"
+                  - link "30 days end of month" [ref=e265] [cursor=pointer]:
+                    - /url: /contract_payment_terms/3
+                - generic [ref=e268]:
+                  - generic [ref=e269]: "Payment Mode:"
+                  - link "OTHER" [ref=e272] [cursor=pointer]:
+                    - /url: /contract_payment_modes/4
+                - generic [ref=e275]:
+                  - generic [ref=e276]: "Cancellation Term:"
+                  - link "2 months" [ref=e279] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/3
+                - generic [ref=e283]: "Expected Contract Value:"
+          - generic [ref=e285]:
+            - heading "Invoicing Details" [level=2] [ref=e286]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e287]: 4 RUE DU MOULIN / - / 55130 / BAUDIGNECOURT / France
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e288]:
+                    - listitem [ref=e289]:
+                      - link "virginie@collinet-sieges.fr" [ref=e290] [cursor=pointer]:
+                        - /url: /contacts/10554
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "EUR" [ref=e292] [cursor=pointer]:
+                    - /url: /currencies/1
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e293]: COLLINET
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+                  - generic [ref=e294]: Bi-Annually
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e295]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e296]: "6406"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+                  - generic [ref=e297]: FR86486120116
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e301] [cursor=pointer]:
+            - /url: /suppliers/show/3926?@all_documents=true&to_tab=document
+          - generic [ref=e302]:
+            - link "Back to the list" [ref=e303] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e304] [cursor=pointer]:
+              - /url: /contracts/simulator/41095
+            - link "Edit" [ref=e305] [cursor=pointer]:
+              - /url: /contracts/edit/41095
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e306]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e307]:
+                    - generic [ref=e308] [cursor=pointer]: Classic Procurement Service Fee
+                    - img "arrow" [ref=e309]
+                  - listitem [ref=e310]:
+                    - generic [ref=e311] [cursor=pointer]: Astore non-digital marketing fee
+                  - listitem [ref=e312]:
+                    - generic [ref=e313] [cursor=pointer]: Basic admin fee
+              - generic:
+                - heading "Service details" [level=3] [ref=e315]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e316]:
+                        - generic [ref=e318]:
+                          - generic:
+                            - generic [ref=e319]: "Name:"
+                            - generic [ref=e320]: Classic Procurement Service Fee
+                        - generic [ref=e322]:
+                          - generic:
+                            - generic [ref=e323]: "Depth of declaration:"
+                            - generic [ref=e324]: Hotel
+                        - generic [ref=e326]:
+                          - generic:
+                            - generic [ref=e327]: "Redistribution:"
+                            - img "ok" [ref=e329]
+                        - generic [ref=e332]: "Description:"
+                        - generic [ref=e334]:
+                          - generic:
+                            - generic [ref=e335]: "Declared By:"
+                            - generic [ref=e336]: Supplier
+                        - generic [ref=e339]: "Maximum Amount:"
+                        - generic [ref=e341]:
+                          - generic:
+                            - generic [ref=e342]: "Tax:"
+                            - generic "20.0" [ref=e343]: 20 %
+                        - generic [ref=e345]:
+                          - generic:
+                            - generic [ref=e346]: "Declaration Frequency:"
+                            - generic [ref=e347]: Bi-Annually
+                        - generic [ref=e349]:
+                          - generic:
+                            - generic [ref=e350]: "Invoicing Periodicity:"
+                            - generic [ref=e351]: Bi-Annually
+                        - generic [ref=e354]: "Import data from ASR:"
+                  - generic [ref=e355]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e356]:
+                    - listitem:
+                      - generic [ref=e358]: "Référencement du Référencé ou de ses produits et/ou services : 4,5% (hors logistique et éco participation)"
+                      - generic [ref=e359]:
+                        - paragraph: "Conditions: 1"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/37293?edit_mode=
+                            - img "Self And Assoc" [ref=e360] [cursor=pointer]
+      - generic [ref=e361]:
+        - generic [ref=e362]: "Version: 2.31.12"
+        - generic [ref=e363]:
+          - link "User Guide" [ref=e364] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e365] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```

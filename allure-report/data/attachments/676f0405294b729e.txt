@@ -1,0 +1,19 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41215
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/4663
+Supplier Name: 45339-PERNOD RICARD FRANCE
+Supplier URL: /suppliers/4663
+Supplier Name: 45339-PERNOD RICARD FRANCE
+url edited: /suppliers/edit/4663
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 8
+contact type: Buyer
+contact type: Supplier
+✅ Checked Invoicing for Supplier row 2

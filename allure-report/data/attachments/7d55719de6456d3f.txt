@@ -1,0 +1,8 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 27250
+Declaration frequency: Annually
+supplier: 6241-LE MENU DUBREUIL
+invoicingCountryField: France
+contract id 1: Contract - FR4GP2155 - 1.1
+contract id 2: Contract - FR4GP2155 - 2.1
