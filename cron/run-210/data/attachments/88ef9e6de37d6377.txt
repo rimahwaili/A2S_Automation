@@ -1,0 +1,6 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 25055
+Declaration frequency: Quarterly
+supplier: 285823-CUSHMAN & WAKEFIELD DESIGN + BUILD France
+invoicingCountryField: France

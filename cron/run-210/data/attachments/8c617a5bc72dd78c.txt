@@ -1,0 +1,5 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Declaration frequency: Quarterly
+supplier: 103494-IMPRIMERIE IMEDIA
+invoicingCountryField: Morocco

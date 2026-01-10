@@ -1,0 +1,13 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Generated Contract Number: CON-I3WAR2CN
+Attempt 1: Current value = "None"
+Attempt 2: Current value = "None"
+Attempt 3: Current value = "World"
+✅ Covered countries set to World
+✅ Scope tab "Services" activated
+✅ Service "Mobilisation Fee" ajouté
+✏️ Editing sub-service "Self And Assoc"
+✅ Set unit to "TO" and value to "10"
+✅ Sub-service modal saved and closed
+Mobilisation Fee - 10.0 - %
