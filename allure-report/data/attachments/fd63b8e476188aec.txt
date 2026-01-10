@@ -1,0 +1,21 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Contract ID: 41067
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+✅ Invoicing tab clicked
+⚠️ No invoicing contacts found
+Invoicing contact was not selected, selecting now...
+Supplier URL: /suppliers/12747
+Supplier Name: 406111-CARAMBAR & Co
+➡ Ensuring we are on the contract page
+✅ Contract page loaded
+Supplier URL: /suppliers/12747
+Supplier Name: 406111-CARAMBAR & Co
+url edited: /suppliers/edit/12747
+✅ Supplier page loaded in new tab
+✅ Opened tab with id: contact-radio
+Rows found: 2
+contact type: Buyer
+contact type: Supplier
+ℹ️ Invoicing already checked for Supplier row 2

@@ -1,0 +1,354 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "astore-logo" [ref=e3] [cursor=pointer]:
+      - /url: /contacts/welcome
+      - img "astore-logo" [ref=e4]
+    - generic [ref=e5]: preprod
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: TA
+      - text: 
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: DATA
+          - generic [ref=e13] [cursor=pointer]: 
+        - generic [ref=e14]:
+          - link "Contacts" [ref=e15] [cursor=pointer]:
+            - /url: /contacts/index
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Contacts
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 
+              - generic [ref=e21]: Suppliers
+              - generic [ref=e22]: 
+            - text:  
+          - link "Clients" [ref=e23] [cursor=pointer]:
+            - /url: /clients/index
+            - generic [ref=e24]: 
+            - generic [ref=e25]: Clients
+      - generic [ref=e26]:
+        - generic [ref=e28]: MODULES
+        - generic [ref=e29]:
+          - link "Billing" [ref=e30] [cursor=pointer]:
+            - /url: /billing_invoices/index
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Billing
+          - link "Contracts" [ref=e33] [cursor=pointer]:
+            - /url: /contracts/index
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Contracts
+          - link "Controls" [ref=e36] [cursor=pointer]:
+            - /url: /control_campaigns/index
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Controls
+          - link "Data Collection" [ref=e39] [cursor=pointer]:
+            - /url: /campaigns/index
+            - generic [ref=e40]: 
+            - generic [ref=e41]: Data Collection
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Declaration
+            - generic [ref=e46]: 
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: 
+              - generic [ref=e50]: Reports
+              - generic [ref=e51]: 
+            - text: 
+          - link "Parameters" [ref=e52] [cursor=pointer]:
+            - /url: /system_settings/parameters_board
+            - generic [ref=e53]: 
+            - generic [ref=e54]: Parameters
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]:
+            - link "Contracts" [ref=e60] [cursor=pointer]:
+              - /url: /contracts/index
+          - paragraph [ref=e61]:
+            - img "arrow-right" [ref=e62]
+          - paragraph [ref=e63]: FRS3-24-3-078 - 2.1
+          - paragraph [ref=e64]:
+            - img "arrow-right" [ref=e65]
+          - paragraph [ref=e66]: Consultation
+        - text:                                                                                                                                                                         
+        - heading "error Contract - FRS3-24-3-078 - 2.1" [level=2] [ref=e67]:
+          - generic [ref=e68]: error
+          - text: Contract - FRS3-24-3-078 - 2.1
+        - paragraph [ref=e69]:
+          - generic [ref=e70]:
+            - text: Renewed from contract n°
+            - link "FRS3-24-3-078 - 1.1" [ref=e71] [cursor=pointer]:
+              - /url: /contracts/show/38645
+        - generic [ref=e72]:
+          - generic [ref=e74] [cursor=pointer]: Main Information
+          - generic [ref=e76] [cursor=pointer]: Invoicing Information
+          - generic [ref=e78] [cursor=pointer]: Documents (0)
+          - generic [ref=e80] [cursor=pointer]: Services
+        - generic [ref=e81]:
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - heading "Main Information" [level=2] [ref=e87]
+                - generic [ref=e90]:
+                  - generic [ref=e91]: "Supplier:"
+                  - link "361752-BBSPA France" [ref=e94] [cursor=pointer]:
+                    - /url: /suppliers/12082
+                - generic [ref=e97]:
+                  - generic [ref=e98]: "Number:"
+                  - generic [ref=e100]: FRS3-24-3-078
+                - generic [ref=e103]:
+                  - generic [ref=e104]: "Name:"
+                  - generic [ref=e106]: Contrat de Référencement et de Services
+                - generic [ref=e109]:
+                  - generic [ref=e110]: "Type:"
+                  - generic [ref=e112]: S3
+                - generic [ref=e116]:
+                  - text: "Description:"
+                  - text: (visible by customers in the directory)
+                - generic [ref=e120]:
+                  - generic [ref=e121]: "Categories:"
+                  - list [ref=e123]:
+                    - listitem [ref=e124]: "E00072-1 Intellectual services : Strategic Consulting"
+                - generic [ref=e127]:
+                  - generic [ref=e128]: "Main Category:"
+                  - 'link "E00072-1 Intellectual services : Strategic Consulting" [ref=e131] [cursor=pointer]':
+                    - /url: /categories/336
+                - generic [ref=e134]:
+                  - generic [ref=e135]: "Brands:"
+                  - generic [ref=e137]: None
+                - generic [ref=e140]:
+                  - generic [ref=e141]: "Category Manager:"
+                  - link "nathalie.noel@accor.com" [ref=e144] [cursor=pointer]:
+                    - /url: /contacts/23219
+                - generic [ref=e148]: "E Procurement:"
+                - generic [ref=e152]:
+                  - generic [ref=e153]: "Former Numbers:"
+                  - generic [ref=e154]:
+                    - list
+                - generic [ref=e157]:
+                  - generic [ref=e158]: "Opex:"
+                  - generic "100.0" [ref=e160]: 100 %
+              - generic [ref=e161]:
+                - heading "Declaration" [level=2] [ref=e163]
+                - generic [ref=e166]:
+                  - generic [ref=e167]: "Declaration Frequency:"
+                  - generic [ref=e169]: Annually
+                - generic [ref=e172]:
+                  - generic [ref=e173]: "Allow specific frequency for services:"
+                  - generic [ref=e175]: This frequency is applied to all services
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - heading "Contracts Dates" [level=2] [ref=e179]
+                - generic [ref=e182]:
+                  - generic [ref=e183]: "Silent Extension:"
+                  - img "ko" [ref=e186]
+                - generic [ref=e189]:
+                  - generic [ref=e190]: "Contract Start date:"
+                  - generic [ref=e192]: 01/01/2025
+                - generic [ref=e195]:
+                  - generic [ref=e196]: "Contract end date:"
+                  - generic [ref=e198]: 12/31/2025
+                - generic [ref=e201]:
+                  - generic [ref=e202]: "Declarative start Date:"
+                  - generic [ref=e204]: 01/01/2025
+                - generic [ref=e207]:
+                  - generic [ref=e208]: "Signing date:"
+                  - generic [ref=e210]: 05/30/2024
+                - generic [ref=e213]:
+                  - generic [ref=e214]: "Creation Date:"
+                  - generic [ref=e216]: 06/03/2024
+                - generic [ref=e220]: "Theoretical end date:"
+                - generic [ref=e223]:
+                  - generic [ref=e224]: "Declarative end date:"
+                  - generic [ref=e226]: 12/31/2025
+              - generic [ref=e227]:
+                - heading "Contract Terms" [level=2] [ref=e229]
+                - generic [ref=e232]:
+                  - generic [ref=e233]: "Invoicing country:"
+                  - link "France" [ref=e236] [cursor=pointer]:
+                    - /url: /countries/76
+                - generic [ref=e239]:
+                  - generic [ref=e240]: "Currency:"
+                  - link "EUR" [ref=e243] [cursor=pointer]:
+                    - /url: /currencies/1
+                - generic [ref=e246]:
+                  - generic [ref=e247]: "Duration (months) = Term:"
+                  - generic [ref=e249]: "12"
+                - generic [ref=e252]:
+                  - generic [ref=e253]: "Covered Perimeter: *"
+                  - list [ref=e255]:
+                    - listitem [ref=e256]: SOUTHERN EUROPE (3 / 13)
+                - generic [ref=e259]:
+                  - generic [ref=e260]: "Declaration Contacts:"
+                  - list [ref=e262]:
+                    - listitem [ref=e263]:
+                      - link "ghislain@bbspafrance.com" [ref=e264] [cursor=pointer]:
+                        - /url: /contacts/47682
+                - generic [ref=e267]:
+                  - generic [ref=e268]: "Payment Term:"
+                  - link "30 days end of month" [ref=e271] [cursor=pointer]:
+                    - /url: /contract_payment_terms/3
+                - generic [ref=e274]:
+                  - generic [ref=e275]: "Payment Mode:"
+                  - link "OTHER" [ref=e278] [cursor=pointer]:
+                    - /url: /contract_payment_modes/4
+                - generic [ref=e281]:
+                  - generic [ref=e282]: "Cancellation Term:"
+                  - link "2 months" [ref=e285] [cursor=pointer]:
+                    - /url: /contract_cancellation_terms/3
+                - generic [ref=e289]: "Expected Contract Value:"
+          - generic [ref=e291]:
+            - heading "Invoicing Details" [level=2] [ref=e292]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Address:"
+                  - generic [ref=e293]: 47 Rue de Perronet / / 92200 / NEUILLY SUR SEINE / France
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Contacts:"
+                  - list [ref=e294]:
+                    - listitem [ref=e295]:
+                      - link "ghislain@bbspafrance.com" [ref=e296] [cursor=pointer]:
+                        - /url: /contacts/47682
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Currency:"
+                  - link "EUR" [ref=e298] [cursor=pointer]:
+                    - /url: /currencies/1
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Company Name on Invoice:"
+                  - generic [ref=e299]: BBSPA France
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Invoicing Periodicity:"
+                  - generic [ref=e300]: Annually
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Allow specific invoicing for services:"
+                  - generic [ref=e301]: This periodicity is applied to all services
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Deposit Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Prepayment:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Package Amount:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AR code:"
+                  - generic [ref=e302]: "470596"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "Intracommunity VAT:"
+                  - generic [ref=e303]: FR21 899584502
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "your references:"
+            - generic:
+              - generic:
+                - generic:
+                  - generic: "AP code:"
+          - link "View all supplier documents" [ref=e307] [cursor=pointer]:
+            - /url: /suppliers/show/12082?@all_documents=true&to_tab=document
+          - generic [ref=e308]:
+            - link "Back to the list" [ref=e309] [cursor=pointer]:
+              - /url: /contracts/list
+            - link "Simulator" [ref=e310] [cursor=pointer]:
+              - /url: /contracts/simulator/40557
+            - link "Edit" [ref=e311] [cursor=pointer]:
+              - /url: /contracts/edit/40557
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e312]:
+                  - heading "Services List" [level=3]
+                - list:
+                  - listitem [ref=e313]:
+                    - generic [ref=e314] [cursor=pointer]: Basic admin fee
+                    - img "arrow" [ref=e315]
+                  - listitem [ref=e316]:
+                    - generic [ref=e317] [cursor=pointer]: Classic Procurement Service Fee
+                  - listitem [ref=e318]:
+                    - generic [ref=e319] [cursor=pointer]: Other
+              - generic:
+                - heading "Service details" [level=3] [ref=e321]
+                - generic:
+                  - generic:
+                    - group:
+                      - generic [ref=e322]:
+                        - generic [ref=e324]:
+                          - generic:
+                            - generic [ref=e325]: "Name:"
+                            - generic [ref=e326]: Basic admin fee
+                        - generic [ref=e328]:
+                          - generic:
+                            - generic [ref=e329]: "Depth of declaration:"
+                            - generic [ref=e330]: Hotel
+                        - generic [ref=e332]:
+                          - generic:
+                            - generic [ref=e333]: "Redistribution:"
+                            - img "ko" [ref=e335]
+                        - generic [ref=e337]:
+                          - generic:
+                            - generic [ref=e338]: "Description:"
+                            - generic [ref=e339]: non redistribué
+                        - generic [ref=e341]:
+                          - generic:
+                            - generic [ref=e342]: "Declared By:"
+                            - generic [ref=e343]: Back-Office
+                        - generic [ref=e346]: "Maximum Amount:"
+                        - generic [ref=e348]:
+                          - generic:
+                            - generic [ref=e349]: "Tax:"
+                            - generic "20.0" [ref=e350]: 20 %
+                        - generic [ref=e352]:
+                          - generic:
+                            - generic [ref=e353]: "Declaration Frequency:"
+                            - generic [ref=e354]: Annually
+                        - generic [ref=e356]:
+                          - generic:
+                            - generic [ref=e357]: "Invoicing Periodicity:"
+                            - generic [ref=e358]: Annually
+                        - generic [ref=e361]: "Import data from ASR:"
+                  - generic [ref=e362]:
+                    - heading "Sub-Services" [level=3]
+                  - list [ref=e363]:
+                    - listitem:
+                      - generic [ref=e365]: S3 Frais de référencement basique 3.000 €
+                      - generic [ref=e366]:
+                        - paragraph: "Conditions: 0"
+                      - generic:
+                        - generic:
+                          - link "Self And Assoc":
+                            - /url: /contract_sub_services/self_and_assoc/35975?edit_mode=
+                            - img "Self And Assoc" [ref=e367] [cursor=pointer]
+      - generic [ref=e368]:
+        - generic [ref=e369]: "Version: 2.31.12"
+        - generic [ref=e370]:
+          - link "User Guide" [ref=e371] [cursor=pointer]:
+            - /url: https://support.astoreprocurement.com/hc/fr
+          - text: "| Copyright © 2026 Astore Suite |"
+          - link "Terms & Conditions" [ref=e372] [cursor=pointer]:
+            - /url: /documentations/display_cgu
+```

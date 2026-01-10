@@ -1,0 +1,26 @@
+🔍 Checking if Pendo popup is displayed...
+ℹ️ No Pendo popup displayed – test continues
+Detected UI language: EN
+No Pendo banner found
+Detected UI language: EN
+Apply filters: { email: 'Supplier2286@yopmail.com' }
+✅ Filters successfully applied
+Opening the contact details page...
+✅ Contact details page opened successfully
+✅ Contact Details page is visible
+✅ Contact basic information verified
+✅ Send Reset Password Link
+✅ Change Password modal opened
+⚠️ Testing invalid password: invalid / Valid@260994!!
+❌ Password mismatch validation triggered
+✅ Change Password modal closed
+✅ Change Password modal opened
+🧩 Setting valid password: Valid@260994!!
+✅ Password changed successfully
+🔎 Waiting for success toast...
+✅ Success toast verified: 
+Password changed
+      
+✅ Toast closed
+🔐 Setting new password (14 chars)...
+✅ Password set and form submitted
